@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-07-27T07:16:06",
+  "new_count": 2,
+  "notices": [
+    {
+      "id": 33055,
+      "title": "광고 운영 중 궁금증, 이제 '네이버 광고 AI챗봇'에게 물어보세요.",
+      "category": "공통",
+      "date": "2026-07-24",
+      "is_pinned": false,
+      "is_new": true,
+      "platform": "네이버 GFA",
+      "url": "https://ads.naver.com/notice/33055"
+    },
+    {
+      "id": 33083,
+      "title": "경기도 안양시 만안구 지역체계 변경에 따른 광고주 안내",
+      "category": "디스플레이 광고",
+      "date": "2026-07-23",
+      "is_pinned": false,
+      "is_new": true,
+      "platform": "네이버 GFA",
+      "url": "https://ads.naver.com/notice/33083"
+    },
+    {
+      "id": 18005,
+      "title": "네이버 성과형 디스플레이 광고 노출 지면 및 집행 가이드 안내",
+      "category": "디스플레이 광고",
+      "date": "2024-12-09",
+      "is_pinned": true,
+      "is_new": false,
+      "platform": "네이버 GFA",
+      "url": "https://ads.naver.com/notice/18005"
+    }
+  ]
+}

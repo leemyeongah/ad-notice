@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>매체 공지 모니터</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #10141b;
+    --panel: #191f29;
+    --panel-hover: #1f2733;
+    --line: #262f3d;
+    --text: #e7ebf1;
+    --muted: #8993a4;
+    --accent: #f2a93b;
+    --accent-dim: #f2a93b33;
+    --gfa: #5b8def;
+    --nosp: #7fd1a8;
+    --common: #b48ee8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Noto Sans KR', sans-serif;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 780px; margin: 0 auto; padding: 40px 20px 80px; }
+
+  header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+  }
+  .title-block h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0 0 6px;
+    letter-spacing: -0.02em;
+  }
+  .title-block .sub {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+  }
+  .live-badge {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+  }
+  .live-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 0 var(--accent-dim);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(242,169,59,0.5); }
+    70% { box-shadow: 0 0 0 6px rgba(242,169,59,0); }
+    100% { box-shadow: 0 0 0 0 rgba(242,169,59,0); }
+  }
+
+  .filters {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+  .filter-btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid var(--line);
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .filter-btn:hover { border-color: var(--muted); color: var(--text); }
+  .filter-btn.active {
+    background: var(--text);
+    color: var(--bg);
+    border-color: var(--text);
+  }
+
+  .day-group { margin-bottom: 8px; }
+  .day-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    margin: 24px 0 10px;
+    padding-left: 2px;
+  }
+
+  .notice-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin-bottom: 8px;
+    transition: background 0.15s ease, border-color 0.15s ease;
+    position: relative;
+  }
+  .notice-card:hover { background: var(--panel-hover); border-color: #38445a; }
+  .notice-card.pinned { border-left: 3px solid var(--accent); }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .platform-tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    font-weight: 500;
+    padding: 3px 8px;
+    border-radius: 5px;
+    letter-spacing: 0.02em;
+  }
+  .platform-tag.gfa { background: #5b8def22; color: var(--gfa); }
+  .platform-tag.nosp { background: #7fd1a822; color: var(--nosp); }
+  .platform-tag.common { background: #b48ee822; color: var(--common); }
+
+  .cat-label {
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .new-flag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+    margin-left: auto;
+  }
+  .notice-title {
+    font-size: 14.5px;
+    line-height: 1.5;
+    color: var(--text);
+  }
+  .card-meta {
+    margin-top: 8px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--muted);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  .empty-state code {
+    display: block;
+    margin-top: 12px;
+    background: var(--panel);
+    padding: 10px 14px;
+    border-radius: 6px;
+    color: var(--accent);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="title-block">
+      <h1>매체 공지 모니터</h1>
+      <div class="sub" id="last-checked">마지막 확인 —</div>
+    </div>
+    <div class="live-badge"><span class="live-dot"></span>LIVE</div>
+  </header>
+
+  <div class="filters" id="filters"></div>
+  <div id="feed"></div>
+</div>
+
+<script>
+const PLATFORM_CLASS = {
+  '네이버 GFA': 'gfa',
+  'NOSP': 'nosp',
+};
+
+let allNotices = [];
+let activeFilter = '전체';
+
+function renderFilters(platforms) {
+  const el = document.getElementById('filters');
+  const list = ['전체', ...platforms];
+  el.innerHTML = list.map(p =>
+    `<button class="filter-btn ${p === activeFilter ? 'active' : ''}" data-platform="${p}">${p}</button>`
+  ).join('');
+  el.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeFilter = btn.dataset.platform;
+      renderFilters(platforms);
+      renderFeed();
+    });
+  });
+}
+
+function renderFeed() {
+  const feed = document.getElementById('feed');
+  const filtered = activeFilter === '전체'
+    ? allNotices
+    : allNotices.filter(n => n.platform === activeFilter);
+
+  if (filtered.length === 0) {
+    feed.innerHTML = '<div class="empty-state">해당 매체의 공지가 없어요.</div>';
+    return;
+  }
+
+  const groups = {};
+  filtered.forEach(n => {
+    (groups[n.date] = groups[n.date] || []).push(n);
+  });
+
+  const dates = Object.keys(groups).sort().reverse();
+  feed.innerHTML = dates.map(date => `
+    <div class="day-group">
+      <div class="day-label">${date}</div>
+      ${groups[date].map(n => `
+        <a class="notice-card ${n.is_pinned ? 'pinned' : ''}" href="${n.url}" target="_blank" rel="noopener">
+          <div class="card-top">
+            <span class="platform-tag ${PLATFORM_CLASS[n.platform] || 'common'}">${n.platform}</span>
+            <span class="cat-label">${n.category}</span>
+            ${n.is_new ? '<span class="new-flag">● NEW</span>' : ''}
+          </div>
+          <div class="notice-title">${n.title}</div>
+        </a>
+      `).join('')}
+    </div>
+  `).join('');
+}
+
+fetch('data/notices.json')
+  .then(res => {
+    if (!res.ok) throw new Error('not found');
+    return res.json();
+  })
+  .then(data => {
+    allNotices = data.notices || [];
+    document.getElementById('last-checked').textContent =
+      '마지막 확인 — ' + data.generated_at.replace('T', ' ');
+    const platforms = [...new Set(allNotices.map(n => n.platform))];
+    renderFilters(platforms);
+    renderFeed();
+  })
+  .catch(() => {
+    document.getElementById('feed').innerHTML = `
+      <div class="empty-state">
+        아직 수집된 데이터가 없어요. 먼저 크롤러를 실행해주세요.
+        <code>python crawler.py</code>
+      </div>`;
+  });
+</script>
+</body>
+</html>
