@@ -1,7 +1,17 @@
 {
-  "generated_at": "2026-07-27T07:16:06",
-  "new_count": 2,
+  "generated_at": "2026-07-27T17:12:46",
+  "new_count": 12,
   "notices": [
+    {
+      "id": 100932,
+      "title": "[상품] 매출 성장의 치트키, 카카오비즈 멤버십 주요 혜택 안내",
+      "category": "상품/서비스",
+      "date": "2026-07-27",
+      "is_pinned": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트",
+      "is_new": true
+    },
     {
       "id": 33055,
       "title": "광고 운영 중 궁금증, 이제 '네이버 광고 AI챗봇'에게 물어보세요.",
@@ -13,6 +23,16 @@
       "url": "https://ads.naver.com/notice/33055"
     },
     {
+      "id": 100936,
+      "title": "[상품] 카카오톡 브랜드픽 집행 기준 확대 및 등록 화면 개선 안내 (07/28)",
+      "category": "상품/서비스",
+      "date": "2026-07-24",
+      "is_pinned": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트",
+      "is_new": true
+    },
+    {
       "id": 33083,
       "title": "경기도 안양시 만안구 지역체계 변경에 따른 광고주 안내",
       "category": "디스플레이 광고",
@@ -21,6 +41,86 @@
       "is_new": true,
       "platform": "네이버 GFA",
       "url": "https://ads.naver.com/notice/33083"
+    },
+    {
+      "id": 100933,
+      "title": "상품 카탈로그 광고 카카오톡 노출 지원 범위 확대 안내 (7/28)",
+      "category": "상품/서비스",
+      "date": "2026-07-22",
+      "is_pinned": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트",
+      "is_new": true
+    },
+    {
+      "id": 100930,
+      "title": "[상품] 카카오 선물하기 홈 CPT 랜딩 URL 변경사항 안내 (7/28)",
+      "category": "상품/서비스",
+      "date": "2026-07-22",
+      "is_pinned": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트",
+      "is_new": true
+    },
+    {
+      "id": 100926,
+      "title": "[시스템] 메시지 광고 친구 추가 지표 집계 기준 변경 안내(7/29)",
+      "category": "시스템/개선",
+      "date": "2026-07-21",
+      "is_pinned": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트",
+      "is_new": true
+    },
+    {
+      "id": 100927,
+      "title": "'전남광주통합특별시'신설에 따른 모먼트 타겟팅 및 Open API 변동 사항 안내",
+      "category": "시스템/개선",
+      "date": "2026-07-20",
+      "is_pinned": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트",
+      "is_new": true
+    },
+    {
+      "id": 100925,
+      "title": "보고서 당일 실시간 조회 지원 안내",
+      "category": "공지/이벤트",
+      "date": "2026-07-15",
+      "is_pinned": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트",
+      "is_new": true
+    },
+    {
+      "id": 100923,
+      "title": "픽셀&SDK 지표에 모델링된 전환 반영 안내(정확한 전환 측정을 위한 모델링적용)",
+      "category": "공지/이벤트",
+      "date": "2026-07-14",
+      "is_pinned": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트",
+      "is_new": true
+    },
+    {
+      "id": 100788,
+      "title": "[시스템] 모먼트  '통합 광고 식별 체계' 도입 안내(4/16 완료)",
+      "category": "시스템/개선",
+      "date": "2026-04-07",
+      "is_pinned": true,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트",
+      "is_new": true
+    },
+    {
+      "id": 100644,
+      "title": "[공지] 카카오 Conversion API 오픈 안내",
+      "category": "공지/이벤트",
+      "date": "2025-11-20",
+      "is_pinned": true,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트",
+      "is_new": true
     },
     {
       "id": 18005,

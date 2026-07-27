@@ -1,1 +1,600 @@
-붙여넣기 전 이 안내문은 지우고, Response 탭에서 복사한 JSON을 여기 붙여넣은 뒤 저장하세요.
+{
+    "code": "0000",
+    "totalCount": 1068,
+    "list": [
+        {
+            "id": 100788,
+            "categoryId": 307,
+            "title": "[시스템] 모먼트  '통합 광고 식별 체계' 도입 안내(4/16 완료)",
+            "status": {
+                "code": "A",
+                "content": "정상"
+            },
+            "pin": true,
+            "popup": false,
+            "displayStartAt": "2026-04-07T16:44:08.716",
+            "createdAt": "2026-04-07T16:44:08.716",
+            "createdBy": 11831,
+            "modifiedAt": "2026-04-17T14:25:16.126",
+            "modifiedBy": 11831,
+            "migration": false,
+            "bulletinDisplayServiceTypeMapping": [
+                {
+                    "id": 7674,
+                    "bulletinId": 100788,
+                    "serviceType": {
+                        "code": "KAKAOAGENCY",
+                        "content": "통합에이전시"
+                    }
+                },
+                {
+                    "id": 7673,
+                    "bulletinId": 100788,
+                    "serviceType": {
+                        "code": "KAKAOMOMENT",
+                        "content": "모먼트"
+                    }
+                }
+            ],
+            "isTargeted": false,
+            "category": {
+                "id": 307,
+                "name": "시스템/개선",
+                "status": {
+                    "code": "A",
+                    "content": "정상"
+                },
+                "autoAnswer": false,
+                "categoryType": {
+                    "code": "BULLETIN",
+                    "content": "공지사항"
+                },
+                "ordering": 4,
+                "aiAssistantEnabled": false,
+                "scheduledReplyEnabled": false,
+                "createdAt": "2023-12-21T16:19:52.659",
+                "createdBy": 1113,
+                "modifiedAt": "2025-01-25T23:22:14.189",
+                "modifiedBy": 5126
+            },
+            "isNewBadge": false,
+            "isRead": false,
+            "attachments": [],
+            "calendar": false
+        },
+        {
+            "id": 100644,
+            "categoryId": 305,
+            "title": "[공지] 카카오 Conversion API 오픈 안내",
+            "status": {
+                "code": "A",
+                "content": "정상"
+            },
+            "pin": true,
+            "popup": false,
+            "topBanner": false,
+            "displayStartAt": "2025-11-20T11:05:09.944",
+            "createdAt": "2025-11-20T11:05:09.944",
+            "createdBy": 11531,
+            "modifiedAt": "2026-03-19T10:56:42.466",
+            "modifiedBy": 1113,
+            "migration": false,
+            "bulletinDisplayServiceTypeMapping": [
+                {
+                    "id": 6148,
+                    "bulletinId": 100644,
+                    "serviceType": {
+                        "code": "KAKAOAGENCY",
+                        "content": "통합에이전시"
+                    }
+                },
+                {
+                    "id": 6147,
+                    "bulletinId": 100644,
+                    "serviceType": {
+                        "code": "KAKAOMOMENT",
+                        "content": "모먼트"
+                    }
+                }
+            ],
+            "isTargeted": false,
+            "category": {
+                "id": 305,
+                "name": "공지/이벤트",
+                "status": {
+                    "code": "A",
+                    "content": "정상"
+                },
+                "autoAnswer": false,
+                "categoryType": {
+                    "code": "BULLETIN",
+                    "content": "공지사항"
+                },
+                "ordering": 0,
+                "aiAssistantEnabled": false,
+                "scheduledReplyEnabled": false,
+                "createdAt": "2023-12-21T16:15:39.923",
+                "createdBy": 1113,
+                "modifiedAt": "2024-01-29T14:15:11.202",
+                "modifiedBy": 1113
+            },
+            "isNewBadge": false,
+            "isRead": false,
+            "attachments": [],
+            "calendar": false
+        },
+        {
+            "id": 100932,
+            "categoryId": 310,
+            "title": "[상품] 매출 성장의 치트키, 카카오비즈 멤버십 주요 혜택 안내",
+            "status": {
+                "code": "A",
+                "content": "정상"
+            },
+            "pin": false,
+            "popup": false,
+            "topBanner": true,
+            "displayStartAt": "2026-07-27T00:00:00",
+            "createdAt": "2026-07-22T15:15:00.664",
+            "createdBy": 829458,
+            "modifiedAt": "2026-07-27T10:52:48.7",
+            "modifiedBy": 829458,
+            "migration": false,
+            "bulletinDisplayServiceTypeMapping": [
+                {
+                    "id": 7889,
+                    "bulletinId": 100932,
+                    "serviceType": {
+                        "code": "KAKAOMOMENT",
+                        "content": "모먼트"
+                    }
+                }
+            ],
+            "isTargeted": false,
+            "category": {
+                "id": 310,
+                "name": "상품/서비스",
+                "status": {
+                    "code": "A",
+                    "content": "정상"
+                },
+                "autoAnswer": false,
+                "categoryType": {
+                    "code": "BULLETIN",
+                    "content": "공지사항"
+                },
+                "ordering": 1,
+                "aiAssistantEnabled": false,
+                "scheduledReplyEnabled": false,
+                "createdAt": "2023-12-21T16:21:07.049",
+                "createdBy": 1113,
+                "modifiedAt": "2023-12-21T16:21:07.049",
+                "modifiedBy": 1113
+            },
+            "isNewBadge": false,
+            "isRead": true,
+            "attachments": [],
+            "calendar": false
+        },
+        {
+            "id": 100936,
+            "categoryId": 310,
+            "title": "[상품] 카카오톡 브랜드픽 집행 기준 확대 및 등록 화면 개선 안내 (07/28)",
+            "status": {
+                "code": "A",
+                "content": "정상"
+            },
+            "pin": false,
+            "popup": false,
+            "displayStartAt": "2026-07-24T17:49:09.184",
+            "createdAt": "2026-07-24T17:49:09.184",
+            "createdBy": 24374,
+            "modifiedAt": "2026-07-24T17:49:09.184",
+            "modifiedBy": 24374,
+            "migration": false,
+            "bulletinDisplayServiceTypeMapping": [
+                {
+                    "id": 7895,
+                    "bulletinId": 100936,
+                    "serviceType": {
+                        "code": "KAKAOAGENCY",
+                        "content": "통합에이전시"
+                    }
+                },
+                {
+                    "id": 7894,
+                    "bulletinId": 100936,
+                    "serviceType": {
+                        "code": "KAKAOMOMENT",
+                        "content": "모먼트"
+                    }
+                }
+            ],
+            "isTargeted": false,
+            "category": {
+                "id": 310,
+                "name": "상품/서비스",
+                "status": {
+                    "code": "A",
+                    "content": "정상"
+                },
+                "autoAnswer": false,
+                "categoryType": {
+                    "code": "BULLETIN",
+                    "content": "공지사항"
+                },
+                "ordering": 1,
+                "aiAssistantEnabled": false,
+                "scheduledReplyEnabled": false,
+                "createdAt": "2023-12-21T16:21:07.049",
+                "createdBy": 1113,
+                "modifiedAt": "2023-12-21T16:21:07.049",
+                "modifiedBy": 1113
+            },
+            "isNewBadge": true,
+            "isRead": false,
+            "attachments": [],
+            "calendar": false
+        },
+        {
+            "id": 100933,
+            "categoryId": 310,
+            "title": "상품 카탈로그 광고 카카오톡 노출 지원 범위 확대 안내 (7/28)",
+            "status": {
+                "code": "A",
+                "content": "정상"
+            },
+            "pin": false,
+            "popup": false,
+            "displayStartAt": "2026-07-22T20:05:50.745",
+            "createdAt": "2026-07-22T20:05:50.745",
+            "createdBy": 7686,
+            "modifiedAt": "2026-07-27T15:54:58.628",
+            "modifiedBy": 7686,
+            "migration": false,
+            "bulletinDisplayServiceTypeMapping": [
+                {
+                    "id": 7891,
+                    "bulletinId": 100933,
+                    "serviceType": {
+                        "code": "KAKAOAGENCY",
+                        "content": "통합에이전시"
+                    }
+                },
+                {
+                    "id": 7890,
+                    "bulletinId": 100933,
+                    "serviceType": {
+                        "code": "KAKAOMOMENT",
+                        "content": "모먼트"
+                    }
+                }
+            ],
+            "isTargeted": false,
+            "category": {
+                "id": 310,
+                "name": "상품/서비스",
+                "status": {
+                    "code": "A",
+                    "content": "정상"
+                },
+                "autoAnswer": false,
+                "categoryType": {
+                    "code": "BULLETIN",
+                    "content": "공지사항"
+                },
+                "ordering": 1,
+                "aiAssistantEnabled": false,
+                "scheduledReplyEnabled": false,
+                "createdAt": "2023-12-21T16:21:07.049",
+                "createdBy": 1113,
+                "modifiedAt": "2023-12-21T16:21:07.049",
+                "modifiedBy": 1113
+            },
+            "isNewBadge": true,
+            "isRead": false,
+            "attachments": [],
+            "calendar": false
+        },
+        {
+            "id": 100930,
+            "categoryId": 310,
+            "title": "[상품] 카카오 선물하기 홈 CPT 랜딩 URL 변경사항 안내 (7/28)",
+            "status": {
+                "code": "A",
+                "content": "정상"
+            },
+            "pin": false,
+            "popup": false,
+            "displayStartAt": "2026-07-22T13:47:44.738",
+            "createdAt": "2026-07-22T13:47:44.738",
+            "createdBy": 1200653,
+            "modifiedAt": "2026-07-22T13:51:00.779",
+            "modifiedBy": 1200653,
+            "migration": false,
+            "bulletinDisplayServiceTypeMapping": [
+                {
+                    "id": 7886,
+                    "bulletinId": 100930,
+                    "serviceType": {
+                        "code": "KAKAOAGENCY",
+                        "content": "통합에이전시"
+                    }
+                },
+                {
+                    "id": 7885,
+                    "bulletinId": 100930,
+                    "serviceType": {
+                        "code": "KAKAOMOMENT",
+                        "content": "모먼트"
+                    }
+                }
+            ],
+            "isTargeted": false,
+            "category": {
+                "id": 310,
+                "name": "상품/서비스",
+                "status": {
+                    "code": "A",
+                    "content": "정상"
+                },
+                "autoAnswer": false,
+                "categoryType": {
+                    "code": "BULLETIN",
+                    "content": "공지사항"
+                },
+                "ordering": 1,
+                "aiAssistantEnabled": false,
+                "scheduledReplyEnabled": false,
+                "createdAt": "2023-12-21T16:21:07.049",
+                "createdBy": 1113,
+                "modifiedAt": "2023-12-21T16:21:07.049",
+                "modifiedBy": 1113
+            },
+            "isNewBadge": true,
+            "isRead": false,
+            "attachments": [],
+            "calendar": false
+        },
+        {
+            "id": 100926,
+            "categoryId": 307,
+            "title": "[시스템] 메시지 광고 친구 추가 지표 집계 기준 변경 안내(7/29)",
+            "status": {
+                "code": "A",
+                "content": "정상"
+            },
+            "pin": false,
+            "popup": false,
+            "displayStartAt": "2026-07-21T12:00:00",
+            "createdAt": "2026-07-20T09:22:01.531",
+            "createdBy": 110014,
+            "modifiedAt": "2026-07-21T16:38:02.694",
+            "modifiedBy": 110014,
+            "migration": false,
+            "bulletinDisplayServiceTypeMapping": [
+                {
+                    "id": 7879,
+                    "bulletinId": 100926,
+                    "serviceType": {
+                        "code": "KAKAOAGENCY",
+                        "content": "통합에이전시"
+                    }
+                },
+                {
+                    "id": 7878,
+                    "bulletinId": 100926,
+                    "serviceType": {
+                        "code": "KAKAOMOMENT",
+                        "content": "모먼트"
+                    }
+                }
+            ],
+            "isTargeted": false,
+            "category": {
+                "id": 307,
+                "name": "시스템/개선",
+                "status": {
+                    "code": "A",
+                    "content": "정상"
+                },
+                "autoAnswer": false,
+                "categoryType": {
+                    "code": "BULLETIN",
+                    "content": "공지사항"
+                },
+                "ordering": 4,
+                "aiAssistantEnabled": false,
+                "scheduledReplyEnabled": false,
+                "createdAt": "2023-12-21T16:19:52.659",
+                "createdBy": 1113,
+                "modifiedAt": "2025-01-25T23:22:14.189",
+                "modifiedBy": 5126
+            },
+            "isNewBadge": true,
+            "isRead": false,
+            "attachments": [],
+            "calendar": false
+        },
+        {
+            "id": 100927,
+            "categoryId": 307,
+            "title": "'전남광주통합특별시'신설에 따른 모먼트 타겟팅 및 Open API 변동 사항 안내",
+            "status": {
+                "code": "A",
+                "content": "정상"
+            },
+            "pin": false,
+            "popup": false,
+            "displayStartAt": "2026-07-20T19:59:16.618",
+            "createdAt": "2026-07-20T19:59:16.618",
+            "createdBy": 11851,
+            "modifiedAt": "2026-07-20T20:34:11.869",
+            "modifiedBy": 11851,
+            "migration": false,
+            "bulletinDisplayServiceTypeMapping": [
+                {
+                    "id": 7881,
+                    "bulletinId": 100927,
+                    "serviceType": {
+                        "code": "KAKAOAGENCY",
+                        "content": "통합에이전시"
+                    }
+                },
+                {
+                    "id": 7880,
+                    "bulletinId": 100927,
+                    "serviceType": {
+                        "code": "KAKAOMOMENT",
+                        "content": "모먼트"
+                    }
+                }
+            ],
+            "isTargeted": false,
+            "category": {
+                "id": 307,
+                "name": "시스템/개선",
+                "status": {
+                    "code": "A",
+                    "content": "정상"
+                },
+                "autoAnswer": false,
+                "categoryType": {
+                    "code": "BULLETIN",
+                    "content": "공지사항"
+                },
+                "ordering": 4,
+                "aiAssistantEnabled": false,
+                "scheduledReplyEnabled": false,
+                "createdAt": "2023-12-21T16:19:52.659",
+                "createdBy": 1113,
+                "modifiedAt": "2025-01-25T23:22:14.189",
+                "modifiedBy": 5126
+            },
+            "isNewBadge": true,
+            "isRead": false,
+            "attachments": [],
+            "calendar": false
+        },
+        {
+            "id": 100925,
+            "categoryId": 305,
+            "title": "보고서 당일 실시간 조회 지원 안내 ",
+            "status": {
+                "code": "A",
+                "content": "정상"
+            },
+            "pin": false,
+            "popup": false,
+            "displayStartAt": "2026-07-15T18:20:58.197",
+            "createdAt": "2026-07-15T18:20:58.197",
+            "createdBy": 219667,
+            "modifiedAt": "2026-07-15T18:26:18.209",
+            "modifiedBy": 219667,
+            "migration": false,
+            "bulletinDisplayServiceTypeMapping": [
+                {
+                    "id": 7877,
+                    "bulletinId": 100925,
+                    "serviceType": {
+                        "code": "KAKAOAGENCY",
+                        "content": "통합에이전시"
+                    }
+                },
+                {
+                    "id": 7876,
+                    "bulletinId": 100925,
+                    "serviceType": {
+                        "code": "KAKAOMOMENT",
+                        "content": "모먼트"
+                    }
+                }
+            ],
+            "isTargeted": false,
+            "category": {
+                "id": 305,
+                "name": "공지/이벤트",
+                "status": {
+                    "code": "A",
+                    "content": "정상"
+                },
+                "autoAnswer": false,
+                "categoryType": {
+                    "code": "BULLETIN",
+                    "content": "공지사항"
+                },
+                "ordering": 0,
+                "aiAssistantEnabled": false,
+                "scheduledReplyEnabled": false,
+                "createdAt": "2023-12-21T16:15:39.923",
+                "createdBy": 1113,
+                "modifiedAt": "2024-01-29T14:15:11.202",
+                "modifiedBy": 1113
+            },
+            "isNewBadge": true,
+            "isRead": false,
+            "attachments": [],
+            "calendar": false
+        },
+        {
+            "id": 100923,
+            "categoryId": 305,
+            "title": "픽셀&SDK 지표에 모델링된 전환 반영 안내(정확한 전환 측정을 위한 모델링적용)",
+            "status": {
+                "code": "A",
+                "content": "정상"
+            },
+            "pin": false,
+            "popup": false,
+            "displayStartAt": "2026-07-14T13:32:57.633",
+            "createdAt": "2026-07-14T13:32:57.633",
+            "createdBy": 11824,
+            "modifiedAt": "2026-07-15T10:11:44.97",
+            "modifiedBy": 11824,
+            "migration": false,
+            "bulletinDisplayServiceTypeMapping": [
+                {
+                    "id": 7874,
+                    "bulletinId": 100923,
+                    "serviceType": {
+                        "code": "KAKAOAGENCY",
+                        "content": "통합에이전시"
+                    }
+                },
+                {
+                    "id": 7873,
+                    "bulletinId": 100923,
+                    "serviceType": {
+                        "code": "KAKAOMOMENT",
+                        "content": "모먼트"
+                    }
+                }
+            ],
+            "isTargeted": false,
+            "category": {
+                "id": 305,
+                "name": "공지/이벤트",
+                "status": {
+                    "code": "A",
+                    "content": "정상"
+                },
+                "autoAnswer": false,
+                "categoryType": {
+                    "code": "BULLETIN",
+                    "content": "공지사항"
+                },
+                "ordering": 0,
+                "aiAssistantEnabled": false,
+                "scheduledReplyEnabled": false,
+                "createdAt": "2023-12-21T16:15:39.923",
+                "createdBy": 1113,
+                "modifiedAt": "2024-01-29T14:15:11.202",
+                "modifiedBy": 1113
+            },
+            "isNewBadge": true,
+            "isRead": false,
+            "attachments": [],
+            "calendar": false
+        }
+    ]
+}
