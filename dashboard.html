@@ -9,13 +9,13 @@
 <style>
   :root {
     --bg: #10141b;
-    --panel: #191f29;
-    --panel-hover: #1f2733;
-    --line: #262f3d;
+    --panel: #171d27;
+    --panel-hover: #1d2430;
+    --line: #232b38;
     --text: #e7ebf1;
-    --muted: #8993a4;
+    --muted: #7c8494;
     --accent: #f2a93b;
-    --accent-dim: #f2a93b33;
+    --accent-dim: rgba(242,169,59,0.12);
     --gfa: #5b8def;
     --nosp: #7fd1a8;
     --common: #b48ee8;
@@ -28,22 +28,24 @@
     color: var(--text);
     font-family: 'Noto Sans KR', sans-serif;
     min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
   }
-  .wrap { max-width: 780px; margin: 0 auto; padding: 40px 20px 80px; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
 
+  /* header */
   header {
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: 28px;
-    padding-bottom: 20px;
+    margin-bottom: 32px;
+    padding-bottom: 24px;
     border-bottom: 1px solid var(--line);
   }
   .title-block h1 {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 26px;
+    font-size: 25px;
     font-weight: 700;
-    margin: 0 0 6px;
+    margin: 0 0 8px;
     letter-spacing: -0.02em;
   }
   .title-block .sub {
@@ -51,19 +53,20 @@
     font-size: 12px;
     color: var(--muted);
   }
+  .status-block { text-align: right; }
   .live-badge {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 7px;
+    gap: 6px;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
+    font-size: 10.5px;
     color: var(--accent);
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
+    margin-bottom: 6px;
   }
   .live-dot {
-    width: 7px; height: 7px; border-radius: 50%;
+    width: 6px; height: 6px; border-radius: 50%;
     background: var(--accent);
-    box-shadow: 0 0 0 0 var(--accent-dim);
     animation: pulse 2s infinite;
   }
   @keyframes pulse {
@@ -71,11 +74,18 @@
     70% { box-shadow: 0 0 0 6px rgba(242,169,59,0); }
     100% { box-shadow: 0 0 0 0 rgba(242,169,59,0); }
   }
+  .new-count {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .new-count b { color: var(--accent); font-size: 15px; }
 
+  /* filters */
   .filters {
     display: flex;
     gap: 8px;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
     flex-wrap: wrap;
   }
   .filter-btn {
@@ -89,22 +99,36 @@
     cursor: pointer;
     transition: all 0.15s ease;
   }
-  .filter-btn:hover { border-color: var(--muted); color: var(--text); }
+  .filter-btn:hover { border-color: #3a4457; color: var(--text); }
   .filter-btn.active {
     background: var(--text);
     color: var(--bg);
     border-color: var(--text);
   }
 
-  .day-group { margin-bottom: 8px; }
+  /* pinned section */
+  .pinned-section {
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px dashed var(--line);
+  }
+  .section-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+  }
+
+  /* feed */
   .day-label {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 11px;
     color: var(--muted);
-    letter-spacing: 0.05em;
-    margin: 24px 0 10px;
-    padding-left: 2px;
+    letter-spacing: 0.04em;
+    margin: 22px 0 10px;
   }
+  .day-group:first-child .day-label { margin-top: 0; }
 
   .notice-card {
     display: block;
@@ -113,19 +137,18 @@
     background: var(--panel);
     border: 1px solid var(--line);
     border-radius: 10px;
-    padding: 16px 18px;
+    padding: 14px 16px;
     margin-bottom: 8px;
     transition: background 0.15s ease, border-color 0.15s ease;
-    position: relative;
   }
-  .notice-card:hover { background: var(--panel-hover); border-color: #38445a; }
+  .notice-card:hover { background: var(--panel-hover); border-color: #333f52; }
   .notice-card.pinned { border-left: 3px solid var(--accent); }
 
   .card-top {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 7px;
   }
   .platform-tag {
     font-family: 'IBM Plex Mono', monospace;
@@ -134,34 +157,36 @@
     padding: 3px 8px;
     border-radius: 5px;
     letter-spacing: 0.02em;
+    flex-shrink: 0;
   }
-  .platform-tag.gfa { background: #5b8def22; color: var(--gfa); }
-  .platform-tag.nosp { background: #7fd1a822; color: var(--nosp); }
-  .platform-tag.common { background: #b48ee822; color: var(--common); }
-  .platform-tag.kakao { background: #f4d35e22; color: var(--kakao); }
+  .platform-tag.gfa { background: #5b8def1f; color: var(--gfa); }
+  .platform-tag.nosp { background: #7fd1a81f; color: var(--nosp); }
+  .platform-tag.common { background: #b48ee81f; color: var(--common); }
+  .platform-tag.kakao { background: #f4d35e1f; color: var(--kakao); }
 
   .cat-label {
     font-size: 11px;
     color: var(--muted);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .new-flag {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 10px;
     font-weight: 500;
     color: var(--accent);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     margin-left: auto;
+    flex-shrink: 0;
+    background: var(--accent-dim);
+    padding: 2px 7px;
+    border-radius: 4px;
   }
   .notice-title {
     font-size: 14.5px;
     line-height: 1.5;
     color: var(--text);
-  }
-  .card-meta {
-    margin-top: 8px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    color: var(--muted);
   }
 
   .empty-state {
@@ -180,6 +205,11 @@
     border-radius: 6px;
     color: var(--accent);
   }
+
+  @media (max-width: 480px) {
+    header { flex-direction: column; gap: 14px; }
+    .status-block { text-align: left; }
+  }
 </style>
 </head>
 <body>
@@ -189,10 +219,14 @@
       <h1>매체 공지 모니터</h1>
       <div class="sub" id="last-checked">마지막 확인 —</div>
     </div>
-    <div class="live-badge"><span class="live-dot"></span>LIVE</div>
+    <div class="status-block">
+      <div class="live-badge"><span class="live-dot"></span>LIVE</div>
+      <div class="new-count" id="new-count"></div>
+    </div>
   </header>
 
   <div class="filters" id="filters"></div>
+  <div id="pinned-area"></div>
   <div id="feed"></div>
 </div>
 
@@ -205,6 +239,25 @@ const PLATFORM_CLASS = {
 
 let allNotices = [];
 let activeFilter = '전체';
+
+function formatKST(isoString) {
+  // 이미 KST(+09:00)로 저장된 값이면 그대로, 아니면 UTC로 간주하고 KST로 변환
+  const d = new Date(isoString);
+  const opts = { month: 'long', day: 'numeric', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Seoul' };
+  return new Intl.DateTimeFormat('ko-KR', opts).format(d) + ' (KST)';
+}
+
+function cardHTML(n) {
+  return `
+    <a class="notice-card ${n.is_pinned ? 'pinned' : ''}" href="${n.url}" target="_blank" rel="noopener">
+      <div class="card-top">
+        <span class="platform-tag ${PLATFORM_CLASS[n.platform] || 'common'}">${n.platform}</span>
+        <span class="cat-label">${n.category}</span>
+        ${n.is_new ? '<span class="new-flag">NEW</span>' : ''}
+      </div>
+      <div class="notice-title">${n.title}</div>
+    </a>`;
+}
 
 function renderFilters(platforms) {
   const el = document.getElementById('filters');
@@ -223,34 +276,35 @@ function renderFilters(platforms) {
 
 function renderFeed() {
   const feed = document.getElementById('feed');
+  const pinnedArea = document.getElementById('pinned-area');
+
   const filtered = activeFilter === '전체'
     ? allNotices
     : allNotices.filter(n => n.platform === activeFilter);
 
   if (filtered.length === 0) {
+    pinnedArea.innerHTML = '';
     feed.innerHTML = '<div class="empty-state">해당 매체의 공지가 없어요.</div>';
     return;
   }
 
-  const groups = {};
-  filtered.forEach(n => {
-    (groups[n.date] = groups[n.date] || []).push(n);
-  });
+  const pinned = filtered.filter(n => n.is_pinned);
+  const rest = filtered.filter(n => !n.is_pinned);
 
+  pinnedArea.innerHTML = pinned.length ? `
+    <div class="pinned-section">
+      <div class="section-label">📌 고정 공지</div>
+      ${pinned.map(cardHTML).join('')}
+    </div>` : '';
+
+  const groups = {};
+  rest.forEach(n => { (groups[n.date] = groups[n.date] || []).push(n); });
   const dates = Object.keys(groups).sort().reverse();
+
   feed.innerHTML = dates.map(date => `
     <div class="day-group">
       <div class="day-label">${date}</div>
-      ${groups[date].map(n => `
-        <a class="notice-card ${n.is_pinned ? 'pinned' : ''}" href="${n.url}" target="_blank" rel="noopener">
-          <div class="card-top">
-            <span class="platform-tag ${PLATFORM_CLASS[n.platform] || 'common'}">${n.platform}</span>
-            <span class="cat-label">${n.category}</span>
-            ${n.is_new ? '<span class="new-flag">● NEW</span>' : ''}
-          </div>
-          <div class="notice-title">${n.title}</div>
-        </a>
-      `).join('')}
+      ${groups[date].map(cardHTML).join('')}
     </div>
   `).join('');
 }
@@ -262,8 +316,11 @@ fetch('data/notices.json')
   })
   .then(data => {
     allNotices = data.notices || [];
-    document.getElementById('last-checked').textContent =
-      '마지막 확인 — ' + data.generated_at.replace('T', ' ');
+    document.getElementById('last-checked').textContent = '마지막 확인 — ' + formatKST(data.generated_at);
+    const newCount = data.new_count || 0;
+    document.getElementById('new-count').innerHTML = newCount > 0
+      ? `새 소식 <b>${newCount}</b>건`
+      : '새 소식 없음';
     const platforms = [...new Set(allNotices.map(n => n.platform))];
     renderFilters(platforms);
     renderFeed();
