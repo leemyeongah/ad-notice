@@ -6,8 +6,9 @@
     python crawler.py
 
 - SOURCES 리스트에 있는 URL들을 순서대로 가져와서 파싱
-- 이전 실행 때 본 적 없는 id는 새 글로 표시
-- data/seen_ids.json    : 지금까지 본 공지 id 저장 (중복 알림 방지용)
+- "새 글" 여부는 네이버가 자체적으로 계산해서 내려주는 isNew 값을 그대로 사용
+  (우리 쪽에서 "처음 봤는지"로 판단하지 않음 -> 크롤러를 며칠 만에 돌려도 오래된 글이
+   갑자기 무더기로 NEW 처리되는 문제가 없음)
 - data/notices.json      : 대시보드(dashboard.html)가 읽어가는 최종 데이터
 
 주의: 이 스크립트는 로컬/서버 등 실제 인터넷이 되는 환경에서 실행해야 합니다.
@@ -16,12 +17,13 @@ import json
 import re
 from pathlib import Path
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 import requests
 
+KST = ZoneInfo("Asia/Seoul")
 DATA_DIR = Path(__file__).parent / "data"
 DATA_DIR.mkdir(exist_ok=True)
-SEEN_IDS_PATH = DATA_DIR / "seen_ids.json"
 NOTICES_PATH = DATA_DIR / "notices.json"
 
 # 매체별 소스. 이름과 URL만 추가하면 계속 확장 가능.
@@ -64,19 +66,10 @@ def extract_notices(raw_html: str):
             "category": _unescape(m.group("category")),
             "date": m.group("date"),
             "is_pinned": m.group("is_pinned") == "true",
+            "is_new": m.group("is_new") == "true",
             "url": "https://ads.naver.com" + _unescape(m.group("url")),
         })
     return notices
-
-
-def load_seen_ids() -> dict:
-    if SEEN_IDS_PATH.exists():
-        return json.loads(SEEN_IDS_PATH.read_text(encoding="utf-8"))
-    return {}
-
-
-def save_seen_ids(seen: dict):
-    SEEN_IDS_PATH.write_text(json.dumps(seen, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def fetch(url: str) -> str:
@@ -90,9 +83,8 @@ def fetch(url: str) -> str:
 
 
 def run():
-    seen_ids = load_seen_ids()  # {platform: [id, id, ...]}
-    all_notices = []
-    new_count_total = 0
+    crawled_platforms = {s["platform"] for s in SOURCES}
+    fresh_notices = []
 
     for source in SOURCES:
         platform = source["platform"]
@@ -103,27 +95,26 @@ def run():
             continue
 
         notices = extract_notices(raw)
-        platform_seen = set(seen_ids.get(platform, []))
-
         for n in notices:
             n["platform"] = platform
-            n["is_new"] = n["id"] not in platform_seen
-            if n["is_new"]:
-                new_count_total += 1
-            all_notices.append(n)
+        fresh_notices.extend(notices)
+        print(f"[{platform}] {len(notices)}건 수집, 신규(NEW 배지) {sum(1 for n in notices if n['is_new'])}건")
 
-        seen_ids[platform] = list({n["id"] for n in notices} | platform_seen)
-        print(f"[{platform}] {len(notices)}건 수집, 신규 {sum(1 for n in notices if n['is_new'])}건")
+    # notices.json에 다른 방식(예: merge_kakao.py)으로 들어간 다른 플랫폼 데이터는 그대로 유지
+    existing = {}
+    if NOTICES_PATH.exists():
+        existing = json.loads(NOTICES_PATH.read_text(encoding="utf-8"))
+    kept = [n for n in existing.get("notices", []) if n.get("platform") not in crawled_platforms]
 
+    all_notices = kept + fresh_notices
     all_notices.sort(key=lambda n: n["date"], reverse=True)
 
     output = {
-        "generated_at": datetime.now().isoformat(timespec="seconds"),
-        "new_count": new_count_total,
+        "generated_at": datetime.now(KST).isoformat(timespec="seconds"),
+        "new_count": sum(1 for n in all_notices if n["is_new"]),
         "notices": all_notices,
     }
     NOTICES_PATH.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
-    save_seen_ids(seen_ids)
     print(f"\n총 {len(all_notices)}건 저장 완료 -> {NOTICES_PATH}")
 
 

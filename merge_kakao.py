@@ -15,15 +15,17 @@
 import json
 from pathlib import Path
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
+KST = ZoneInfo("Asia/Seoul")
 BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
 MANUAL_INPUT_PATH = BASE_DIR / "manual_input" / "kakao_raw.json"
-SEEN_IDS_PATH = DATA_DIR / "seen_ids.json"
 NOTICES_PATH = DATA_DIR / "notices.json"
 
 PLATFORM_NAME = "카카오모먼트"
 # 개별 공지 상세 URL 패턴이 아직 확인되지 않아서, 일단 목록 페이지로 연결합니다.
+# (상세 페이지 URL 패턴을 알게 되면 아래를 "https://lounge-board.kakao.com/bulletin/view/{id}" 식으로 바꿀 수 있어요)
 LIST_URL = "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT"
 
 
@@ -38,7 +40,7 @@ def save_json(path: Path, data):
 
 
 def parse_kakao_notices(raw: dict):
-    items = raw.get("data", raw).get("list", [])
+    items = raw.get("data", raw).get("list", [])  # data 래퍼가 있든 없든 처리
     notices = []
     for item in items:
         display_at = item.get("displayStartAt") or item.get("createdAt") or ""
@@ -49,6 +51,7 @@ def parse_kakao_notices(raw: dict):
             "category": item.get("category", {}).get("name", ""),
             "date": date,
             "is_pinned": bool(item.get("pin", False)),
+            "is_new": bool(item.get("isNewBadge", False)),
             "url": LIST_URL,
         })
     return notices
@@ -68,31 +71,24 @@ def run():
         return
 
     kakao_notices = parse_kakao_notices(raw)
-
-    seen_ids = load_json(SEEN_IDS_PATH, {})
-    platform_seen = set(seen_ids.get(PLATFORM_NAME, []))
-
     for n in kakao_notices:
         n["platform"] = PLATFORM_NAME
-        n["is_new"] = n["id"] not in platform_seen
 
-    seen_ids[PLATFORM_NAME] = list({n["id"] for n in kakao_notices} | platform_seen)
-    save_json(SEEN_IDS_PATH, seen_ids)
-
+    # 기존 notices.json에서 다른 플랫폼 데이터는 유지하고, 카카오모먼트만 이번 걸로 교체
     existing = load_json(NOTICES_PATH, {"notices": []})
     other_platform_notices = [n for n in existing.get("notices", []) if n.get("platform") != PLATFORM_NAME]
     all_notices = other_platform_notices + kakao_notices
     all_notices.sort(key=lambda n: n["date"], reverse=True)
 
     output = {
-        "generated_at": datetime.now().isoformat(timespec="seconds"),
+        "generated_at": datetime.now(KST).isoformat(timespec="seconds"),
         "new_count": sum(1 for n in all_notices if n.get("is_new")),
         "notices": all_notices,
     }
     save_json(NOTICES_PATH, output)
 
     new_count = sum(1 for n in kakao_notices if n["is_new"])
-    print(f"[{PLATFORM_NAME}] {len(kakao_notices)}건 병합 완료, 신규 {new_count}건")
+    print(f"[{PLATFORM_NAME}] {len(kakao_notices)}건 병합 완료, NEW 배지 {new_count}건")
     print(f"-> {NOTICES_PATH} 갱신됨")
 
 
