@@ -1,26 +1,106 @@
 {
-  "generated_at": "2026-07-27T07:16:06",
-  "new_count": 2,
+  "generated_at": "2026-07-27T07:51:45",
+  "new_count": 11,
   "notices": [
-    {
-      "id": 33055,
-      "title": "광고 운영 중 궁금증, 이제 '네이버 광고 AI챗봇'에게 물어보세요.",
-      "category": "공통",
-      "date": "2026-07-24",
-      "is_pinned": false,
-      "is_new": true,
-      "platform": "네이버 GFA",
-      "url": "https://ads.naver.com/notice/33055"
-    },
     {
       "id": 33083,
       "title": "경기도 안양시 만안구 지역체계 변경에 따른 광고주 안내",
       "category": "디스플레이 광고",
       "date": "2026-07-23",
       "is_pinned": false,
-      "is_new": true,
+      "url": "https://ads.naver.com/notice/33083",
       "platform": "네이버 GFA",
-      "url": "https://ads.naver.com/notice/33083"
+      "is_new": true
+    },
+    {
+      "id": 32778,
+      "title": "[디스플레이 광고] 밴드 앱 신규 노출 영역 및 노출 상품 추가 안내 (7/16)",
+      "category": "디스플레이 광고",
+      "date": "2026-07-09",
+      "is_pinned": false,
+      "url": "https://ads.naver.com/notice/32778",
+      "platform": "네이버 GFA",
+      "is_new": true
+    },
+    {
+      "id": 32742,
+      "title": "디스플레이 광고 상품 성과 보고서 내 일부 기능 변경 안내",
+      "category": "디스플레이 광고",
+      "date": "2026-07-08",
+      "is_pinned": false,
+      "url": "https://ads.naver.com/notice/32742",
+      "platform": "네이버 GFA",
+      "is_new": true
+    },
+    {
+      "id": 32348,
+      "title": "(수정) 디스플레이 광고 내 광고계정·캠페인 단위 일정·결과·결과당비용 보고서 지표 제공 종료 안내",
+      "category": "디스플레이 광고",
+      "date": "2026-06-29",
+      "is_pinned": false,
+      "url": "https://ads.naver.com/notice/32348",
+      "platform": "네이버 GFA",
+      "is_new": true
+    },
+    {
+      "id": 32311,
+      "title": "[신규 노출 영역] 네이버 > MO > 증권 > 가상자산 안내 (6/25)",
+      "category": "디스플레이 광고",
+      "date": "2026-06-18",
+      "is_pinned": false,
+      "url": "https://ads.naver.com/notice/32311",
+      "platform": "네이버 GFA",
+      "is_new": true
+    },
+    {
+      "id": 32009,
+      "title": "[신규 노출 영역] 네이버 > MO > 플레이스 > 업체 > 리뷰 안내 (일정 연기)",
+      "category": "디스플레이 광고",
+      "date": "2026-06-12",
+      "is_pinned": false,
+      "url": "https://ads.naver.com/notice/32009",
+      "platform": "네이버 GFA",
+      "is_new": true
+    },
+    {
+      "id": 32197,
+      "title": "[신규 노출 영역] 시리즈 앱 > 리워드프로그램",
+      "category": "디스플레이 광고",
+      "date": "2026-06-11",
+      "is_pinned": false,
+      "url": "https://ads.naver.com/notice/32197",
+      "platform": "네이버 GFA",
+      "is_new": true
+    },
+    {
+      "id": 32024,
+      "title": "[신규 노출 영역] 네이버+ > 카페 게시글 하단 피드 내 이미지피드 광고 노출 안내",
+      "category": "디스플레이 광고",
+      "date": "2026-06-04",
+      "is_pinned": false,
+      "url": "https://ads.naver.com/notice/32024",
+      "platform": "네이버 GFA",
+      "is_new": true
+    },
+    {
+      "id": 32011,
+      "title": "[신규 노출 영역] 네이버페이 앱 > 페이펫 미니게임",
+      "category": "디스플레이 광고",
+      "date": "2026-06-04",
+      "is_pinned": false,
+      "url": "https://ads.naver.com/notice/32011",
+      "platform": "네이버 GFA",
+      "is_new": true
+    },
+    {
+      "id": 31904,
+      "title": "(수정) '부스트 업' 캠페인 노출 매체 및 성과 지표 안정화 작업 추가 안내",
+      "category": "디스플레이 광고",
+      "date": "2026-06-04",
+      "is_pinned": false,
+      "url": "https://ads.naver.com/notice/31904",
+      "platform": "네이버 GFA",
+      "is_new": true
     },
     {
       "id": 18005,
@@ -28,9 +108,9 @@
       "category": "디스플레이 광고",
       "date": "2024-12-09",
       "is_pinned": true,
-      "is_new": false,
+      "url": "https://ads.naver.com/notice/18005",
       "platform": "네이버 GFA",
-      "url": "https://ads.naver.com/notice/18005"
+      "is_new": true
     }
   ]
 }
