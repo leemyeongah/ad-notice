@@ -16,7 +16,9 @@
 import json
 import re
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timedelta
+from email.utils import parsedate_to_datetime
+from xml.etree import ElementTree
 from zoneinfo import ZoneInfo
 
 import requests
@@ -26,10 +28,14 @@ DATA_DIR = Path(__file__).parent / "data"
 DATA_DIR.mkdir(exist_ok=True)
 NOTICES_PATH = DATA_DIR / "notices.json"
 
-# 매체별 소스. 이름과 URL만 추가하면 계속 확장 가능.
+# 며칠 이내 발행된 글까지 NEW로 볼지 (RSS 소스처럼 자체 NEW 표시가 없는 경우에 사용)
+NEW_WINDOW_DAYS = 5
+
+# 매체별 소스. type: "gfa_json" (네이버 GFA처럼 페이지에 JSON이 박혀있는 경우) / "rss" (표준 RSS 피드)
 SOURCES = [
-    {"platform": "네이버 GFA", "url": "https://ads.naver.com/notice?categoryId=148&page=1"},
-    # {"platform": "NOSP", "url": "..."},  # URL 확인되면 추가
+    {"platform": "네이버 GFA", "type": "gfa_json", "url": "https://ads.naver.com/notice?categoryId=148&page=1"},
+    {"platform": "메타 for Business", "type": "rss", "url": "https://en-gb.facebook.com/business/news/rss"},
+    # {"platform": "NOSP", "type": "gfa_json", "url": "..."},  # URL 확인되면 추가
 ]
 
 NOTICE_PATTERN = re.compile(
@@ -52,7 +58,7 @@ def _unescape(s: str) -> str:
              .replace('\\\\', '\\'))
 
 
-def extract_notices(raw_html: str):
+def extract_gfa_notices(raw_html: str):
     notices = []
     seen_in_page = set()
     for m in NOTICE_PATTERN.finditer(raw_html):
@@ -68,6 +74,42 @@ def extract_notices(raw_html: str):
             "is_pinned": m.group("is_pinned") == "true",
             "is_new": m.group("is_new") == "true",
             "url": "https://ads.naver.com" + _unescape(m.group("url")),
+        })
+    return notices
+
+
+def extract_rss_notices(raw_xml: str):
+    """표준 RSS 2.0 피드 파싱 (예: 메타 for Business). isNew 개념이 없어서
+    최근 NEW_WINDOW_DAYS일 이내 발행된 글만 NEW로 표시한다."""
+    root = ElementTree.fromstring(raw_xml)
+    now_kst = datetime.now(KST)
+    notices = []
+
+    for item in root.findall(".//item"):
+        title = (item.findtext("title") or "").strip()
+        link = (item.findtext("link") or "").strip()
+        category = (item.findtext("category") or "").strip()
+        pub_date_raw = item.findtext("pubDate")
+
+        if pub_date_raw:
+            pub_dt = parsedate_to_datetime(pub_date_raw).astimezone(KST)
+            date_str = pub_dt.strftime("%Y-%m-%d")
+            is_new = (now_kst - pub_dt) <= timedelta(days=NEW_WINDOW_DAYS)
+        else:
+            date_str = ""
+            is_new = False
+
+        # link를 안정적인 id로 사용 (RSS에는 별도 숫자 id가 없음)
+        notice_id = link or title
+
+        notices.append({
+            "id": notice_id,
+            "title": title,
+            "category": category,
+            "date": date_str,
+            "is_pinned": False,
+            "is_new": is_new,
+            "url": link,
         })
     return notices
 
@@ -88,13 +130,22 @@ def run():
 
     for source in SOURCES:
         platform = source["platform"]
+        source_type = source["type"]
         try:
             raw = fetch(source["url"])
         except requests.RequestException as e:
             print(f"[에러] {platform} 요청 실패: {e}")
             continue
 
-        notices = extract_notices(raw)
+        try:
+            if source_type == "rss":
+                notices = extract_rss_notices(raw)
+            else:
+                notices = extract_gfa_notices(raw)
+        except ElementTree.ParseError as e:
+            print(f"[에러] {platform} 파싱 실패 (RSS XML이 아닌 것 같아요): {e}")
+            continue
+
         for n in notices:
             n["platform"] = platform
         fresh_notices.extend(notices)
