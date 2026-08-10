@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0053)file:///C:/Users/wisebirds/Downloads/dashboard_7.html -->
+<!-- saved from url=(0053)file:///C:/Users/wisebirds/Downloads/dashboard_9.html -->
 <html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +11,12 @@
     --bg: #10141b;
     --panel: #171d27;
     --panel-hover: #1d2430;
+    --page: #1a212c;
     --line: #232b38;
+    --line-soft: #1c2330;
     --text: #e7ebf1;
     --muted: #7c8494;
+    --faint: #565f70;
     --accent: #f2a93b;
     --accent-dim: rgba(242,169,59,0.12);
     --gfa: #5b8def;
@@ -32,9 +35,8 @@
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
   }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
 
-  /* header */
   header {
     display: flex;
     align-items: flex-start;
@@ -83,7 +85,6 @@
   }
   .new-count b { color: var(--accent); font-size: 15px; }
 
-  /* filters */
   .filters {
     display: flex;
     gap: 8px;
@@ -108,7 +109,6 @@
     border-color: var(--text);
   }
 
-  /* pinned section */
   .pinned-section {
     margin-bottom: 28px;
     padding-bottom: 24px;
@@ -122,7 +122,6 @@
     margin-bottom: 10px;
   }
 
-  /* feed */
   .day-label {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 11px;
@@ -193,6 +192,77 @@
     color: var(--text);
   }
 
+  .page-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: var(--page);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 20px 22px;
+    margin-bottom: 10px;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  }
+  .page-card:hover { border-color: #3a4457; box-shadow: 0 2px 14px rgba(0,0,0,0.25); }
+
+  .page-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10.5px;
+    color: var(--nasmedia);
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
+  .page-eyebrow .divider { color: var(--faint); }
+  .page-eyebrow .cat { color: var(--muted); }
+  .page-eyebrow .new-flag { margin-left: auto; }
+
+  .page-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16.5px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--text);
+    margin-bottom: 10px;
+  }
+
+  .page-platforms {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+  .platform-chip {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: #ff9f8c17;
+    color: var(--nasmedia);
+    border: 1px solid #ff9f8c30;
+  }
+
+  .page-excerpt {
+    font-size: 13.5px;
+    line-height: 1.65;
+    color: var(--muted);
+    margin: 0 0 12px;
+  }
+
+  .page-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--faint);
+    padding-top: 10px;
+    border-top: 1px solid var(--line-soft);
+  }
+  .page-footer .open-link { color: var(--muted); }
+
   .empty-state {
     text-align: center;
     padding: 60px 20px;
@@ -252,21 +322,44 @@ let allNotices = [];
 let activeFilter = '전체';
 
 function formatKST(isoString) {
-  // 이미 KST(+09:00)로 저장된 값이면 그대로, 아니면 UTC로 간주하고 KST로 변환
   const d = new Date(isoString);
   const opts = { month: 'long', day: 'numeric', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Seoul' };
   return new Intl.DateTimeFormat('ko-KR', opts).format(d) + ' (KST)';
 }
 
+function escapeHTML(s) {
+  return (s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
 function cardHTML(n) {
+  if (n.excerpt) {
+    const platformsHTML = (n.platforms || []).map(p => `<span class="platform-chip">${escapeHTML(p)}</span>`).join('');
+    return `
+      <a class="page-card" href="${n.url}" target="_blank" rel="noopener">
+        <div class="page-eyebrow">
+          <span>🗒️ 나스미디어</span>
+          <span class="divider">·</span>
+          <span class="cat">${escapeHTML(n.category)}</span>
+          ${n.is_new ? '<span class="new-flag">NEW</span>' : ''}
+        </div>
+        <div class="page-title">${escapeHTML(n.title)}</div>
+        ${platformsHTML ? `<div class="page-platforms">${platformsHTML}</div>` : ''}
+        <p class="page-excerpt">${escapeHTML(n.excerpt)}</p>
+        <div class="page-footer">
+          <span>${n.date}</span>
+          <span class="open-link">원문 보기 ↗</span>
+        </div>
+      </a>`;
+  }
+
   return `
     <a class="notice-card ${n.is_pinned ? 'pinned' : ''}" href="${n.url}" target="_blank" rel="noopener">
       <div class="card-top">
-        <span class="platform-tag ${PLATFORM_CLASS[n.platform] || 'common'}">${n.platform}</span>
-        <span class="cat-label">${n.category}</span>
+        <span class="platform-tag ${PLATFORM_CLASS[n.platform] || 'common'}">${escapeHTML(n.platform)}</span>
+        <span class="cat-label">${escapeHTML(n.category)}</span>
         ${n.is_new ? '<span class="new-flag">NEW</span>' : ''}
       </div>
-      <div class="notice-title">${n.title}</div>
+      <div class="notice-title">${escapeHTML(n.title)}</div>
     </a>`;
 }
 
@@ -274,7 +367,7 @@ function renderFilters(platforms) {
   const el = document.getElementById('filters');
   const list = ['전체', ...platforms];
   el.innerHTML = list.map(p =>
-    `<button class="filter-btn ${p === activeFilter ? 'active' : ''}" data-platform="${p}">${p}</button>`
+    `<button class="filter-btn ${p === activeFilter ? 'active' : ''}" data-platform="${escapeHTML(p)}">${escapeHTML(p)}</button>`
   ).join('');
   el.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {

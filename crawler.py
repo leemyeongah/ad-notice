@@ -46,10 +46,40 @@ SOURCES = [
 NASMEDIA_POST_ITEM = re.compile(
     r'<div class="post-item">\s*<a href="(?P<href>/entry/[^"]+)".*?'
     r'<span class="title">(?P<title>[^<]+)</span>.*?'
+    r'<span class="excerpt">(?P<excerpt>.*?)</span>.*?'
     r'<span class="date">(?P<date>[^<]+)</span>',
     re.DOTALL
 )
 NASMEDIA_NEW_WINDOW_DAYS = 7
+
+# 광고상품업데이트 등에서 본문 안에 언급된 매체를 자동 태깅하기 위한 키워드 목록
+# (등장 빈도가 흔한 매체 위주, 길이가 긴 이름을 먼저 매칭해서 부분 중복 방지)
+KNOWN_PLATFORMS = [
+    "인스타그램", "유튜브", "챗GPT", "오픈AI", "네이버지도", "네이버페이", "네이버",
+    "카카오톡", "카카오페이", "카카오", "당근", "메타", "구글", "토스", "틱톡",
+    "쿠팡", "배민", "링크드인", "스레드", "X", "OTT",
+]
+
+
+def _clean_html_text(raw: str) -> str:
+    """excerpt/title 안의 HTML 엔티티를 풀고 남은 태그를 제거."""
+    text = re.sub(r'<[^>]+>', '', raw)
+    replacements = {
+        '&middot;': '·', '&hellip;': '…', '&lsquo;': '‘', '&rsquo;': '’',
+        '&ldquo;': '“', '&rdquo;': '”', '&amp;': '&', '&nbsp;': ' ',
+        '&quot;': '"', '&#39;': "'", '&lt;': '<', '&gt;': '>',
+    }
+    for k, v in replacements.items():
+        text = text.replace(k, v)
+    return text.strip()
+
+
+def _detect_platforms(text: str):
+    found = []
+    for name in KNOWN_PLATFORMS:
+        if name in text and name not in found:
+            found.append(name)
+    return found
 
 NOTICE_PATTERN = re.compile(
     r'\\?"category\\?":\{.*?\\?"categoryName\\?":\\?"(?P<category>[^"\\]*)\\?".*?\}'
@@ -146,9 +176,20 @@ def extract_nasmedia_notices(raw_html: str, category_label: str = ""):
         except (ValueError, IndexError):
             pass
 
+        title_clean = _clean_html_text(m.group("title"))
+        excerpt_clean = _clean_html_text(m.group("excerpt"))
+        platforms = _detect_platforms(title_clean + " " + excerpt_clean)
+
+        # 나스미디어 글머리에 흔히 붙는 해시태그 무더기(예: "#디지털미디어", "#네이버 #메타 #당근📢") 제거
+        excerpt_clean = excerpt_clean.replace('#디지털미디어', '')
+        excerpt_clean = re.sub(r'(?:#\S+\s*){2,}(?=📢)', '', excerpt_clean)
+        excerpt_clean = re.sub(r'\s{2,}', ' ', excerpt_clean).strip()
+
         notices.append({
             "id": m.group("href"),
-            "title": m.group("title").strip(),
+            "title": title_clean,
+            "excerpt": excerpt_clean,
+            "platforms": platforms,
             "category": category_label,
             "date": date_iso,
             "is_pinned": False,
