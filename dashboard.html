@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0053)file:///C:/Users/wisebirds/Downloads/dashboard_9.html -->
+<!-- saved from url=(0054)file:///C:/Users/wisebirds/Downloads/dashboard_10.html -->
 <html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -280,6 +280,127 @@
     color: var(--accent);
   }
 
+  /* ---- hero: this week's nasmedia news clipping, always on top ---- */
+  .hero-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+  }
+  .hero-label .line { flex: 1; height: 1px; background: var(--line); }
+
+  .hero-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: linear-gradient(160deg, #1f2a3a 0%, var(--page) 55%);
+    border: 1px solid #3a4457;
+    border-radius: 16px;
+    padding: 26px 26px 22px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  .hero-card:hover { border-color: var(--accent); transform: translateY(-1px); }
+
+  .hero-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--nasmedia);
+    letter-spacing: 0.04em;
+    margin-bottom: 12px;
+  }
+  .hero-eyebrow .week-badge {
+    background: var(--accent-dim);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-left: auto;
+  }
+
+  .hero-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+
+  .hero-platforms { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+
+  .hero-excerpt {
+    font-size: 14px;
+    line-height: 1.75;
+    color: #b9c0cd;
+    margin: 0 0 16px;
+  }
+
+  .hero-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px;
+    color: var(--muted);
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+  }
+  .hero-footer .open-link { color: var(--accent); font-weight: 500; }
+
+  /* ---- weekly quick-scan list (other platforms' new items this week) ---- */
+  .weekly-section { margin-bottom: 28px; }
+  .weekly-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+  }
+  .weekly-list { display: flex; flex-direction: column; gap: 6px; }
+  .weekly-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 10px 14px;
+    transition: background 0.15s ease;
+  }
+  .weekly-item:hover { background: var(--panel-hover); }
+  .weekly-item .wi-title { font-size: 13px; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .weekly-empty {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--faint);
+    padding: 10px 2px;
+  }
+
+  /* ---- archive toggle ---- */
+  .archive-toggle-wrap { text-align: center; margin: 8px 0 24px; }
+  .archive-toggle {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    background: none;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 8px 18px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .archive-toggle:hover { color: var(--text); border-color: #3a4457; }
+
   @media (max-width: 480px) {
     header { flex-direction: column; gap: 14px; }
     .status-block { text-align: left; }
@@ -299,13 +420,21 @@
     </div>
   </header>
 
-  <div class="filters" id="filters"></div>
-  <div id="pinned-area"></div>
-  <div id="feed">
+  <div id="hero-area"></div>
+  <div id="weekly-area"></div>
+
+  <div class="archive-toggle-wrap">
+    <button class="archive-toggle" id="archive-toggle">전체 보관함 펼치기 ▾</button>
+  </div>
+  <div id="archive-area" style="display:none;">
+    <div class="filters" id="filters"></div>
+    <div id="pinned-area"></div>
+    <div id="feed">
       <div class="empty-state">
         아직 수집된 데이터가 없어요. 먼저 크롤러를 실행해주세요.
         <code>python crawler.py</code>
       </div></div>
+  </div>
 </div>
 
 <script>
@@ -413,6 +542,64 @@ function renderFeed() {
   `).join('');
 }
 
+function renderHero() {
+  const heroArea = document.getElementById('hero-area');
+  const clippings = allNotices
+    .filter(n => n.platform === '나스미디어 뉴스클리핑')
+    .sort((a, b) => b.date.localeCompare(a.date));
+
+  if (!clippings.length) { heroArea.innerHTML = ''; return; }
+
+  const hero = clippings[0];
+  const platformsHTML = (hero.platforms || []).map(p => `<span class="platform-chip">${escapeHTML(p)}</span>`).join('');
+
+  heroArea.innerHTML = `
+    <div class="hero-label"><span>📌 이번 주 브리핑</span><span class="line"></span></div>
+    <a class="hero-card" href="${hero.url}" target="_blank" rel="noopener">
+      <div class="hero-eyebrow">
+        <span>🗒️ 나스미디어 뉴스클리핑</span>
+        ${hero.is_new ? '<span class="week-badge">이번 주 발행</span>' : ''}
+      </div>
+      <div class="hero-title">${escapeHTML(hero.title)}</div>
+      ${platformsHTML ? `<div class="hero-platforms">${platformsHTML}</div>` : ''}
+      <p class="hero-excerpt">${escapeHTML(hero.excerpt || '')}</p>
+      <div class="hero-footer">
+        <span>${hero.date} 발행</span>
+        <span class="open-link">전체 클리핑 읽기 ↗</span>
+      </div>
+    </a>`;
+}
+
+function renderWeekly() {
+  const weeklyArea = document.getElementById('weekly-area');
+  const items = allNotices
+    .filter(n => n.is_new && n.platform !== '나스미디어 뉴스클리핑')
+    .sort((a, b) => b.date.localeCompare(a.date));
+
+  const listHTML = items.length
+    ? items.map(n => `
+        <a class="weekly-item" href="${n.url}" target="_blank" rel="noopener">
+          <span class="platform-tag ${PLATFORM_CLASS[n.platform] || 'common'}">${escapeHTML(n.platform)}</span>
+          <span class="wi-title">${escapeHTML(n.title)}</span>
+          <span class="new-flag">NEW</span>
+        </a>`).join('')
+    : '<div class="weekly-empty">이번 주 다른 매체 새 소식은 없어요.</div>';
+
+  weeklyArea.innerHTML = `
+    <div class="weekly-section">
+      <div class="weekly-title">그 외 이번 주 새 소식 (${items.length}건)</div>
+      <div class="weekly-list">${listHTML}</div>
+    </div>`;
+}
+
+document.getElementById('archive-toggle').addEventListener('click', () => {
+  const area = document.getElementById('archive-area');
+  const btn = document.getElementById('archive-toggle');
+  const isHidden = area.style.display === 'none';
+  area.style.display = isHidden ? 'block' : 'none';
+  btn.textContent = isHidden ? '전체 보관함 접기 ▴' : '전체 보관함 펼치기 ▾';
+});
+
 fetch('data/notices.json')
   .then(res => {
     if (!res.ok) throw new Error('not found');
@@ -426,6 +613,8 @@ fetch('data/notices.json')
       ? `새 소식 <b>${newCount}</b>건`
       : '새 소식 없음';
     const platforms = [...new Set(allNotices.map(n => n.platform))];
+    renderHero();
+    renderWeekly();
     renderFilters(platforms);
     renderFeed();
   })
