@@ -1,7 +1,27 @@
 {
-  "generated_at": "2026-07-27T17:41:48+09:00",
-  "new_count": 11,
+  "generated_at": "2026-08-10T12:33:02+09:00",
+  "new_count": 10,
   "notices": [
+    {
+      "id": "/entry/20260727-news-clipping",
+      "title": "2026년 7월 27일주 뉴스클리핑",
+      "category": "뉴스클리핑",
+      "date": "2026-08-03",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/20260727-news-clipping",
+      "platform": "나스미디어 뉴스클리핑"
+    },
+    {
+      "id": "/entry/2607adissue",
+      "title": "2026년 7월 - 당근 AI 기반 광고 자동화 솔루션 '당근 RISE' 출시 외",
+      "category": "광고 상품 업데이트",
+      "date": "2026-07-30",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/2607adissue",
+      "platform": "나스미디어 광고상품업데이트"
+    },
     {
       "id": 100932,
       "title": "[상품] 매출 성장의 치트키, 카카오비즈 멤버십 주요 혜택 안내",
@@ -11,6 +31,16 @@
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
       "platform": "카카오모먼트",
       "is_new": true
+    },
+    {
+      "id": "/entry/20260720-news-clipping",
+      "title": "2026년 7월 20일주 뉴스클리핑",
+      "category": "뉴스클리핑",
+      "date": "2026-07-27",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/20260720-news-clipping",
+      "platform": "나스미디어 뉴스클리핑"
     },
     {
       "id": 100936,
@@ -28,7 +58,7 @@
       "category": "디스플레이 광고",
       "date": "2026-07-23",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://ads.naver.com/notice/33083",
       "platform": "네이버 GFA"
     },
@@ -63,6 +93,16 @@
       "is_new": true
     },
     {
+      "id": "/entry/2607adissue-navermapads",
+      "title": "오프라인 방문을 유도하는 네이버지도 신규 광고상품 - 버블키워드패키지, 팝업스토어 솔루션",
+      "category": "광고 상품 업데이트",
+      "date": "2026-07-21",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/2607adissue-navermapads",
+      "platform": "나스미디어 광고상품업데이트"
+    },
+    {
       "id": 100927,
       "title": "'전남광주통합특별시'신설에 따른 모먼트 타겟팅 및 Open API 변동 사항 안내",
       "category": "시스템/개선",
@@ -71,6 +111,16 @@
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
       "platform": "카카오모먼트",
       "is_new": true
+    },
+    {
+      "id": "/entry/20260713-news-clipping",
+      "title": "2026년 7월 13일주 뉴스클리핑",
+      "category": "뉴스클리핑",
+      "date": "2026-07-20",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/20260713-news-clipping",
+      "platform": "나스미디어 뉴스클리핑"
     },
     {
       "id": 100925,
@@ -93,6 +143,16 @@
       "is_new": true
     },
     {
+      "id": "/entry/20260706-news-clipping",
+      "title": "2026년 7월 6일주 뉴스클리핑",
+      "category": "뉴스클리핑",
+      "date": "2026-07-13",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/20260706-news-clipping",
+      "platform": "나스미디어 뉴스클리핑"
+    },
+    {
       "id": 32778,
       "title": "[디스플레이 광고] 밴드 앱 신규 노출 영역 및 노출 상품 추가 안내 (7/16)",
       "category": "디스플레이 광고",
@@ -113,6 +173,16 @@
       "platform": "네이버 GFA"
     },
     {
+      "id": "/entry/20260629-news-clipping",
+      "title": "2026년 6월 29일주 뉴스클리핑",
+      "category": "뉴스클리핑",
+      "date": "2026-07-06",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/20260629-news-clipping",
+      "platform": "나스미디어 뉴스클리핑"
+    },
+    {
       "id": 32348,
       "title": "(수정) 디스플레이 광고 내 광고계정·캠페인 단위 일정·결과·결과당비용 보고서 지표 제공 종료 안내",
       "category": "디스플레이 광고",
@@ -123,6 +193,46 @@
       "platform": "네이버 GFA"
     },
     {
+      "id": "/entry/20260622-news-clipping",
+      "title": "2026년 6월 22일주 뉴스클리핑",
+      "category": "뉴스클리핑",
+      "date": "2026-06-29",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/20260622-news-clipping",
+      "platform": "나스미디어 뉴스클리핑"
+    },
+    {
+      "id": "/entry/2606adissue",
+      "title": "2026년 6월 - 오픈AI, 챗GPT 광고 국내 파일럿 시작 외",
+      "category": "광고 상품 업데이트",
+      "date": "2026-06-22",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/2606adissue",
+      "platform": "나스미디어 광고상품업데이트"
+    },
+    {
+      "id": "/entry/2606adissue-chatgptadvertisingpilot",
+      "title": "챗GPT 광고, 이제 한국에서도 시작됩니다.",
+      "category": "광고 상품 업데이트",
+      "date": "2026-06-22",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/2606adissue-chatgptadvertisingpilot",
+      "platform": "나스미디어 광고상품업데이트"
+    },
+    {
+      "id": "/entry/20260615-news-clipping",
+      "title": "2026년 6월 15일주 뉴스클리핑",
+      "category": "뉴스클리핑",
+      "date": "2026-06-21",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/20260615-news-clipping",
+      "platform": "나스미디어 뉴스클리핑"
+    },
+    {
       "id": 32311,
       "title": "[신규 노출 영역] 네이버 > MO > 증권 > 가상자산 안내 (6/25)",
       "category": "디스플레이 광고",
@@ -131,6 +241,16 @@
       "is_new": false,
       "url": "https://ads.naver.com/notice/32311",
       "platform": "네이버 GFA"
+    },
+    {
+      "id": "/entry/20260608-news-clipping",
+      "title": "2026년 6월 8일주 뉴스클리핑",
+      "category": "뉴스클리핑",
+      "date": "2026-06-15",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/20260608-news-clipping",
+      "platform": "나스미디어 뉴스클리핑"
     },
     {
       "id": 32009,
@@ -151,6 +271,16 @@
       "is_new": false,
       "url": "https://ads.naver.com/notice/32197",
       "platform": "네이버 GFA"
+    },
+    {
+      "id": "/entry/20260601-news-clipping",
+      "title": "2026년 6월 1일주 뉴스클리핑",
+      "category": "뉴스클리핑",
+      "date": "2026-06-08",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/20260601-news-clipping",
+      "platform": "나스미디어 뉴스클리핑"
     },
     {
       "id": 32024,
@@ -183,6 +313,66 @@
       "platform": "네이버 GFA"
     },
     {
+      "id": "/entry/20260525-news-clipping",
+      "title": "2026년 5월 25일주 뉴스클리핑",
+      "category": "뉴스클리핑",
+      "date": "2026-06-01",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/20260525-news-clipping",
+      "platform": "나스미디어 뉴스클리핑"
+    },
+    {
+      "id": "/entry/2605adissue",
+      "title": "2026년 5월 - 네이버 브랜드검색 PC/모바일 상품 통합 개편 외",
+      "category": "광고 상품 업데이트",
+      "date": "2026-06-01",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/2605adissue",
+      "platform": "나스미디어 광고상품업데이트"
+    },
+    {
+      "id": "/entry/20260518-news-clipping",
+      "title": "2026년 5월 18일주 뉴스클리핑",
+      "category": "뉴스클리핑",
+      "date": "2026-05-26",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/20260518-news-clipping",
+      "platform": "나스미디어 뉴스클리핑"
+    },
+    {
+      "id": "/entry/20260511-news-clipping",
+      "title": "2026년 5월 11일주 뉴스클리핑",
+      "category": "뉴스클리핑",
+      "date": "2026-05-18",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/20260511-news-clipping",
+      "platform": "나스미디어 뉴스클리핑"
+    },
+    {
+      "id": "/entry/2604adissue",
+      "title": "2026년 4월 - 메타, 인스타그램 라이브 방송 광고 한국 롤아웃 외",
+      "category": "광고 상품 업데이트",
+      "date": "2026-04-23",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/2604adissue",
+      "platform": "나스미디어 광고상품업데이트"
+    },
+    {
+      "id": "/entry/2603adissue",
+      "title": "2026년 3월 - 네이버, 광고 플랫폼 통합 및 기능 개편 외",
+      "category": "광고 상품 업데이트",
+      "date": "2026-04-09",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/2603adissue",
+      "platform": "나스미디어 광고상품업데이트"
+    },
+    {
       "id": 100788,
       "title": "[시스템] 모먼트  '통합 광고 식별 체계' 도입 안내(4/16 완료)",
       "category": "시스템/개선",
@@ -193,6 +383,46 @@
       "is_new": true
     },
     {
+      "id": "/entry/2602adissue",
+      "title": "2026년 2월 - 토스, 플랫폼 대시보드 '인사이트 팁' 오픈",
+      "category": "광고 상품 업데이트",
+      "date": "2026-02-20",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/2602adissue",
+      "platform": "나스미디어 광고상품업데이트"
+    },
+    {
+      "id": "/entry/2601adissue",
+      "title": "2026년 1월 - 네이버 크림(KREAM) DA 출시 및 게재 지면 추가 외",
+      "category": "광고 상품 업데이트",
+      "date": "2026-01-20",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/2601adissue",
+      "platform": "나스미디어 광고상품업데이트"
+    },
+    {
+      "id": "/entry/2512adissue",
+      "title": "2025년 12월 - 유튜브 마스트헤드(Masthead) 가격 변동 외",
+      "category": "광고 상품 업데이트",
+      "date": "2025-12-23",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/2512adissue",
+      "platform": "나스미디어 광고상품업데이트"
+    },
+    {
+      "id": "/entry/2511adissue",
+      "title": "2025년 11월 - 인스타그램 '릴스 트렌딩 광고' 일부 국가에서 본격 도입 외",
+      "category": "광고 상품 업데이트",
+      "date": "2025-11-24",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/2511adissue",
+      "platform": "나스미디어 광고상품업데이트"
+    },
+    {
       "id": 100644,
       "title": "[공지] 카카오 Conversion API 오픈 안내",
       "category": "공지/이벤트",
@@ -201,6 +431,16 @@
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
       "platform": "카카오모먼트",
       "is_new": true
+    },
+    {
+      "id": "/entry/2510adissue",
+      "title": "2025년 10월 - 유튜브 'Peak Places 패키지' 출시, 카카오톡 신규 광고 지면 출시 외",
+      "category": "광고 상품 업데이트",
+      "date": "2025-10-27",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/2510adissue",
+      "platform": "나스미디어 광고상품업데이트"
     },
     {
       "id": 18005,
