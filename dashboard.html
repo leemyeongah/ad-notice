@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-<meta charset="UTF-8">
+<!-- saved from url=(0053)file:///C:/Users/wisebirds/Downloads/dashboard_7.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>매체 공지 모니터</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./dashboard_files/css2" rel="stylesheet">
 <style>
   :root {
     --bg: #10141b;
@@ -21,6 +21,7 @@
     --common: #b48ee8;
     --kakao: #f4d35e;
     --meta: #6ea8fe;
+    --nasmedia: #ff9f8c;
   }
   * { box-sizing: border-box; }
   body {
@@ -165,6 +166,7 @@
   .platform-tag.common { background: #b48ee81f; color: var(--common); }
   .platform-tag.kakao { background: #f4d35e1f; color: var(--kakao); }
   .platform-tag.meta { background: #6ea8fe1f; color: var(--meta); }
+  .platform-tag.nasmedia { background: #ff9f8c1f; color: var(--nasmedia); }
 
   .cat-label {
     font-size: 11px;
@@ -229,7 +231,11 @@
 
   <div class="filters" id="filters"></div>
   <div id="pinned-area"></div>
-  <div id="feed"></div>
+  <div id="feed">
+      <div class="empty-state">
+        아직 수집된 데이터가 없어요. 먼저 크롤러를 실행해주세요.
+        <code>python crawler.py</code>
+      </div></div>
 </div>
 
 <script>
@@ -238,6 +244,8 @@ const PLATFORM_CLASS = {
   'NOSP': 'nosp',
   '카카오모먼트': 'kakao',
   '메타 for Business': 'meta',
+  '나스미디어 뉴스클리핑': 'nasmedia',
+  '나스미디어 광고상품업데이트': 'nasmedia',
 };
 
 let allNotices = [];
@@ -336,5 +344,6 @@ fetch('data/notices.json')
       </div>`;
   });
 </script>
-</body>
-</html>
+
+
+</body></html>

@@ -31,12 +31,25 @@ NOTICES_PATH = DATA_DIR / "notices.json"
 # 며칠 이내 발행된 글까지 NEW로 볼지 (RSS 소스처럼 자체 NEW 표시가 없는 경우에 사용)
 NEW_WINDOW_DAYS = 5
 
-# 매체별 소스. type: "gfa_json" (네이버 GFA처럼 페이지에 JSON이 박혀있는 경우) / "rss" (표준 RSS 피드)
+# 매체별 소스. type: "gfa_json" (네이버 GFA처럼 페이지에 JSON이 박혀있는 경우) /
+# "rss" (표준 RSS 피드) / "nasmedia" (나스미디어 블로그 post-item 목록)
+# 메타(Facebook)는 자동 요청을 막아서(400 에러) 여기 넣지 않음 -> merge_meta.py로 반자동 처리
 SOURCES = [
     {"platform": "네이버 GFA", "type": "gfa_json", "url": "https://ads.naver.com/notice?categoryId=148&page=1"},
-    {"platform": "메타 for Business", "type": "rss", "url": "https://en-gb.facebook.com/business/news/rss"},
+    {"platform": "나스미디어 뉴스클리핑", "type": "nasmedia", "category_label": "뉴스클리핑",
+     "url": "https://blog.nasmedia.co.kr/category/%EB%94%94%EC%A7%80%ED%84%B8%20%EB%AF%B8%EB%94%94%EC%96%B4%20%EC%9D%B4%EC%8A%88/%EB%89%B4%EC%8A%A4%ED%81%B4%EB%A6%AC%ED%95%91"},
+    {"platform": "나스미디어 광고상품업데이트", "type": "nasmedia", "category_label": "광고 상품 업데이트",
+     "url": "https://blog.nasmedia.co.kr/category/%EB%94%94%EC%A7%80%ED%84%B8%20%EB%AF%B8%EB%94%94%EC%96%B4%20%EC%9D%B4%EC%8A%88/%EA%B4%91%EA%B3%A0%20%EC%83%81%ED%92%88%20%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8"},
     # {"platform": "NOSP", "type": "gfa_json", "url": "..."},  # URL 확인되면 추가
 ]
+
+NASMEDIA_POST_ITEM = re.compile(
+    r'<div class="post-item">\s*<a href="(?P<href>/entry/[^"]+)".*?'
+    r'<span class="title">(?P<title>[^<]+)</span>.*?'
+    r'<span class="date">(?P<date>[^<]+)</span>',
+    re.DOTALL
+)
+NASMEDIA_NEW_WINDOW_DAYS = 7
 
 NOTICE_PATTERN = re.compile(
     r'\\?"category\\?":\{.*?\\?"categoryName\\?":\\?"(?P<category>[^"\\]*)\\?".*?\}'
@@ -114,6 +127,37 @@ def extract_rss_notices(raw_xml: str):
     return notices
 
 
+def extract_nasmedia_notices(raw_html: str, category_label: str = ""):
+    """나스미디어 블로그 카테고리 목록 페이지 파싱 (뉴스클리핑/광고 상품 업데이트 등 공통).
+    URL 슬러그 형식이 카테고리마다 달라서(YYYYMMDD-... 나 YYYYMM... 등) 슬러그 날짜는 안 쓰고,
+    화면에 보이는 게시일(meta date)만 date/NEW 판정 기준으로 사용."""
+    notices = []
+    now_kst = datetime.now(KST)
+
+    for m in NASMEDIA_POST_ITEM.finditer(raw_html):
+        raw_date = m.group("date").strip().rstrip('.')
+        date_iso = ""
+        is_new = False
+        try:
+            y, mo, d = [int(p.strip()) for p in raw_date.split('.')]
+            meta_dt = datetime(y, mo, d, tzinfo=KST)
+            date_iso = meta_dt.strftime("%Y-%m-%d")
+            is_new = (now_kst - meta_dt) <= timedelta(days=NASMEDIA_NEW_WINDOW_DAYS)
+        except (ValueError, IndexError):
+            pass
+
+        notices.append({
+            "id": m.group("href"),
+            "title": m.group("title").strip(),
+            "category": category_label,
+            "date": date_iso,
+            "is_pinned": False,
+            "is_new": is_new,
+            "url": "https://blog.nasmedia.co.kr" + m.group("href"),
+        })
+    return notices
+
+
 def fetch(url: str) -> str:
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
@@ -140,6 +184,8 @@ def run():
         try:
             if source_type == "rss":
                 notices = extract_rss_notices(raw)
+            elif source_type == "nasmedia":
+                notices = extract_nasmedia_notices(raw, source.get("category_label", ""))
             else:
                 notices = extract_gfa_notices(raw)
         except ElementTree.ParseError as e:
