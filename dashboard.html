@@ -8,23 +8,23 @@
 <link href="./dashboard_files/css2" rel="stylesheet">
 <style>
   :root {
-    --bg: #10141b;
-    --panel: #171d27;
-    --panel-hover: #1d2430;
-    --page: #1a212c;
-    --line: #232b38;
-    --line-soft: #1c2330;
-    --text: #e7ebf1;
-    --muted: #7c8494;
-    --faint: #565f70;
-    --accent: #f2a93b;
-    --accent-dim: rgba(242,169,59,0.12);
-    --gfa: #5b8def;
-    --nosp: #7fd1a8;
-    --common: #b48ee8;
-    --kakao: #f4d35e;
-    --meta: #6ea8fe;
-    --nasmedia: #ff9f8c;
+    --bg: #f5f6f8;
+    --panel: #ffffff;
+    --panel-hover: #fbfbfc;
+    --page: #ffffff;
+    --border: #e6e8ec;
+    --border-soft: #eef0f3;
+    --text: #1a1d24;
+    --muted: #6b7280;
+    --faint: #9aa1ac;
+    --accent: #2f6fed;
+    --accent-dim: rgba(47,111,237,0.08);
+    --gfa: #2f6fed;
+    --nosp: #12967a;
+    --common: #7c5cff;
+    --kakao: #a3760a;
+    --meta: #3b6fe0;
+    --nasmedia: #e0562f;
   }
   * { box-sizing: border-box; }
   body {
@@ -35,99 +35,344 @@
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
   }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
 
-  header {
+  .topbar {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-    margin-bottom: 32px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid var(--line);
+    padding: 16px 28px;
+    background: var(--panel);
+    border-bottom: 1px solid var(--border);
   }
-  .title-block h1 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 25px;
+  .brand {
     font-weight: 700;
-    margin: 0 0 8px;
-    letter-spacing: -0.02em;
+    font-size: 15px;
+    letter-spacing: -0.01em;
   }
-  .title-block .sub {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 12px;
-    color: var(--muted);
-  }
-  .status-block { text-align: right; }
-  .live-badge {
+  .brand .dot { color: var(--accent); }
+  .live-chip {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10.5px;
-    color: var(--accent);
-    letter-spacing: 0.1em;
-    margin-bottom: 6px;
+    font-size: 12px;
+    color: var(--muted);
   }
-  .live-dot {
+  .live-chip .pulse-dot {
     width: 6px; height: 6px; border-radius: 50%;
     background: var(--accent);
     animation: pulse 2s infinite;
   }
   @keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(242,169,59,0.5); }
-    70% { box-shadow: 0 0 0 6px rgba(242,169,59,0); }
-    100% { box-shadow: 0 0 0 0 rgba(242,169,59,0); }
+    0% { box-shadow: 0 0 0 0 rgba(47,111,237,0.5); }
+    70% { box-shadow: 0 0 0 6px rgba(47,111,237,0); }
+    100% { box-shadow: 0 0 0 0 rgba(47,111,237,0); }
   }
-  .new-count {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 13px;
-    color: var(--muted);
-  }
-  .new-count b { color: var(--accent); font-size: 15px; }
+  .live-chip b { color: var(--accent); font-weight: 700; }
 
-  .filters {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 28px;
-    flex-wrap: wrap;
-  }
-  .filter-btn {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 12px;
-    padding: 6px 14px;
+  .tab-nav { display: flex; gap: 4px; }
+  .tab-btn {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 7px 16px;
     border-radius: 20px;
-    border: 1px solid var(--line);
+    border: 1px solid transparent;
     background: transparent;
     color: var(--muted);
     cursor: pointer;
     transition: all 0.15s ease;
   }
-  .filter-btn:hover { border-color: #3a4457; color: var(--text); }
+  .tab-btn:hover { color: var(--text); }
+  .tab-btn.active {
+    background: var(--accent-dim);
+    color: var(--accent);
+  }
+
+  .wrap { max-width: 920px; margin: 0 auto; padding: 32px 24px 80px; }
+
+  .page-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+  .page-head h1 {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 6px;
+    letter-spacing: -0.02em;
+  }
+  .page-sub {
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+
+  .filters {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .filter-btn {
+    font-size: 12.5px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    color: var(--muted);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .filter-btn:hover { border-color: #c7ccd6; color: var(--text); }
   .filter-btn.active {
     background: var(--text);
-    color: var(--bg);
+    color: #fff;
     border-color: var(--text);
   }
 
-  .pinned-section {
-    margin-bottom: 28px;
-    padding-bottom: 24px;
-    border-bottom: 1px dashed var(--line);
-  }
-  .section-label {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10.5px;
-    color: var(--accent);
-    letter-spacing: 0.1em;
-    margin-bottom: 10px;
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
   }
 
-  .day-label {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
+  /* ---- highlight card: latest ad-product update grouped by media ---- */
+  .highlight-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  .highlight-icon {
+    width: 22px; height: 22px;
+    border-radius: 6px;
+    background: var(--accent-dim);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px;
+    flex-shrink: 0;
+  }
+  .highlight-head .htitle { font-weight: 700; font-size: 13.5px; }
+  .highlight-sub {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 6px 0 4px;
+  }
+  .highlight-meta {
+    font-size: 12px;
+    color: var(--faint);
+    margin-bottom: 18px;
+  }
+  .highlight-groups { display: flex; flex-direction: column; gap: 14px; }
+  .hg-row { display: flex; gap: 18px; }
+  .hg-label {
+    flex-shrink: 0;
+    width: 84px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent);
+    padding-left: 12px;
+    border-left: 2px solid var(--border);
+  }
+  .hg-items {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+  }
+  .hg-item {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--text);
+    font-size: 13.5px;
+  }
+  .hg-item:hover { color: var(--accent); }
+  .hg-item .hi-title {
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .hg-item .hi-new {
+    flex-shrink: 0;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--accent);
+    background: var(--accent-dim);
+    padding: 1px 6px;
+    border-radius: 4px;
+  }
+
+  /* ---- source grid: one report card per platform ---- */
+  .source-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+  .source-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px 8px;
+  }
+  .source-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-soft);
+  }
+  .source-swatch {
+    width: 8px; height: 8px; border-radius: 2px;
+    flex-shrink: 0;
+  }
+  .source-name { font-weight: 700; font-size: 14px; }
+  .source-count {
+    margin-left: auto;
+    font-size: 11.5px;
+    color: var(--faint);
+  }
+  .source-item { padding-bottom: 14px; margin-bottom: 14px; border-bottom: 1px solid var(--border-soft); }
+  .source-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 4px; }
+  .si-title-row {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .si-title {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 13.5px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  .si-title:hover { color: var(--accent); }
+  .si-new {
+    flex-shrink: 0;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--accent);
+    background: var(--accent-dim);
+    padding: 1px 6px;
+    border-radius: 4px;
+  }
+  .si-meta {
+    font-size: 11.5px;
+    color: var(--faint);
+    margin: 4px 0 6px;
+  }
+  .si-excerpt {
+    font-size: 12.5px;
     color: var(--muted);
-    letter-spacing: 0.04em;
-    margin: 22px 0 10px;
+    line-height: 1.6;
+    margin: 0;
+  }
+  .source-empty {
+    font-size: 12.5px;
+    color: var(--faint);
+    padding: 6px 0 14px;
+  }
+
+  /* ---- product intro cards ---- */
+  .product-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .product-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 20px;
+    cursor: pointer;
+  }
+  .product-swatch { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
+  .product-name { font-weight: 700; font-size: 14.5px; }
+  .product-category {
+    font-size: 11.5px;
+    color: var(--faint);
+  }
+  .product-summary {
+    font-size: 12.5px;
+    color: var(--muted);
+    margin-left: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 45%;
+  }
+  .product-chevron {
+    flex-shrink: 0;
+    font-size: 11px;
+    color: var(--faint);
+    transition: transform 0.15s ease;
+  }
+  .product-card.open .product-chevron { transform: rotate(180deg); }
+  .product-detail {
+    display: none;
+    padding: 0 20px 18px;
+    border-top: 1px solid var(--border-soft);
+  }
+  .product-card.open .product-detail { display: block; padding-top: 14px; }
+  .product-desc {
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--text);
+    margin: 0 0 10px;
+    white-space: pre-line;
+  }
+  .product-features {
+    margin: 0 0 12px;
+    padding-left: 18px;
+    font-size: 12.5px;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+  .product-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11.5px;
+    color: var(--faint);
+  }
+  .product-link { color: var(--accent); text-decoration: none; font-weight: 600; }
+  .product-link:hover { text-decoration: underline; }
+
+  /* ---- archive (full list) ---- */
+  .archive-toggle-wrap { text-align: center; margin: 20px 0 24px; }
+  .archive-toggle {
+    font-size: 12.5px;
+    color: var(--muted);
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 8px 18px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .archive-toggle:hover { color: var(--text); border-color: #c7ccd6; }
+
+  .pinned-section {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px dashed var(--border);
+  }
+  .section-label {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  .day-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--muted);
+    margin: 18px 0 8px;
   }
   .day-group:first-child .day-label { margin-top: 0; }
 
@@ -136,36 +381,35 @@
     text-decoration: none;
     color: inherit;
     background: var(--panel);
-    border: 1px solid var(--line);
+    border: 1px solid var(--border);
     border-radius: 10px;
-    padding: 14px 16px;
+    padding: 12px 16px;
     margin-bottom: 8px;
     transition: background 0.15s ease, border-color 0.15s ease;
   }
-  .notice-card:hover { background: var(--panel-hover); border-color: #333f52; }
+  .notice-card:hover { background: var(--panel-hover); border-color: #c7ccd6; }
   .notice-card.pinned { border-left: 3px solid var(--accent); }
 
   .card-top {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 7px;
+    margin-bottom: 6px;
   }
   .platform-tag {
-    font-family: 'IBM Plex Mono', monospace;
     font-size: 10.5px;
-    font-weight: 500;
+    font-weight: 700;
     padding: 3px 8px;
     border-radius: 5px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
     flex-shrink: 0;
   }
-  .platform-tag.gfa { background: #5b8def1f; color: var(--gfa); }
-  .platform-tag.nosp { background: #7fd1a81f; color: var(--nosp); }
-  .platform-tag.common { background: #b48ee81f; color: var(--common); }
-  .platform-tag.kakao { background: #f4d35e1f; color: var(--kakao); }
-  .platform-tag.meta { background: #6ea8fe1f; color: var(--meta); }
-  .platform-tag.nasmedia { background: #ff9f8c1f; color: var(--nasmedia); }
+  .platform-tag.gfa { background: #2f6fed14; color: var(--gfa); }
+  .platform-tag.nosp { background: #12967a14; color: var(--nosp); }
+  .platform-tag.common { background: #7c5cff14; color: var(--common); }
+  .platform-tag.kakao { background: #a3760a14; color: var(--kakao); }
+  .platform-tag.meta { background: #3b6fe014; color: var(--meta); }
+  .platform-tag.nasmedia { background: #e0562f14; color: var(--nasmedia); }
 
   .cat-label {
     font-size: 11px;
@@ -175,11 +419,10 @@
     white-space: nowrap;
   }
   .new-flag {
-    font-family: 'IBM Plex Mono', monospace;
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 700;
     color: var(--accent);
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     margin-left: auto;
     flex-shrink: 0;
     background: var(--accent-dim);
@@ -187,253 +430,77 @@
     border-radius: 4px;
   }
   .notice-title {
-    font-size: 14.5px;
+    font-size: 14px;
     line-height: 1.5;
     color: var(--text);
   }
-
-  .page-card {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    background: var(--page);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 20px 22px;
-    margin-bottom: 10px;
-    transition: border-color 0.15s ease, box-shadow 0.15s ease;
-  }
-  .page-card:hover { border-color: #3a4457; box-shadow: 0 2px 14px rgba(0,0,0,0.25); }
-
-  .page-eyebrow {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10.5px;
-    color: var(--nasmedia);
-    letter-spacing: 0.03em;
-    margin-bottom: 10px;
-  }
-  .page-eyebrow .divider { color: var(--faint); }
-  .page-eyebrow .cat { color: var(--muted); }
-  .page-eyebrow .new-flag { margin-left: auto; }
-
-  .page-title {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 16.5px;
-    font-weight: 700;
-    line-height: 1.4;
-    color: var(--text);
-    margin-bottom: 10px;
-  }
-
-  .page-platforms {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 12px;
-  }
-  .platform-chip {
-    font-size: 11px;
-    font-weight: 500;
-    padding: 3px 10px;
-    border-radius: 20px;
-    background: #ff9f8c17;
-    color: var(--nasmedia);
-    border: 1px solid #ff9f8c30;
-  }
-
-  .page-excerpt {
-    font-size: 13.5px;
-    line-height: 1.65;
-    color: var(--muted);
-    margin: 0 0 12px;
-  }
-
-  .page-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    color: var(--faint);
-    padding-top: 10px;
-    border-top: 1px solid var(--line-soft);
-  }
-  .page-footer .open-link { color: var(--muted); }
 
   .empty-state {
     text-align: center;
     padding: 60px 20px;
     color: var(--muted);
-    font-family: 'IBM Plex Mono', monospace;
     font-size: 13px;
     line-height: 1.8;
   }
   .empty-state code {
     display: block;
     margin-top: 12px;
-    background: var(--panel);
+    background: var(--bg);
     padding: 10px 14px;
     border-radius: 6px;
     color: var(--accent);
   }
 
-  /* ---- hero: this week's nasmedia news clipping, always on top ---- */
-  .hero-label {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    color: var(--accent);
-    letter-spacing: 0.08em;
-    margin-bottom: 12px;
-  }
-  .hero-label .line { flex: 1; height: 1px; background: var(--line); }
-
-  .hero-card {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-    background: linear-gradient(160deg, #1f2a3a 0%, var(--page) 55%);
-    border: 1px solid #3a4457;
-    border-radius: 16px;
-    padding: 26px 26px 22px;
-    margin-bottom: 32px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
-    transition: border-color 0.15s ease, transform 0.15s ease;
-  }
-  .hero-card:hover { border-color: var(--accent); transform: translateY(-1px); }
-
-  .hero-eyebrow {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    color: var(--nasmedia);
-    letter-spacing: 0.04em;
-    margin-bottom: 12px;
-  }
-  .hero-eyebrow .week-badge {
-    background: var(--accent-dim);
-    color: var(--accent);
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-weight: 500;
-    margin-left: auto;
-  }
-
-  .hero-title {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.4;
-    margin-bottom: 12px;
-  }
-
-  .hero-platforms { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
-
-  .hero-excerpt {
-    font-size: 14px;
-    line-height: 1.75;
-    color: #b9c0cd;
-    margin: 0 0 16px;
-  }
-
-  .hero-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11.5px;
-    color: var(--muted);
-    padding-top: 14px;
-    border-top: 1px solid var(--line);
-  }
-  .hero-footer .open-link { color: var(--accent); font-weight: 500; }
-
-  /* ---- weekly quick-scan list (other platforms' new items this week) ---- */
-  .weekly-section { margin-bottom: 28px; }
-  .weekly-title {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 11px;
-    color: var(--muted);
-    letter-spacing: 0.06em;
-    margin-bottom: 10px;
-  }
-  .weekly-list { display: flex; flex-direction: column; gap: 6px; }
-  .weekly-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    color: inherit;
-    background: var(--panel);
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 10px 14px;
-    transition: background 0.15s ease;
-  }
-  .weekly-item:hover { background: var(--panel-hover); }
-  .weekly-item .wi-title { font-size: 13px; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .weekly-empty {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 12px;
-    color: var(--faint);
-    padding: 10px 2px;
-  }
-
-  /* ---- archive toggle ---- */
-  .archive-toggle-wrap { text-align: center; margin: 8px 0 24px; }
-  .archive-toggle {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 12px;
-    color: var(--muted);
-    background: none;
-    border: 1px solid var(--line);
-    border-radius: 20px;
-    padding: 8px 18px;
-    cursor: pointer;
-    transition: all 0.15s ease;
-  }
-  .archive-toggle:hover { color: var(--text); border-color: #3a4457; }
-
   @media (max-width: 480px) {
-    header { flex-direction: column; gap: 14px; }
-    .status-block { text-align: left; }
+    .page-head { flex-direction: column; align-items: flex-start; }
+    .hg-row { flex-direction: column; gap: 4px; }
+    .hg-label { width: auto; border-left: none; padding-left: 0; }
   }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <div class="title-block">
-      <h1>매체 공지 모니터</h1>
-      <div class="sub" id="last-checked">마지막 확인 —</div>
-    </div>
-    <div class="status-block">
-      <div class="live-badge"><span class="live-dot"></span>LIVE</div>
-      <div class="new-count" id="new-count"></div>
-    </div>
-  </header>
-
-  <div id="hero-area"></div>
-  <div id="weekly-area"></div>
-
-  <div class="archive-toggle-wrap">
-    <button class="archive-toggle" id="archive-toggle">전체 보관함 펼치기 ▾</button>
+<div class="topbar">
+  <div class="brand">매체 공지 <span class="dot">모니터</span></div>
+  <div class="tab-nav" id="tab-nav">
+    <button class="tab-btn active" data-tab="news">매체소식</button>
+    <button class="tab-btn" data-tab="products">매체 상품소개서</button>
   </div>
-  <div id="archive-area" style="display:none;">
-    <div class="filters" id="filters"></div>
-    <div id="pinned-area"></div>
-    <div id="feed">
-      <div class="empty-state">
-        아직 수집된 데이터가 없어요. 먼저 크롤러를 실행해주세요.
-        <code>python crawler.py</code>
-      </div></div>
+  <div class="live-chip"><span class="pulse-dot"></span>LIVE · <span id="new-count-chip"></span></div>
+</div>
+<div class="wrap">
+  <div id="panel-news">
+    <div class="page-head">
+      <div>
+        <h1>신규매체 소식</h1>
+        <div class="page-sub" id="last-checked">마지막 확인 —</div>
+      </div>
+    </div>
+
+    <div id="highlight-area"></div>
+    <div id="source-grid" class="source-grid"></div>
+
+    <div class="archive-toggle-wrap">
+      <button class="archive-toggle" id="archive-toggle">전체 보관함 펼치기 ▾</button>
+    </div>
+    <div id="archive-area" style="display:none;">
+      <div class="filters" id="filters"></div>
+      <div id="pinned-area"></div>
+      <div id="feed">
+        <div class="empty-state">
+          아직 수집된 데이터가 없어요. 먼저 크롤러를 실행해주세요.
+          <code>python crawler.py</code>
+        </div></div>
+    </div>
+  </div>
+
+  <div id="panel-products" style="display:none;">
+    <div class="page-head">
+      <div>
+        <h1>매체 상품소개서</h1>
+        <div class="page-sub" id="products-last-updated">최근 업데이트 —</div>
+      </div>
+    </div>
+    <div id="product-list" style="display:flex; flex-direction:column; gap:10px;"></div>
   </div>
 </div>
 
@@ -446,6 +513,8 @@ const PLATFORM_CLASS = {
   '나스미디어 뉴스클리핑': 'nasmedia',
   '나스미디어 광고상품업데이트': 'nasmedia',
 };
+const HIGHLIGHT_PLATFORM = '나스미디어 광고상품업데이트';
+const SOURCE_ORDER = ['나스미디어 뉴스클리핑', '네이버 GFA', 'NOSP', '카카오모먼트', '메타 for Business'];
 
 let allNotices = [];
 let activeFilter = '전체';
@@ -461,26 +530,6 @@ function escapeHTML(s) {
 }
 
 function cardHTML(n) {
-  if (n.excerpt) {
-    const platformsHTML = (n.platforms || []).map(p => `<span class="platform-chip">${escapeHTML(p)}</span>`).join('');
-    return `
-      <a class="page-card" href="${n.url}" target="_blank" rel="noopener">
-        <div class="page-eyebrow">
-          <span>🗒️ 나스미디어</span>
-          <span class="divider">·</span>
-          <span class="cat">${escapeHTML(n.category)}</span>
-          ${n.is_new ? '<span class="new-flag">NEW</span>' : ''}
-        </div>
-        <div class="page-title">${escapeHTML(n.title)}</div>
-        ${platformsHTML ? `<div class="page-platforms">${platformsHTML}</div>` : ''}
-        <p class="page-excerpt">${escapeHTML(n.excerpt)}</p>
-        <div class="page-footer">
-          <span>${n.date}</span>
-          <span class="open-link">원문 보기 ↗</span>
-        </div>
-      </a>`;
-  }
-
   return `
     <a class="notice-card ${n.is_pinned ? 'pinned' : ''}" href="${n.url}" target="_blank" rel="noopener">
       <div class="card-top">
@@ -542,55 +591,143 @@ function renderFeed() {
   `).join('');
 }
 
-function renderHero() {
-  const heroArea = document.getElementById('hero-area');
-  const clippings = allNotices
-    .filter(n => n.platform === '나스미디어 뉴스클리핑')
-    .sort((a, b) => b.date.localeCompare(a.date));
-
-  if (!clippings.length) { heroArea.innerHTML = ''; return; }
-
-  const hero = clippings[0];
-  const platformsHTML = (hero.platforms || []).map(p => `<span class="platform-chip">${escapeHTML(p)}</span>`).join('');
-
-  heroArea.innerHTML = `
-    <div class="hero-label"><span>📌 이번 주 브리핑</span><span class="line"></span></div>
-    <a class="hero-card" href="${hero.url}" target="_blank" rel="noopener">
-      <div class="hero-eyebrow">
-        <span>🗒️ 나스미디어 뉴스클리핑</span>
-        ${hero.is_new ? '<span class="week-badge">이번 주 발행</span>' : ''}
-      </div>
-      <div class="hero-title">${escapeHTML(hero.title)}</div>
-      ${platformsHTML ? `<div class="hero-platforms">${platformsHTML}</div>` : ''}
-      <p class="hero-excerpt">${escapeHTML(hero.excerpt || '')}</p>
-      <div class="hero-footer">
-        <span>${hero.date} 발행</span>
-        <span class="open-link">전체 클리핑 읽기 ↗</span>
-      </div>
-    </a>`;
-}
-
-function renderWeekly() {
-  const weeklyArea = document.getElementById('weekly-area');
+function renderHighlight() {
+  const area = document.getElementById('highlight-area');
   const items = allNotices
-    .filter(n => n.is_new && n.platform !== '나스미디어 뉴스클리핑')
-    .sort((a, b) => b.date.localeCompare(a.date));
+    .filter(n => n.platform === HIGHLIGHT_PLATFORM)
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, 12);
 
-  const listHTML = items.length
-    ? items.map(n => `
-        <a class="weekly-item" href="${n.url}" target="_blank" rel="noopener">
-          <span class="platform-tag ${PLATFORM_CLASS[n.platform] || 'common'}">${escapeHTML(n.platform)}</span>
-          <span class="wi-title">${escapeHTML(n.title)}</span>
-          <span class="new-flag">NEW</span>
-        </a>`).join('')
-    : '<div class="weekly-empty">이번 주 다른 매체 새 소식은 없어요.</div>';
+  if (!items.length) { area.innerHTML = ''; return; }
 
-  weeklyArea.innerHTML = `
-    <div class="weekly-section">
-      <div class="weekly-title">그 외 이번 주 새 소식 (${items.length}건)</div>
-      <div class="weekly-list">${listHTML}</div>
+  const groups = {};
+  items.forEach(n => {
+    const key = (n.platforms && n.platforms.length) ? n.platforms[0] : '기타';
+    (groups[key] = groups[key] || []).push(n);
+  });
+
+  const rowsHTML = Object.keys(groups).map(label => `
+    <div class="hg-row">
+      <div class="hg-label">${escapeHTML(label)}</div>
+      <div class="hg-items">
+        ${groups[label].map(n => `
+          <a class="hg-item" href="${n.url}" target="_blank" rel="noopener">
+            <span class="hi-title">${escapeHTML(n.title)}</span>
+            ${n.is_new ? '<span class="hi-new">NEW</span>' : ''}
+          </a>`).join('')}
+      </div>
+    </div>`).join('');
+
+  area.innerHTML = `
+    <div class="card">
+      <div class="highlight-head">
+        <span class="highlight-icon">🗞️</span>
+        <span class="htitle">${escapeHTML(HIGHLIGHT_PLATFORM)}</span>
+      </div>
+      <div class="highlight-sub">${escapeHTML(items[0].title)}</div>
+      <div class="highlight-meta">최근 업데이트 · ${items[0].date} · 언급 매체별로 묶어서 보여드려요</div>
+      <div class="highlight-groups">${rowsHTML}</div>
     </div>`;
 }
+
+function renderSourceGrid() {
+  const grid = document.getElementById('source-grid');
+  const platforms = [...new Set(allNotices.map(n => n.platform))]
+    .filter(p => p !== HIGHLIGHT_PLATFORM);
+  platforms.sort((a, b) => {
+    const ia = SOURCE_ORDER.indexOf(a), ib = SOURCE_ORDER.indexOf(b);
+    return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+  });
+
+  grid.innerHTML = platforms.map(platform => {
+    const items = allNotices
+      .filter(n => n.platform === platform)
+      .sort((a, b) => b.date.localeCompare(a.date))
+      .slice(0, 3);
+
+    const itemsHTML = items.length
+      ? items.map(n => `
+          <div class="source-item">
+            <div class="si-title-row">
+              <a class="si-title" href="${n.url}" target="_blank" rel="noopener">${escapeHTML(n.title)}</a>
+              ${n.is_new ? '<span class="si-new">NEW</span>' : ''}
+            </div>
+            <div class="si-meta">${escapeHTML(n.category)} · ${n.date}</div>
+            ${n.excerpt ? `<p class="si-excerpt">${escapeHTML(n.excerpt)}</p>` : ''}
+          </div>`).join('')
+      : '<div class="source-empty">최근 소식이 없어요.</div>';
+
+    return `
+      <div class="source-card">
+        <div class="source-head">
+          <span class="source-swatch" style="background:var(--${PLATFORM_CLASS[platform] || 'common'})"></span>
+          <span class="source-name">${escapeHTML(platform)}</span>
+          <span class="source-count">${items.length}건</span>
+        </div>
+        ${itemsHTML}
+      </div>`;
+  }).join('');
+}
+
+function renderProducts(products) {
+  const list = document.getElementById('product-list');
+  if (!products.length) {
+    list.innerHTML = `
+      <div class="empty-state">
+        아직 등록된 상품소개서가 없어요.<br>manual_input/products_raw.json 을 작성한 뒤 실행해주세요.
+        <code>python manage_products.py</code>
+      </div>`;
+    return;
+  }
+
+  list.innerHTML = products.map(p => `
+    <div class="product-card">
+      <div class="product-head">
+        <span class="product-swatch" style="background:var(--${PLATFORM_CLASS[p.platform] || 'common'})"></span>
+        <span class="product-name">${escapeHTML(p.platform)}</span>
+        <span class="product-category">${escapeHTML(p.category)}</span>
+        <span class="product-summary">${escapeHTML(p.summary)}</span>
+        <span class="product-chevron">▾</span>
+      </div>
+      <div class="product-detail">
+        ${p.description ? `<p class="product-desc">${escapeHTML(p.description)}</p>` : ''}
+        ${(p.features || []).length ? `<ul class="product-features">${p.features.map(f => `<li>${escapeHTML(f)}</li>`).join('')}</ul>` : ''}
+        <div class="product-footer">
+          <span>${p.updated_at ? '최근 업데이트 ' + p.updated_at : ''}</span>
+          ${p.link ? `<a class="product-link" href="${p.link}" target="_blank" rel="noopener">자세히 보기 ↗</a>` : ''}
+        </div>
+      </div>
+    </div>`).join('');
+
+  list.querySelectorAll('.product-card').forEach(card => {
+    card.querySelector('.product-head').addEventListener('click', () => {
+      card.classList.toggle('open');
+    });
+  });
+}
+
+document.getElementById('tab-nav').addEventListener('click', (e) => {
+  const btn = e.target.closest('.tab-btn');
+  if (!btn) return;
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b === btn));
+  const isNews = btn.dataset.tab === 'news';
+  document.getElementById('panel-news').style.display = isNews ? 'block' : 'none';
+  document.getElementById('panel-products').style.display = isNews ? 'none' : 'block';
+});
+
+fetch('data/products.json')
+  .then(res => {
+    if (!res.ok) throw new Error('not found');
+    return res.json();
+  })
+  .then(data => {
+    const products = data.products || [];
+    document.getElementById('products-last-updated').textContent = data.generated_at
+      ? '최근 업데이트 — ' + formatKST(data.generated_at)
+      : '최근 업데이트 —';
+    renderProducts(products);
+  })
+  .catch(() => renderProducts([]));
 
 document.getElementById('archive-toggle').addEventListener('click', () => {
   const area = document.getElementById('archive-area');
@@ -609,12 +746,12 @@ fetch('data/notices.json')
     allNotices = data.notices || [];
     document.getElementById('last-checked').textContent = '마지막 확인 — ' + formatKST(data.generated_at);
     const newCount = data.new_count || 0;
-    document.getElementById('new-count').innerHTML = newCount > 0
+    document.getElementById('new-count-chip').innerHTML = newCount > 0
       ? `새 소식 <b>${newCount}</b>건`
       : '새 소식 없음';
     const platforms = [...new Set(allNotices.map(n => n.platform))];
-    renderHero();
-    renderWeekly();
+    renderHighlight();
+    renderSourceGrid();
     renderFilters(platforms);
     renderFeed();
   })
