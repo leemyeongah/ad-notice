@@ -36,7 +36,7 @@ NEW_WINDOW_DAYS = 5
 # 메타(Facebook)는 자동 요청을 막아서(400 에러) 여기 넣지 않음 -> merge_meta.py로 반자동 처리
 SOURCES = [
     {"platform": "네이버 GFA", "type": "gfa_json", "url": "https://ads.naver.com/notice?categoryId=148&page=1"},
-    {"platform": "나스미디어 뉴스클리핑", "type": "nasmedia", "category_label": "뉴스클리핑",
+    {"platform": "나스미디어 뉴스클리핑", "type": "nasmedia", "category_label": "뉴스클리핑", "highlight_top_n": 3,
      "url": "https://blog.nasmedia.co.kr/category/%EB%94%94%EC%A7%80%ED%84%B8%20%EB%AF%B8%EB%94%94%EC%96%B4%20%EC%9D%B4%EC%8A%88/%EB%89%B4%EC%8A%A4%ED%81%B4%EB%A6%AC%ED%95%91"},
     {"platform": "나스미디어 광고상품업데이트", "type": "nasmedia", "category_label": "광고 상품 업데이트",
      "url": "https://blog.nasmedia.co.kr/category/%EB%94%94%EC%A7%80%ED%84%B8%20%EB%AF%B8%EB%94%94%EC%96%B4%20%EC%9D%B4%EC%8A%88/%EA%B4%91%EA%B3%A0%20%EC%83%81%ED%92%88%20%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8"},
@@ -76,6 +76,54 @@ def _clean_html_text(raw: str) -> str:
     for k, v in replacements.items():
         text = text.replace(k, v)
     return text.strip()
+
+
+def _clean_html_preserve_bold(raw: str) -> str:
+    """_clean_html_text와 같은 정리를 하되, <b>/<strong>로 감싼 부분(원문에서 실제로
+    굵게 강조된 헤드라인)만 <mark>...</mark>로 남겨서 나중에 대시보드에서 하이라이트로 보여준다."""
+    text = re.sub(r'<(?:b|strong)(?:\s[^>]*)?>', '\x01', raw, flags=re.IGNORECASE)
+    text = re.sub(r'</(?:b|strong)>', '\x02', text, flags=re.IGNORECASE)
+    text = re.sub(r'<[^>]+>', '', text)
+    replacements = {
+        '&middot;': '·', '&hellip;': '…', '&lsquo;': '‘', '&rsquo;': '’',
+        '&ldquo;': '“', '&rdquo;': '”', '&amp;': '&', '&nbsp;': ' ',
+        '&quot;': '"', '&#39;': "'", '&lt;': '<', '&gt;': '>',
+    }
+    for k, v in replacements.items():
+        text = text.replace(k, v)
+    text = text.replace('\x01', '<mark>').replace('\x02', '</mark>')
+    return re.sub(r'\s+', ' ', text).strip()
+
+
+def fetch_highlighted_excerpt(entry_url: str, max_len: int = 550) -> str:
+    """뉴스클리핑 개별 글 페이지에서 실제로 <b> 처리된 헤드라인을 살린 요약을 만든다.
+    카테고리 목록 페이지의 excerpt는 서식이 다 빠진 평문이라 여기서 따로 만든다.
+    실패해도 조용히 빈 문자열을 돌려주고, 호출부에서는 원래 평문 excerpt를 그대로 쓴다."""
+    try:
+        raw_html = fetch(entry_url)
+    except requests.RequestException:
+        return ""
+
+    marker_idx = raw_html.find('id="article-view"')
+    if marker_idx == -1:
+        return ""
+    tag_start = raw_html.rfind('<', 0, marker_idx)
+    if tag_start == -1:
+        return ""
+    chunk = raw_html[tag_start:tag_start + 20000]
+    chunk = chunk[:chunk.rfind('>') + 1]
+
+    text = _clean_html_preserve_bold(chunk)
+    text = re.sub(r'\s*#디지털미디어\s*', ' ', text)
+    text = re.sub(r'(?:#\S+\s*){2,}(?=📢)', '', text)
+    text = re.sub(r'\s{2,}', ' ', text).strip()
+
+    if len(text) > max_len:
+        text = text[:max_len]
+        if text.count('<mark>') > text.count('</mark>'):
+            text += '</mark>'
+        text += '…'
+    return text
 
 
 def _detect_platforms(text: str):
@@ -161,10 +209,14 @@ def extract_rss_notices(raw_xml: str):
     return notices
 
 
-def extract_nasmedia_notices(raw_html: str, category_label: str = ""):
+def extract_nasmedia_notices(raw_html: str, category_label: str = "", highlight_top_n: int = 0):
     """나스미디어 블로그 카테고리 목록 페이지 파싱 (뉴스클리핑/광고 상품 업데이트 등 공통).
     URL 슬러그 형식이 카테고리마다 달라서(YYYYMMDD-... 나 YYYYMM... 등) 슬러그 날짜는 안 쓰고,
-    화면에 보이는 게시일(meta date)만 date/NEW 판정 기준으로 사용."""
+    화면에 보이는 게시일(meta date)만 date/NEW 판정 기준으로 사용.
+
+    highlight_top_n > 0이면 최신 글부터 그만큼 개별 글 페이지를 추가로 열어서
+    실제 굵게 강조된 헤드라인이 살아있는 excerpt로 바꿔치기한다(대시보드에 최근 몇 건만 보여주므로
+    전체 목록을 다 열어볼 필요는 없음)."""
     notices = []
     now_kst = datetime.now(KST)
 
@@ -200,6 +252,12 @@ def extract_nasmedia_notices(raw_html: str, category_label: str = ""):
             "is_new": is_new,
             "url": "https://blog.nasmedia.co.kr" + m.group("href"),
         })
+
+    for notice in notices[:highlight_top_n]:
+        highlighted = fetch_highlighted_excerpt(notice["url"])
+        if highlighted:
+            notice["excerpt"] = highlighted
+
     return notices
 
 
@@ -260,7 +318,7 @@ def run():
             if source_type == "rss":
                 notices = extract_rss_notices(raw)
             elif source_type == "nasmedia":
-                notices = extract_nasmedia_notices(raw, source.get("category_label", ""))
+                notices = extract_nasmedia_notices(raw, source.get("category_label", ""), source.get("highlight_top_n", 0))
             elif source_type == "toss_faq":
                 notices = extract_toss_faq_notices(raw)
             else:
