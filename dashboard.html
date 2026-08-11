@@ -25,6 +25,7 @@
     --kakao: #a3760a;
     --meta: #3b6fe0;
     --nasmedia: #e0562f;
+    --toss: #0064ff;
   }
   * { box-sizing: border-box; }
   body {
@@ -410,6 +411,7 @@
   .platform-tag.kakao { background: #a3760a14; color: var(--kakao); }
   .platform-tag.meta { background: #3b6fe014; color: var(--meta); }
   .platform-tag.nasmedia { background: #e0562f14; color: var(--nasmedia); }
+  .platform-tag.toss { background: #0064ff14; color: var(--toss); }
 
   .cat-label {
     font-size: 11px;
@@ -512,9 +514,10 @@ const PLATFORM_CLASS = {
   '메타 for Business': 'meta',
   '나스미디어 뉴스클리핑': 'nasmedia',
   '나스미디어 광고상품업데이트': 'nasmedia',
+  '토스애즈': 'toss',
 };
 const HIGHLIGHT_PLATFORM = '나스미디어 광고상품업데이트';
-const SOURCE_ORDER = ['나스미디어 뉴스클리핑', '네이버 GFA', 'NOSP', '카카오모먼트', '메타 for Business'];
+const SOURCE_ORDER = ['나스미디어 뉴스클리핑', '네이버 GFA', 'NOSP', '카카오모먼트', '메타 for Business', '토스애즈'];
 
 let allNotices = [];
 let activeFilter = '전체';

@@ -40,6 +40,10 @@ SOURCES = [
      "url": "https://blog.nasmedia.co.kr/category/%EB%94%94%EC%A7%80%ED%84%B8%20%EB%AF%B8%EB%94%94%EC%96%B4%20%EC%9D%B4%EC%8A%88/%EB%89%B4%EC%8A%A4%ED%81%B4%EB%A6%AC%ED%95%91"},
     {"platform": "나스미디어 광고상품업데이트", "type": "nasmedia", "category_label": "광고 상품 업데이트",
      "url": "https://blog.nasmedia.co.kr/category/%EB%94%94%EC%A7%80%ED%84%B8%20%EB%AF%B8%EB%94%94%EC%96%B4%20%EC%9D%B4%EC%8A%88/%EA%B4%91%EA%B3%A0%20%EC%83%81%ED%92%88%20%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8"},
+    # 토스애즈는 페이지에 직접 API가 안 박혀있고 자바스크립트로 불러오지만, 그 API 자체는 인증 없이 열려있어서 바로 호출
+    # (workspace_id=35, category_id=223 = "시스템 공지" 카테고리. 231은 FAQ라서 제외)
+    {"platform": "토스애즈", "type": "toss_faq",
+     "url": "https://faq-editor-api.toss.im/api/v1/workspaces/35/faq/?with_deleted=false&page_size=20&order_by=-is_pinned,-created_time&page=1&category_id=223"},
     # {"platform": "NOSP", "type": "gfa_json", "url": "..."},  # URL 확인되면 추가
 ]
 
@@ -199,6 +203,36 @@ def extract_nasmedia_notices(raw_html: str, category_label: str = ""):
     return notices
 
 
+def extract_toss_faq_notices(raw_json: str):
+    """토스애즈 공지사항 API(workspaces/{id}/faq/) 파싱. isNew 개념이 없어서
+    최근 NEW_WINDOW_DAYS일 이내 발행된 글만 NEW로 표시한다."""
+    data = json.loads(raw_json)
+    now_kst = datetime.now(KST)
+    notices = []
+
+    for item in data.get("success", {}).get("results", []):
+        created_raw = item.get("created_time") or ""
+        try:
+            pub_dt = datetime.fromisoformat(created_raw).replace(tzinfo=KST)
+            date_str = pub_dt.strftime("%Y-%m-%d")
+            is_new = (now_kst - pub_dt) <= timedelta(days=NEW_WINDOW_DAYS)
+        except ValueError:
+            date_str = ""
+            is_new = False
+
+        notice_id = item.get("id")
+        notices.append({
+            "id": notice_id,
+            "title": (item.get("title") or "").strip(),
+            "category": "공지",
+            "date": date_str,
+            "is_pinned": bool(item.get("is_pinned", False)),
+            "is_new": is_new,
+            "url": f"https://tossads.toss.im/notice/{notice_id}",
+        })
+    return notices
+
+
 def fetch(url: str) -> str:
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
@@ -227,10 +261,15 @@ def run():
                 notices = extract_rss_notices(raw)
             elif source_type == "nasmedia":
                 notices = extract_nasmedia_notices(raw, source.get("category_label", ""))
+            elif source_type == "toss_faq":
+                notices = extract_toss_faq_notices(raw)
             else:
                 notices = extract_gfa_notices(raw)
         except ElementTree.ParseError as e:
             print(f"[에러] {platform} 파싱 실패 (RSS XML이 아닌 것 같아요): {e}")
+            continue
+        except (json.JSONDecodeError, KeyError) as e:
+            print(f"[에러] {platform} 파싱 실패 (예상한 JSON 형식이 아닌 것 같아요): {e}")
             continue
 
         for n in notices:

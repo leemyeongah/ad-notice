@@ -1,7 +1,33 @@
 {
-  "generated_at": "2026-08-10T12:56:40+09:00",
-  "new_count": 10,
+  "generated_at": "2026-08-11T15:49:22+09:00",
+  "new_count": 12,
   "notices": [
+    {
+      "id": "/entry/20260803-news-clipping",
+      "title": "2026년 8월 3일주 뉴스클리핑",
+      "excerpt": "한 주 간의 디지털 미디어와 마케팅 관련 주요 뉴스를 모아 전해드립니다.네이버·카카오, 2분기 호실적 속 AI 수익화 격돌네이버·카카오가 올해 2분기 나란히 성장세를 기록하며 AI 사업의 본격적인 수익화 단계 진입을 선언함. 네이버는 AI 탭과 AI 브리핑 광고를 앞세운 '실행형 AI'를 통해 광고 및 쇼핑 사업화에 집중하고 있음. 반면 카카오는 카카오톡 기반으로 이용자 의도를 파악해 거래로 연결하는 '의도경제' 서비스를 확장 중임. 🔗'검색·결제' vs '톡'…AI 수익화 길 갈렸다네이버, '채널 검색' 출시…AI 기반 숏폼 생태계 확장네이버가 숏폼 창작자의 채널 정보와 콘텐츠를 한데 모아 보여주는 '채널 검색' 서비스를 출시함. 이는 이용자의 개별 콘텐츠 관심을 창작자 탐색과 소비로 이..",
+      "platforms": [
+        "네이버",
+        "카카오톡",
+        "카카오"
+      ],
+      "category": "뉴스클리핑",
+      "date": "2026-08-10",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://blog.nasmedia.co.kr/entry/20260803-news-clipping",
+      "platform": "나스미디어 뉴스클리핑"
+    },
+    {
+      "id": 25492,
+      "title": "[중요] 일주일 방문 미션(협력광고) 오픈 안내",
+      "category": "공지",
+      "date": "2026-08-10",
+      "is_pinned": true,
+      "is_new": true,
+      "url": "https://tossads.toss.im/notice/25492",
+      "platform": "토스애즈"
+    },
     {
       "id": "/entry/20260727-news-clipping",
       "title": "2026년 7월 27일주 뉴스클리핑",
@@ -62,6 +88,16 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
+      "id": 25392,
+      "title": "'도달률 높이기' 캠페인 목표 종료 안내",
+      "category": "공지",
+      "date": "2026-07-26",
+      "is_pinned": true,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25392",
+      "platform": "토스애즈"
+    },
+    {
       "id": 100936,
       "title": "[상품] 카카오톡 브랜드픽 집행 기준 확대 및 등록 화면 개선 안내 (07/28)",
       "category": "상품/서비스",
@@ -100,6 +136,16 @@
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
       "platform": "카카오모먼트",
       "is_new": true
+    },
+    {
+      "id": 25322,
+      "title": "[중요] 신규 네이티브 광고 상품 오픈 안내",
+      "category": "공지",
+      "date": "2026-07-22",
+      "is_pinned": true,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25322",
+      "platform": "토스애즈"
     },
     {
       "id": 100926,
@@ -195,6 +241,16 @@
       "platform": "네이버 GFA"
     },
     {
+      "id": 25308,
+      "title": "라이브마켓 광고 지표 변경 안내",
+      "category": "공지",
+      "date": "2026-07-09",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25308",
+      "platform": "토스애즈"
+    },
+    {
       "id": 32742,
       "title": "디스플레이 광고 상품 성과 보고서 내 일부 기능 변경 안내",
       "category": "디스플레이 광고",
@@ -222,6 +278,26 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
+      "id": 25300,
+      "title": "전환 캠페인 검수 기준 적용 안내",
+      "category": "공지",
+      "date": "2026-07-06",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25300",
+      "platform": "토스애즈"
+    },
+    {
+      "id": 25266,
+      "title": "디스플레이 광고 소재 등록 규격/정책 변경 안내",
+      "category": "공지",
+      "date": "2026-06-30",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25266",
+      "platform": "토스애즈"
+    },
+    {
       "id": 32348,
       "title": "(수정) 디스플레이 광고 내 광고계정·캠페인 단위 일정·결과·결과당비용 보고서 지표 제공 종료 안내",
       "category": "디스플레이 광고",
@@ -244,6 +320,16 @@
       "is_new": false,
       "url": "https://blog.nasmedia.co.kr/entry/20260622-news-clipping",
       "platform": "나스미디어 뉴스클리핑"
+    },
+    {
+      "id": 25264,
+      "title": "버튼 누르기 광고 ‘노출·CTR’ 지표 변경 안내",
+      "category": "공지",
+      "date": "2026-06-29",
+      "is_pinned": true,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25264",
+      "platform": "토스애즈"
     },
     {
       "id": "/entry/2606adissue",
@@ -298,6 +384,16 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
+      "id": 25248,
+      "title": "디스플레이 광고 타겟팅 기능/정책 개편 안내 (오토 타겟팅 BETA 출시 · 미성년 타겟 범위 추가 · 성인 타겟팅 추가 · 10대 인지도 높이기 목표 종료)",
+      "category": "공지",
+      "date": "2026-06-21",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25248",
+      "platform": "토스애즈"
+    },
+    {
       "id": 32311,
       "title": "[신규 노출 영역] 네이버 > MO > 증권 > 가상자산 안내 (6/25)",
       "category": "디스플레이 광고",
@@ -306,6 +402,16 @@
       "is_new": false,
       "url": "https://ads.naver.com/notice/32311",
       "platform": "네이버 GFA"
+    },
+    {
+      "id": 25220,
+      "title": "직접 입찰의 입찰가 선정 방식 변경 안내",
+      "category": "공지",
+      "date": "2026-06-16",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25220",
+      "platform": "토스애즈"
     },
     {
       "id": "/entry/20260608-news-clipping",
@@ -420,6 +526,36 @@
       "platform": "나스미디어 광고상품업데이트"
     },
     {
+      "id": 25206,
+      "title": "[중요] 토스애즈 디스플레이 광고가 새롭게 개편됩니다",
+      "category": "공지",
+      "date": "2026-05-29",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25206",
+      "platform": "토스애즈"
+    },
+    {
+      "id": 25200,
+      "title": "잠재고객 모으기 웹훅 연동 기능 안내",
+      "category": "공지",
+      "date": "2026-05-29",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25200",
+      "platform": "토스애즈"
+    },
+    {
+      "id": 25198,
+      "title": "채널톡 상담  운영 시간 변경 안내",
+      "category": "공지",
+      "date": "2026-05-29",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25198",
+      "platform": "토스애즈"
+    },
+    {
       "id": "/entry/20260518-news-clipping",
       "title": "2026년 5월 18일주 뉴스클리핑",
       "excerpt": "한 주 간의 디지털 미디어와 마케팅 관련 주요 뉴스를 모아 전해드립니다.구글, 검색창 25년 만에 전면 개편…AI 검색 경험 본격 통합구글이 I/O 2026에서 키워드 중심의 기존 검색창을 대화·음성·이미지·문서 첨부가 가능한 AI 검색창으로 개편함. 이용자 검색 행태가 긴 질문과 후속 대화 중심으로 변화하는 가운데, 24시간 정보 모니터링 에이전트와 제너러티브 UI, 미니 앱 기능까지 더하며 검색을 에이전트형 플랫폼으로 확장하는 흐름임🔗구글 검색창, 25년만에 바뀐다…키워드 아닌 대화·음성으로 확장네이버, 브랜드 검색 광고 개편…프리미엄 상품 중심 재편 네이버가 검색 결과 상단에 노출되는 브랜드 검색 광고를 기존 32개 템플릿에서 7개 주요 템플릿으로 통합하고, 광고 소재 확대와 성별 타..",
@@ -435,19 +571,34 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
-      "id": "/entry/20260511-news-clipping",
-      "title": "2026년 5월 11일주 뉴스클리핑",
-      "excerpt": "한 주 간의 디지털 미디어와 마케팅 관련 주요 뉴스를 모아 전해드립니다.KT나스미디어, 2026 'NPR 타깃 인포그래픽스'로 세대별 디지털 소비 행태 공개 KT나스미디어가 2026 NPR 타깃 인포그래픽스 보고서를 통해 10대부터 50대까지 세대별 콘텐츠 소비·쇼핑·광고 반응·구독 서비스 이용 행태를 분석. 10대는 숏폼과 SNS 기반 소통, 20대는 생성형 AI 이용, 30대는 구매 전 블로그·카페·커뮤니티 후기 탐색과 유료 구독 활용이 두드러지며 세대별 디지털 소비 방식이 뚜렷하게 분화되는 흐름으로 나타남🔗 KT나스미디어 ‘2026 타깃 인포그래픽스’ 통합본 다운로드메타 AI, 한국 출시…페이스북·인스타그램 기반 무료 AI 경험 확대메타가 자체 대규모 언어모델 뮤즈 스파크 기반의 생성..",
-      "platforms": [
-        "인스타그램",
-        "메타"
-      ],
-      "category": "뉴스클리핑",
-      "date": "2026-05-18",
+      "id": 25174,
+      "title": "라이브 마켓 베이직 상품 반값 할인 프로모션 연장 안내",
+      "category": "공지",
+      "date": "2026-05-20",
       "is_pinned": false,
       "is_new": false,
-      "url": "https://blog.nasmedia.co.kr/entry/20260511-news-clipping",
-      "platform": "나스미디어 뉴스클리핑"
+      "url": "https://tossads.toss.im/notice/25174",
+      "platform": "토스애즈"
+    },
+    {
+      "id": 25140,
+      "title": "광고 상품 위약금 정책 변경 안내",
+      "category": "공지",
+      "date": "2026-05-06",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25140",
+      "platform": "토스애즈"
+    },
+    {
+      "id": 25116,
+      "title": "배너 광고 성/연령 성과 제공 방식 변경 안내",
+      "category": "공지",
+      "date": "2026-04-27",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25116",
+      "platform": "토스애즈"
     },
     {
       "id": "/entry/2604adissue",
@@ -467,6 +618,26 @@
       "is_new": false,
       "url": "https://blog.nasmedia.co.kr/entry/2604adissue",
       "platform": "나스미디어 광고상품업데이트"
+    },
+    {
+      "id": 25088,
+      "title": "광고 계정 및 비즈니스 그룹 선택 방식 변경 안내",
+      "category": "공지",
+      "date": "2026-04-21",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25088",
+      "platform": "토스애즈"
+    },
+    {
+      "id": 25072,
+      "title": "Toss Ads 광고 어뷰징 행위 제한 정책 안내",
+      "category": "공지",
+      "date": "2026-04-10",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25072",
+      "platform": "토스애즈"
     },
     {
       "id": "/entry/2603adissue",
@@ -493,6 +664,36 @@
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
       "platform": "카카오모먼트",
       "is_new": true
+    },
+    {
+      "id": 24946,
+      "title": "라이브 마켓 베이직 상품 반값 할인 프로모션 안내",
+      "category": "공지",
+      "date": "2026-03-26",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/24946",
+      "platform": "토스애즈"
+    },
+    {
+      "id": 24802,
+      "title": "토스애즈 모바일 앱 오픈 안내",
+      "category": "공지",
+      "date": "2026-03-09",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/24802",
+      "platform": "토스애즈"
+    },
+    {
+      "id": 24780,
+      "title": "토스 비즈니스 월렛 이관 및 이용약관 개정 안내",
+      "category": "공지",
+      "date": "2026-03-03",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/24780",
+      "platform": "토스애즈"
     },
     {
       "id": "/entry/2602adissue",
