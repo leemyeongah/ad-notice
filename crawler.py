@@ -44,6 +44,11 @@ SOURCES = [
     # (workspace_id=35, category_id=223 = "시스템 공지" 카테고리. 231은 FAQ라서 제외)
     {"platform": "토스애즈", "type": "toss_faq",
      "url": "https://faq-editor-api.toss.im/api/v1/workspaces/35/faq/?with_deleted=false&page_size=20&order_by=-is_pinned,-created_time&page=1&category_id=223"},
+    # 틱톡 for Business 한국어 블로그의 "공지사항" 카테고리. 서버에서 완성된 HTML로 내려와서
+    # 로그인/JS 실행 없이 바로 파싱 가능. 첫 페이지에 나오는 최근 12건 정도만 가져옴
+    # (그 이상 과거 글은 "더 보기"가 로그인 세션이 있어야 동작하는 것으로 보임)
+    {"platform": "틱톡 for Business", "type": "tiktok",
+     "url": "https://ads.tiktok.com/business/ko/blog/category/Announcements"},
     # {"platform": "NOSP", "type": "gfa_json", "url": "..."},  # URL 확인되면 추가
 ]
 
@@ -55,6 +60,15 @@ NASMEDIA_POST_ITEM = re.compile(
     re.DOTALL
 )
 NASMEDIA_NEW_WINDOW_DAYS = 7
+
+TIKTOK_CARD_PATTERN = re.compile(
+    r'<div class="tt4bRevampedStyleSpace articleCard">\s*'
+    r'<a href="(?P<href>/business/ko/blog/[^"]+)"[^>]*class="main">.*?'
+    r'<span class="publishedDate[^"]*">(?P<date>[^<]+)</span>\s*'
+    r'<div class="cardTitle[^"]*">(?P<title>[^<]+)</div>',
+    re.DOTALL
+)
+TIKTOK_DATE_PATTERN = re.compile(r'(\d{1,2})월\s*(\d{1,2}),\s*(\d{4})')
 
 # 광고상품업데이트 등에서 본문 안에 언급된 매체를 자동 태깅하기 위한 키워드 목록
 # (등장 빈도가 흔한 매체 위주, 길이가 긴 이름을 먼저 매칭해서 부분 중복 방지)
@@ -261,6 +275,38 @@ def extract_nasmedia_notices(raw_html: str, category_label: str = "", highlight_
     return notices
 
 
+def extract_tiktok_notices(raw_html: str):
+    """틱톡 for Business 한국어 블로그 "공지사항" 카테고리 페이지 파싱.
+    isNew 개념이 없어서 최근 NEW_WINDOW_DAYS일 이내 발행된 글만 NEW로 표시한다."""
+    notices = []
+    now_kst = datetime.now(KST)
+
+    for m in TIKTOK_CARD_PATTERN.finditer(raw_html):
+        raw_date = m.group("date").strip()
+        date_iso = ""
+        is_new = False
+        date_match = TIKTOK_DATE_PATTERN.match(raw_date)
+        if date_match:
+            mo, d, y = (int(g) for g in date_match.groups())
+            try:
+                pub_dt = datetime(y, mo, d, tzinfo=KST)
+                date_iso = pub_dt.strftime("%Y-%m-%d")
+                is_new = (now_kst - pub_dt) <= timedelta(days=NEW_WINDOW_DAYS)
+            except ValueError:
+                pass
+
+        notices.append({
+            "id": m.group("href"),
+            "title": m.group("title").strip(),
+            "category": "공지사항",
+            "date": date_iso,
+            "is_pinned": False,
+            "is_new": is_new,
+            "url": "https://ads.tiktok.com" + m.group("href"),
+        })
+    return notices
+
+
 def extract_toss_faq_notices(raw_json: str):
     """토스애즈 공지사항 API(workspaces/{id}/faq/) 파싱. isNew 개념이 없어서
     최근 NEW_WINDOW_DAYS일 이내 발행된 글만 NEW로 표시한다."""
@@ -321,6 +367,8 @@ def run():
                 notices = extract_nasmedia_notices(raw, source.get("category_label", ""), source.get("highlight_top_n", 0))
             elif source_type == "toss_faq":
                 notices = extract_toss_faq_notices(raw)
+            elif source_type == "tiktok":
+                notices = extract_tiktok_notices(raw)
             else:
                 notices = extract_gfa_notices(raw)
         except ElementTree.ParseError as e:

@@ -1,7 +1,37 @@
 {
-  "generated_at": "2026-08-11T16:07:13+09:00",
-  "new_count": 12,
+  "generated_at": "2026-08-12T18:20:10+09:00",
+  "new_count": 15,
   "notices": [
+    {
+      "id": 33495,
+      "title": "[신규 노출 영역] 네이버 모바일 페이 > 머니스토리 안내(8/19)",
+      "category": "디스플레이 광고",
+      "date": "2026-08-12",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://ads.naver.com/notice/33495",
+      "platform": "네이버 GFA"
+    },
+    {
+      "id": 33492,
+      "title": "디스플레이 광고 도달 보고서 제공 안내",
+      "category": "디스플레이 광고",
+      "date": "2026-08-12",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://ads.naver.com/notice/33492",
+      "platform": "네이버 GFA"
+    },
+    {
+      "id": 33469,
+      "title": "[디스플레이 광고] 시리즈 > 작품 하단 성과형 광고 유형 추가 안내",
+      "category": "디스플레이 광고",
+      "date": "2026-08-12",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://ads.naver.com/notice/33469",
+      "platform": "네이버 GFA"
+    },
     {
       "id": "/entry/20260803-news-clipping",
       "title": "2026년 8월 3일주 뉴스클리핑",
@@ -368,6 +398,16 @@
       "platform": "나스미디어 광고상품업데이트"
     },
     {
+      "id": "/business/ko/blog/tiktok-symphony-ai-creative-suite",
+      "title": "새로운 크리에이티브 AI 모음인 틱톡 Symphony를 만나보세요",
+      "category": "공지사항",
+      "date": "2026-06-22",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://ads.tiktok.com/business/ko/blog/tiktok-symphony-ai-creative-suite",
+      "platform": "틱톡 for Business"
+    },
+    {
       "id": "/entry/20260615-news-clipping",
       "title": "2026년 6월 15일주 뉴스클리핑",
       "excerpt": "한 주 간의 디지털 미디어와 마케팅 관련 주요 뉴스를 모아 전해드립니다.오픈AI, 한국서 챗GPT 광고 파일럿 시작…무료·Go 요금제 대상 광고 실험 확대 오픈AI가 6월 19일부터 한국에서 챗GPT 무료 및 Go 요금제 성인 이용자를 대상으로 광고 파일럿을 시작함. 광고는 답변과 분리된 스폰서 콘텐츠로 표시되며, 유료 요금제·미성년자·정신건강·정치 등 민감 주제 대화에는 노출하지 않는 방식으로 이용자 신뢰와 광고 경험 관리에 나섬.🔗=오픈AI, 한국서 무료·고(Go) 요금제 대상 '챗GPT 광고 파일럿' 시작유튜브, 한국인 영상·음악 앱 사용시간 1위…넷플릭스·음원 앱 압도올해 1~5월 한국인이 가장 오래 사용한 영상·음악 앱은 유튜브로 월평균 1,136억 분을 기록하며 독주를 이어감. ..",
@@ -462,36 +502,6 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
-      "id": 32024,
-      "title": "[신규 노출 영역] 네이버+ > 카페 게시글 하단 피드 내 이미지피드 광고 노출 안내",
-      "category": "디스플레이 광고",
-      "date": "2026-06-04",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://ads.naver.com/notice/32024",
-      "platform": "네이버 GFA"
-    },
-    {
-      "id": 32011,
-      "title": "[신규 노출 영역] 네이버페이 앱 > 페이펫 미니게임",
-      "category": "디스플레이 광고",
-      "date": "2026-06-04",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://ads.naver.com/notice/32011",
-      "platform": "네이버 GFA"
-    },
-    {
-      "id": 31904,
-      "title": "(수정) '부스트 업' 캠페인 노출 매체 및 성과 지표 안정화 작업 추가 안내",
-      "category": "디스플레이 광고",
-      "date": "2026-06-04",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://ads.naver.com/notice/31904",
-      "platform": "네이버 GFA"
-    },
-    {
       "id": "/entry/20260525-news-clipping",
       "title": "2026년 5월 25일주 뉴스클리핑",
       "excerpt": "한 주 간의 디지털 미디어와 마케팅 관련 주요 뉴스를 모아 전해드립니다.웨이브, OTT 최초 '미디어 커머스' 도입…콘텐츠 시청 중 상품 구매 연계웨이브가 KLPGA·KPGA 골프 중계와 VOD 화면 하단에 관련 상품을 노출하는 ‘미디어 커머스’ 기능을 도입. 첫 협업 브랜드는 올리브영으로, 스포츠 콘텐츠와 연관된 뷰티 상품을 연결해 콘텐츠 시청 경험과 구매 흐름을 결합하려는 전략으로 보임.🔗웨이브, OTT 최초 ‘미디어 커머스’ … 콘텐츠 보며 올리브영 상품 구매네이버, AI 브리핑에 숏폼 클립 노출…AI 검색 콘텐츠 형식 확대네이버가 AI 브리핑에 블로그·카페 글뿐 아니라 숏폼 서비스 ‘클립’ 영상까지 함께 노출하는 방식으로 기능을 고도화. 텍스트 요약 중심의 AI 검색을 영상 기반 설..",
@@ -579,6 +589,26 @@
       "is_new": false,
       "url": "https://tossads.toss.im/notice/25174",
       "platform": "토스애즈"
+    },
+    {
+      "id": "/business/ko/blog/tiktok-one-creative-platform",
+      "title": "틱톡 One: 크리에이터 마케팅을 성공적으로 진행할 수 있는 올인원 크리에이티브 플랫폼",
+      "category": "공지사항",
+      "date": "2026-05-13",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://ads.tiktok.com/business/ko/blog/tiktok-one-creative-platform",
+      "platform": "틱톡 for Business"
+    },
+    {
+      "id": "/business/ko/blog/smart-plus-ai-performance-solution",
+      "title": "Smart+를 사용하여 원하는 방식으로 캠페인을 구축하는 방법",
+      "category": "공지사항",
+      "date": "2026-05-13",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://ads.tiktok.com/business/ko/blog/smart-plus-ai-performance-solution",
+      "platform": "틱톡 for Business"
     },
     {
       "id": 25140,
@@ -696,6 +726,16 @@
       "platform": "토스애즈"
     },
     {
+      "id": "/business/ko/blog/lead-generation-dfo-solution",
+      "title": "고품질 리드를 만드는 가장 확실한 방법, TikTok Lead Generation",
+      "category": "공지사항",
+      "date": "2026-02-27",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://ads.tiktok.com/business/ko/blog/lead-generation-dfo-solution",
+      "platform": "틱톡 for Business"
+    },
+    {
       "id": "/entry/2602adissue",
       "title": "2026년 2월 - 토스, 플랫폼 대시보드 '인사이트 팁' 오픈",
       "excerpt": "2026년 2월 디지털 미디어 애드 이슈월간 디지털 미디어 주요 업데이트를 전해드립니다.#토스토스, 플랫폼 대시보드 '인사이트 팁' 오픈토스가 플랫폼 대시보드에 인사이트 팁 기능을 새로 오픈했습니다. 이번 업데이트는 캠페인 진행 시 KPI를 더 효율적으로 달성할 수 있도록, 실행 가능한 형태의 인사이트를 제공하는 것이 핵심입니다.캠페인·세트가 인사이트 제공 조건을 충족하면 대시보드에 노출되고, 광고그룹을 최적화하는 데 도움이 되는 콘텐츠를 우선순위에 따라 안내해주는 방식이에요. 또한 최소 1주 이상 데이터가 쌓인 캠페인은 팁 적용 전·후 기간의 성과 변화를 함께 확인할 수 있어, 추천을 적용했을 때 실제로 무엇이 달라졌는지를 대시보드 내에서 바로 비교할 수 있도록 설계됐습니다.원문 리포트가 궁금하신가요?..",
@@ -794,6 +834,56 @@
       "platform": "나스미디어 광고상품업데이트"
     },
     {
+      "id": "/business/ko/blog/pangle-event-2025",
+      "title": "게임 비즈니스의 해답, 인스파이어 라운지 2025에서!",
+      "category": "공지사항",
+      "date": "2025-10-27",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://ads.tiktok.com/business/ko/blog/pangle-event-2025",
+      "platform": "틱톡 for Business"
+    },
+    {
+      "id": "/business/ko/blog/korea-us-cross-border",
+      "title": "틱톡 '코리아-US 크로스보더' 런칭: 한국 법인만으로 미국 틱톡샵 입점 가능!",
+      "category": "공지사항",
+      "date": "2025-06-19",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://ads.tiktok.com/business/ko/blog/korea-us-cross-border",
+      "platform": "틱톡 for Business"
+    },
+    {
+      "id": "/business/ko/blog/introducing-search-ads-campaign",
+      "title": "검색 광고 캠페인 소개",
+      "category": "공지사항",
+      "date": "2025-06-03",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://ads.tiktok.com/business/ko/blog/introducing-search-ads-campaign",
+      "platform": "틱톡 for Business"
+    },
+    {
+      "id": "/business/ko/blog/automotive-marketing-101",
+      "title": "틱톡 자동차 광고 소개",
+      "category": "공지사항",
+      "date": "2025-06-03",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://ads.tiktok.com/business/ko/blog/automotive-marketing-101",
+      "platform": "틱톡 for Business"
+    },
+    {
+      "id": "/business/ko/blog/out-of-phone",
+      "title": "TikTok Out of Phone: 이제 틱톡 캠페인이 눈앞에 펼쳐집니다!",
+      "category": "공지사항",
+      "date": "2025-03-03",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://ads.tiktok.com/business/ko/blog/out-of-phone",
+      "platform": "틱톡 for Business"
+    },
+    {
       "id": 18005,
       "title": "네이버 성과형 디스플레이 광고 노출 지면 및 집행 가이드 안내",
       "category": "디스플레이 광고",
@@ -802,6 +892,36 @@
       "is_new": false,
       "url": "https://ads.naver.com/notice/18005",
       "platform": "네이버 GFA"
+    },
+    {
+      "id": "/business/ko/blog/tiktok-image-ads-visual-marketing-guide",
+      "title": "이미지 광고: TikTok에서 스토리를 전달하는 새로운 성장형 방식",
+      "category": "공지사항",
+      "date": "2024-09-13",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://ads.tiktok.com/business/ko/blog/tiktok-image-ads-visual-marketing-guide",
+      "platform": "틱톡 for Business"
+    },
+    {
+      "id": "/business/ko/blog/foryou-summit-korea-2024",
+      "title": "For You Summit Korea 2024, 하던 대로 말고 핫한 데로",
+      "category": "공지사항",
+      "date": "2024-08-25",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://ads.tiktok.com/business/ko/blog/foryou-summit-korea-2024",
+      "platform": "틱톡 for Business"
+    },
+    {
+      "id": "/business/ko/blog/amazon-ads-native-checkout",
+      "title": "앱을 떠나지 않고 TikTok에서 Amazon 광고를 선택하여 쇼핑하세요.",
+      "category": "공지사항",
+      "date": "2024-08-08",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://ads.tiktok.com/business/ko/blog/amazon-ads-native-checkout",
+      "platform": "틱톡 for Business"
     }
   ]
 }

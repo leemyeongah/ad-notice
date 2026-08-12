@@ -26,6 +26,7 @@
     --meta: #3b6fe0;
     --nasmedia: #e0562f;
     --toss: #0064ff;
+    --tiktok: #d0195a;
   }
   * { box-sizing: border-box; }
   body {
@@ -41,6 +42,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px 16px;
     padding: 16px 28px;
     background: var(--panel);
     border-bottom: 1px solid var(--border);
@@ -140,71 +143,125 @@
     margin-bottom: 16px;
   }
 
-  /* ---- highlight card: latest ad-product update grouped by media ---- */
-  .highlight-head {
+  /* ---- search ---- */
+  .search-bar { position: relative; margin-bottom: 16px; }
+  .search-input {
+    width: 100%;
+    font-size: 13.5px;
+    font-family: inherit;
+    padding: 11px 36px 11px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    color: var(--text);
+  }
+  .search-input:focus { outline: none; border-color: var(--accent); }
+  .search-clear {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    color: var(--faint);
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+  }
+
+  /* ---- week picker (나스미디어 뉴스클리핑 발행 주 기준 기간 조회) ---- */
+  .week-picker {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 4px;
+    margin-bottom: 16px;
   }
-  .highlight-icon {
-    width: 22px; height: 22px;
-    border-radius: 6px;
-    background: var(--accent-dim);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 12px;
+  .week-nav-btn {
     flex-shrink: 0;
-  }
-  .highlight-head .htitle { font-weight: 700; font-size: 13.5px; }
-  .highlight-sub {
-    font-size: 15px;
-    font-weight: 700;
-    margin: 6px 0 4px;
-  }
-  .highlight-meta {
-    font-size: 12px;
-    color: var(--faint);
-    margin-bottom: 18px;
-  }
-  .highlight-groups { display: flex; flex-direction: column; gap: 14px; }
-  .hg-row { display: flex; gap: 18px; }
-  .hg-label {
-    flex-shrink: 0;
-    width: 84px;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    color: var(--muted);
     font-size: 13px;
+    cursor: pointer;
+  }
+  .week-nav-btn:hover:not(:disabled) { border-color: #c7ccd6; color: var(--text); }
+  .week-nav-btn:disabled { opacity: 0.35; cursor: default; }
+  .week-select {
+    flex: 1;
+    font-size: 13px;
+    font-family: inherit;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--panel);
+    color: var(--text);
+  }
+
+  /* ---- clipping hero ---- */
+  .clip-hero-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: var(--nasmedia);
+    margin-bottom: 10px;
+  }
+  .clip-hero-title { font-size: 16.5px; font-weight: 800; margin-bottom: 8px; }
+  .clip-hero-excerpt { font-size: 13px; line-height: 1.7; color: var(--muted); margin: 0 0 14px; }
+  .clip-hero-excerpt mark {
+    background: var(--accent-dim);
+    color: var(--accent);
+    font-weight: 700;
+    padding: 0 2px;
+    border-radius: 3px;
+  }
+  .clip-hero-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11.5px;
+    color: var(--faint);
+    padding-top: 12px;
+    border-top: 1px solid var(--border-soft);
+  }
+  .clip-hero-footer a { color: var(--accent); text-decoration: none; font-weight: 600; }
+
+  /* ---- top highlights: 매체별 가장 눈에 띄는 내용 ---- */
+  .th-title-row {
+    font-size: 11.5px;
     font-weight: 700;
     color: var(--accent);
-    padding-left: 12px;
-    border-left: 2px solid var(--border);
+    margin-bottom: 10px;
   }
-  .hg-items {
-    flex: 1;
+  .th-row {
     display: flex;
-    flex-direction: column;
-    gap: 6px;
-    min-width: 0;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--border-soft);
   }
-  .hg-item {
+  .th-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .th-row:first-child { padding-top: 0; }
+  .th-link {
+    flex: 1;
     display: flex;
     align-items: baseline;
     gap: 8px;
+    min-width: 0;
     text-decoration: none;
     color: var(--text);
-    font-size: 13.5px;
   }
-  .hg-item:hover { color: var(--accent); }
-  .hg-item .hi-title {
-    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  .th-link:hover { color: var(--accent); }
+  .th-link .th-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
-  .hg-item .hi-new {
-    flex-shrink: 0;
-    font-size: 10px;
-    font-weight: 700;
-    color: var(--accent);
-    background: var(--accent-dim);
-    padding: 1px 6px;
-    border-radius: 4px;
-  }
+  .th-date { flex-shrink: 0; font-size: 11.5px; color: var(--faint); }
+  .th-empty { font-size: 12.5px; color: var(--faint); padding: 4px 0; }
 
   /* ---- source grid: one report card per platform ---- */
   .source-grid {
@@ -419,6 +476,7 @@
   .platform-tag.meta { background: #3b6fe014; color: var(--meta); }
   .platform-tag.nasmedia { background: #e0562f14; color: var(--nasmedia); }
   .platform-tag.toss { background: #0064ff14; color: var(--toss); }
+  .platform-tag.tiktok { background: #d0195a14; color: var(--tiktok); }
 
   .cat-label {
     font-size: 11px;
@@ -461,9 +519,13 @@
   }
 
   @media (max-width: 480px) {
+    .topbar { padding: 14px 16px; }
+    .brand, .tab-btn, .live-chip { white-space: nowrap; }
+    .live-chip { width: 100%; justify-content: flex-end; }
     .page-head { flex-direction: column; align-items: flex-start; }
-    .hg-row { flex-direction: column; gap: 4px; }
-    .hg-label { width: auto; border-left: none; padding-left: 0; }
+    .week-picker { flex-wrap: wrap; }
+    .week-select { flex-basis: 100%; order: 1; }
+    .product-summary { display: none; }
   }
 </style>
 </head>
@@ -485,8 +547,23 @@
       </div>
     </div>
 
-    <div id="highlight-area"></div>
-    <div id="source-grid" class="source-grid"></div>
+    <div class="search-bar">
+      <input type="text" class="search-input" id="search-input" placeholder="매체 소식 검색 (제목)">
+      <button class="search-clear" id="search-clear">✕</button>
+    </div>
+    <div id="search-results"></div>
+
+    <div id="browse-area">
+      <div class="week-picker">
+        <button class="week-nav-btn" id="week-prev" title="이전 주">◀</button>
+        <select class="week-select" id="week-select"></select>
+        <button class="week-nav-btn" id="week-next" title="다음 주">▶</button>
+      </div>
+
+      <div id="clip-hero-area"></div>
+      <div id="top-highlights-area"></div>
+      <div id="source-grid" class="source-grid"></div>
+    </div>
 
     <div class="archive-toggle-wrap">
       <button class="archive-toggle" id="archive-toggle">전체 보관함 펼치기 ▾</button>
@@ -522,12 +599,15 @@ const PLATFORM_CLASS = {
   '나스미디어 뉴스클리핑': 'nasmedia',
   '나스미디어 광고상품업데이트': 'nasmedia',
   '토스애즈': 'toss',
+  '틱톡 for Business': 'tiktok',
 };
-const HIGHLIGHT_PLATFORM = '나스미디어 광고상품업데이트';
-const SOURCE_ORDER = ['나스미디어 뉴스클리핑', '네이버 GFA', 'NOSP', '카카오모먼트', '메타 for Business', '토스애즈'];
+const CLIPPING_PLATFORM = '나스미디어 뉴스클리핑';
+const SOURCE_ORDER = ['나스미디어 광고상품업데이트', '네이버 GFA', 'NOSP', '카카오모먼트', '메타 for Business', '토스애즈', '틱톡 for Business'];
 
 let allNotices = [];
 let activeFilter = '전체';
+let clippings = [];
+let selectedClipIndex = 0;
 
 function formatKST(isoString) {
   const d = new Date(isoString);
@@ -606,73 +686,172 @@ function renderFeed() {
   `).join('');
 }
 
-function renderHighlight() {
-  const area = document.getElementById('highlight-area');
-  const items = allNotices
-    .filter(n => n.platform === HIGHLIGHT_PLATFORM)
-    .sort((a, b) => b.date.localeCompare(a.date))
-    .slice(0, 12);
+// ---- 기간 조회: 나스미디어 뉴스클리핑 발행 주 기준 ----
+// 클리핑은 그 다음주 월요일에 지난 한 주(월~일)를 정리해서 올라오므로,
+// date(발행일) 기준으로 하루 전까지 역산한 7일을 "그 주"로 본다.
+function parseDateOnly(s) {
+  const [y, m, d] = s.split('-').map(Number);
+  return new Date(Date.UTC(y, m - 1, d));
+}
+function addDays(d, n) {
+  const r = new Date(d);
+  r.setUTCDate(r.getUTCDate() + n);
+  return r;
+}
+function toDateStr(d) {
+  return d.toISOString().slice(0, 10);
+}
+function weekRangeOf(clip) {
+  const end = addDays(parseDateOnly(clip.date), -1);
+  const start = addDays(end, -6);
+  return { start: toDateStr(start), end: toDateStr(end) };
+}
 
-  if (!items.length) { area.innerHTML = ''; return; }
+function renderWeekPicker() {
+  const select = document.getElementById('week-select');
+  select.innerHTML = clippings.map((c, i) =>
+    `<option value="${i}" ${i === selectedClipIndex ? 'selected' : ''}>${escapeHTML(c.title)}</option>`
+  ).join('');
+  document.getElementById('week-prev').disabled = selectedClipIndex >= clippings.length - 1;
+  document.getElementById('week-next').disabled = selectedClipIndex <= 0;
+}
 
-  const groups = {};
-  items.forEach(n => {
-    const key = (n.platforms && n.platforms.length) ? n.platforms[0] : '기타';
-    (groups[key] = groups[key] || []).push(n);
-  });
-
-  const rowsHTML = Object.keys(groups).map(label => `
-    <div class="hg-row">
-      <div class="hg-label">${escapeHTML(label)}</div>
-      <div class="hg-items">
-        ${groups[label].map(n => `
-          <a class="hg-item" href="${n.url}" target="_blank" rel="noopener">
-            <span class="hi-title">${escapeHTML(n.title)}</span>
-            ${n.is_new ? '<span class="hi-new">NEW</span>' : ''}
-          </a>`).join('')}
-      </div>
-    </div>`).join('');
+function renderClippingHero() {
+  const area = document.getElementById('clip-hero-area');
+  const clip = clippings[selectedClipIndex];
+  if (!clip) { area.innerHTML = ''; return; }
 
   area.innerHTML = `
     <div class="card">
-      <div class="highlight-head">
-        <span class="highlight-icon">🗞️</span>
-        <span class="htitle">${escapeHTML(HIGHLIGHT_PLATFORM)}</span>
+      <div class="clip-hero-eyebrow">
+        <span>🗞️ 나스미디어 뉴스클리핑</span>
+        ${clip.is_new ? '<span class="new-flag">NEW</span>' : ''}
       </div>
-      <div class="highlight-sub">${escapeHTML(items[0].title)}</div>
-      <div class="highlight-meta">최근 업데이트 · ${items[0].date} · 언급 매체별로 묶어서 보여드려요</div>
-      <div class="highlight-groups">${rowsHTML}</div>
+      <div class="clip-hero-title">${escapeHTML(clip.title)}</div>
+      ${clip.excerpt ? `<p class="clip-hero-excerpt">${excerptHTML(clip.excerpt)}</p>` : ''}
+      <div class="clip-hero-footer">
+        <span>${clip.date} 발행 · ${clippings.length - selectedClipIndex} / ${clippings.length}주</span>
+        <a href="${clip.url}" target="_blank" rel="noopener">전체 클리핑 읽기 ↗</a>
+      </div>
     </div>`;
 }
 
-function renderSourceGrid() {
+function renderTopHighlights() {
+  const area = document.getElementById('top-highlights-area');
+  const clip = clippings[selectedClipIndex];
+  if (!clip) { area.innerHTML = ''; return; }
+  const { start, end } = weekRangeOf(clip);
+
+  const inRange = allNotices.filter(n =>
+    n.platform !== CLIPPING_PLATFORM && n.date >= start && n.date <= end
+  );
+
+  const byPlatform = {};
+  inRange.forEach(n => {
+    const cur = byPlatform[n.platform];
+    if (!cur || (n.is_pinned && !cur.is_pinned) || (n.is_pinned === cur.is_pinned && n.date > cur.date)) {
+      byPlatform[n.platform] = n;
+    }
+  });
+
+  const platforms = Object.keys(byPlatform).sort((a, b) => {
+    const ia = SOURCE_ORDER.indexOf(a), ib = SOURCE_ORDER.indexOf(b);
+    return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+  });
+
+  const rowsHTML = platforms.length
+    ? platforms.map(p => {
+        const n = byPlatform[p];
+        return `
+          <div class="th-row">
+            <a class="th-link" href="${n.url}" target="_blank" rel="noopener">
+              <span class="platform-tag ${PLATFORM_CLASS[n.platform] || 'common'}">${escapeHTML(n.platform)}</span>
+              <span class="th-text">${escapeHTML(n.title)}</span>
+            </a>
+            <span class="th-date">${n.date}</span>
+          </div>`;
+      }).join('')
+    : '<div class="th-empty">선택한 주간(' + start + ' ~ ' + end + ')에는 다른 매체 소식이 없었어요.</div>';
+
+  area.innerHTML = `
+    <div class="card">
+      <div class="th-title-row">📌 ${start} ~ ${end} · 매체별 가장 눈에 띄는 소식</div>
+      ${rowsHTML}
+    </div>`;
+}
+
+function renderBrowseArea() {
+  const clip = clippings[selectedClipIndex];
+  renderWeekPicker();
+  renderClippingHero();
+  renderTopHighlights();
+  renderSourceGrid(clip ? weekRangeOf(clip) : null);
+}
+
+// ---- 검색 ----
+function renderSearch(query) {
+  const results = document.getElementById('search-results');
+  const browse = document.getElementById('browse-area');
+  const clearBtn = document.getElementById('search-clear');
+  const q = query.trim().toLowerCase();
+
+  clearBtn.style.display = q ? 'block' : 'none';
+
+  if (!q) {
+    results.innerHTML = '';
+    browse.style.display = 'block';
+    return;
+  }
+  browse.style.display = 'none';
+
+  const matched = allNotices
+    .filter(n => n.title.toLowerCase().includes(q))
+    .sort((a, b) => b.date.localeCompare(a.date));
+
+  results.innerHTML = matched.length
+    ? `<div class="th-title-row">"${escapeHTML(query.trim())}" 검색 결과 ${matched.length}건</div>` + matched.map(cardHTML).join('')
+    : `<div class="empty-state">"${escapeHTML(query.trim())}"에 대한 검색 결과가 없어요.</div>`;
+}
+
+function renderSourceGrid(range) {
   const grid = document.getElementById('source-grid');
   const platforms = [...new Set(allNotices.map(n => n.platform))]
-    .filter(p => p !== HIGHLIGHT_PLATFORM);
+    .filter(p => p !== CLIPPING_PLATFORM);
   platforms.sort((a, b) => {
     const ia = SOURCE_ORDER.indexOf(a), ib = SOURCE_ORDER.indexOf(b);
     return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
   });
 
-  grid.innerHTML = platforms.map(platform => {
-    const items = allNotices
-      .filter(n => n.platform === platform)
+  const byPlatform = platforms.map(platform => ({
+    platform,
+    items: allNotices
+      .filter(n => n.platform === platform && (!range || (n.date >= range.start && n.date <= range.end)))
       .sort((a, b) => b.date.localeCompare(a.date))
-      .slice(0, 3);
+      .slice(0, 3),
+  }));
 
-    const itemsHTML = items.length
-      ? items.map(n => `
-          <div class="source-item">
-            <div class="si-title-row">
-              <a class="si-title" href="${n.url}" target="_blank" rel="noopener">${escapeHTML(n.title)}</a>
-              ${n.is_new ? '<span class="si-new">NEW</span>' : ''}
-            </div>
-            <div class="si-meta">${escapeHTML(n.category)} · ${n.date}</div>
-            ${n.excerpt ? `<p class="si-excerpt">${excerptHTML(n.excerpt)}</p>` : ''}
-          </div>`).join('')
-      : '<div class="source-empty">최근 소식이 없어요.</div>';
+  // 기간 조회 중인데 전 매체에 소식이 하나도 없으면, 빈 카드를 잔뜩 늘어놓는 대신 안내 한 줄로 정리한다.
+  if (range && byPlatform.every(p => p.items.length === 0)) {
+    grid.innerHTML = `<div class="th-empty" style="grid-column:1/-1;">선택한 주간(${range.start} ~ ${range.end})에는 매체 소식이 없었어요.</div>`;
+    return;
+  }
 
-    return `
+  grid.innerHTML = byPlatform
+    .filter(p => !range || p.items.length > 0)
+    .map(({ platform, items }) => {
+      const itemsHTML = items.length
+        ? items.map(n => `
+            <div class="source-item">
+              <div class="si-title-row">
+                <a class="si-title" href="${n.url}" target="_blank" rel="noopener">${escapeHTML(n.title)}</a>
+                ${n.is_new ? '<span class="si-new">NEW</span>' : ''}
+              </div>
+              <div class="si-meta">${escapeHTML(n.category)} · ${n.date}</div>
+              ${n.excerpt ? `<p class="si-excerpt">${excerptHTML(n.excerpt)}</p>` : ''}
+            </div>`).join('')
+        : `<div class="source-empty">최근 소식이 없어요.</div>`;
+
+      return `
       <div class="source-card">
         <div class="source-head">
           <span class="source-swatch" style="background:var(--${PLATFORM_CLASS[platform] || 'common'})"></span>
@@ -752,6 +931,23 @@ document.getElementById('archive-toggle').addEventListener('click', () => {
   btn.textContent = isHidden ? '전체 보관함 접기 ▴' : '전체 보관함 펼치기 ▾';
 });
 
+document.getElementById('search-input').addEventListener('input', (e) => renderSearch(e.target.value));
+document.getElementById('search-clear').addEventListener('click', () => {
+  const input = document.getElementById('search-input');
+  input.value = '';
+  renderSearch('');
+});
+document.getElementById('week-select').addEventListener('change', (e) => {
+  selectedClipIndex = Number(e.target.value);
+  renderBrowseArea();
+});
+document.getElementById('week-prev').addEventListener('click', () => {
+  if (selectedClipIndex < clippings.length - 1) { selectedClipIndex++; renderBrowseArea(); }
+});
+document.getElementById('week-next').addEventListener('click', () => {
+  if (selectedClipIndex > 0) { selectedClipIndex--; renderBrowseArea(); }
+});
+
 fetch('data/notices.json')
   .then(res => {
     if (!res.ok) throw new Error('not found');
@@ -765,8 +961,13 @@ fetch('data/notices.json')
       ? `새 소식 <b>${newCount}</b>건`
       : '새 소식 없음';
     const platforms = [...new Set(allNotices.map(n => n.platform))];
-    renderHighlight();
-    renderSourceGrid();
+
+    clippings = allNotices
+      .filter(n => n.platform === CLIPPING_PLATFORM)
+      .sort((a, b) => b.date.localeCompare(a.date));
+    selectedClipIndex = 0;
+
+    renderBrowseArea();
     renderFilters(platforms);
     renderFeed();
   })
