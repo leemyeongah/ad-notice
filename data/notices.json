@@ -1,7 +1,27 @@
 {
-  "generated_at": "2026-08-12T18:20:10+09:00",
+  "generated_at": "2026-08-17T11:20:36+09:00",
   "new_count": 15,
   "notices": [
+    {
+      "id": 25520,
+      "title": "라이브 마켓 CTA 클릭 수 / 클릭자 수 이벤트 집계 방식 개선 안내",
+      "category": "공지",
+      "date": "2026-08-14",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://tossads.toss.im/notice/25520",
+      "platform": "토스애즈"
+    },
+    {
+      "id": 25508,
+      "title": "동영상 캠페인 iOS 재생 수 집계 방식 개선 안내",
+      "category": "공지",
+      "date": "2026-08-13",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://tossads.toss.im/notice/25508",
+      "platform": "토스애즈"
+    },
     {
       "id": 33495,
       "title": "[신규 노출 영역] 네이버 모바일 페이 > 머니스토리 안내(8/19)",
@@ -44,7 +64,7 @@
       "category": "뉴스클리핑",
       "date": "2026-08-10",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://blog.nasmedia.co.kr/entry/20260803-news-clipping",
       "platform": "나스미디어 뉴스클리핑"
     },
@@ -54,7 +74,7 @@
       "category": "공지",
       "date": "2026-08-10",
       "is_pinned": true,
-      "is_new": true,
+      "is_new": false,
       "url": "https://tossads.toss.im/notice/25492",
       "platform": "토스애즈"
     },
@@ -703,26 +723,6 @@
       "is_pinned": false,
       "is_new": false,
       "url": "https://tossads.toss.im/notice/24946",
-      "platform": "토스애즈"
-    },
-    {
-      "id": 24802,
-      "title": "토스애즈 모바일 앱 오픈 안내",
-      "category": "공지",
-      "date": "2026-03-09",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://tossads.toss.im/notice/24802",
-      "platform": "토스애즈"
-    },
-    {
-      "id": 24780,
-      "title": "토스 비즈니스 월렛 이관 및 이용약관 개정 안내",
-      "category": "공지",
-      "date": "2026-03-03",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://tossads.toss.im/notice/24780",
       "platform": "토스애즈"
     },
     {
