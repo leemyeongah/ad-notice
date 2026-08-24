@@ -342,7 +342,7 @@
     padding: 6px 0 14px;
   }
 
-  /* ---- product intro cards ---- */
+  /* ---- product intro rows (tap to open bottom sheet) ---- */
   .product-card {
     background: var(--panel);
     border: 1px solid var(--border);
@@ -355,7 +355,9 @@
     gap: 10px;
     padding: 16px 20px;
     cursor: pointer;
+    transition: background 0.15s ease;
   }
+  .product-head:hover { background: var(--panel-hover); }
   .product-swatch { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
   .product-name { font-weight: 700; font-size: 14.5px; }
   .product-category {
@@ -371,28 +373,79 @@
     white-space: nowrap;
     max-width: 45%;
   }
-  .product-chevron {
+  .product-chevron { flex-shrink: 0; font-size: 15px; color: var(--faint); }
+
+  /* ---- bottom sheet ---- */
+  .sheet-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(20,23,30,0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 900;
+  }
+  .sheet-backdrop.show { opacity: 1; pointer-events: auto; }
+  .bottom-sheet {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    max-width: 560px;
+    max-height: 78vh;
+    background: var(--panel);
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 -12px 32px rgba(20,23,30,0.18);
+    transform: translateY(100%);
+    transition: transform 0.25s ease;
+    z-index: 901;
+    display: flex;
+    flex-direction: column;
+  }
+  .bottom-sheet.open { transform: translateY(0); }
+  .sheet-handle {
+    width: 36px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--border);
+    margin: 10px auto 4px;
     flex-shrink: 0;
-    font-size: 11px;
-    color: var(--faint);
-    transition: transform 0.15s ease;
   }
-  .product-card.open .product-chevron { transform: rotate(180deg); }
-  .product-detail {
-    display: none;
-    padding: 0 20px 18px;
-    border-top: 1px solid var(--border-soft);
+  .sheet-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 14px 20px 12px;
+    border-bottom: 1px solid var(--border-soft);
+    flex-shrink: 0;
   }
-  .product-card.open .product-detail { display: block; padding-top: 14px; }
+  .sheet-swatch { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 8px; }
+  .sheet-name { font-weight: 800; font-size: 16px; }
+  .sheet-category { display: block; font-size: 11.5px; color: var(--faint); margin: 4px 0 0 16px; }
+  .sheet-close {
+    flex-shrink: 0;
+    border: none;
+    background: var(--bg);
+    color: var(--muted);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .sheet-close:hover { color: var(--text); }
+  .sheet-body { padding: 16px 20px 24px; overflow-y: auto; }
   .product-desc {
     font-size: 13px;
     line-height: 1.7;
     color: var(--text);
-    margin: 0 0 10px;
+    margin: 0 0 12px;
     white-space: pre-line;
   }
   .product-features {
-    margin: 0 0 12px;
+    margin: 0 0 14px;
     padding-left: 18px;
     font-size: 12.5px;
     color: var(--muted);
@@ -404,6 +457,8 @@
     justify-content: space-between;
     font-size: 11.5px;
     color: var(--faint);
+    padding-top: 12px;
+    border-top: 1px solid var(--border-soft);
   }
   .product-link { color: var(--accent); text-decoration: none; font-weight: 600; }
   .product-link:hover { text-decoration: underline; }
@@ -545,6 +600,19 @@
     </div>
     <div id="product-list" style="display:flex; flex-direction:column; gap:10px;"></div>
   </div>
+</div>
+
+<div class="sheet-backdrop" id="sheet-backdrop"></div>
+<div class="bottom-sheet" id="bottom-sheet">
+  <div class="sheet-handle"></div>
+  <div class="sheet-header">
+    <div>
+      <span class="sheet-swatch" id="sheet-swatch"></span><span class="sheet-name" id="sheet-name"></span>
+      <span class="sheet-category" id="sheet-category"></span>
+    </div>
+    <button class="sheet-close" id="sheet-close">✕</button>
+  </div>
+  <div class="sheet-body" id="sheet-body"></div>
 </div>
 
 <script>
@@ -848,31 +916,45 @@ function renderProducts(products) {
     return;
   }
 
-  list.innerHTML = products.map(p => `
+  list.innerHTML = products.map((p, i) => `
     <div class="product-card">
-      <div class="product-head">
+      <div class="product-head" data-index="${i}">
         <span class="product-swatch" style="background:var(--${PLATFORM_CLASS[p.platform] || 'common'})"></span>
         <span class="product-name">${escapeHTML(p.platform)}</span>
         <span class="product-category">${escapeHTML(p.category)}</span>
         <span class="product-summary">${escapeHTML(p.summary)}</span>
-        <span class="product-chevron">▾</span>
-      </div>
-      <div class="product-detail">
-        ${p.description ? `<p class="product-desc">${escapeHTML(p.description)}</p>` : ''}
-        ${(p.features || []).length ? `<ul class="product-features">${p.features.map(f => `<li>${escapeHTML(f)}</li>`).join('')}</ul>` : ''}
-        <div class="product-footer">
-          <span>${p.updated_at ? '최근 업데이트 ' + p.updated_at : ''}</span>
-          ${p.link ? `<a class="product-link" href="${p.link}" target="_blank" rel="noopener">자세히 보기 ↗</a>` : ''}
-        </div>
+        <span class="product-chevron">›</span>
       </div>
     </div>`).join('');
 
-  list.querySelectorAll('.product-card').forEach(card => {
-    card.querySelector('.product-head').addEventListener('click', () => {
-      card.classList.toggle('open');
-    });
+  list.querySelectorAll('.product-head').forEach(head => {
+    head.addEventListener('click', () => openProductSheet(products[Number(head.dataset.index)]));
   });
 }
+
+function openProductSheet(p) {
+  document.getElementById('sheet-swatch').style.background = `var(--${PLATFORM_CLASS[p.platform] || 'common'})`;
+  document.getElementById('sheet-name').textContent = p.platform;
+  document.getElementById('sheet-category').textContent = p.category || '';
+  document.getElementById('sheet-body').innerHTML = `
+    ${p.description ? `<p class="product-desc">${escapeHTML(p.description)}</p>` : ''}
+    ${(p.features || []).length ? `<ul class="product-features">${p.features.map(f => `<li>${escapeHTML(f)}</li>`).join('')}</ul>` : ''}
+    <div class="product-footer">
+      <span>${p.updated_at ? '최근 업데이트 ' + p.updated_at : ''}</span>
+      ${p.link ? `<a class="product-link" href="${p.link}" target="_blank" rel="noopener">자세히 보기 ↗</a>` : ''}
+    </div>`;
+  document.getElementById('bottom-sheet').classList.add('open');
+  document.getElementById('sheet-backdrop').classList.add('show');
+}
+
+function closeProductSheet() {
+  document.getElementById('bottom-sheet').classList.remove('open');
+  document.getElementById('sheet-backdrop').classList.remove('show');
+}
+
+document.getElementById('sheet-backdrop').addEventListener('click', closeProductSheet);
+document.getElementById('sheet-close').addEventListener('click', closeProductSheet);
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeProductSheet(); });
 
 document.getElementById('tab-nav').addEventListener('click', (e) => {
   const btn = e.target.closest('.tab-btn');
