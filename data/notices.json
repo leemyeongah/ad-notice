@@ -1,14 +1,90 @@
 {
-  "generated_at": "2026-08-17T11:20:36+09:00",
+  "generated_at": "2026-08-24T11:24:01+09:00",
   "new_count": 15,
   "notices": [
+    {
+      "id": 33583,
+      "title": "디스플레이 광고 비즈채널 재검수 요청 기능 추가 안내",
+      "category": "디스플레이 광고",
+      "date": "2026-08-19",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://ads.naver.com/notice/33583",
+      "platform": "네이버 GFA"
+    },
+    {
+      "id": 33601,
+      "title": "‘카탈로그 판매’ 캠페인 소재 신규 UI 추가 안내",
+      "category": "디스플레이 광고",
+      "date": "2026-08-18",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://ads.naver.com/notice/33601",
+      "platform": "네이버 GFA"
+    },
+    {
+      "id": 33552,
+      "title": "[노출영역] 동영상 조회 캠페인(인스트림 동영상) 노출 영역 변경 안내",
+      "category": "디스플레이 광고",
+      "date": "2026-08-18",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://ads.naver.com/notice/33552",
+      "platform": "네이버 GFA"
+    },
+    {
+      "id": 33513,
+      "title": "클립 지면 광고 랜딩페이지 노출 방식 테스트 안내 (바텀시트 적용)",
+      "category": "디스플레이 광고",
+      "date": "2026-08-18",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://ads.naver.com/notice/33513",
+      "platform": "네이버 GFA"
+    },
+    {
+      "id": "/entry/20260810-news-clipping",
+      "title": "2026년 8월 10일주 뉴스클리핑",
+      "excerpt": "한 주 간의 <mark>디지털 미디어와 마케팅</mark> 관련 주요 뉴스를 모아 전해드립니다. <mark>구글, 국내 모바일 앱 MAU 네이버 첫 추월…AI 검색 확산에 검색시장 지형 변화</mark> 구글이 지난달 앱 MAU 4,702만 명을 기록하며 네이버(4,684만 명)를 앞서 2021년 통계 집계 이후 처음으로 1위를 기록함. 제미나이와 AI 검색 기능 강화 등이 구글 이용자 증가에 영향을 미친 것으로 분석됨. 다만 DAU는 네이버가 2,675만 명으로 구글(1,732만 명)을 크게 앞섰고, 1인당 월평균 사용 시간도 네이버가 약 6배 높은 것으로 나타나 실제 이용 빈도와 체류 측면에서는 네이버의 우위가 이어지고 있음. 🔗구글, 국내 이용자수 네이버 첫 추월…포털 지형 흔드나 <mark>인스타그램, 10년 만에 영문 워드마크 변경</mark> 인스타그램이 2016년 이후 약 10년 만에 영문 워드마크를 변경함. 기존 필기체 형태와 브랜드 정체성은 유지하면서 글자의 곡선을 강조해 보다 선명하고 현대적인 디자인으로 다듬음. 이번 변화는 영문 워드마크에 한정되며 분…",
+      "platforms": [
+        "인스타그램",
+        "네이버",
+        "구글"
+      ],
+      "category": "뉴스클리핑",
+      "date": "2026-08-18",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://blog.nasmedia.co.kr/entry/20260810-news-clipping",
+      "platform": "나스미디어 뉴스클리핑"
+    },
+    {
+      "id": 25524,
+      "title": "기존 캠페인 종료 안내 (디스플레이 광고 개편 전 버전, 도달률 높이기)",
+      "category": "공지",
+      "date": "2026-08-18",
+      "is_pinned": true,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25524",
+      "platform": "토스애즈"
+    },
+    {
+      "id": 25522,
+      "title": "직접 타겟팅 '타겟 최적화' 기능 종료 안내",
+      "category": "공지",
+      "date": "2026-08-18",
+      "is_pinned": true,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25522",
+      "platform": "토스애즈"
+    },
     {
       "id": 25520,
       "title": "라이브 마켓 CTA 클릭 수 / 클릭자 수 이벤트 집계 방식 개선 안내",
       "category": "공지",
       "date": "2026-08-14",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://tossads.toss.im/notice/25520",
       "platform": "토스애즈"
     },
@@ -18,17 +94,17 @@
       "category": "공지",
       "date": "2026-08-13",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://tossads.toss.im/notice/25508",
       "platform": "토스애즈"
     },
     {
       "id": 33495,
-      "title": "[신규 노출 영역] 네이버 모바일 페이 > 머니스토리 안내(8/19)",
+      "title": "[신규 노출 영역] 네이버 모바일 페이 > 머니스토리 안내 (8/19)",
       "category": "디스플레이 광고",
       "date": "2026-08-12",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://ads.naver.com/notice/33495",
       "platform": "네이버 GFA"
     },
@@ -38,7 +114,7 @@
       "category": "디스플레이 광고",
       "date": "2026-08-12",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://ads.naver.com/notice/33492",
       "platform": "네이버 GFA"
     },
@@ -48,7 +124,7 @@
       "category": "디스플레이 광고",
       "date": "2026-08-12",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://ads.naver.com/notice/33469",
       "platform": "네이버 GFA"
     },
@@ -124,7 +200,7 @@
     {
       "id": "/entry/20260720-news-clipping",
       "title": "2026년 7월 20일주 뉴스클리핑",
-      "excerpt": "한 주 간의 <mark>디지털 미디어와 마케팅</mark> 관련 주요 뉴스를 모아 전해드립니다. <mark>삼성전자, 갤럭시 언팩 2026에서 AI 기반 신제품 공개…구글·넷플릭스와 협업</mark> 삼성이 갤럭시 언팩 2026에서 AI 기반 신제품을 공개하며 실행형 AI 경험을 강화함. 구글 제미나이와 넷플릭스 등 주요 서비스와의 협업을 확대하며 AI 활용성과 앱 생태계 연동을 강화함. AI 경쟁이 모델 성능을 넘어 플랫폼 협업과 생태계 중심으로 확대되는 흐름. 🔗말 한마디에 40개 앱 움직인다…'대화' 넘어 '실행' 나선 폰AI <mark>네이버페이, AI 기반 'Npay 연금' 출시…맞춤형 자산관리 서비스 확대 </mark> 네이버페이가 국민연금·퇴직연금·개인연금을 통합 조회하고 AI 기반 맞춤형 연금 관리 서비스 'Npay 연금'을 출시함. AI가 이용자 데이터를 분석해 노후 준비 수준을 진단하고 추가 납입, 수익률 개선 등 개인별 관리 방안을 제안함. 금융 데이터를 활용한 초개인화 자산관리 서비스 확대로 AI 금융 경쟁력 강화에 나서는 전략으로 해석됨.🔗네이버페…",
+      "excerpt": "한 주 간의 디지털 미디어와 마케팅 관련 주요 뉴스를 모아 전해드립니다.삼성전자, 갤럭시 언팩 2026에서 AI 기반 신제품 공개…구글·넷플릭스와 협업삼성이 갤럭시 언팩 2026에서 AI 기반 신제품을 공개하며 실행형 AI 경험을 강화함. 구글 제미나이와 넷플릭스 등 주요 서비스와의 협업을 확대하며 AI 활용성과 앱 생태계 연동을 강화함. AI 경쟁이 모델 성능을 넘어 플랫폼 협업과 생태계 중심으로 확대되는 흐름. 🔗말 한마디에 40개 앱 움직인다…'대화' 넘어 '실행' 나선 폰AI네이버페이, AI 기반 'Npay 연금' 출시…맞춤형 자산관리 서비스 확대 네이버페이가 국민연금·퇴직연금·개인연금을 통합 조회하고 AI 기반 맞춤형 연금 관리 서비스 'Npay 연금'을 출시함. AI가 이용자 데..",
       "platforms": [
         "네이버페이",
         "네이버",
@@ -348,16 +424,6 @@
       "platform": "토스애즈"
     },
     {
-      "id": 32348,
-      "title": "(수정) 디스플레이 광고 내 광고계정·캠페인 단위 일정·결과·결과당비용 보고서 지표 제공 종료 안내",
-      "category": "디스플레이 광고",
-      "date": "2026-06-29",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://ads.naver.com/notice/32348",
-      "platform": "네이버 GFA"
-    },
-    {
       "id": "/entry/20260622-news-clipping",
       "title": "2026년 6월 22일주 뉴스클리핑",
       "excerpt": "한 주 간의 디지털 미디어와 마케팅 관련 주요 뉴스를 모아 전해드립니다.네이버, AI탭 정식 출시…검색창 중심 실행형 AI 에이전트 확대네이버가 생성형 AI 기반 대화형 검색 서비스 ‘AI탭’을 전체 사용자 대상으로 정식 출시하며 모바일·PC 검색창에서 AI 검색 접근성을 확대함. 베타 출시 2개월 만에 누적 사용자 400만 명을 기록한 가운데, 장소 탐색·지도 확인·실시간 예약까지 연결하며 검색을 실행형 AI 에이전트로 확장하려는 전략적 행보로 해석됨🔗네이버, 대화형 검색 'AI탭' 정식 출시… 5,000만 사용자의 일상으로네이버, AI 브리핑 검색광고 도입…하반기 AI 수익화 본격화네이버가 7월 21일부터 AI 브리핑 지면에 검색광고를 노출하며 AI 서비스 기반 수익화에 본격 시동을 걺..",
@@ -454,16 +520,6 @@
       "platform": "토스애즈"
     },
     {
-      "id": 32311,
-      "title": "[신규 노출 영역] 네이버 > MO > 증권 > 가상자산 안내 (6/25)",
-      "category": "디스플레이 광고",
-      "date": "2026-06-18",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://ads.naver.com/notice/32311",
-      "platform": "네이버 GFA"
-    },
-    {
       "id": 25220,
       "title": "직접 입찰의 입찰가 선정 방식 변경 안내",
       "category": "공지",
@@ -486,26 +542,6 @@
       "is_new": false,
       "url": "https://blog.nasmedia.co.kr/entry/20260608-news-clipping",
       "platform": "나스미디어 뉴스클리핑"
-    },
-    {
-      "id": 32009,
-      "title": "[신규 노출 영역] 네이버 > MO > 플레이스 > 업체 > 리뷰 안내 (일정 연기)",
-      "category": "디스플레이 광고",
-      "date": "2026-06-12",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://ads.naver.com/notice/32009",
-      "platform": "네이버 GFA"
-    },
-    {
-      "id": 32197,
-      "title": "[신규 노출 영역] 시리즈 앱 > 리워드프로그램",
-      "category": "디스플레이 광고",
-      "date": "2026-06-11",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://ads.naver.com/notice/32197",
-      "platform": "네이버 GFA"
     },
     {
       "id": "/entry/20260601-news-clipping",
@@ -586,21 +622,6 @@
       "platform": "토스애즈"
     },
     {
-      "id": "/entry/20260518-news-clipping",
-      "title": "2026년 5월 18일주 뉴스클리핑",
-      "excerpt": "한 주 간의 디지털 미디어와 마케팅 관련 주요 뉴스를 모아 전해드립니다.구글, 검색창 25년 만에 전면 개편…AI 검색 경험 본격 통합구글이 I/O 2026에서 키워드 중심의 기존 검색창을 대화·음성·이미지·문서 첨부가 가능한 AI 검색창으로 개편함. 이용자 검색 행태가 긴 질문과 후속 대화 중심으로 변화하는 가운데, 24시간 정보 모니터링 에이전트와 제너러티브 UI, 미니 앱 기능까지 더하며 검색을 에이전트형 플랫폼으로 확장하는 흐름임🔗구글 검색창, 25년만에 바뀐다…키워드 아닌 대화·음성으로 확장네이버, 브랜드 검색 광고 개편…프리미엄 상품 중심 재편 네이버가 검색 결과 상단에 노출되는 브랜드 검색 광고를 기존 32개 템플릿에서 7개 주요 템플릿으로 통합하고, 광고 소재 확대와 성별 타..",
-      "platforms": [
-        "네이버",
-        "구글"
-      ],
-      "category": "뉴스클리핑",
-      "date": "2026-05-26",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://blog.nasmedia.co.kr/entry/20260518-news-clipping",
-      "platform": "나스미디어 뉴스클리핑"
-    },
-    {
       "id": 25174,
       "title": "라이브 마켓 베이직 상품 반값 할인 프로모션 연장 안내",
       "category": "공지",
@@ -618,6 +639,16 @@
       "is_pinned": false,
       "is_new": false,
       "url": "https://ads.tiktok.com/business/ko/blog/tiktok-one-creative-platform",
+      "platform": "틱톡 for Business"
+    },
+    {
+      "id": "/business/ko/blog/gmv-max-automate-shop-roi",
+      "title": "GMV Max: 틱톡 샵 성장 동력",
+      "category": "공지사항",
+      "date": "2026-05-13",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://ads.tiktok.com/business/ko/blog/gmv-max-automate-shop-roi",
       "platform": "틱톡 for Business"
     },
     {
@@ -680,16 +711,6 @@
       "platform": "토스애즈"
     },
     {
-      "id": 25072,
-      "title": "Toss Ads 광고 어뷰징 행위 제한 정책 안내",
-      "category": "공지",
-      "date": "2026-04-10",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://tossads.toss.im/notice/25072",
-      "platform": "토스애즈"
-    },
-    {
       "id": "/entry/2603adissue",
       "title": "2026년 3월 - 네이버, 광고 플랫폼 통합 및 기능 개편 외",
       "excerpt": "2026년 3월 디지털 미디어 애드 이슈 월간 디지털 미디어 상품 이슈와 주요 업데이트를 전해드립니다. 📢주요 이슈네이버 검색·디스플레이 광고, 하나의 플랫폼에서 통합 운영네이버는 2026년 3월부터, 검색광고와 디스플레이 광고를 하나의 통합 플랫폼에서 운영할 수 있도록 개편했습니다.기존에는 광고 유형별로 플랫폼이 분리되어 있어 캠페인 관리와 성과 확인이 각각 이루어졌어야 했는데요. 이제는 하나의 화면에서 전체 캠페인을 통합 관리할 수 있어, 운영 효율이 크게 개선됩니다. 특히 검색과 디스플레이를 함께 집행하는 광고주 입장에서는 채널 간 성과를 비교하고 전략을 조정하는 과정이 훨씬 간결해집니다.성과 분석 측면에서도 변화가 있습니다. 통합 대시보드를 통해 광고 유형을 넘나드는 성과..",
@@ -714,16 +735,6 @@
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
       "platform": "카카오모먼트",
       "is_new": true
-    },
-    {
-      "id": 24946,
-      "title": "라이브 마켓 베이직 상품 반값 할인 프로모션 안내",
-      "category": "공지",
-      "date": "2026-03-26",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://tossads.toss.im/notice/24946",
-      "platform": "토스애즈"
     },
     {
       "id": "/business/ko/blog/lead-generation-dfo-solution",
@@ -911,16 +922,6 @@
       "is_pinned": false,
       "is_new": false,
       "url": "https://ads.tiktok.com/business/ko/blog/foryou-summit-korea-2024",
-      "platform": "틱톡 for Business"
-    },
-    {
-      "id": "/business/ko/blog/amazon-ads-native-checkout",
-      "title": "앱을 떠나지 않고 TikTok에서 Amazon 광고를 선택하여 쇼핑하세요.",
-      "category": "공지사항",
-      "date": "2024-08-08",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://ads.tiktok.com/business/ko/blog/amazon-ads-native-checkout",
       "platform": "틱톡 for Business"
     }
   ]
