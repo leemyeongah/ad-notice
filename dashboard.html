@@ -342,38 +342,98 @@
     padding: 6px 0 14px;
   }
 
-  /* ---- product intro rows (tap to open bottom sheet) ---- */
+  /* ---- product intro: stats + filter pills + card grid ---- */
+  .stats-row {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .stat-block { display: flex; flex-direction: column; gap: 2px; }
+  .stat-number { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; }
+  .stat-label { font-size: 11.5px; color: var(--muted); }
+
+  .product-meta-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--muted);
+    margin: 4px 0 12px;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 14px;
+  }
   .product-card {
     background: var(--panel);
     border: 1px solid var(--border);
     border-radius: 14px;
-    overflow: hidden;
+    padding: 16px 18px;
+    cursor: pointer;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
   }
-  .product-head {
+  .product-card:hover { border-color: #c7ccd6; box-shadow: 0 4px 16px rgba(20,23,30,0.06); }
+  .pc-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .pc-title { display: flex; align-items: center; gap: 8px; min-width: 0; }
+  .pc-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 9px;
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 16px 20px;
-    cursor: pointer;
-    transition: background 0.15s ease;
+    justify-content: center;
+    font-size: 15px;
+    flex-shrink: 0;
   }
-  .product-head:hover { background: var(--panel-hover); }
-  .product-swatch { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
-  .product-name { font-weight: 700; font-size: 14.5px; }
-  .product-category {
-    font-size: 11.5px;
-    color: var(--faint);
-  }
-  .product-summary {
-    font-size: 12.5px;
-    color: var(--muted);
-    margin-left: auto;
+  .pc-name {
+    font-weight: 700;
+    font-size: 14px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    max-width: 45%;
   }
-  .product-chevron { flex-shrink: 0; font-size: 15px; color: var(--faint); }
+  .pc-badge {
+    flex-shrink: 0;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  .pc-desc {
+    font-size: 12.5px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0 0 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 3.2em;
+  }
+  .pc-footer {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    color: var(--faint);
+    padding-top: 10px;
+    border-top: 1px solid var(--border-soft);
+  }
+  .pc-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+  .pc-dot.fresh { background: #2f9e44; }
+  .pc-dot.stale { background: #e8a33d; }
+  .pc-dot.old { background: #b9bfc9; }
 
   /* ---- bottom sheet ---- */
   .sheet-backdrop {
@@ -537,7 +597,7 @@
     .page-head { flex-direction: column; align-items: flex-start; }
     .week-picker { flex-wrap: wrap; }
     .week-select { flex-basis: 100%; order: 1; }
-    .product-summary { display: none; }
+    .stats-row { gap: 20px; }
   }
 </style>
 </head>
@@ -598,7 +658,10 @@
         <div class="page-sub" id="products-last-updated">최근 업데이트 —</div>
       </div>
     </div>
-    <div id="product-list" style="display:flex; flex-direction:column; gap:10px;"></div>
+    <div id="product-stats" class="stats-row"></div>
+    <div class="filters" id="product-filters"></div>
+    <div class="product-meta-row" id="product-meta-row"></div>
+    <div id="product-list" class="product-grid"></div>
   </div>
 </div>
 
@@ -905,35 +968,136 @@ function renderSourceGrid(range) {
   }).join('');
 }
 
+let allProducts = [];
+let activeProductFilter = '전체';
+
+const CATEGORY_ICON = {
+  'DSP': '🎯', 'SNS': '💬', 'DA': '📊', 'Video': '🎬', '보상형': '🎁', 'OOH': '🚏',
+  'DMP': '🗂️', 'App': '📱', '비즈니스': '💼', '로컬': '📍', 'CTV': '📺', '리타기팅': '🔁',
+  '네이티브': '🧩', '기타': '🔹', 'SA': '🔎', '오프라인': '🏬',
+};
+const CATEGORY_PALETTE = ['#5b8def', '#e0562f', '#12967a', '#a3760a', '#7c5cff', '#d0195a', '#0064ff', '#2f9e44', '#e8590c', '#845ef7'];
+
+function categoryTokens(p) {
+  return (p.category || '기타').split(',').map(s => s.trim()).filter(Boolean);
+}
+function primaryCategory(p) {
+  return categoryTokens(p)[0] || '기타';
+}
+function categoryColor(cat) {
+  let hash = 0;
+  for (let i = 0; i < cat.length; i++) hash = (hash * 31 + cat.charCodeAt(i)) >>> 0;
+  return CATEGORY_PALETTE[hash % CATEGORY_PALETTE.length];
+}
+function categoryIcon(cat) {
+  return CATEGORY_ICON[cat] || '🏷️';
+}
+// "최근 업데이트 기준: 2025.11" 같은 실제 콘텐츠 기준일을 features에서 찾고,
+// 없으면 스크립트가 마지막으로 반영한 날짜(updated_at)로 대체한다.
+function extractUpdateNote(p) {
+  const found = (p.features || []).map(f => f.match(/기준:\s*([\d.]+)/)).find(Boolean);
+  return found ? found[1] : (p.updated_at || '');
+}
+function parseUpdateDate(s) {
+  if (!s) return null;
+  const parts = s.split(/[.\-]/).map(Number).filter(n => !isNaN(n));
+  if (parts.length < 2) return null;
+  return new Date(parts[0], (parts[1] || 1) - 1, parts[2] || 1);
+}
+function freshnessClass(dateObj) {
+  if (!dateObj) return 'old';
+  const days = (Date.now() - dateObj.getTime()) / 86400000;
+  if (days <= 60) return 'fresh';
+  if (days <= 180) return 'stale';
+  return 'old';
+}
+
 function renderProducts(products) {
-  const list = document.getElementById('product-list');
-  if (!products.length) {
-    list.innerHTML = `
-      <div class="empty-state">
+  allProducts = products;
+  activeProductFilter = '전체';
+  renderProductStats();
+  renderProductFilters();
+  renderProductGrid();
+}
+
+function renderProductStats() {
+  const el = document.getElementById('product-stats');
+  const catSet = new Set();
+  allProducts.forEach(p => categoryTokens(p).forEach(c => catSet.add(c)));
+  el.innerHTML = `
+    <div class="stat-block"><span class="stat-number">${allProducts.length}</span><span class="stat-label">등록된 매체</span></div>
+    <div class="stat-block"><span class="stat-number" style="color:var(--accent)">${catSet.size}</span><span class="stat-label">매체 카테고리</span></div>`;
+}
+
+function renderProductFilters() {
+  const el = document.getElementById('product-filters');
+  const counts = {};
+  allProducts.forEach(p => categoryTokens(p).forEach(c => { counts[c] = (counts[c] || 0) + 1; }));
+  const cats = Object.keys(counts).sort((a, b) => counts[b] - counts[a] || a.localeCompare(b));
+
+  el.innerHTML = ['전체', ...cats].map(c => {
+    const count = c === '전체' ? allProducts.length : counts[c];
+    return `<button class="filter-btn ${c === activeProductFilter ? 'active' : ''}" data-cat="${escapeHTML(c)}">${escapeHTML(c)} ${count}</button>`;
+  }).join('');
+
+  el.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      activeProductFilter = btn.dataset.cat;
+      renderProductFilters();
+      renderProductGrid();
+    });
+  });
+}
+
+function renderProductGrid() {
+  const grid = document.getElementById('product-list');
+  const metaRow = document.getElementById('product-meta-row');
+
+  if (!allProducts.length) {
+    metaRow.innerHTML = '';
+    grid.innerHTML = `
+      <div class="empty-state" style="grid-column:1/-1;">
         아직 등록된 상품소개서가 없어요.<br>manual_input/products_raw.json 을 작성한 뒤 실행해주세요.
         <code>python manage_products.py</code>
       </div>`;
     return;
   }
 
-  list.innerHTML = products.map((p, i) => `
-    <div class="product-card">
-      <div class="product-head" data-index="${i}">
-        <span class="product-swatch" style="background:var(--${PLATFORM_CLASS[p.platform] || 'common'})"></span>
-        <span class="product-name">${escapeHTML(p.platform)}</span>
-        <span class="product-category">${escapeHTML(p.category)}</span>
-        <span class="product-summary">${escapeHTML(p.summary)}</span>
-        <span class="product-chevron">›</span>
-      </div>
-    </div>`).join('');
+  const filtered = activeProductFilter === '전체'
+    ? allProducts
+    : allProducts.filter(p => categoryTokens(p).includes(activeProductFilter));
 
-  list.querySelectorAll('.product-head').forEach(head => {
-    head.addEventListener('click', () => openProductSheet(products[Number(head.dataset.index)]));
+  metaRow.innerHTML = `<span>전체 매체 ${filtered.length}개</span>`;
+
+  grid.innerHTML = filtered.map(p => {
+    const cat = primaryCategory(p);
+    const color = categoryColor(cat);
+    const note = extractUpdateNote(p);
+    const fresh = freshnessClass(parseUpdateDate(note));
+    return `
+      <div class="product-card" data-index="${allProducts.indexOf(p)}">
+        <div class="pc-head">
+          <div class="pc-title">
+            <span class="pc-icon" style="background:${color}1f;">${categoryIcon(cat)}</span>
+            <span class="pc-name">${escapeHTML(p.platform)}</span>
+          </div>
+          <span class="pc-badge" style="background:${color}1f; color:${color};">${escapeHTML(cat)}</span>
+        </div>
+        <p class="pc-desc">${escapeHTML(p.description || p.summary || '')}</p>
+        <div class="pc-footer">
+          <span class="pc-dot ${fresh}"></span>
+          <span>${note ? '최근 업데이트 ' + note : '업데이트 정보 없음'}</span>
+        </div>
+      </div>`;
+  }).join('');
+
+  grid.querySelectorAll('.product-card').forEach(card => {
+    card.addEventListener('click', () => openProductSheet(allProducts[Number(card.dataset.index)]));
   });
 }
 
 function openProductSheet(p) {
-  document.getElementById('sheet-swatch').style.background = `var(--${PLATFORM_CLASS[p.platform] || 'common'})`;
+  document.getElementById('sheet-swatch').style.background = categoryColor(primaryCategory(p));
   document.getElementById('sheet-name').textContent = p.platform;
   document.getElementById('sheet-category').textContent = p.category || '';
   document.getElementById('sheet-body').innerHTML = `
