@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-24T16:12:52+09:00",
-  "new_count": 16,
+  "generated_at": "2026-08-25T19:16:32+09:00",
+  "new_count": 13,
   "notices": [
     {
       "id": "/entry/20260817-news-clipping",
@@ -17,7 +17,47 @@
       "is_pinned": false,
       "is_new": true,
       "url": "https://blog.nasmedia.co.kr/entry/20260817-news-clipping",
+      "highlights": [
+        {
+          "platform": "카카오",
+          "headline": "카카오, 카카오AI·카카오X로 인적분할"
+        },
+        {
+          "platform": "네이버",
+          "headline": "네이버, 플레이스 검색광고에 AI 기반 'ADVoost 플레이스' BETA 출시 예정"
+        },
+        {
+          "platform": "틱톡",
+          "headline": "틱톡, 연내 한국에 '틱톡샵' 론칭"
+        },
+        {
+          "platform": "메타",
+          "headline": "메타, 맥용 '메타 AI' 앱 출시"
+        },
+        {
+          "platform": "챗GPT",
+          "headline": "챗GPT, 2030 모바일 앱 이용 증가율 1위 기록"
+        },
+        {
+          "platform": "유튜브",
+          "headline": "유튜브·넷플릭스, 크리에이터 콘텐츠 확보 경쟁 심화…독점 계약 확대"
+        },
+        {
+          "platform": "OTT",
+          "headline": "OTT, 검증된 구작 IP 활용"
+        }
+      ],
       "platform": "나스미디어 뉴스클리핑"
+    },
+    {
+      "id": 25538,
+      "title": "잠재고객 모으기 캠페인 변경 사항 안내 (’외부 URL’ 캠페인 입찰·타겟팅 변경 및 소개 화면 필수 등록, ‘고객 수집 양식’ 소개 화면 개편)",
+      "category": "공지",
+      "date": "2026-08-22",
+      "is_pinned": true,
+      "is_new": true,
+      "url": "https://tossads.toss.im/notice/25538",
+      "platform": "토스애즈"
     },
     {
       "id": 33583,
@@ -35,7 +75,7 @@
       "category": "디스플레이 광고",
       "date": "2026-08-18",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://ads.naver.com/notice/33601",
       "platform": "네이버 GFA"
     },
@@ -45,7 +85,7 @@
       "category": "디스플레이 광고",
       "date": "2026-08-18",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://ads.naver.com/notice/33552",
       "platform": "네이버 GFA"
     },
@@ -55,7 +95,7 @@
       "category": "디스플레이 광고",
       "date": "2026-08-18",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://ads.naver.com/notice/33513",
       "platform": "네이버 GFA"
     },
@@ -71,8 +111,42 @@
       "category": "뉴스클리핑",
       "date": "2026-08-18",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://blog.nasmedia.co.kr/entry/20260810-news-clipping",
+      "highlights": [
+        {
+          "platform": "네이버",
+          "headline": "구글, 국내 모바일 앱 MAU 네이버 첫 추월…AI 검색 확산에 검색시장 지형 변화"
+        },
+        {
+          "platform": "인스타그램",
+          "headline": "인스타그램, 10년 만에 영문 워드마크 변경"
+        },
+        {
+          "platform": "당근",
+          "headline": "당근, 맞춤형 광고 강화…로컬 데이터 기반 광고 플랫폼 확대"
+        },
+        {
+          "platform": "유튜브",
+          "headline": "유튜브, 2027년부터 수익 창출 기준 상향"
+        },
+        {
+          "platform": "메타",
+          "headline": "메타, 라이브 방송부터 상품 구매까지 연결"
+        },
+        {
+          "platform": "틱톡",
+          "headline": "틱톡샵, 미국 온라인 쇼핑 시장서 급성장"
+        },
+        {
+          "platform": "배민",
+          "headline": "배민, 패션 카테고리 강화"
+        },
+        {
+          "platform": "OTT",
+          "headline": "글로벌 OTT, K예능 서바이벌 투자 확대"
+        }
+      ],
       "platform": "나스미디어 뉴스클리핑"
     },
     {
@@ -159,6 +233,40 @@
       "is_pinned": false,
       "is_new": false,
       "url": "https://blog.nasmedia.co.kr/entry/20260803-news-clipping",
+      "highlights": [
+        {
+          "platform": "네이버",
+          "headline": "네이버·카카오, 2분기 호실적 속 AI 수익화 격돌"
+        },
+        {
+          "platform": "유튜브",
+          "headline": "카페24, 아시아 최초 유튜브 크리에이터 파트너십 API 연동"
+        },
+        {
+          "platform": "당근",
+          "headline": "당근, '동네걷기' 출시 1년"
+        },
+        {
+          "platform": "챗GPT",
+          "headline": "오픈AI, 챗GPT 무료 이용자에 ‘GPT-5.6 루나’ 무제한 제공"
+        },
+        {
+          "platform": "카카오",
+          "headline": "카카오, 카나나-오 음성 생성 고도화…자연어로 말투·감정까지 제어"
+        },
+        {
+          "platform": "카카오페이",
+          "headline": "카카오페이, 마이데이터 기반 AI 금융 에이전트 ‘AI코치’ 출시"
+        },
+        {
+          "platform": "틱톡",
+          "headline": "디즈니플러스, 틱톡 숏폼 콘텐츠 유통 확대"
+        },
+        {
+          "platform": "OTT",
+          "headline": "…OTT·소셜미디어 경계 허문다"
+        }
+      ],
       "platform": "나스미디어 뉴스클리핑"
     },
     {
@@ -487,7 +595,7 @@
     {
       "id": "/entry/2606adissue-chatgptadvertisingpilot",
       "title": "챗GPT 광고, 이제 한국에서도 시작됩니다.",
-      "excerpt": "챗GPT 광고 시작, 대화 맥락이 광고 지면으로오픈AI의 챗GPT에도 이제 광고가 도입됩니다. 생성형 AI가 검색과 정보 탐색의 주요 접점으로 자리 잡으면서 오픈AI는 챗GPT 안에서 광고를 노출하는 실험을 본격화하고 있습니다. 그동안 챗GPT는 이용자의 질문에 답변을 제공하는 AI 서비스로 인식되어 왔는데요. 이제는 이용자의 대화 맥락을 기반으로 브랜드·상품을 연결하는 새로운 광고 채널로 확장되고 있어요.👉🏻네이버의 AI 광고와 챗GPT 광고 비교해서 확인하기 한국도 AI 광고 시대 열린다, 네이버 AI 검색 광고 출시·오픈AI 테스트 본격화🚨 [6월 업데이트] 네이버 AI 광고 정식 출시 · 챗GPT 한국 테스트 시작 생성형 AI 광고 시장이 예상보다 빠르게 상용화 단계로 진입하고 있습니다. 최..",
+      "excerpt": "챗GPT 광고 시작, 대화 맥락이 광고 지면으로오픈AI의 챗GPT에도 이제 광고가 도입됩니다. 생성형 AI가 검색과 정보 탐색의 주요 접점으로 자리 잡으면서 오픈AI는 챗GPT 안에서 광고를 노출하는 실험을 본격화하고 있습니다. 그동안 챗GPT는 이용자의 질문에 답변을 제공하는 AI 서비스로 인식되어 왔는데요. 이제는 이용자의 대화 맥락을 기반으로 브랜드·상품을 연결하는 새로운 광고 채널로 확장되고 있어요.👉🏻네이버의 AI 광고와 챗GPT 광고 비교해서 확인하기 한국도 AI 광고 시대 열린다, 네이버 AI 검색 광고·오픈AI 챗GPT 광고 정식 출시🚨 [8월 업데이트] 네이버 AI 광고 정식 출시 · 챗GPT 한국 정식 출시 생성형 AI 광고 시장이 예상보다 빠르게 상용화 단계로 진입하고 있습니다..",
       "platforms": [
         "챗GPT",
         "오픈AI",
@@ -701,16 +809,6 @@
       "is_new": false,
       "url": "https://blog.nasmedia.co.kr/entry/2604adissue",
       "platform": "나스미디어 광고상품업데이트"
-    },
-    {
-      "id": 25088,
-      "title": "광고 계정 및 비즈니스 그룹 선택 방식 변경 안내",
-      "category": "공지",
-      "date": "2026-04-21",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://tossads.toss.im/notice/25088",
-      "platform": "토스애즈"
     },
     {
       "id": "/entry/2603adissue",

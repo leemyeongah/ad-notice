@@ -109,22 +109,23 @@ def _clean_html_preserve_bold(raw: str) -> str:
     return re.sub(r'\s+', ' ', text).strip()
 
 
-def fetch_highlighted_excerpt(entry_url: str, max_len: int = 550) -> str:
-    """뉴스클리핑 개별 글 페이지에서 실제로 <b> 처리된 헤드라인을 살린 요약을 만든다.
+def fetch_clipping_detail(entry_url: str, max_len: int = 550):
+    """뉴스클리핑 개별 글 페이지에서 (1) <b> 처리된 헤드라인을 살린 요약(excerpt)과
+    (2) 헤드라인마다 언급된 매체를 찾아 매체별 핵심 한 줄(highlights)을 같이 뽑는다.
     카테고리 목록 페이지의 excerpt는 서식이 다 빠진 평문이라 여기서 따로 만든다.
-    실패해도 조용히 빈 문자열을 돌려주고, 호출부에서는 원래 평문 excerpt를 그대로 쓴다."""
+    실패해도 조용히 ("", [])를 돌려주고, 호출부에서는 원래 평문 excerpt를 그대로 쓴다."""
     try:
         raw_html = fetch(entry_url)
     except requests.RequestException:
-        return ""
+        return "", []
 
     marker_idx = raw_html.find('id="article-view"')
     if marker_idx == -1:
-        return ""
+        return "", []
     tag_start = raw_html.rfind('<', 0, marker_idx)
     if tag_start == -1:
-        return ""
-    chunk = raw_html[tag_start:tag_start + 20000]
+        return "", []
+    chunk = raw_html[tag_start:tag_start + 30000]
     chunk = chunk[:chunk.rfind('>') + 1]
 
     text = _clean_html_preserve_bold(chunk)
@@ -132,12 +133,26 @@ def fetch_highlighted_excerpt(entry_url: str, max_len: int = 550) -> str:
     text = re.sub(r'(?:#\S+\s*){2,}(?=📢)', '', text)
     text = re.sub(r'\s{2,}', ' ', text).strip()
 
-    if len(text) > max_len:
-        text = text[:max_len]
-        if text.count('<mark>') > text.count('</mark>'):
-            text += '</mark>'
-        text += '…'
-    return text
+    highlights = []
+    seen_platforms = set()
+    for m in re.finditer(r'<mark>(.*?)</mark>', text):
+        headline = m.group(1).strip()
+        if not headline:
+            continue
+        platforms = _detect_platforms(headline)
+        if not platforms or platforms[0] in seen_platforms:
+            continue
+        seen_platforms.add(platforms[0])
+        highlights.append({"platform": platforms[0], "headline": headline})
+
+    excerpt = text
+    if len(excerpt) > max_len:
+        excerpt = excerpt[:max_len]
+        if excerpt.count('<mark>') > excerpt.count('</mark>'):
+            excerpt += '</mark>'
+        excerpt += '…'
+
+    return excerpt, highlights
 
 
 def _detect_platforms(text: str):
@@ -268,9 +283,11 @@ def extract_nasmedia_notices(raw_html: str, category_label: str = "", highlight_
         })
 
     for notice in notices[:highlight_top_n]:
-        highlighted = fetch_highlighted_excerpt(notice["url"])
-        if highlighted:
-            notice["excerpt"] = highlighted
+        excerpt, highlights = fetch_clipping_detail(notice["url"])
+        if excerpt:
+            notice["excerpt"] = excerpt
+        if highlights:
+            notice["highlights"] = highlights
 
     return notices
 
