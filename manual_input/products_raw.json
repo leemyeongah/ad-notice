@@ -1,51 +1,5 @@
 [
   {
-    "platform": "토스",
-    "category": "",
-    "summary": "모바일 금융 서비스",
-    "description": "모바일 금융 서비스",
-    "features": [
-      "비고: 확인 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "NETFLIX",
-    "category": "",
-    "summary": "담당: 전략실 문의",
-    "description": "",
-    "features": [
-      "담당: 전략실 문의",
-      "최근 업데이트 기준: 2026.04"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "사람인 (NEST ADS)",
-    "category": "",
-    "summary": "담당: NEST ADS팀 문의",
-    "description": "",
-    "features": [
-      "담당: NEST ADS팀 문의",
-      "사내 자료명: 사람인",
-      "최근 업데이트 기준: 2026.04"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "TikTok",
-    "category": "",
-    "summary": "담당자 연락처 등록됨",
-    "description": "",
-    "features": [
-      "담당자: 김동훈 매니저",
-      "이메일: donghoon.kim@bytedance.com",
-      "사내 자료명: TikTok게시판",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": ""
-  },
-  {
     "platform": "Apple",
     "category": "App",
     "summary": "App Store 광고",
@@ -54,96 +8,6 @@
       "최근 업데이트 기준: 2025.11"
     ],
     "link": "https://ads.apple.com/kr/app-store"
-  },
-  {
-    "platform": "SMR",
-    "category": "Video",
-    "summary": "국내 동영상 / 방송 광고 플랫폼",
-    "description": "국내 동영상 / 방송 광고 플랫폼",
-    "features": [
-      "담당자: 윤호윤 파트장",
-      "이메일: hoyoon.yoon@smartmediarep.com",
-      "전화: 010-8932-7179 / 02-6352-0055",
-      "사내 자료명: SMR상품소개",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/drive/folders/1KTw9hDGtDlQ_r3ErpkjuD-TYpTkitbj_?usp=drive_link"
-  },
-  {
-    "platform": "COVI",
-    "category": "기타",
-    "summary": "모바일 outstream 동영상 광고 플랫폼",
-    "description": "모바일 outstream 동영상 광고 플랫폼",
-    "features": [
-      "담당자: 신범균 팀장",
-      "이메일: zion@covi.co.kr",
-      "전화: 010-2326-4231",
-      "사내 자료명: COVI",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/drive/folders/1rqOUYntZWsj2iAB6mJrv4tk3Dd2p7cFK?usp=drive_link"
-  },
-  {
-    "platform": "로플랫",
-    "category": "DMP",
-    "summary": "User의 오프라인 여정을 데이터화하여, 디지털 광고 매체를 통한 광고/마케팅",
-    "description": "User의 오프라인 여정을 데이터화하여, 디지털 광고 매체를 통한 광고/마케팅",
-    "features": [
-      "담당자: 배은호 매니저",
-      "이메일: beh0307@loplat.com (팀메일: dmp@loplat.com)",
-      "사내 자료명: 로플랫소개",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/drive/folders/1FbHTjb7Ew2uCRz6Bgd4Wlh4ULIGsJ7cz?usp=drive_link"
-  },
-  {
-    "platform": "Teads",
-    "category": "기타",
-    "summary": "",
-    "description": "",
-    "features": [
-      "사내 자료명: 한국티즈소개",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "버즈빌",
-    "category": "보상형",
-    "summary": "광고주와 매체, 그리고 유저를 리워드로 연결하는 플랫폼",
-    "description": "광고주와 매체, 그리고 유저를 리워드로 연결하는 플랫폼",
-    "features": [
-      "담당자: 임주희 매니저",
-      "이메일: jules.yim@buzzvil.com",
-      "전화: 010-6355-0032",
-      "사내 자료명: 버즈빌소개",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/drive/folders/1eu-rCoRC4y8irBh3r-D8t_QDol-3VFHe?usp=drive_link"
-  },
-  {
-    "platform": "카울리",
-    "category": "",
-    "summary": "모바일 광고 네트워크 플랫폼",
-    "description": "모바일 광고 네트워크 플랫폼",
-    "features": [
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "애피어",
-    "category": "App",
-    "summary": "모바일 광고 네트워크 플랫폼",
-    "description": "모바일 광고 네트워크 플랫폼",
-    "features": [
-      "담당자: 박건호님",
-      "이메일: ryan.park@appier.com (팀메일: bd-kr@appier.com)",
-      "전화: 010-2840-1330",
-      "사내 자료명: 애피어소개",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/drive/folders/1_OaOjMcbj-2sKl9QeMjNTMvMuk0d8dUY?usp=drive_link"
   },
   {
     "platform": "애디슨오퍼월 / 캐쉬슬라이드 / Treasure Hunt (NBT)",
@@ -155,17 +19,6 @@
       "최근 업데이트 기준: 2025.11"
     ],
     "link": "https://nbtads.oopy.io/adison"
-  },
-  {
-    "platform": "유니브아이엠씨",
-    "category": "기타",
-    "summary": "에브리타임 / 캠퍼스픽 / 대학백과",
-    "description": "에브리타임, 캠퍼스픽, 대학백과 운영",
-    "features": [
-      "사내 자료명: 비누랩스소개",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/drive/folders/1fv9I1WPtKGbLssbZtFDWopro2qYUCH8Z?usp=drive_link"
   },
   {
     "platform": "인사이트",
@@ -217,31 +70,6 @@
       "최근 업데이트 기준: 2025.11"
     ],
     "link": "https://drive.google.com/file/d/1iSzNnrQ-1A0ZkmxeJueBEgv1bs3B2k0T/view?usp=drive_link"
-  },
-  {
-    "platform": "L.Point",
-    "category": "DA, CTV, DMP",
-    "summary": "L.Point App",
-    "description": "L.Point App",
-    "features": [
-      "이메일: yeongdongoh@daehong.co.kr",
-      "전화: 02-3671-6693",
-      "사내 자료명: 대홍기획소개",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/drive/folders/1pkXSsGLcYRjhVPK2TuYGNbTRXD8T8PlR?usp=drive_link"
-  },
-  {
-    "platform": "리멤버",
-    "category": "비즈니스",
-    "summary": "명함 관리, 경력 채용 앱",
-    "description": "명함 관리, 경력 채용 앱",
-    "features": [
-      "이메일: ad@rememberapp.co.kr",
-      "사내 자료명: 리멤버소개",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/drive/folders/1kkpXFY0qUCQXAofLForUHrkYQ1Xz0SqS?usp=drive_link"
   },
   {
     "platform": "블라인드",
@@ -380,16 +208,6 @@
     "link": "https://drive.google.com/file/d/1DPEnpVxdDKG70eYe5j4G6V8cBRfIsOk-/view?usp=drive_link"
   },
   {
-    "platform": "ReAppi",
-    "category": "",
-    "summary": "글로벌 모바일 마케팅 플랫폼",
-    "description": "글로벌 모바일 마케팅 플랫폼",
-    "features": [
-      "비고: 광고소개서 최신버전 없음"
-    ],
-    "link": ""
-  },
-  {
     "platform": "Singular",
     "category": "DMP",
     "summary": "DMP / 마케팅 인텔리전스 플랫폼",
@@ -398,31 +216,6 @@
       "최근 업데이트 기준: 2025.11"
     ],
     "link": "https://www.singular.net/ko/"
-  },
-  {
-    "platform": "SOOP",
-    "category": "SNS, Video, App, OOH",
-    "summary": "실시간 1인 방송 플랫폼",
-    "description": "실시간 1인 방송 플랫폼",
-    "features": [
-      "자료: 최신 상품소개서 SOOP",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/drive/folders/19Vc1Ixu2aNKH4dV2wayMs1IVEmomjGU6?usp=drive_link"
-  },
-  {
-    "platform": "캐시워크",
-    "category": "보상형",
-    "summary": "헬스케어앱",
-    "description": "헬스케어앱",
-    "features": [
-      "자료: [캐시워크] 최신 상품 소개서",
-      "담당자: 오수정 매니저",
-      "이메일: oh.sujeong@cashwalk.io (팀메일: ads@cashwalk.io)",
-      "사내 자료명: 캐시워크 소개",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/drive/folders/1x6m3hxPqbYO3K16wIsHKVD55RMdZ66lo?usp=drive_link"
   },
   {
     "platform": "오늘의집",
@@ -449,20 +242,6 @@
       "최근 업데이트 기준: 2025.11"
     ],
     "link": "https://drive.google.com/file/d/1YeeIvI-2erztQQKA8Lp5QO8TNb8KwGzq/view?usp=drive_link"
-  },
-  {
-    "platform": "잡코리아",
-    "category": "DA",
-    "summary": "AI기반 종합 커리어 플랫폼",
-    "description": "AI기반 종합 커리어 플랫폼",
-    "features": [
-      "이메일: ad@jobkorea.co.kr",
-      "전화: 02-3466-5480",
-      "사내 자료명: 잡코리아소개",
-      "최근 업데이트 기준: 2025.11",
-      "비고: 잡코리아 광고"
-    ],
-    "link": "https://drive.google.com/drive/folders/18uLCvS-7zo2i2a9oqOzEy-PIbllcjGIC?usp=drive_link"
   },
   {
     "platform": "열나요",
@@ -515,30 +294,6 @@
       "최근 업데이트 기준: 2025.11"
     ],
     "link": "https://drive.google.com/file/d/1Zub7Y5Tpgxm5xNW-q7aAclMJv0sBgoej/view?usp=drive_link"
-  },
-  {
-    "platform": "디에디트",
-    "category": "SNS, Video, 기타",
-    "summary": "멀티 채널 운영",
-    "description": "멀티 채널 운영",
-    "features": [
-      "담당자: 이혜민",
-      "이메일: m@the-edit.co.kr (회사: hello@the-edit.co.kr)",
-      "사내 자료명: 디에디트",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "HYPEBEAST",
-    "category": "DA, 기타",
-    "summary": "브랜드 협업 콘텐츠 제작 및 뉴스 웹 매거진",
-    "description": "브랜드 협업 콘텐츠 제작 및 뉴스 웹 매거진",
-    "features": [
-      "사내 자료명: 하입비스트",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": ""
   },
   {
     "platform": "챌린저스",
@@ -602,21 +357,6 @@
     "link": "https://drive.google.com/file/d/1NCACLD9Ni6MlpPHu6zPvHz460iGnuSbt/view?usp=drive_link"
   },
   {
-    "platform": "TVING",
-    "category": "Video",
-    "summary": "컨텐츠 플랫폼",
-    "description": "컨텐츠 플랫폼",
-    "features": [
-      "담당자: 현지은, 조성현, 정보교",
-      "이메일: jieun.hyun@cj.net, sh.cho22@cj.net, bg.jeong@cj.net",
-      "전화: 010-8253-8222 / 010-4704-2550 / 010-7457-1756",
-      "사내 자료명: 티빙소개",
-      "최근 업데이트 기준: 2024.11",
-      "비고: POC 확인 필요"
-    ],
-    "link": "https://drive.google.com/drive/folders/1DGRuyoR_hNiRhpWzdrVynrmcoWhRaELx?usp=drive_link"
-  },
-  {
     "platform": "점신",
     "category": "DA",
     "summary": "모바일 앱 기반 통합 운세 플랫폼",
@@ -640,18 +380,6 @@
       "최근 업데이트 기준: 2025.11"
     ],
     "link": "https://www.appsflyer.com/ko/"
-  },
-  {
-    "platform": "클래스팅",
-    "category": "DA",
-    "summary": "학부모-학생-교사가 활용하는 클래스 관리 앱",
-    "description": "학부모-학생-교사가 활용하는 클래스 관리 앱",
-    "features": [
-      "담당자: 클래스팅 문의폼",
-      "사내 자료명: 클래스팅소개",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/drive/folders/1tB0gyF2Un4y0UwT06sDxXlVi0BEhn1Aq?usp=drive_link"
   },
   {
     "platform": "리얼클릭(RealClick)",
@@ -761,18 +489,6 @@
     "link": "https://drive.google.com/file/d/1T9rTVKfTHKuwwe5HaQ0exp0HeYwJKnHy/view?usp=drive_link"
   },
   {
-    "platform": "키즈노트",
-    "category": "DA, 기타",
-    "summary": "영유아 모바일 커뮤니케이션 플랫폼",
-    "description": "영유아 모바일 커뮤니케이션 플랫폼",
-    "features": [
-      "이메일: adpart@kidsnote.com",
-      "사내 자료명: 키즈노트 소개",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/drive/folders/1gQRXeJnbcqMPuJ30uPfr-S3UuBoqJA5t?usp=drive_link"
-  },
-  {
     "platform": "캐치테이블",
     "category": "DA, 로컬",
     "summary": "국내 대표 미식 생활 플랫폼",
@@ -784,43 +500,5 @@
       "최근 업데이트 기준: 2025.11"
     ],
     "link": "https://drive.google.com/file/d/1m1bY8Gcg5Du58dQUzvrdk4a8iY5-vpKH/view?usp=drive_link"
-  },
-  {
-    "platform": "링크드인",
-    "category": "SNS, Video, DA, 리타기팅, 비즈니스",
-    "summary": "세계 최대 비즈니스 플랫폼",
-    "description": "세계 최대 비즈니스 플랫폼",
-    "features": [
-      "사내 자료명: 링크드인",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/drive/folders/14psGp62gpwcjN8CLmNxPbu5JsUDtsuRj?usp=drive_link"
-  },
-  {
-    "platform": "다방",
-    "category": "DA",
-    "summary": "대한민국 부동산 앱",
-    "description": "대한민국 부동산 앱",
-    "features": [
-      "담당자: 팀메일 ad@station3.co.kr, 이지혜 매니저 jhlee93@station3.co.kr",
-      "전화: T 070-4211-3953 / M 010-4851-2430",
-      "사내 자료명: 다방 소개",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/drive/folders/1SPt7lSleEYJ0JbGjS8QOQTFM30F3jXZa?usp=drive_link"
-  },
-  {
-    "platform": "티오더",
-    "category": "로컬, 기타, Video, DA",
-    "summary": "주문·결제하고 테이블에 바로 받아볼 수 있는 스마트 오더 시스템",
-    "description": "주문·결제하고 테이블에 바로 받아볼 수 있는 스마트 오더 시스템",
-    "features": [
-      "담당자: 조용래 팀장",
-      "이메일: yonglae.cho@torder.com (광고팀: team_ads@torder.com)",
-      "전화: 010-6647-9585",
-      "사내 자료명: 티오더소개",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/drive/folders/1zlxNpQdnz3kGqawrUX4YZC666tU1bjT7?usp=drive_link"
   }
 ]
