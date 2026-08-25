@@ -511,6 +511,15 @@
     color: var(--muted);
     line-height: 1.8;
   }
+  .pdf-embed {
+    margin: 0 0 8px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--bg);
+  }
+  .pdf-embed iframe { width: 100%; height: 360px; border: none; display: block; }
+  .pdf-embed-note { font-size: 11px; color: var(--faint); margin: 0 0 14px; }
   .product-footer {
     display: flex;
     align-items: center;
@@ -657,6 +666,10 @@
         <h1>매체 상품소개서</h1>
         <div class="page-sub" id="products-last-updated">최근 업데이트 —</div>
       </div>
+    </div>
+    <div class="search-bar">
+      <input type="text" class="search-input" id="product-search-input" placeholder="매체 상품소개서 검색 (매체명, 설명)">
+      <button class="search-clear" id="product-search-clear">✕</button>
     </div>
     <div id="product-stats" class="stats-row"></div>
     <div class="filters" id="product-filters"></div>
@@ -970,6 +983,7 @@ function renderSourceGrid(range) {
 
 let allProducts = [];
 let activeProductFilter = '전체';
+let productSearchQuery = '';
 
 const CATEGORY_ICON = {
   'DSP': '🎯', 'SNS': '💬', 'DA': '📊', 'Video': '🎬', '보상형': '🎁', 'OOH': '🚏',
@@ -1063,11 +1077,24 @@ function renderProductGrid() {
     return;
   }
 
-  const filtered = activeProductFilter === '전체'
+  const byCategory = activeProductFilter === '전체'
     ? allProducts
     : allProducts.filter(p => categoryTokens(p).includes(activeProductFilter));
 
+  const q = productSearchQuery.trim().toLowerCase();
+  const filtered = q
+    ? byCategory.filter(p =>
+        p.platform.toLowerCase().includes(q) ||
+        (p.description || '').toLowerCase().includes(q) ||
+        (p.summary || '').toLowerCase().includes(q))
+    : byCategory;
+
   metaRow.innerHTML = `<span>전체 매체 ${filtered.length}개</span>`;
+
+  if (!filtered.length) {
+    grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1;">"${escapeHTML(productSearchQuery.trim())}"에 대한 검색 결과가 없어요.</div>`;
+    return;
+  }
 
   grid.innerHTML = filtered.map(p => {
     const cat = primaryCategory(p);
@@ -1096,16 +1123,31 @@ function renderProductGrid() {
   });
 }
 
+// 구글 드라이브 "개별 파일" 링크(/file/d/{id}/...)일 때만 미리보기 iframe을 띄운다.
+// 폴더 링크나 외부 홈페이지 링크는 그대로 새 탭으로 열도록 둔다.
+function driveFileId(url) {
+  const m = (url || '').match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
+  return m ? m[1] : null;
+}
+
 function openProductSheet(p) {
   document.getElementById('sheet-swatch').style.background = categoryColor(primaryCategory(p));
   document.getElementById('sheet-name').textContent = p.platform;
   document.getElementById('sheet-category').textContent = p.category || '';
+
+  const fileId = driveFileId(p.link);
+  const previewHTML = fileId
+    ? `<div class="pdf-embed"><iframe src="https://drive.google.com/file/d/${fileId}/preview" allow="autoplay" loading="lazy"></iframe></div>
+       <p class="pdf-embed-note">미리보기가 로그인 화면만 나온다면, 드라이브에서 해당 파일을 "링크가 있는 모든 사용자"로 공유해주세요.</p>`
+    : '';
+
   document.getElementById('sheet-body').innerHTML = `
     ${p.description ? `<p class="product-desc">${escapeHTML(p.description)}</p>` : ''}
     ${(p.features || []).length ? `<ul class="product-features">${p.features.map(f => `<li>${escapeHTML(f)}</li>`).join('')}</ul>` : ''}
+    ${previewHTML}
     <div class="product-footer">
       <span>${p.updated_at ? '최근 업데이트 ' + p.updated_at : ''}</span>
-      ${p.link ? `<a class="product-link" href="${p.link}" target="_blank" rel="noopener">자세히 보기 ↗</a>` : ''}
+      ${p.link ? `<a class="product-link" href="${p.link}" target="_blank" rel="noopener">${fileId ? '드라이브에서 열기' : '자세히 보기'} ↗</a>` : ''}
     </div>`;
   document.getElementById('bottom-sheet').classList.add('open');
   document.getElementById('sheet-backdrop').classList.add('show');
@@ -1156,6 +1198,18 @@ document.getElementById('search-clear').addEventListener('click', () => {
   const input = document.getElementById('search-input');
   input.value = '';
   renderSearch('');
+});
+document.getElementById('product-search-input').addEventListener('input', (e) => {
+  productSearchQuery = e.target.value;
+  document.getElementById('product-search-clear').style.display = productSearchQuery.trim() ? 'block' : 'none';
+  renderProductGrid();
+});
+document.getElementById('product-search-clear').addEventListener('click', () => {
+  const input = document.getElementById('product-search-input');
+  input.value = '';
+  productSearchQuery = '';
+  document.getElementById('product-search-clear').style.display = 'none';
+  renderProductGrid();
 });
 document.getElementById('week-select').addEventListener('change', (e) => {
   selectedClipIndex = Number(e.target.value);
