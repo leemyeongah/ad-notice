@@ -1129,6 +1129,10 @@ function driveFileId(url) {
   const m = (url || '').match(/drive\.google\.com\/file\/d\/([a-zA-Z0-9_-]+)/);
   return m ? m[1] : null;
 }
+// data/pdfs/... 처럼 이 저장소 안에 직접 넣은 PDF는 구글 로그인 없이 그냥 바로 열린다.
+function isRepoPdf(url) {
+  return !!url && !/^https?:\/\//i.test(url) && url.toLowerCase().endsWith('.pdf');
+}
 
 function openProductSheet(p) {
   document.getElementById('sheet-swatch').style.background = categoryColor(primaryCategory(p));
@@ -1136,10 +1140,17 @@ function openProductSheet(p) {
   document.getElementById('sheet-category').textContent = p.category || '';
 
   const fileId = driveFileId(p.link);
-  const previewHTML = fileId
-    ? `<div class="pdf-embed"><iframe src="https://drive.google.com/file/d/${fileId}/preview" allow="autoplay" loading="lazy"></iframe></div>
-       <p class="pdf-embed-note">미리보기가 로그인 화면만 나온다면, 드라이브에서 해당 파일을 "링크가 있는 모든 사용자"로 공유해주세요.</p>`
-    : '';
+  const repoPdf = isRepoPdf(p.link);
+  let previewHTML = '';
+  let linkLabel = '자세히 보기';
+  if (repoPdf) {
+    previewHTML = `<div class="pdf-embed"><iframe src="${p.link}" loading="lazy"></iframe></div>`;
+    linkLabel = 'PDF 새 탭으로 열기';
+  } else if (fileId) {
+    previewHTML = `<div class="pdf-embed"><iframe src="https://drive.google.com/file/d/${fileId}/preview" allow="autoplay" loading="lazy"></iframe></div>
+       <p class="pdf-embed-note">미리보기가 로그인 화면만 나온다면, 드라이브에서 해당 파일을 "링크가 있는 모든 사용자"로 공유해주세요.</p>`;
+    linkLabel = '드라이브에서 열기';
+  }
 
   document.getElementById('sheet-body').innerHTML = `
     ${p.description ? `<p class="product-desc">${escapeHTML(p.description)}</p>` : ''}
@@ -1147,7 +1158,7 @@ function openProductSheet(p) {
     ${previewHTML}
     <div class="product-footer">
       <span>${p.updated_at ? '최근 업데이트 ' + p.updated_at : ''}</span>
-      ${p.link ? `<a class="product-link" href="${p.link}" target="_blank" rel="noopener">${fileId ? '드라이브에서 열기' : '자세히 보기'} ↗</a>` : ''}
+      ${p.link ? `<a class="product-link" href="${p.link}" target="_blank" rel="noopener">${linkLabel} ↗</a>` : ''}
     </div>`;
   document.getElementById('bottom-sheet').classList.add('open');
   document.getElementById('sheet-backdrop').classList.add('show');
