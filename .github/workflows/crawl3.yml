@@ -2,8 +2,9 @@ name: 매체 공지 크롤링
 
 on:
   schedule:
-    # UTC 기준 매주 월요일 1시 = 한국시간(UTC+9) 월요일 오전 10시
-    - cron: '0 1 * * 1'
+    # UTC 기준 매주 화요일 0시 = 한국시간(UTC+9) 화요일 오전 9시
+    # (나스미디어 뉴스클리핑이 월요일 중 늦게 올라올 때가 있어서 하루 늦춰서 확실히 잡음)
+    - cron: '0 0 * * 2'
   workflow_dispatch: {}  # Actions 탭에서 수동으로도 실행 가능
 
 permissions:
