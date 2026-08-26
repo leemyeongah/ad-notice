@@ -803,7 +803,17 @@ const PLATFORM_CLASS = {
   '틱톡 for Business': 'tiktok',
 };
 const CLIPPING_PLATFORM = '나스미디어 뉴스클리핑';
-const SOURCE_ORDER = ['나스미디어 광고상품업데이트', '네이버 GFA', 'NOSP', '카카오모먼트', '메타 for Business', '토스애즈', '틱톡 for Business'];
+// 나스미디어 소식 2건(광고상품 업데이트, 뉴스클리핑)은 개별 매체가 아니라 요약성 소식이라
+// 정렬 시 항상 맨 뒤로 보낸다.
+const SOURCE_ORDER = ['네이버 GFA', 'NOSP', '카카오모먼트', '메타 for Business', '토스애즈', '틱톡 for Business', '나스미디어 광고상품업데이트', '나스미디어 뉴스클리핑'];
+// 매체 이름은 원본 데이터(n.platform) 그대로 두고, 화면 표시용 짧은 이름만 따로 매핑한다.
+const PLATFORM_LABEL = {
+  '나스미디어 뉴스클리핑': '클리핑',
+  '나스미디어 광고상품업데이트': '광고상품 업데이트',
+};
+function platformLabel(p) {
+  return PLATFORM_LABEL[p] || p;
+}
 
 let allNotices = [];
 let activeFilter = '전체';
@@ -854,7 +864,7 @@ function noticeRowHTML(n) {
     <div class="th-row">
       <a class="th-link ${isUnseen(n) ? 'is-unseen' : ''}" href="${n.url}" target="_blank" rel="noopener">
         ${isUnseen(n) ? '<span class="unseen-dot" title="지난 방문 이후 새 글"></span>' : ''}
-        <span class="platform-tag ${PLATFORM_CLASS[n.platform] || 'common'}">${escapeHTML(n.platform)}</span>
+        <span class="platform-tag ${PLATFORM_CLASS[n.platform] || 'common'}">${escapeHTML(platformLabel(n.platform))}</span>
         ${n.is_pinned ? '<span title="고정 공지">📌</span>' : ''}
         ${isImportant(n.title) ? '<span title="캠페인에 영향 줄 수 있는 소식">⚠️</span>' : ''}
         <span class="th-text">${escapeHTML(n.title)}</span>
@@ -866,9 +876,13 @@ function noticeRowHTML(n) {
 
 function renderFilters(platforms) {
   const el = document.getElementById('filters');
-  const list = ['전체', ...platforms];
+  const sorted = [...platforms].sort((a, b) => {
+    const ia = SOURCE_ORDER.indexOf(a), ib = SOURCE_ORDER.indexOf(b);
+    return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+  });
+  const list = ['전체', ...sorted];
   el.innerHTML = list.map(p =>
-    `<button class="filter-btn ${p === activeFilter ? 'active' : ''}" data-platform="${escapeHTML(p)}">${escapeHTML(p)}</button>`
+    `<button class="filter-btn ${p === activeFilter ? 'active' : ''}" data-platform="${escapeHTML(p)}">${escapeHTML(p === '전체' ? p : platformLabel(p))}</button>`
   ).join('');
   el.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -915,7 +929,7 @@ function renderSidebar() {
       <a class="sb-item" href="${n.url}" target="_blank" rel="noopener">
         <div class="sb-item-title">${isImportant(n.title) ? '⚠️ ' : ''}${escapeHTML(n.title)}</div>
         <div class="sb-item-meta">
-          <span class="platform-tag ${PLATFORM_CLASS[n.platform] || 'common'}">${escapeHTML(n.platform)}</span>
+          <span class="platform-tag ${PLATFORM_CLASS[n.platform] || 'common'}">${escapeHTML(platformLabel(n.platform))}</span>
           <span>${n.date}</span>
         </div>
       </a>`).join('');
@@ -1023,7 +1037,7 @@ function renderClippingHero() {
   area.innerHTML = `
     <div class="card">
       <div class="clip-hero-eyebrow">
-        <span>🗞️ 나스미디어 뉴스클리핑</span>
+        <span>🗞️ ${escapeHTML(platformLabel(CLIPPING_PLATFORM))}</span>
         ${clip.is_new ? '<span class="new-flag">NEW</span>' : ''}
       </div>
       <div class="clip-hero-title">${escapeHTML(clip.title)}</div>
@@ -1158,7 +1172,7 @@ function renderSourceGrid(range) {
       <div class="source-card">
         <div class="source-head">
           <span class="source-swatch" style="background:var(--${PLATFORM_CLASS[platform] || 'common'})"></span>
-          <span class="source-name">${escapeHTML(platform)}</span>
+          <span class="source-name">${escapeHTML(platformLabel(platform))}</span>
           <span class="source-count">${items.length}건</span>
         </div>
         ${freshnessHTML}
