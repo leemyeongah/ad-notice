@@ -3,7 +3,7 @@
 <html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>매체 공지 모니터</title>
+<title>매체 신규 소식 - ACD1-T2용</title>
 <link rel="preconnect" href="https://fonts.googleapis.com/">
 <link href="./dashboard_files/css2" rel="stylesheet">
 <style>
@@ -649,11 +649,10 @@
 </head>
 <body>
 <div class="topbar">
-  <div class="brand">매체 공지 <span class="dot">모니터</span></div>
+  <div class="brand">매체 신규 소식 <span class="dot">- ACD1-T2용</span></div>
   <div class="tab-nav" id="tab-nav">
     <button class="tab-btn active" data-tab="news">매체소식</button>
     <button class="tab-btn" data-tab="products">매체 상품소개서</button>
-    <button class="tab-btn" data-tab="slack">팀 채널</button>
   </div>
   <div class="live-chip"><span class="pulse-dot"></span>LIVE · <span id="new-count-chip"></span></div>
 </div>
@@ -713,16 +712,6 @@
     <div class="filters" id="product-filters"></div>
     <div class="product-meta-row" id="product-meta-row"></div>
     <div id="product-list" class="product-grid"></div>
-  </div>
-
-  <div id="panel-slack" style="display:none;">
-    <div class="page-head">
-      <div>
-        <h1>팀 채널</h1>
-        <div class="page-sub" id="slack-last-updated">최근 업데이트 —</div>
-      </div>
-    </div>
-    <div id="slack-list" style="display:flex; flex-direction:column; gap:10px;"></div>
   </div>
 </div>
 
@@ -1290,7 +1279,6 @@ document.getElementById('tab-nav').addEventListener('click', (e) => {
   const tab = btn.dataset.tab;
   document.getElementById('panel-news').style.display = tab === 'news' ? 'block' : 'none';
   document.getElementById('panel-products').style.display = tab === 'products' ? 'block' : 'none';
-  document.getElementById('panel-slack').style.display = tab === 'slack' ? 'block' : 'none';
 });
 
 fetch('data/products.json')
