@@ -1386,7 +1386,7 @@ document.getElementById('tab-nav').addEventListener('click', (e) => {
   document.getElementById('panel-products').style.display = tab === 'products' ? 'block' : 'none';
 });
 
-fetch('data/products.json')
+fetch('data/products.json', { cache: 'no-store' })
   .then(res => {
     if (!res.ok) throw new Error('not found');
     return res.json();
@@ -1437,7 +1437,7 @@ document.getElementById('week-next').addEventListener('click', () => {
   if (selectedClipIndex > 0) { selectedClipIndex--; renderBrowseArea(); }
 });
 
-fetch('data/notices.json')
+fetch('data/notices.json', { cache: 'no-store' })
   .then(res => {
     if (!res.ok) throw new Error('not found');
     return res.json();
