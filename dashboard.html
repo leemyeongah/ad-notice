@@ -24,7 +24,7 @@
     --nosp: #0d9488;
     --kakao: #b45309;
     --meta: #7c3aed;
-    --toss: #db2777;
+    --toss: #0064ff;
     --tiktok: #334155;
     /* 나스미디어 소식 2건은 개별 매체가 아니라 요약성 소식이라 톤을 낮춘 무채색 계열을 쓴다. */
     --adupdate: #78716c;
@@ -37,6 +37,7 @@
     background: var(--bg);
     color: var(--text);
     font-family: 'Noto Sans KR', sans-serif;
+    font-size: 13px;
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
   }
@@ -110,7 +111,7 @@
     margin-bottom: 24px;
   }
   .page-head h1 {
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 800;
     margin: 0 0 6px;
     letter-spacing: -0.02em;
@@ -217,7 +218,7 @@
     color: var(--clipping);
     margin-bottom: 10px;
   }
-  .clip-hero-title { font-size: 16px; font-weight: 800; margin-bottom: 8px; }
+  .clip-hero-title { font-size: 15px; font-weight: 800; margin-bottom: 8px; }
   .clip-hero-excerpt { font-size: 13px; line-height: 1.7; color: var(--muted); margin: 0 0 14px; }
   .clip-hero-excerpt mark {
     background: var(--accent-dim);
@@ -262,6 +263,7 @@
     align-items: baseline;
     gap: 8px;
     min-width: 0;
+    font-size: 13px;
     text-decoration: none;
     color: var(--text);
   }
@@ -366,12 +368,6 @@
     padding: 0 2px;
     border-radius: 3px;
   }
-  .source-rest {
-    margin-top: 12px;
-    padding-top: 2px;
-    border-top: 1px solid var(--border-soft);
-  }
-  .source-rest .th-row { padding: 8px 0; }
   .source-empty {
     font-size: 12px;
     color: var(--faint);
@@ -518,7 +514,7 @@
     flex-shrink: 0;
   }
   .sheet-swatch { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 8px; }
-  .sheet-name { font-weight: 800; font-size: 16px; }
+  .sheet-name { font-weight: 800; font-size: 15px; }
   .sheet-category { display: block; font-size: 11px; color: var(--faint); margin: 4px 0 0 16px; }
   .sheet-close {
     flex-shrink: 0;
@@ -608,7 +604,7 @@
   .platform-tag.nosp { background: rgba(13,148,136,0.12); color: var(--nosp); }
   .platform-tag.kakao { background: rgba(180,83,9,0.12); color: var(--kakao); }
   .platform-tag.meta { background: rgba(124,58,237,0.12); color: var(--meta); }
-  .platform-tag.toss { background: rgba(219,39,119,0.12); color: var(--toss); }
+  .platform-tag.toss { background: rgba(0,100,255,0.12); color: var(--toss); }
   .platform-tag.tiktok { background: rgba(51,65,85,0.12); color: var(--tiktok); }
   .platform-tag.adupdate { background: rgba(120,113,108,0.12); color: var(--adupdate); }
   .platform-tag.clipping { background: rgba(168,162,158,0.16); color: var(--clipping); }
@@ -1002,9 +998,20 @@ function renderSearch(query) {
     : `<div class="empty-state">"${escapeHTML(query.trim())}"에 대한 검색 결과가 없어요.</div>`;
 }
 
-// 매체별 소식 카드: 가장 최근 소식 1건은 헤드라인으로, 나머지 최대 2건은 한 줄 요약으로 보여준다.
+// 소식 여러 건 중 "가장 중요한" 1건을 고른다: 고정 공지 > 캠페인에 영향 줄 수 있는 소식(⚠️) > 최신순.
+function pickHeadline(items) {
+  return [...items].sort((a, b) => {
+    const pa = a.is_pinned ? 1 : 0, pb = b.is_pinned ? 1 : 0;
+    if (pa !== pb) return pb - pa;
+    const ia = isImportant(a.title) ? 1 : 0, ib = isImportant(b.title) ? 1 : 0;
+    if (ia !== ib) return ib - ia;
+    return b.date.localeCompare(a.date);
+  })[0];
+}
+
+// 매체별 소식 카드: 매체당 가장 중요한 소식 딱 1건만 헤드라인으로 보여준다.
 // (예전엔 "매체별 가장 눈에 띄는 소식" 카드를 이 위에 따로 두었는데, 같은 정보를 두 번 보여주는
-// 셈이라 하나로 합쳤다.)
+// 셈이라 하나로 합쳤고, 카드당 여러 건을 늘어놓던 것도 정보량이 많아 1건으로 줄였다.)
 function renderSourceGrid(range) {
   const label = document.getElementById('source-grid-label');
   const grid = document.getElementById('source-grid');
@@ -1015,30 +1022,23 @@ function renderSourceGrid(range) {
     return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
   });
 
-  const byPlatform = platforms.map(platform => ({
-    platform,
-    items: allNotices
-      .filter(n => n.platform === platform && (!range || (n.date >= range.start && n.date <= range.end)))
-      .sort((a, b) => b.date.localeCompare(a.date))
-      .slice(0, 3),
-  }));
+  const byPlatform = platforms.map(platform => {
+    const items = allNotices.filter(n => n.platform === platform && (!range || (n.date >= range.start && n.date <= range.end)));
+    return { platform, count: items.length, headline: items.length ? pickHeadline(items) : null };
+  });
 
-  label.textContent = range ? `📌 ${range.start} ~ ${range.end} · 매체별 소식` : '📌 매체별 소식';
+  label.textContent = range ? `📌 ${range.start} ~ ${range.end} · 주요 매체 소식` : '📌 주요 매체 소식';
 
   // 기간 조회 중인데 전 매체에 소식이 하나도 없으면, 빈 카드를 잔뜩 늘어놓는 대신 안내 한 줄로 정리한다.
-  if (range && byPlatform.every(p => p.items.length === 0)) {
+  if (range && byPlatform.every(p => p.count === 0)) {
     grid.innerHTML = `<div class="th-empty" style="grid-column:1/-1;">선택한 주간(${range.start} ~ ${range.end})에는 매체 소식이 없었어요.</div>`;
     return;
   }
 
   grid.innerHTML = byPlatform
-    .filter(p => !range || p.items.length > 0)
-    .map(({ platform, items }) => {
-      const bodyHTML = items.length
-        ? sourceHeadlineHTML(items[0]) + (items.length > 1
-            ? `<div class="source-rest">${items.slice(1).map(noticeRowHTML).join('')}</div>`
-            : '')
-        : `<div class="source-empty">최근 소식이 없어요.</div>`;
+    .filter(p => !range || p.count > 0)
+    .map(({ platform, count, headline }) => {
+      const bodyHTML = headline ? sourceHeadlineHTML(headline) : `<div class="source-empty">최근 소식이 없어요.</div>`;
 
       const latestDate = allNotices
         .filter(n => n.platform === platform)
@@ -1055,7 +1055,7 @@ function renderSourceGrid(range) {
         <div class="source-head">
           <span class="source-swatch" style="background:var(--${PLATFORM_CLASS[platform] || 'common'})"></span>
           <span class="source-name">${escapeHTML(platformLabel(platform))}</span>
-          <span class="source-count">${items.length}건</span>
+          <span class="source-count">${count}건</span>
         </div>
         ${freshnessHTML}
         ${bodyHTML}
