@@ -104,10 +104,11 @@
   .sidebar { width: 260px; flex-shrink: 0; position: sticky; top: 20px; }
   .sidebar-title {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 6px;
     font-size: 13px;
     font-weight: 800;
+    line-height: 1.4;
     margin-bottom: 12px;
   }
   .sidebar-card {
@@ -714,7 +715,7 @@
 </div>
 <div class="layout">
   <aside class="sidebar">
-    <div class="sidebar-title">⚡ 지금 챙겨야 할 것</div>
+    <div class="sidebar-title">🗓️ <span id="sidebar-title-text">이번 주 소식</span></div>
     <div class="sidebar-card" id="sidebar-alerts"></div>
   </aside>
   <div class="wrap">
@@ -878,25 +879,46 @@ function renderFilters(platforms) {
   });
 }
 
-// 왼쪽 사이드바: 안 본 글이거나 ⚠️ 중요 표시된 것만 모아서 한눈에 보여준다.
+// 왼쪽 사이드바: 이번 주(월~일)에 올라온 전체 매체 소식을 모아서 한눈에 보여준다.
+// 크롤링은 화요일 1번뿐이라 "이번 주"에 아무것도 없으면 가장 최근 걸로 대체한다.
 function renderSidebar() {
   const el = document.getElementById('sidebar-alerts');
-  const candidates = allNotices.filter(n =>
-    n.platform !== CLIPPING_PLATFORM && (isImportant(n.title) || isUnseen(n))
-  );
-  candidates.sort((a, b) => b.date.localeCompare(a.date));
-  const items = candidates.slice(0, 8);
+  const title = document.getElementById('sidebar-title-text');
+  const relevant = allNotices.filter(n => n.platform !== CLIPPING_PLATFORM);
 
-  el.innerHTML = items.length
-    ? items.map(n => `
+  if (!relevant.length) {
+    if (title) title.textContent = '이번 주 소식';
+    el.innerHTML = '<div class="sb-empty">아직 수집된 소식이 없어요.</div>';
+    return;
+  }
+
+  const latestDate = relevant.reduce((max, n) => (n.date > max ? n.date : max), '');
+  const monday = mondayOf(latestDate);
+  const sunday = toDateStr(addDays(parseDateOnly(monday), 6));
+
+  let items = relevant.filter(n => n.date >= monday && n.date <= sunday);
+  let usedFallback = false;
+  if (!items.length) {
+    items = relevant.filter(n => n.date === latestDate);
+    usedFallback = true;
+  }
+  items.sort((a, b) => (b.is_pinned - a.is_pinned) || b.date.localeCompare(a.date));
+  items = items.slice(0, 10);
+
+  if (title) {
+    title.textContent = usedFallback
+      ? `이번 주 소식 · 최근 업데이트(${latestDate})`
+      : `이번 주 소식 · ${formatMD(monday)} ~ ${formatMD(sunday)}`;
+  }
+
+  el.innerHTML = items.map(n => `
       <a class="sb-item" href="${n.url}" target="_blank" rel="noopener">
         <div class="sb-item-title">${isImportant(n.title) ? '⚠️ ' : ''}${escapeHTML(n.title)}</div>
         <div class="sb-item-meta">
           <span class="platform-tag ${PLATFORM_CLASS[n.platform] || 'common'}">${escapeHTML(n.platform)}</span>
           <span>${n.date}</span>
         </div>
-      </a>`).join('')
-    : '<div class="sb-empty">지금은 챙길 게 없어요 🎉</div>';
+      </a>`).join('');
 }
 
 function renderFeed() {
