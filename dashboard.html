@@ -19,14 +19,17 @@
     --faint: #9aa1ac;
     --accent: #2f6fed;
     --accent-dim: rgba(47,111,237,0.08);
-    --gfa: #2f6fed;
-    --nosp: #12967a;
-    --common: #7c5cff;
-    --kakao: #a3760a;
-    --meta: #3b6fe0;
-    --nasmedia: #e0562f;
-    --toss: #0064ff;
-    --tiktok: #d0195a;
+    /* 매체별 고유색: 서로 겹치지 않는 하나의 계통색 세트에서만 골라 쓴다(파란색은 accent 전용). */
+    --gfa: #059669;
+    --nosp: #0d9488;
+    --kakao: #b45309;
+    --meta: #7c3aed;
+    --toss: #db2777;
+    --tiktok: #334155;
+    /* 나스미디어 소식 2건은 개별 매체가 아니라 요약성 소식이라 톤을 낮춘 무채색 계열을 쓴다. */
+    --adupdate: #78716c;
+    --clipping: #a8a29e;
+    --common: #64748b;
   }
   * { box-sizing: border-box; }
   body {
@@ -113,7 +116,7 @@
     letter-spacing: -0.02em;
   }
   .page-sub {
-    font-size: 12.5px;
+    font-size: 12px;
     color: var(--muted);
   }
 
@@ -124,7 +127,7 @@
     flex-wrap: wrap;
   }
   .filter-btn {
-    font-size: 12.5px;
+    font-size: 12px;
     padding: 6px 14px;
     border-radius: 20px;
     border: 1px solid var(--border);
@@ -152,7 +155,7 @@
   .search-bar { position: relative; margin-bottom: 16px; }
   .search-input {
     width: 100%;
-    font-size: 13.5px;
+    font-size: 13px;
     font-family: inherit;
     padding: 11px 36px 11px 14px;
     border-radius: 10px;
@@ -179,7 +182,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
   .week-nav-btn {
     flex-shrink: 0;
@@ -211,10 +214,10 @@
     align-items: center;
     gap: 6px;
     font-size: 11px;
-    color: var(--nasmedia);
+    color: var(--clipping);
     margin-bottom: 10px;
   }
-  .clip-hero-title { font-size: 16.5px; font-weight: 800; margin-bottom: 8px; }
+  .clip-hero-title { font-size: 16px; font-weight: 800; margin-bottom: 8px; }
   .clip-hero-excerpt { font-size: 13px; line-height: 1.7; color: var(--muted); margin: 0 0 14px; }
   .clip-hero-excerpt mark {
     background: var(--accent-dim);
@@ -230,26 +233,20 @@
     margin: 0 0 16px;
   }
   .ch-row { display: flex; align-items: baseline; gap: 10px; }
-  .ch-platform { flex-shrink: 0; width: 72px; font-size: 12.5px; font-weight: 700; }
+  .ch-platform { flex-shrink: 0; width: 72px; font-size: 12px; font-weight: 700; }
   .ch-headline { font-size: 13px; color: var(--text); line-height: 1.5; }
   .clip-hero-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 11.5px;
+    font-size: 11px;
     color: var(--faint);
     padding-top: 12px;
     border-top: 1px solid var(--border-soft);
   }
   .clip-hero-footer a { color: var(--accent); text-decoration: none; font-weight: 600; }
 
-  /* ---- top highlights: 매체별 가장 눈에 띄는 내용 ---- */
-  .th-title-row {
-    font-size: 11.5px;
-    font-weight: 700;
-    color: var(--accent);
-    margin-bottom: 10px;
-  }
+  /* ---- notice row: 한 줄짜리 소식(보관함/검색/카드 내 보조 항목 공용) ---- */
   .th-row {
     display: flex;
     align-items: center;
@@ -274,10 +271,16 @@
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  .th-date { flex-shrink: 0; font-size: 11.5px; color: var(--faint); }
-  .th-empty { font-size: 12.5px; color: var(--faint); padding: 4px 0; }
+  .th-date { flex-shrink: 0; font-size: 11px; color: var(--faint); }
+  .th-empty { font-size: 12px; color: var(--faint); padding: 4px 0; }
 
-  /* ---- source grid: one report card per platform ---- */
+  /* ---- source grid: 매체별 소식 카드 (헤드라인 1건 + 나머지는 한 줄 요약) ---- */
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
   .source-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -305,7 +308,7 @@
   .source-name { font-weight: 700; font-size: 14px; }
   .source-count {
     margin-left: auto;
-    font-size: 11.5px;
+    font-size: 11px;
     color: var(--faint);
   }
   .source-freshness {
@@ -323,22 +326,19 @@
     background: var(--accent);
     flex-shrink: 0;
   }
-  .th-link.is-unseen .th-text, .si-title.is-unseen { font-weight: 700; }
-  .source-item { padding-bottom: 14px; margin-bottom: 14px; border-bottom: 1px solid var(--border-soft); }
-  .source-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 4px; }
-  .si-title-row {
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-  }
-  .si-title {
+  .th-link.is-unseen .th-text, .sh-title.is-unseen { font-weight: 800; }
+
+  /* 카드당 가장 최근 소식 1건은 헤드라인으로 크게, 나머지는 .th-row로 압축해서 보여준다. */
+  .source-headline { margin-bottom: 4px; }
+  .sh-title-row { display: flex; align-items: baseline; gap: 8px; }
+  .sh-title {
     text-decoration: none;
     color: var(--text);
-    font-size: 13.5px;
-    font-weight: 600;
-    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.45;
   }
-  .si-title:hover { color: var(--accent); }
+  .sh-title:hover { color: var(--accent); }
   .si-new {
     flex-shrink: 0;
     font-size: 10px;
@@ -349,12 +349,12 @@
     border-radius: 4px;
   }
   .si-meta {
-    font-size: 11.5px;
+    font-size: 11px;
     color: var(--faint);
     margin: 4px 0 6px;
   }
   .si-excerpt {
-    font-size: 12.5px;
+    font-size: 12px;
     color: var(--muted);
     line-height: 1.6;
     margin: 0;
@@ -366,8 +366,14 @@
     padding: 0 2px;
     border-radius: 3px;
   }
+  .source-rest {
+    margin-top: 12px;
+    padding-top: 2px;
+    border-top: 1px solid var(--border-soft);
+  }
+  .source-rest .th-row { padding: 8px 0; }
   .source-empty {
-    font-size: 12.5px;
+    font-size: 12px;
     color: var(--faint);
     padding: 6px 0 14px;
   }
@@ -382,7 +388,7 @@
   }
   .stat-block { display: flex; flex-direction: column; gap: 2px; }
   .stat-number { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; }
-  .stat-label { font-size: 11.5px; color: var(--muted); }
+  .stat-label { font-size: 11px; color: var(--muted); }
 
   .product-meta-row {
     display: flex;
@@ -441,7 +447,7 @@
     white-space: nowrap;
   }
   .pc-desc {
-    font-size: 12.5px;
+    font-size: 12px;
     color: var(--muted);
     line-height: 1.6;
     margin: 0 0 14px;
@@ -513,7 +519,7 @@
   }
   .sheet-swatch { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 8px; }
   .sheet-name { font-weight: 800; font-size: 16px; }
-  .sheet-category { display: block; font-size: 11.5px; color: var(--faint); margin: 4px 0 0 16px; }
+  .sheet-category { display: block; font-size: 11px; color: var(--faint); margin: 4px 0 0 16px; }
   .sheet-close {
     flex-shrink: 0;
     border: none;
@@ -537,7 +543,7 @@
   .product-features {
     margin: 0 0 14px;
     padding-left: 18px;
-    font-size: 12.5px;
+    font-size: 12px;
     color: var(--muted);
     line-height: 1.8;
   }
@@ -566,7 +572,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 11.5px;
+    font-size: 11px;
     color: var(--faint);
     padding-top: 12px;
     border-top: 1px solid var(--border-soft);
@@ -577,7 +583,7 @@
   /* ---- archive (full list) ---- */
   .archive-toggle-wrap { text-align: center; margin: 20px 0 24px; }
   .archive-toggle {
-    font-size: 12.5px;
+    font-size: 12px;
     color: var(--muted);
     background: var(--panel);
     border: 1px solid var(--border);
@@ -588,12 +594,6 @@
   }
   .archive-toggle:hover { color: var(--text); border-color: #c7ccd6; }
 
-  .section-label {
-    font-size: 11.5px;
-    font-weight: 700;
-    color: var(--accent);
-    margin-bottom: 10px;
-  }
   .week-group { margin-bottom: 12px; }
 
   .platform-tag {
@@ -604,14 +604,15 @@
     letter-spacing: 0.01em;
     flex-shrink: 0;
   }
-  .platform-tag.gfa { background: #2f6fed14; color: var(--gfa); }
-  .platform-tag.nosp { background: #12967a14; color: var(--nosp); }
-  .platform-tag.common { background: #7c5cff14; color: var(--common); }
-  .platform-tag.kakao { background: #a3760a14; color: var(--kakao); }
-  .platform-tag.meta { background: #3b6fe014; color: var(--meta); }
-  .platform-tag.nasmedia { background: #e0562f14; color: var(--nasmedia); }
-  .platform-tag.toss { background: #0064ff14; color: var(--toss); }
-  .platform-tag.tiktok { background: #d0195a14; color: var(--tiktok); }
+  .platform-tag.gfa { background: rgba(5,150,105,0.12); color: var(--gfa); }
+  .platform-tag.nosp { background: rgba(13,148,136,0.12); color: var(--nosp); }
+  .platform-tag.kakao { background: rgba(180,83,9,0.12); color: var(--kakao); }
+  .platform-tag.meta { background: rgba(124,58,237,0.12); color: var(--meta); }
+  .platform-tag.toss { background: rgba(219,39,119,0.12); color: var(--toss); }
+  .platform-tag.tiktok { background: rgba(51,65,85,0.12); color: var(--tiktok); }
+  .platform-tag.adupdate { background: rgba(120,113,108,0.12); color: var(--adupdate); }
+  .platform-tag.clipping { background: rgba(168,162,158,0.16); color: var(--clipping); }
+  .platform-tag.common { background: rgba(100,116,139,0.12); color: var(--common); }
 
   .new-flag {
     font-size: 10px;
@@ -666,7 +667,7 @@
   <div id="panel-news">
     <div class="page-head">
       <div>
-        <h1>신규매체 소식</h1>
+        <h1>매체 소식</h1>
         <div class="page-sub" id="last-checked">마지막 확인 —</div>
       </div>
     </div>
@@ -685,7 +686,7 @@
       </div>
 
       <div id="clip-hero-area"></div>
-      <div id="top-highlights-area"></div>
+      <div class="section-label" id="source-grid-label"></div>
       <div id="source-grid" class="source-grid"></div>
     </div>
 
@@ -741,8 +742,8 @@ const PLATFORM_CLASS = {
   'NOSP': 'nosp',
   '카카오모먼트': 'kakao',
   '메타 for Business': 'meta',
-  '나스미디어 뉴스클리핑': 'nasmedia',
-  '나스미디어 광고상품업데이트': 'nasmedia',
+  '나스미디어 뉴스클리핑': 'clipping',
+  '나스미디어 광고상품업데이트': 'adupdate',
   '토스애즈': 'toss',
   '틱톡 for Business': 'tiktok',
 };
@@ -815,6 +816,24 @@ function noticeRowHTML(n) {
         ${n.is_new ? '<span class="new-flag">NEW</span>' : ''}
       </a>
       <span class="th-date">${n.date}</span>
+    </div>`;
+}
+
+// 매체별 소식 카드에서 가장 최근 소식 1건을 헤드라인으로 크게 보여줄 때 쓰는 마크업.
+function sourceHeadlineHTML(n) {
+  return `
+    <div class="source-headline">
+      <div class="sh-title-row">
+        <a class="sh-title ${isUnseen(n) ? 'is-unseen' : ''}" href="${n.url}" target="_blank" rel="noopener">
+          ${isUnseen(n) ? '<span class="unseen-dot" title="지난 방문 이후 새 글"></span>' : ''}
+          ${n.is_pinned ? '<span title="고정 공지">📌</span>' : ''}
+          ${isImportant(n.title) ? '<span title="캠페인에 영향 줄 수 있는 소식">⚠️</span>' : ''}
+          ${escapeHTML(n.title)}
+        </a>
+        ${n.is_new ? '<span class="si-new">NEW</span>' : ''}
+      </div>
+      <div class="si-meta">${escapeHTML(n.category)} · ${n.date}</div>
+      ${n.excerpt ? `<p class="si-excerpt">${excerptHTML(n.excerpt)}</p>` : ''}
     </div>`;
 }
 
@@ -951,45 +970,10 @@ function renderClippingHero() {
     </div>`;
 }
 
-function renderTopHighlights() {
-  const area = document.getElementById('top-highlights-area');
-  const clip = clippings[selectedClipIndex];
-  if (!clip) { area.innerHTML = ''; return; }
-  const { start, end } = weekRangeOf(clip);
-
-  const inRange = allNotices.filter(n =>
-    n.platform !== CLIPPING_PLATFORM && n.date >= start && n.date <= end
-  );
-
-  const byPlatform = {};
-  inRange.forEach(n => {
-    const cur = byPlatform[n.platform];
-    if (!cur || (n.is_pinned && !cur.is_pinned) || (n.is_pinned === cur.is_pinned && n.date > cur.date)) {
-      byPlatform[n.platform] = n;
-    }
-  });
-
-  const platforms = Object.keys(byPlatform).sort((a, b) => {
-    const ia = SOURCE_ORDER.indexOf(a), ib = SOURCE_ORDER.indexOf(b);
-    return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
-  });
-
-  const rowsHTML = platforms.length
-    ? platforms.map(p => noticeRowHTML(byPlatform[p])).join('')
-    : '<div class="th-empty">선택한 주간(' + start + ' ~ ' + end + ')에는 다른 매체 소식이 없었어요.</div>';
-
-  area.innerHTML = `
-    <div class="card">
-      <div class="th-title-row">📌 ${start} ~ ${end} · 매체별 가장 눈에 띄는 소식</div>
-      ${rowsHTML}
-    </div>`;
-}
-
 function renderBrowseArea() {
   const clip = clippings[selectedClipIndex];
   renderWeekPicker();
   renderClippingHero();
-  renderTopHighlights();
   renderSourceGrid(clip ? weekRangeOf(clip) : null);
 }
 
@@ -1018,7 +1002,11 @@ function renderSearch(query) {
     : `<div class="empty-state">"${escapeHTML(query.trim())}"에 대한 검색 결과가 없어요.</div>`;
 }
 
+// 매체별 소식 카드: 가장 최근 소식 1건은 헤드라인으로, 나머지 최대 2건은 한 줄 요약으로 보여준다.
+// (예전엔 "매체별 가장 눈에 띄는 소식" 카드를 이 위에 따로 두었는데, 같은 정보를 두 번 보여주는
+// 셈이라 하나로 합쳤다.)
 function renderSourceGrid(range) {
+  const label = document.getElementById('source-grid-label');
   const grid = document.getElementById('source-grid');
   const platforms = [...new Set(allNotices.map(n => n.platform))]
     .filter(p => p !== CLIPPING_PLATFORM);
@@ -1035,6 +1023,8 @@ function renderSourceGrid(range) {
       .slice(0, 3),
   }));
 
+  label.textContent = range ? `📌 ${range.start} ~ ${range.end} · 매체별 소식` : '📌 매체별 소식';
+
   // 기간 조회 중인데 전 매체에 소식이 하나도 없으면, 빈 카드를 잔뜩 늘어놓는 대신 안내 한 줄로 정리한다.
   if (range && byPlatform.every(p => p.items.length === 0)) {
     grid.innerHTML = `<div class="th-empty" style="grid-column:1/-1;">선택한 주간(${range.start} ~ ${range.end})에는 매체 소식이 없었어요.</div>`;
@@ -1044,20 +1034,10 @@ function renderSourceGrid(range) {
   grid.innerHTML = byPlatform
     .filter(p => !range || p.items.length > 0)
     .map(({ platform, items }) => {
-      const itemsHTML = items.length
-        ? items.map(n => `
-            <div class="source-item">
-              <div class="si-title-row">
-                <a class="si-title ${isUnseen(n) ? 'is-unseen' : ''}" href="${n.url}" target="_blank" rel="noopener">
-                  ${isUnseen(n) ? '<span class="unseen-dot" title="지난 방문 이후 새 글"></span>' : ''}
-                  ${isImportant(n.title) ? '<span title="캠페인에 영향 줄 수 있는 소식">⚠️</span>' : ''}
-                  ${escapeHTML(n.title)}
-                </a>
-                ${n.is_new ? '<span class="si-new">NEW</span>' : ''}
-              </div>
-              <div class="si-meta">${escapeHTML(n.category)} · ${n.date}</div>
-              ${n.excerpt ? `<p class="si-excerpt">${excerptHTML(n.excerpt)}</p>` : ''}
-            </div>`).join('')
+      const bodyHTML = items.length
+        ? sourceHeadlineHTML(items[0]) + (items.length > 1
+            ? `<div class="source-rest">${items.slice(1).map(noticeRowHTML).join('')}</div>`
+            : '')
         : `<div class="source-empty">최근 소식이 없어요.</div>`;
 
       const latestDate = allNotices
@@ -1078,7 +1058,7 @@ function renderSourceGrid(range) {
           <span class="source-count">${items.length}건</span>
         </div>
         ${freshnessHTML}
-        ${itemsHTML}
+        ${bodyHTML}
       </div>`;
   }).join('');
 }
@@ -1092,7 +1072,9 @@ const CATEGORY_ICON = {
   'DMP': '🗂️', 'App': '📱', '비즈니스': '💼', '로컬': '📍', 'CTV': '📺', '리타기팅': '🔁',
   '네이티브': '🧩', '기타': '🔹', 'SA': '🔎', '오프라인': '🏬',
 };
-const CATEGORY_PALETTE = ['#5b8def', '#e0562f', '#12967a', '#a3760a', '#7c5cff', '#d0195a', '#0064ff', '#2f9e44', '#e8590c', '#845ef7'];
+// 매체 태그와 같은 계통의 색 세트를 공유해서(플랫폼 색 + 상품 카테고리 색) 화면 전체가
+// 하나의 색 시스템처럼 느껴지게 한다.
+const CATEGORICAL_PALETTE = ['#059669', '#0d9488', '#0891b2', '#4f46e5', '#7c3aed', '#db2777', '#dc2626', '#b45309', '#65a30d', '#334155'];
 
 function categoryTokens(p) {
   return (p.category || '기타').split(',').map(s => s.trim()).filter(Boolean);
@@ -1103,7 +1085,7 @@ function primaryCategory(p) {
 function categoryColor(cat) {
   let hash = 0;
   for (let i = 0; i < cat.length; i++) hash = (hash * 31 + cat.charCodeAt(i)) >>> 0;
-  return CATEGORY_PALETTE[hash % CATEGORY_PALETTE.length];
+  return CATEGORICAL_PALETTE[hash % CATEGORICAL_PALETTE.length];
 }
 function categoryIcon(cat) {
   return CATEGORY_ICON[cat] || '🏷️';
