@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-25T19:16:32+09:00",
-  "new_count": 13,
+  "generated_at": "2026-08-26T10:23:56+09:00",
+  "new_count": 14,
   "notices": [
     {
       "id": "/entry/20260817-news-clipping",
@@ -68,6 +68,16 @@
       "is_new": true,
       "url": "https://ads.naver.com/notice/33583",
       "platform": "네이버 GFA"
+    },
+    {
+      "id": "https://www.facebook.com/business/news/meta-ai-for-small-businesses",
+      "title": "소규모 비즈니스를 위한 새로운 Meta AI 기능",
+      "category": "비즈니스 소식",
+      "date": "2026-08-19",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://www.facebook.com/business/news/meta-ai-for-small-businesses",
+      "platform": "메타 for Business"
     },
     {
       "id": 33601,
@@ -339,6 +349,16 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
+      "id": "https://www.facebook.com/business/news/2026-holiday-small-business",
+      "title": "소규모 비즈니스의 연말 시즌 준비: 무료 인사이트, AI 도구 및 성장에 도움이 되는 가이드북",
+      "category": "비즈니스 소식",
+      "date": "2026-07-27",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://www.facebook.com/business/news/2026-holiday-small-business",
+      "platform": "메타 for Business"
+    },
+    {
       "id": 25392,
       "title": "'도달률 높이기' 캠페인 목표 종료 안내",
       "category": "공지",
@@ -512,6 +532,16 @@
       "platform": "네이버 GFA"
     },
     {
+      "id": "https://www.facebook.com/business/news/muse-image-for-businesses",
+      "title": "어드밴티지+ 크리에이티브의 Muse Image",
+      "category": "비즈니스 소식",
+      "date": "2026-07-07",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://www.facebook.com/business/news/muse-image-for-businesses",
+      "platform": "메타 for Business"
+    },
+    {
       "id": "/entry/20260629-news-clipping",
       "title": "2026년 6월 29일주 뉴스클리핑",
       "excerpt": "한 주 간의 디지털 미디어와 마케팅 관련 주요 뉴스를 모아 전해드립니다.카카오TV 서비스 종료...카톡 숏폼으로 광고·커머스 접점 확대 예정 카카오TV가 9년 만에 서비스를 종료함. 콘텐츠 시장이 OTT·숏폼 중심으로 재편되면서 자체 동영상 플랫폼으로서 입지가 약해진 것이 배경으로 해석됨. 카카오톡 내 숏폼 콘텐츠를 확대 배치해 이용자 체류 시간과 광고·커머스 접점을 늘리고, 카카오톡 자체를 콘텐츠 소비 플랫폼으로 전환할 전망임. 🔗카카오TV 9년 만에 퇴장...카톡 숏폼으로 새판 짠다네이버, 올 상반기 국내 검색엔진 점유율 1위...'AI탭' 성과 두각 네이버가 올해 상반기 국내 검색엔진 점유율 64.39%를 기록하며 1위를 차지함. 2024년 상반기보다 6.54%P 높아진 수치로, 'A..",
@@ -571,6 +601,16 @@
       "is_new": false,
       "url": "https://tossads.toss.im/notice/25264",
       "platform": "토스애즈"
+    },
+    {
+      "id": "https://www.facebook.com/business/news/cannes-2026-cross-ai-threshold",
+      "title": "2026년 칸 라이언즈: 모든 마케터가 AI의 한계를 넘을 수 있도록 지원하는 새로운 크리에이티브 및 크리에이터 도구",
+      "category": "비즈니스 소식",
+      "date": "2026-06-23",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://www.facebook.com/business/news/cannes-2026-cross-ai-threshold",
+      "platform": "메타 for Business"
     },
     {
       "id": "/entry/2606adissue",
@@ -655,6 +695,16 @@
       "platform": "토스애즈"
     },
     {
+      "id": "https://www.facebook.com/business/news/cannes-2026-discovery-into-purchase",
+      "title": "2026년 칸 라이언즈: Meta에서 발견을 구매로 전환하는 새로운 방법",
+      "category": "비즈니스 소식",
+      "date": "2026-06-16",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://www.facebook.com/business/news/cannes-2026-discovery-into-purchase",
+      "platform": "메타 for Business"
+    },
+    {
       "id": "/entry/20260608-news-clipping",
       "title": "2026년 6월 8일주 뉴스클리핑",
       "excerpt": "한 주 간의 디지털 미디어와 마케팅 관련 주요 뉴스를 모아 전해드립니다.네이버 치지직, 월드컵 첫 경기서 482만명 접속…역대 최대 기록 경신 네이버 치지직이 한국 대표팀의 북중미 월드컵 첫 경기 체코전에서 최고 동시접속자 482만명을 기록하며 플랫폼 역대 최대 접속 기록을 경신. 지난해 LoL 월드 챔피언십 당시 기록한 76만명을 크게 웃돈 수치로, 한동숙의 같이보기 방송에도 36만명이 몰리며 스포츠 중계와 스트리머 시청 경험 결합 가능성 확인🔗체코전 몰린 482만명…네이버 치지직 역대 최대 접속네이버, 외국인 여권 인증 도입…방한 관광객 편의성 강화네이버가 단기 체류 외국인 관광객을 대상으로 해외 발급 여권 기반 본인 인증 기능 도입. 국내 휴대폰 번호 없이 네이버 예약·주문·결제 등 ..",
@@ -669,6 +719,26 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
+      "id": "https://www.facebook.com/business/news/closing-the-creator-measurement-gap",
+      "title": "크리에이터 측정 격차 줄이기: L'Oréal이 보고 기능을 성장 전략으로 활용한 방법",
+      "category": "비즈니스 소식",
+      "date": "2026-06-11",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://www.facebook.com/business/news/closing-the-creator-measurement-gap",
+      "platform": "메타 for Business"
+    },
+    {
+      "id": "https://www.facebook.com/business/news/2026-winning-hearts-boosting-carts",
+      "title": "피크 시즌 전에 고객의 마음을 사로잡아 가장 중요한 시기에 구매를 늘리는 방법",
+      "category": "비즈니스 소식",
+      "date": "2026-06-11",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://www.facebook.com/business/news/2026-winning-hearts-boosting-carts",
+      "platform": "메타 for Business"
+    },
+    {
       "id": "/entry/20260601-news-clipping",
       "title": "2026년 6월 1일주 뉴스클리핑",
       "excerpt": "한 주 간의 디지털 미디어와 마케팅 관련 주요 뉴스를 모아 전해드립니다.네이버, AI 검색 인용 창작자 보상 프로그램 도입…UGC 생태계 강화네이버가 AI 브리핑에 인용된 블로그·카페·지식iN 등 UGC 창작자를 대상으로 연 200억 원 규모의 네이버 메이트 프로그램을 도입. 월 30만 원부터 최대 1000만 원까지 활동비를 지원하며, AI 검색 경쟁에서 실제 경험과 전문성이 담긴 콘텐츠 확보를 강화하려는 전략으로 해석🔗\"AI도 '사람 손길 담긴 콘텐츠' 필요해\"…네이버, 창작자에 200억 쏜다네이버 치지직, 월드컵 중계 부분 유료화…스포츠 콘텐츠 수익화 본격화네이버가 2026 북중미 월드컵 온라인 독점 중계에서 한국전 외 경기와 고화질 시청을 멤버십 구독자 중심으로 제공하며 치지직 수익화..",
@@ -681,6 +751,16 @@
       "is_new": false,
       "url": "https://blog.nasmedia.co.kr/entry/20260601-news-clipping",
       "platform": "나스미디어 뉴스클리핑"
+    },
+    {
+      "id": "https://www.facebook.com/business/news/conversations-2026-introducing-meta-business-agent",
+      "title": "Conversations 2026: Meta 비즈니스 에이전트 소개",
+      "category": "비즈니스 소식",
+      "date": "2026-06-03",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://www.facebook.com/business/news/conversations-2026-introducing-meta-business-agent",
+      "platform": "메타 for Business"
     },
     {
       "id": "/entry/2605adissue",
@@ -740,6 +820,46 @@
       "is_new": false,
       "url": "https://tossads.toss.im/notice/25174",
       "platform": "토스애즈"
+    },
+    {
+      "id": "https://www.facebook.com/business/news/brandsafety",
+      "title": "Threads 광고를 위한 새로운 브랜드 가치 보호 및 적합성 관리 기능",
+      "category": "비즈니스 소식",
+      "date": "2026-05-18",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://www.facebook.com/business/news/brandsafety",
+      "platform": "메타 for Business"
+    },
+    {
+      "id": "https://www.facebook.com/business/news/social-search-series-2",
+      "title": "Meta 테크놀로지에서 소셜 검색에 콘텐츠를 최적화하는 방법",
+      "category": "비즈니스 소식",
+      "date": "2026-05-15",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://www.facebook.com/business/news/social-search-series-2",
+      "platform": "메타 for Business"
+    },
+    {
+      "id": "https://www.facebook.com/business/news/social-search-series-3",
+      "title": "검색을 재편하는 트렌드와 지금의 전환을 정당화하는 ROI",
+      "category": "비즈니스 소식",
+      "date": "2026-05-15",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://www.facebook.com/business/news/social-search-series-3",
+      "platform": "메타 for Business"
+    },
+    {
+      "id": "https://www.facebook.com/business/news/social-search-series-1",
+      "title": "소셜 검색과 기존 검색이 경쟁하는 것이 아니라 공존하는 이유",
+      "category": "비즈니스 소식",
+      "date": "2026-05-14",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://www.facebook.com/business/news/social-search-series-1",
+      "platform": "메타 for Business"
     },
     {
       "id": "/business/ko/blog/tiktok-one-creative-platform",
