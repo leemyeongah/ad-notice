@@ -1,261 +1,15 @@
 [
   {
-    "platform": "Apple",
-    "category": "App",
-    "summary": "App Store 광고",
-    "description": "App Store 광고",
+    "platform": "ACE Trader",
+    "category": "DA, Video, CTV",
+    "summary": "데이터 기반 광고 DSP",
+    "description": "데이터 기반 광고 DSP",
     "features": [
+      "자료: [ACE Trader] 상품소개서_2025.Q1.pdf",
+      "이메일: at@nhnace.com",
       "최근 업데이트 기준: 2025.11"
     ],
-    "link": "https://ads.apple.com/kr/app-store"
-  },
-  {
-    "platform": "애디슨오퍼월 / 캐쉬슬라이드 / Treasure Hunt (NBT)",
-    "category": "보상형",
-    "summary": "NBT / 대형 프리미엄 매체 내 보상형 광고 운영 플랫폼",
-    "description": "NBT / 대형 프리미엄 매체 내 보상형 광고 운영 플랫폼",
-    "features": [
-      "자료: 애디슨오퍼월홈페이지, 캐쉬슬라이드",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://nbtads.oopy.io/adison"
-  },
-  {
-    "platform": "인사이트",
-    "category": "SNS, Video",
-    "summary": "인스타그램 카드 뉴스, 웹사이트, 네이버 포스트",
-    "description": "인스타그램 카드 뉴스, 웹사이트, 네이버 포스트",
-    "features": [
-      "자료: [인사이트] 광고상품소개서_2025.Q1.pdf",
-      "이메일: ad_team@insight.co.kr",
-      "전화: 02-6734-2200",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/file/d/1kF1DYSDk4Tx2-u8-qrBuxALfkOCSUtTN/view?usp=drive_link"
-  },
-  {
-    "platform": "아이즈맥",
-    "category": "SNS, Video, 비즈니스",
-    "summary": "패션&라이프스타일 웹 매거진, 인스타그램 뉴스",
-    "description": "패션&라이프스타일 웹 매거진, 인스타그램 뉴스",
-    "features": [
-      "자료: [eyesmag] 회사소개서_2025.Q1.pdf",
-      "이메일: info@eyesmag.com",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/file/d/17xPG6n0ofosXRVO4MwNwwi4W8VeIqgIU/view?usp=drive_link"
-  },
-  {
-    "platform": "위키트리",
-    "category": "SNS, Video, 비즈니스",
-    "summary": "인스타그램 카드 뉴스",
-    "description": "인스타그램 카드 뉴스",
-    "features": [
-      "자료: [위키트리] 네이티브광고 상품 소개서_2025.Q4.pdf",
-      "이메일: brandnews@wikitree.co.kr",
-      "전화: 기사/카드뉴스 070-4206-7947, 영상 070-4206-7059, 대표 02-3789-8900",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/file/d/1T97lRO_MHQ5XcqColJwohZrXEmr7r6Np/view?usp=drive_link"
-  },
-  {
-    "platform": "허프포스트",
-    "category": "SNS, Video, 비즈니스",
-    "summary": "인스타그램 카드 뉴스, 웹사이트",
-    "description": "인스타그램 카드 뉴스, 웹사이트",
-    "features": [
-      "자료: [허프포스트] 광고소개서_2023_Q1.pdf",
-      "이메일: sanga.kwak@huffpost.kr",
-      "전화: 대표 02-6959-9810",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/file/d/1iSzNnrQ-1A0ZkmxeJueBEgv1bs3B2k0T/view?usp=drive_link"
-  },
-  {
-    "platform": "블라인드",
-    "category": "SNS, 비즈니스",
-    "summary": "직장인 SNS",
-    "description": "직장인 SNS",
-    "features": [
-      "자료: [블라인드] 매체소개서_2025.Q2.pdf",
-      "이메일: ads@teamblind.com",
-      "사내 자료명: 블라인드",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/file/d/1oMc8jsqHN2WQCKX5Q41YDtpAf8DCiK6F/view?usp=drive_link"
-  },
-  {
-    "platform": "Motov",
-    "category": "OOH, 로컬",
-    "summary": "모빌리티 DOOH 미디어 플랫폼",
-    "description": "모빌리티 DOOH 미디어 플랫폼",
-    "features": [
-      "자료: [motov] 매체소개서_2025.Q1.pdf",
-      "이메일: sales@motov.co.kr",
-      "전화: 1644-4437",
-      "사내 자료명: Motov소개",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/file/d/1NnOov8K5ZIBEynqcmPBLMLSc-TPvH-Hz/view?usp=drive_link"
-  },
-  {
-    "platform": "팟빵",
-    "category": "App, 기타, Video",
-    "summary": "오디오 플랫폼",
-    "description": "오디오 플랫폼",
-    "features": [
-      "자료: [팟빵] 광고소개서_2025.Q1.pdf",
-      "이메일: ad@podbbang.com",
-      "전화: 02-6457-8017",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/file/d/1MrZ13z34o1PtZ6Bi2XWYRluK9MN93fj5/view?usp=drive_link"
-  },
-  {
-    "platform": "레뷰코퍼레이션",
-    "category": "기타, SNS",
-    "summary": "인플루언서 마케팅 플랫폼",
-    "description": "인플루언서 마케팅 플랫폼",
-    "features": [
-      "자료: 레뷰홈페이지",
-      "이메일: help@revu.net",
-      "전화: 1544-9851",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://corp.revu.net/"
-  },
-  {
-    "platform": "Taboola",
-    "category": "SA, 리타기팅, 기타",
-    "summary": "디스커버리 플랫폼",
-    "description": "디스커버리 플랫폼",
-    "features": [
-      "자료: [Taboola] 매체소개서_2024.Q3.pdf",
-      "담당자: 손원형",
-      "이메일: wonhyoung.s@taboola.com",
-      "전화: 010-9535-9628",
-      "사내 자료명: 타불라소개",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/file/d/1lIZwFqjQ7m4je479RMeYCm2U126t3HGF/view?usp=drive_link"
-  },
-  {
-    "platform": "몰로코",
-    "category": "DSP, 리타기팅",
-    "summary": "DSP",
-    "description": "DSP",
-    "features": [
-      "자료: [Moloco] 와이즈버즈 매체설명회_2025.Q1.pdf",
-      "담당자: 허정용 부장",
-      "이메일: jeongyong@moloco.com",
-      "전화: 010-4690-3489",
-      "사내 자료명: 몰로코소개",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/file/d/1hkHUJAf7zGNNcVTgNBYrJabAr4T0lpA4/view?usp=drive_link"
-  },
-  {
-    "platform": "Pinterest",
-    "category": "SNS",
-    "summary": "아이디어 검색 플랫폼",
-    "description": "아이디어 검색 플랫폼",
-    "features": [
-      "자료: [Pinterest] 매체소개서_2025.Q2.pdf",
-      "이메일: pinterest-kr@mediadonuts.com",
-      "사내 자료명: 핀터레스트 웨비나",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/file/d/1XOjTED1THeYV_StW90Nmkkj-xX0e7dbo/view?usp=drive_link"
-  },
-  {
-    "platform": "Snow(스노우)",
-    "category": "App, DA",
-    "summary": "카메라 앱",
-    "description": "카메라 앱",
-    "features": [
-      "자료: 스노우 광고소개서 2025.Q4",
-      "이메일: snow_support@snowcorp.com",
-      "사내 자료명: 스노우",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://docs.google.com/presentation/d/1GRziNCSGvBfiLbUMO3_owm3pRtnk_48-mxlEpDe_AbU/edit?usp=sharing"
-  },
-  {
-    "platform": "퀀텀유니버스",
-    "category": "기타",
-    "summary": "AR/VR/XR 관련 솔루션",
-    "description": "AR/VR/XR 관련 솔루션",
-    "features": [
-      "자료: [퀀텀유니버스] 광고소개서_2022_Q1_kr.pdf",
-      "이메일: info@quantumuniverse.co",
-      "전화: 02-555-8809",
-      "비고: 광고소개서 최신버전 없음"
-    ],
-    "link": "https://drive.google.com/file/d/1qRXbXYEB61sO1JwdjFz83I-BQLgMXJza/view?usp=drive_link"
-  },
-  {
-    "platform": "Inmobi",
-    "category": "DSP",
-    "summary": "글로벌 모바일 네트워크 플랫폼",
-    "description": "글로벌 모바일 네트워크 플랫폼",
-    "features": [
-      "자료: [InMobi] 상품소개서_2025.Q1.pdf",
-      "이메일(세일즈): Korea-Sales@inmobi.com",
-      "이메일(AdOps): korea-adops@inmobi.com",
-      "사내 자료명: 인모비",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/file/d/1DPEnpVxdDKG70eYe5j4G6V8cBRfIsOk-/view?usp=drive_link"
-  },
-  {
-    "platform": "Singular",
-    "category": "DMP",
-    "summary": "DMP / 마케팅 인텔리전스 플랫폼",
-    "description": "DMP / 마케팅 인텔리전스 플랫폼",
-    "features": [
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://www.singular.net/ko/"
-  },
-  {
-    "platform": "오늘의집",
-    "category": "DA",
-    "summary": "라이프스타일 플랫폼",
-    "description": "라이프스타일 플랫폼",
-    "features": [
-      "자료: 오하우스애즈 소개서, 오늘의집 배너광고 상품소개서",
-      "이메일: ad_product@bucketplace.net",
-      "사내 자료명: 오늘의집소개",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://docs.google.com/presentation/d/1QVmkia1aUUOzSUee4AJX6NJPLPFHL4NGZAbfBlQiV58/edit?slide=id.g38c61f3d49f_2_255"
-  },
-  {
-    "platform": "원티드",
-    "category": "DA",
-    "summary": "커리어 플랫폼",
-    "description": "커리어 플랫폼",
-    "features": [
-      "자료: [원티드] 광고상품소개서_2024.Q4.pdf",
-      "이메일: ad@wantedlab.com",
-      "사내 자료명: 원티드",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/file/d/1YeeIvI-2erztQQKA8Lp5QO8TNb8KwGzq/view?usp=drive_link"
-  },
-  {
-    "platform": "열나요",
-    "category": "DA",
-    "summary": "영유아 열 관리",
-    "description": "영유아 열 관리",
-    "features": [
-      "자료: [열나요] 광고상품소개서_25.02.pdf",
-      "이메일: contact@fevercoach.net",
-      "전화: 02-6408-5577",
-      "사내 자료명: 디지털캠프",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/file/d/1SbcEmUk5GO79YJKs61NClilF-f5cNhjB/view?usp=drive_link"
+    "link": "https://drive.google.com/file/d/1T9rTVKfTHKuwwe5HaQ0exp0HeYwJKnHy/view?usp=drive_link"
   },
   {
     "platform": "ACROS ADN",
@@ -272,6 +26,134 @@
     "link": "https://drive.google.com/file/d/1B7lM5wHR4CqVmQG5dWZCL-x9HK5cEjGk/view?usp=drive_link"
   },
   {
+    "platform": "ART19",
+    "category": "",
+    "summary": "팟캐스트 광고 플랫폼",
+    "description": "",
+    "features": [
+      "비고: 자료 없음, 확인 필요"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "ASA",
+    "category": "앱",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 0% (마크업) · 영역: 앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "Adjust",
+    "category": "",
+    "summary": "MMP(모바일 측정 파트너)",
+    "description": "",
+    "features": [
+      "비고: 최신 자료 없음"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "Apple",
+    "category": "App",
+    "summary": "App Store 광고",
+    "description": "App Store 광고",
+    "features": [
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://ads.apple.com/kr/app-store"
+  },
+  {
+    "platform": "Appsflyer",
+    "category": "기타",
+    "summary": "성과 측정 솔루션",
+    "description": "성과 측정 솔루션",
+    "features": [
+      "자료: Appsflyer홈페이지",
+      "이메일: hello@appsflyer.com",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://www.appsflyer.com/ko/"
+  },
+  {
+    "platform": "CGV",
+    "category": "SA",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 검색광고(SA) 집행 매체"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "CJ ONE",
+    "category": "DA, 보상형",
+    "summary": "통합 마케팅 서비스 플랫폼",
+    "description": "통합 마케팅 서비스 플랫폼",
+    "features": [
+      "자료: [CJ ONE] 매체소개서_2025.Q2.pdf",
+      "이메일: cjonead@cj.net",
+      "사내 자료명: CJ ONE",
+      "최근 업데이트 기준: 2025.11",
+      "수수료율: 15% (백피) · 영역: 웹/앱"
+    ],
+    "link": "https://drive.google.com/file/d/13xdvRcBeDRNHesKp_GmaKx4rICYMvYwo/view?usp=drive_link"
+  },
+  {
+    "platform": "CJ YouTube",
+    "category": "SA",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 검색광고(SA) 집행 매체"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "COVI",
+    "category": "기타",
+    "summary": "모바일 outstream 동영상 광고 플랫폼",
+    "description": "모바일 outstream 동영상 광고 플랫폼",
+    "features": [
+      "자료: COVI",
+      "담당: 신범균 팀장",
+      "이메일: zion@covi.co.kr",
+      "전화: M) 010-2326-4231",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "Criteo",
+    "category": "리타기팅",
+    "summary": "리타기팅 DSP",
+    "description": "리타기팅 DSP (사내 NEST 게시판 참고)",
+    "features": [],
+    "link": ""
+  },
+  {
+    "platform": "DeepAD",
+    "category": "",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 확인 필요"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "Dighty",
+    "category": "",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 확인 필요"
+    ],
+    "link": ""
+  },
+  {
     "platform": "EMCG",
     "category": "OOH",
     "summary": "항공기 옥외광고",
@@ -283,43 +165,96 @@
     "link": "https://emcg.co.kr/?page_id=1534&n_media=27758&n_query=EMCG&n_rank=1&n_ad_group=grp-a001-01-000000011640013&n_ad=nad-a001-01-000000309971024&n_keyword_id=nkw-a001-01-000002140167615&n_keyword=EMCG&n_campaign_type=1&n_ad_group_type=1&n_match=1"
   },
   {
-    "platform": "디지털캠프",
-    "category": "DSP, DA, Video, DMP",
-    "summary": "SKP DMP 기반 플랫폼",
-    "description": "SKP DMP 기반 플랫폼",
-    "features": [
-      "자료: [디지털캠프] 상품소개서_2025.Q1.pdf",
-      "이메일: mkt@digitalcamp.co.kr",
-      "사내 자료명: 디지털캠프",
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": "https://drive.google.com/file/d/1Zub7Y5Tpgxm5xNW-q7aAclMJv0sBgoej/view?usp=drive_link"
+    "platform": "Google",
+    "category": "",
+    "summary": "구글 광고 전반",
+    "description": "구글 광고 전반 (사내 NEST 게시판 참고)",
+    "features": [],
+    "link": ""
   },
   {
-    "platform": "챌린저스",
-    "category": "DA, SNS, 기타",
-    "summary": "건강 챌린지 앱",
-    "description": "건강 챌린지 앱",
+    "platform": "HYPEBEAST",
+    "category": "DA, 기타",
+    "summary": "브랜드 협업 콘텐츠 및 뉴스 웹 매거진",
+    "description": "브랜드 협업 콘텐츠 제작 및 뉴스 웹 매거진",
     "features": [
-      "자료: [챌린저스] 광고상품소개서_2023.Q1.pdf",
-      "담당자: 문의폼",
-      "사내 자료명: 챌린저스",
+      "자료: 하입비스트 홈페이지",
       "최근 업데이트 기준: 2025.11"
     ],
-    "link": "https://drive.google.com/file/d/14hhLrhGZpYAVZZyhVkfg70gE0R6HXYrh/view?usp=drive_link"
+    "link": ""
   },
   {
-    "platform": "CJ ONE",
-    "category": "DA, 보상형",
-    "summary": "통합 마케팅 서비스 플랫폼",
-    "description": "통합 마케팅 서비스 플랫폼",
+    "platform": "Hivestack",
+    "category": "OOH",
+    "summary": "DOOH 광고 플랫폼",
+    "description": "",
     "features": [
-      "자료: [CJ ONE] 매체소개서_2025.Q2.pdf",
-      "이메일: cjonead@cj.net",
-      "사내 자료명: CJ ONE",
+      "비고: 최신 자료 없음, 확인 필요"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "Inmobi",
+    "category": "DSP",
+    "summary": "글로벌 모바일 네트워크 플랫폼",
+    "description": "글로벌 모바일 네트워크 플랫폼",
+    "features": [
+      "자료: [InMobi] 상품소개서_2025.Q1.pdf",
+      "이메일(세일즈): Korea-Sales@inmobi.com",
+      "이메일(AdOps): korea-adops@inmobi.com",
+      "사내 자료명: 인모비",
       "최근 업데이트 기준: 2025.11"
     ],
-    "link": "https://drive.google.com/file/d/13xdvRcBeDRNHesKp_GmaKx4rICYMvYwo/view?usp=drive_link"
+    "link": "https://drive.google.com/file/d/1DPEnpVxdDKG70eYe5j4G6V8cBRfIsOk-/view?usp=drive_link"
+  },
+  {
+    "platform": "Kakao moment",
+    "category": "",
+    "summary": "카카오모먼트 광고",
+    "description": "카카오모먼트 광고 전반 (사내 NEST 게시판 참고)",
+    "features": [],
+    "link": ""
+  },
+  {
+    "platform": "L.Point",
+    "category": "DA, CTV, DMP",
+    "summary": "L.Point App 광고",
+    "description": "L.Point App 광고",
+    "features": [
+      "자료: L.Point",
+      "이메일: yeongdongoh@daehong.co.kr",
+      "전화: 02-3671-6693",
+      "최근 업데이트 기준: 2025.11 (대홍기획)"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "MANPLUS",
+    "category": "",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 운영 여부 확인 필요"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "Meta",
+    "category": "",
+    "summary": "메타 광고 전반",
+    "description": "메타(Facebook/Instagram) 광고 전반 (사내 NEST 게시판 참고)",
+    "features": [],
+    "link": ""
+  },
+  {
+    "platform": "Microsoft ads",
+    "category": "웹",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 11% (마크업) · 영역: 웹"
+    ],
+    "link": ""
   },
   {
     "platform": "MobileMove",
@@ -335,64 +270,121 @@
     "link": "http://37mobilemove.com/"
   },
   {
-    "platform": "얼루어, W, GQ, 보그",
+    "platform": "Motov",
+    "category": "OOH, 로컬",
+    "summary": "모빌리티 DOOH 미디어 플랫폼",
+    "description": "모빌리티 DOOH 미디어 플랫폼",
+    "features": [
+      "자료: [motov] 매체소개서_2025.Q1.pdf",
+      "이메일: sales@motov.co.kr",
+      "전화: 1644-4437",
+      "사내 자료명: Motov소개",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://drive.google.com/file/d/1NnOov8K5ZIBEynqcmPBLMLSc-TPvH-Hz/view?usp=drive_link"
+  },
+  {
+    "platform": "NAP",
+    "category": "SA",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 검색광고(SA) 집행 매체"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "NETFLIX",
+    "category": "Video",
+    "summary": "넷플릭스 광고",
+    "description": "넷플릭스 광고 (전략실 문의)",
+    "features": [
+      "담당: 전략실 문의",
+      "최근 업데이트 기준: 2026.04",
+      "수수료율: 11% (마크업)"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "NHN Dighty",
     "category": "",
-    "summary": "사내 NEST 게시판 참고",
-    "description": "사내 NEST 게시판 참고",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 서비스 종료 추정"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "Naver",
+    "category": "",
+    "summary": "네이버 광고 전반",
+    "description": "네이버 광고 전반 (사내 NEST 게시판 참고)",
     "features": [],
-    "link": "https://nest.wisebirds.com/app/board/103/post/1345"
+    "link": ""
   },
   {
-    "platform": "모비온",
-    "category": "DMP, DSP",
-    "summary": "네트워크 광고 플랫폼",
-    "description": "네트워크 광고 플랫폼",
+    "platform": "Open AI",
+    "category": "",
+    "summary": "",
+    "description": "",
     "features": [
-      "자료: [모비온] 매체 소개서_2024.Q2.pdf",
-      "이메일: mobon@enliple.com",
-      "전화: 070-4672-2303",
-      "사내 자료명: 모비온",
-      "최근 업데이트 기준: 2025.11"
+      "수수료율: 0% (마크업)"
     ],
-    "link": "https://drive.google.com/file/d/1NCACLD9Ni6MlpPHu6zPvHz460iGnuSbt/view?usp=drive_link"
+    "link": ""
   },
   {
-    "platform": "점신",
-    "category": "DA",
-    "summary": "모바일 앱 기반 통합 운세 플랫폼",
-    "description": "모바일 앱 기반 통합 운세 플랫폼",
+    "platform": "Payco(페이코)",
+    "category": "",
+    "summary": "",
+    "description": "",
     "features": [
-      "자료: [점신] 상품소개서 2025.Q2.pdf",
-      "담당자: 점신 문의폼",
-      "사내 자료명: 점신",
-      "최근 업데이트 기준: 2025.11"
+      "비고: 자료 확인 필요"
     ],
-    "link": "https://drive.google.com/file/d/119CrCOzffZD2aoNbecCQarwYoqIbznRd/view?usp=drive_link"
+    "link": ""
   },
   {
-    "platform": "Appsflyer",
-    "category": "기타",
-    "summary": "성과 측정 솔루션",
-    "description": "성과 측정 솔루션",
+    "platform": "Pinterest",
+    "category": "SNS",
+    "summary": "아이디어 검색 플랫폼",
+    "description": "아이디어 검색 플랫폼",
     "features": [
-      "자료: Appsflyer홈페이지",
-      "이메일: hello@appsflyer.com",
+      "자료: [Pinterest] 매체소개서_2025.Q2.pdf",
+      "이메일: pinterest-kr@mediadonuts.com",
+      "사내 자료명: 핀터레스트 웨비나",
       "최근 업데이트 기준: 2025.11"
     ],
-    "link": "https://www.appsflyer.com/ko/"
+    "link": "https://drive.google.com/file/d/1XOjTED1THeYV_StW90Nmkkj-xX0e7dbo/view?usp=drive_link"
   },
   {
-    "platform": "리얼클릭(RealClick)",
-    "category": "DSP",
-    "summary": "DSP 플랫폼",
-    "description": "DSP 플랫폼",
+    "platform": "RTB HOUSE",
+    "category": "웹/앱",
+    "summary": "",
+    "description": "",
     "features": [
-      "자료: 리얼클릭 홈페이지",
-      "담당자: 리얼클릭 문의폼",
-      "사내 자료명: 리얼클릭소개",
-      "최근 업데이트 기준: 2025.11"
+      "수수료율: 15% (네스트애즈) · 영역: 웹/앱"
     ],
-    "link": "https://www.realclick.co.kr/index.html"
+    "link": ""
+  },
+  {
+    "platform": "RTB house",
+    "category": "리타기팅",
+    "summary": "리타기팅 DSP",
+    "description": "",
+    "features": [
+      "비고: 최신 내용 없음, 아래 RTB HOUSE(네스트애즈)와 별개 확인 필요"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "ReAppi",
+    "category": "",
+    "summary": "글로벌 모바일 마케팅 플랫폼",
+    "description": "글로벌 모바일 마케팅 플랫폼",
+    "features": [
+      "비고: 광고소개서 최신버전 없음"
+    ],
+    "link": ""
   },
   {
     "platform": "Remerge",
@@ -408,45 +400,195 @@
     "link": "https://drive.google.com/file/d/1YMhzglKKEokZiua8jEx9qWrROToZDAyX/view?usp=drive_link"
   },
   {
-    "platform": "데이블",
-    "category": "DA, 네이티브",
-    "summary": "개인화 컨텐츠 추천 플랫폼",
-    "description": "개인화 컨텐츠 추천 플랫폼",
+    "platform": "RunDay / FitDay",
+    "category": "SA",
+    "summary": "",
+    "description": "",
     "features": [
-      "자료: [데이블] 데이블 네이티브AD 서비스 소개서_2025.Q2.pdf",
-      "담당자: 이종민 팀장",
-      "이메일: jongmin@dable.io",
-      "전화: 010-8685-7898",
-      "사내 자료명: 데이블 소개",
-      "최근 업데이트 기준: 2025.11"
+      "비고: 검색광고(SA) 집행 매체"
     ],
-    "link": "https://drive.google.com/file/d/1_6J9JlRq91oN7l7EOrutotvrp_VQ39lV/view?usp=drive_link"
+    "link": ""
   },
   {
-    "platform": "파이브애드",
-    "category": "DA, 비즈니스, 로컬, 오프라인",
-    "summary": "공유오피스 플랫폼",
-    "description": "공유오피스 플랫폼",
+    "platform": "SBS 고릴라",
+    "category": "",
+    "summary": "SBS 통합 매체(?)",
+    "description": "",
     "features": [
-      "자료: [패스트파이브] 광고상품소개서_2025.Q4.pdf",
-      "담당자: 패스트파이브 문의폼",
-      "사내 자료명: 패스트파이브 소개",
-      "최근 업데이트 기준: 2025.11"
+      "비고: SBS 통합 여부 확인 필요"
     ],
-    "link": "https://drive.google.com/file/d/1HZCX-pH9aH77fjODARZwZECa9UICaPyo/view?usp=drive_link"
+    "link": ""
   },
   {
-    "platform": "베나투스미디어",
-    "category": "DA, Video",
-    "summary": "게임 광고 플랫폼",
-    "description": "게임 광고 플랫폼",
+    "platform": "SMR",
+    "category": "Video",
+    "summary": "국내 동영상 / 방송 광고 플랫폼",
+    "description": "국내 동영상 / 방송 광고 플랫폼",
     "features": [
-      "자료: [베나투스] 아카라이브 매체 소개서_2025.Q1.pdf",
-      "이메일: seoul@venatus.com",
-      "사내 자료명: 베나투스미디어 소개",
+      "자료: SMR상품소개",
+      "담당: 윤호윤 파트장",
+      "이메일: hoyoon.yoon@smartmediarep.com",
+      "전화: M) 010-8932-7179 T) 02-6352-0055",
       "최근 업데이트 기준: 2025.11"
     ],
-    "link": "https://drive.google.com/file/d/1o0z18RhaqnvnruggxAdYZ6B7zpCtzzD1/view?usp=drive_link"
+    "link": ""
+  },
+  {
+    "platform": "SOOP",
+    "category": "SNS, Video, App, OOH",
+    "summary": "실시간 1인 방송 플랫폼",
+    "description": "실시간 1인 방송 플랫폼",
+    "features": [
+      "자료: 최신 상품소개서 SOOP",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://adv.sooplive.co.kr/"
+  },
+  {
+    "platform": "SPHERE",
+    "category": "",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 최신 소식 없음"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "Singular",
+    "category": "DMP",
+    "summary": "DMP / 마케팅 인텔리전스 플랫폼",
+    "description": "DMP / 마케팅 인텔리전스 플랫폼",
+    "features": [
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://www.singular.net/ko/"
+  },
+  {
+    "platform": "Smadex",
+    "category": "DSP",
+    "summary": "모바일 DSP",
+    "description": "",
+    "features": [
+      "비고: 한국 철수 여부 확인 필요"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "Snapchat",
+    "category": "SNS",
+    "summary": "스냅챗 광고",
+    "description": "스냅챗 광고",
+    "features": [],
+    "link": ""
+  },
+  {
+    "platform": "Snow(스노우)",
+    "category": "App, DA",
+    "summary": "카메라 앱",
+    "description": "카메라 앱",
+    "features": [
+      "자료: 스노우 광고소개서 2025.Q4",
+      "이메일: snow_support@snowcorp.com",
+      "사내 자료명: 스노우",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://docs.google.com/presentation/d/1GRziNCSGvBfiLbUMO3_owm3pRtnk_48-mxlEpDe_AbU/edit?usp=sharing"
+  },
+  {
+    "platform": "TG360",
+    "category": "",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 계약 종료(?) 확인 필요"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "TVING",
+    "category": "Video",
+    "summary": "컨텐츠 플랫폼",
+    "description": "컨텐츠 플랫폼",
+    "features": [
+      "자료: 티빙소개",
+      "담당: 현지은/조성현/정보교",
+      "이메일: jieun.hyun@cj.net, sh.cho22@cj.net, bg.jeong@cj.net",
+      "전화: 010-8253-8222 / 010-4704-2550 / 010-7457-1756",
+      "최근 업데이트 기준: 2024.11",
+      "비고: POC 확인 필요"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "TW360",
+    "category": "웹/앱",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 15% (백피) · 영역: 웹/앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "Taboola",
+    "category": "SA, 리타기팅, 기타",
+    "summary": "디스커버리 플랫폼",
+    "description": "디스커버리 플랫폼",
+    "features": [
+      "자료: [Taboola] 매체소개서_2024.Q3.pdf",
+      "담당자: 손원형",
+      "이메일: wonhyoung.s@taboola.com",
+      "전화: 010-9535-9628",
+      "사내 자료명: 타불라소개",
+      "최근 업데이트 기준: 2025.11",
+      "수수료율: 0% (마크업) · 영역: 웹"
+    ],
+    "link": "https://drive.google.com/file/d/1lIZwFqjQ7m4je479RMeYCm2U126t3HGF/view?usp=drive_link"
+  },
+  {
+    "platform": "Teads",
+    "category": "기타",
+    "summary": "글로벌 동영상 광고 플랫폼",
+    "description": "글로벌 동영상 광고 플랫폼 (한국티즈)",
+    "features": [
+      "자료: 한국티즈소개",
+      "최근 업데이트 기준: 2025.11",
+      "수수료율: 20% (백피) · 영역: 웹/앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "TikTok",
+    "category": "SNS, Video",
+    "summary": "틱톡 광고",
+    "description": "틱톡 광고 (사내 NEST 게시판 참고)",
+    "features": [
+      "담당: 김동훈 매니저",
+      "이메일: donghoon.kim@bytedance.com"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "WeTransfer",
+    "category": "DA",
+    "summary": "글로벌 대용량 파일 전송 서비스",
+    "description": "글로벌 대용량 파일 전송 서비스",
+    "features": [
+      "자료: WeTransfer 홈페이지",
+      "사내 자료명: Wetransfer",
+      "최근 업데이트 기준: 2025.11",
+      "비고: 영문 문의 필요"
+    ],
+    "link": "https://www.wetransfer.com/"
+  },
+  {
+    "platform": "X(Twitter)",
+    "category": "SNS",
+    "summary": "X(구 트위터) 광고",
+    "description": "X(구 트위터) 광고 (사내 NEST 게시판 참고)",
+    "features": [],
+    "link": ""
   },
   {
     "platform": "watchapedia",
@@ -464,33 +606,716 @@
     "link": "https://drive.google.com/file/d/1vrAptT6Lxk5ldsAYSWJandYC5g7xJQVU/view?usp=drive_link"
   },
   {
-    "platform": "WeTransfer",
-    "category": "DA",
-    "summary": "글로벌 대용량 파일 전송 서비스",
-    "description": "글로벌 대용량 파일 전송 서비스",
+    "platform": "뉴닉",
+    "category": "SA",
+    "summary": "",
+    "description": "",
     "features": [
-      "자료: WeTransfer 홈페이지",
-      "사내 자료명: Wetransfer",
-      "최근 업데이트 기준: 2025.11",
-      "비고: 영문 문의 필요"
+      "비고: 검색광고(SA) 집행 매체"
     ],
-    "link": "https://www.wetransfer.com/"
+    "link": ""
   },
   {
-    "platform": "ACE Trader",
-    "category": "DA, Video, CTV",
-    "summary": "데이터 기반 광고 DSP",
-    "description": "데이터 기반 광고 DSP",
+    "platform": "다방",
+    "category": "DA",
+    "summary": "대한민국 부동산 앱",
+    "description": "대한민국 부동산 앱",
     "features": [
-      "자료: [ACE Trader] 상품소개서_2025.Q1.pdf",
-      "이메일: at@nhnace.com",
+      "자료: 다방 소개",
+      "팀메일: ad@station3.co.kr",
+      "담당: 이지혜 매니저 (jhlee93@station3.co.kr)",
+      "전화: T) 070-4211-3953 M) 010-4851-2430",
       "최근 업데이트 기준: 2025.11"
     ],
-    "link": "https://drive.google.com/file/d/1T9rTVKfTHKuwwe5HaQ0exp0HeYwJKnHy/view?usp=drive_link"
+    "link": ""
+  },
+  {
+    "platform": "다음(AXZ)",
+    "category": "웹/앱",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 20% (네스트애즈) · 영역: 웹/앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "당근",
+    "category": "웹/앱",
+    "summary": "당근마켓 광고",
+    "description": "당근마켓 지역 기반 광고",
+    "features": [
+      "수수료율: 15% (백피) · 영역: 웹/앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "대학백과",
+    "category": "기타",
+    "summary": "대학생 대상 매체",
+    "description": "대학생 대상 매체 (유니브아이엠씨/비누랩스 운영)",
+    "features": [
+      "자료: 비누랩스소개",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "더리치",
+    "category": "앱",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 15% (백피) · 영역: 앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "데이블",
+    "category": "DA, 네이티브",
+    "summary": "개인화 컨텐츠 추천 플랫폼",
+    "description": "개인화 컨텐츠 추천 플랫폼",
+    "features": [
+      "자료: [데이블] 데이블 네이티브AD 서비스 소개서_2025.Q2.pdf",
+      "담당자: 이종민 팀장",
+      "이메일: jongmin@dable.io",
+      "전화: 010-8685-7898",
+      "사내 자료명: 데이블 소개",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://drive.google.com/file/d/1_6J9JlRq91oN7l7EOrutotvrp_VQ39lV/view?usp=drive_link"
+  },
+  {
+    "platform": "데일리샷",
+    "category": "앱",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 20% (네스트애즈) · 영역: 앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "동네알바",
+    "category": "앱",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 20% (네스트애즈) · 영역: 앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "디시인사이드",
+    "category": "웹",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 15% (백피) · 영역: 웹"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "디에디트",
+    "category": "SNS, Video, 기타",
+    "summary": "멀티 채널 운영",
+    "description": "멀티 채널 운영",
+    "features": [
+      "담당: 이혜민",
+      "이메일: m@the-edit.co.kr (회사: hello@the-edit.co.kr)",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "디지털캠프",
+    "category": "DSP, DA, Video, DMP",
+    "summary": "SKP DMP 기반 플랫폼",
+    "description": "SKP DMP 기반 플랫폼",
+    "features": [
+      "자료: [디지털캠프] 상품소개서_2025.Q1.pdf",
+      "이메일: mkt@digitalcamp.co.kr",
+      "사내 자료명: 디지털캠프",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://drive.google.com/file/d/1Zub7Y5Tpgxm5xNW-q7aAclMJv0sBgoej/view?usp=drive_link"
+  },
+  {
+    "platform": "레뷰코퍼레이션",
+    "category": "기타, SNS",
+    "summary": "인플루언서 마케팅 플랫폼",
+    "description": "인플루언서 마케팅 플랫폼",
+    "features": [
+      "자료: 레뷰홈페이지",
+      "이메일: help@revu.net",
+      "전화: 1544-9851",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://corp.revu.net/"
+  },
+  {
+    "platform": "레진코믹스",
+    "category": "웹/앱",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 20% (네스트애즈) · 영역: 웹/앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "로플랫",
+    "category": "DMP",
+    "summary": "오프라인 여정 데이터 기반 광고/마케팅",
+    "description": "User의 오프라인 여정을 데이터화하여, 디지털 광고 매체를 통한 광고/마케팅",
+    "features": [
+      "자료: 로플랫소개",
+      "담당: 배은호 매니저",
+      "이메일: beh0307@loplat.com (팀메일: dmp@loplat.com)",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "롯데멤버스",
+    "category": "LMS",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 15% (백피) · 영역: LMS"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "롯데포인트",
+    "category": "웹/앱",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 15% (백피) · 영역: 웹/앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "롱블랙",
+    "category": "SA",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 검색광고(SA) 집행 매체"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "리멤버",
+    "category": "비즈니스",
+    "summary": "명함 관리, 경력 채용 앱",
+    "description": "명함 관리, 경력 채용 앱",
+    "features": [
+      "자료: 리멤버소개",
+      "이메일: ad@rememberapp.co.kr",
+      "최근 업데이트 기준: 2025.11",
+      "수수료율: 20% (백피) · 영역: 앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "리얼클릭(RealClick)",
+    "category": "DSP",
+    "summary": "DSP 플랫폼",
+    "description": "DSP 플랫폼",
+    "features": [
+      "자료: 리얼클릭 홈페이지",
+      "담당자: 리얼클릭 문의폼",
+      "사내 자료명: 리얼클릭소개",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://www.realclick.co.kr/index.html"
+  },
+  {
+    "platform": "링크드인",
+    "category": "SNS, Video, DA, 리타기팅, 비즈니스",
+    "summary": "세계 최대 비즈니스 플랫폼",
+    "description": "세계 최대 비즈니스 플랫폼",
+    "features": [
+      "자료: 링크드인",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "마이리얼트립",
+    "category": "SA",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 검색광고(SA) 집행 매체"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "모두의 충전",
+    "category": "SA",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 검색광고(SA) 집행 매체"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "모바일 인덱스(MI)",
+    "category": "",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: TW360 관련(?) 확인 필요"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "모비온",
+    "category": "DMP, DSP",
+    "summary": "네트워크 광고 플랫폼",
+    "description": "네트워크 광고 플랫폼",
+    "features": [
+      "자료: [모비온] 매체 소개서_2024.Q2.pdf",
+      "이메일: mobon@enliple.com",
+      "전화: 070-4672-2303",
+      "사내 자료명: 모비온",
+      "최근 업데이트 기준: 2025.11",
+      "수수료율: 15% (백피) · 영역: 웹"
+    ],
+    "link": "https://drive.google.com/file/d/1NCACLD9Ni6MlpPHu6zPvHz460iGnuSbt/view?usp=drive_link"
+  },
+  {
+    "platform": "몰로코",
+    "category": "DSP, 리타기팅",
+    "summary": "DSP",
+    "description": "DSP",
+    "features": [
+      "자료: [Moloco] 와이즈버즈 매체설명회_2025.Q1.pdf",
+      "담당자: 허정용 부장",
+      "이메일: jeongyong@moloco.com",
+      "전화: 010-4690-3489",
+      "사내 자료명: 몰로코소개",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://drive.google.com/file/d/1hkHUJAf7zGNNcVTgNBYrJabAr4T0lpA4/view?usp=drive_link"
+  },
+  {
+    "platform": "무신사",
+    "category": "패션, App",
+    "summary": "국내 대표 온라인 패션 커머스 플랫폼",
+    "description": "스트릿 패션 커뮤니티에서 출발한 국내 최대 규모 패션 커머스 플랫폼. 다양한 브랜드 입점 및 자체 브랜드(무신사 스탠다드) 운영",
+    "features": [
+      "담당자/상품소개서 자료 확인 필요"
+    ],
+    "link": "https://www.musinsa.com"
+  },
+  {
+    "platform": "바나나몽키즈",
+    "category": "SMS",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 10~20% (백피) · 영역: SMS",
+      "카드사별 수수료: BC카드 15%, 삼성카드 10%, 하나카드 10%, 국민카드 15%, 롯데카드 10%, 신한카드 10%, 현대카드 10%, 우리카드 사업종료",
+      "통신사별 수수료: SKT 20%, KT 15%, LG U+ 10%",
+      "멤버십사별 수수료: 롯데멤버스 15%, 신세계포인트 10%, OK캐시백 10%, CJ ONE 10%, H.POINT 10%",
+      "기타 연동사 수수료: 호갱노노(채널톡) 15%, 직방(채널톡) 15%, 카카오페이(채널톡) 10%, 분양통(채널톡) 10%, 아파트아이(채널톡) 10%, 롯데ON 10%, 티맵 15%, 스마트스코어 10%, 나이스평가정보 10%"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "바이버",
+    "category": "앱",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 20% (네스트애즈) · 영역: 앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "버즈빌",
+    "category": "보상형",
+    "summary": "광고주-매체-유저 리워드 연결 플랫폼",
+    "description": "광고주와 매체, 그리고 유저를 리워드로 연결하는 플랫폼",
+    "features": [
+      "자료: 버즈빌",
+      "담당: 임주희 매니저",
+      "이메일: jules.yim@buzzvil.com",
+      "전화: 010-6355-0032",
+      "최근 업데이트 기준: 2025.11",
+      "수수료율: 15% (백피) · 영역: 리워드"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "베나투스미디어",
+    "category": "DA, Video",
+    "summary": "게임 광고 플랫폼",
+    "description": "게임 광고 플랫폼",
+    "features": [
+      "자료: [베나투스] 아카라이브 매체 소개서_2025.Q1.pdf",
+      "이메일: seoul@venatus.com",
+      "사내 자료명: 베나투스미디어 소개",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://drive.google.com/file/d/1o0z18RhaqnvnruggxAdYZ6B7zpCtzzD1/view?usp=drive_link"
+  },
+  {
+    "platform": "봄캘린더",
+    "category": "웹/앱",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 확인 필요 · 영역: 웹/앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "블라인드",
+    "category": "SNS, 비즈니스",
+    "summary": "직장인 SNS",
+    "description": "직장인 SNS",
+    "features": [
+      "자료: [블라인드] 매체소개서_2025.Q2.pdf",
+      "이메일: ads@teamblind.com",
+      "사내 자료명: 블라인드",
+      "최근 업데이트 기준: 2025.11",
+      "수수료율: 20% (백피) · 영역: 웹"
+    ],
+    "link": "https://drive.google.com/file/d/1oMc8jsqHN2WQCKX5Q41YDtpAf8DCiK6F/view?usp=drive_link"
+  },
+  {
+    "platform": "사람인",
+    "category": "웹/앱",
+    "summary": "채용 플랫폼 광고",
+    "description": "채용 플랫폼 광고 (네스트애즈팀 문의)",
+    "features": [
+      "담당: 네스트ADS팀 문의",
+      "최근 업데이트 기준: 2026.04",
+      "수수료율: 20% (네스트애즈) · 영역: 웹/앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "스마트스코어",
+    "category": "앱",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 20% (네스트애즈) · 영역: 앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "아이즈맥",
+    "category": "SNS, Video, 비즈니스",
+    "summary": "패션&라이프스타일 웹 매거진, 인스타그램 뉴스",
+    "description": "패션&라이프스타일 웹 매거진, 인스타그램 뉴스",
+    "features": [
+      "자료: [eyesmag] 회사소개서_2025.Q1.pdf",
+      "이메일: info@eyesmag.com",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://drive.google.com/file/d/17xPG6n0ofosXRVO4MwNwwi4W8VeIqgIU/view?usp=drive_link"
+  },
+  {
+    "platform": "애드팝콘",
+    "category": "리워드",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 20% (백피) · 영역: 리워드"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "애디슨오퍼월 / 캐쉬슬라이드 / Treasure Hunt (NBT)",
+    "category": "보상형",
+    "summary": "NBT / 대형 프리미엄 매체 내 보상형 광고 운영 플랫폼",
+    "description": "NBT / 대형 프리미엄 매체 내 보상형 광고 운영 플랫폼",
+    "features": [
+      "자료: 애디슨오퍼월홈페이지, 캐쉬슬라이드",
+      "최근 업데이트 기준: 2025.11",
+      "수수료율: 20% (백피) · 영역: 리워드"
+    ],
+    "link": "https://nbtads.oopy.io/adison"
+  },
+  {
+    "platform": "애피어",
+    "category": "App",
+    "summary": "모바일 광고 네트워크 플랫폼",
+    "description": "모바일 광고 네트워크 플랫폼",
+    "features": [
+      "자료: 애피어소개",
+      "담당: 박건호님",
+      "이메일: ryan.park@appier.com (팀메일: bd-kr@appier.com)",
+      "전화: 010-2840-1330",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "얼루어, W, GQ, 보그",
+    "category": "",
+    "summary": "사내 NEST 게시판 참고",
+    "description": "사내 NEST 게시판 참고",
+    "features": [],
+    "link": "https://nest.wisebirds.com/app/board/103/post/1345"
+  },
+  {
+    "platform": "에브리타임",
+    "category": "기타",
+    "summary": "대학생 커뮤니티 앱",
+    "description": "대학생 커뮤니티 앱 (유니브아이엠씨/비누랩스 운영)",
+    "features": [
+      "자료: 비누랩스소개",
+      "최근 업데이트 기준: 2025.11",
+      "수수료율: 0% (마크업) · 영역: 앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "에이블리",
+    "category": "패션, App",
+    "summary": "패션 특화 개인화 커머스 앱",
+    "description": "동대문 기반 여성 패션/뷰티 상품을 개인화 추천으로 큐레이션하는 커머스 앱",
+    "features": [
+      "담당자/상품소개서 자료 확인 필요",
+      "수수료율: 20% (백피) · 영역: 웹"
+    ],
+    "link": "https://www.a-bly.com"
+  },
+  {
+    "platform": "엠넷플러스",
+    "category": "웹",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 20% (백피) · 영역: 웹"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "열나요",
+    "category": "DA",
+    "summary": "영유아 열 관리",
+    "description": "영유아 열 관리",
+    "features": [
+      "자료: [열나요] 광고상품소개서_25.02.pdf",
+      "이메일: contact@fevercoach.net",
+      "전화: 02-6408-5577",
+      "사내 자료명: 디지털캠프",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://drive.google.com/file/d/1SbcEmUk5GO79YJKs61NClilF-f5cNhjB/view?usp=drive_link"
+  },
+  {
+    "platform": "열품타",
+    "category": "웹",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 20% (백피) · 영역: 웹"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "오늘의집",
+    "category": "DA",
+    "summary": "라이프스타일 플랫폼",
+    "description": "라이프스타일 플랫폼",
+    "features": [
+      "자료: 오하우스애즈 소개서, 오늘의집 배너광고 상품소개서",
+      "이메일: ad_product@bucketplace.net",
+      "사내 자료명: 오늘의집소개",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://docs.google.com/presentation/d/1QVmkia1aUUOzSUee4AJX6NJPLPFHL4NGZAbfBlQiV58/edit?slide=id.g38c61f3d49f_2_255"
+  },
+  {
+    "platform": "오늘학교",
+    "category": "웹",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 20% (백피) · 영역: 웹"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "오케이캐시백",
+    "category": "웹/앱",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 20% (백피) · 영역: 웹/앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "원티드",
+    "category": "DA",
+    "summary": "커리어 플랫폼",
+    "description": "커리어 플랫폼",
+    "features": [
+      "자료: [원티드] 광고상품소개서_2024.Q4.pdf",
+      "이메일: ad@wantedlab.com",
+      "사내 자료명: 원티드",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://drive.google.com/file/d/1YeeIvI-2erztQQKA8Lp5QO8TNb8KwGzq/view?usp=drive_link"
+  },
+  {
+    "platform": "위키트리",
+    "category": "SNS, Video, 비즈니스",
+    "summary": "인스타그램 카드 뉴스",
+    "description": "인스타그램 카드 뉴스",
+    "features": [
+      "자료: [위키트리] 네이티브광고 상품 소개서_2025.Q4.pdf",
+      "이메일: brandnews@wikitree.co.kr",
+      "전화: 기사/카드뉴스 070-4206-7947, 영상 070-4206-7059, 대표 02-3789-8900",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://drive.google.com/file/d/1T97lRO_MHQ5XcqColJwohZrXEmr7r6Np/view?usp=drive_link"
+  },
+  {
+    "platform": "인사이트",
+    "category": "SNS, Video",
+    "summary": "인스타그램 카드 뉴스, 웹사이트, 네이버 포스트",
+    "description": "인스타그램 카드 뉴스, 웹사이트, 네이버 포스트",
+    "features": [
+      "자료: [인사이트] 광고상품소개서_2025.Q1.pdf",
+      "이메일: ad_team@insight.co.kr",
+      "전화: 02-6734-2200",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://drive.google.com/file/d/1kF1DYSDk4Tx2-u8-qrBuxALfkOCSUtTN/view?usp=drive_link"
+  },
+  {
+    "platform": "자소설닷컴",
+    "category": "웹",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 20% (네스트애즈) · 영역: 웹"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "잡코리아",
+    "category": "DA",
+    "summary": "AI기반 종합 커리어 플랫폼",
+    "description": "AI기반 종합 커리어 플랫폼",
+    "features": [
+      "이메일: ad@jobkorea.co.kr",
+      "전화: 02-3466-5480",
+      "최근 업데이트 기준: 2025.11",
+      "비고: 잡코리아 광고"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "잡플래닛",
+    "category": "비즈니스",
+    "summary": "기업 리뷰/채용 플랫폼",
+    "description": "",
+    "features": [
+      "비고: 자료 확인 필요"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "점신",
+    "category": "DA",
+    "summary": "모바일 앱 기반 통합 운세 플랫폼",
+    "description": "모바일 앱 기반 통합 운세 플랫폼",
+    "features": [
+      "자료: [점신] 상품소개서 2025.Q2.pdf",
+      "담당자: 점신 문의폼",
+      "사내 자료명: 점신",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://drive.google.com/file/d/119CrCOzffZD2aoNbecCQarwYoqIbznRd/view?usp=drive_link"
+  },
+  {
+    "platform": "제이커뮤니케이션",
+    "category": "",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 별도 사이트 없음"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "직방 / 호갱노노",
+    "category": "SA",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 검색광고(SA) 집행 매체"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "집꾸미기",
+    "category": "SA",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 검색광고(SA) 집행 매체"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "챌린저스",
+    "category": "DA, SNS, 기타",
+    "summary": "건강 챌린지 앱",
+    "description": "건강 챌린지 앱",
+    "features": [
+      "자료: [챌린저스] 광고상품소개서_2023.Q1.pdf",
+      "담당자: 문의폼",
+      "사내 자료명: 챌린저스",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://drive.google.com/file/d/14hhLrhGZpYAVZZyhVkfg70gE0R6HXYrh/view?usp=drive_link"
+  },
+  {
+    "platform": "카울리",
+    "category": "",
+    "summary": "모바일 광고 네트워크 플랫폼",
+    "description": "모바일 광고 네트워크 플랫폼",
+    "features": [],
+    "link": ""
+  },
+  {
+    "platform": "카카오뱅크",
+    "category": "앱",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 20% (백피) · 영역: 앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "카카오페이지 (캐시프렌즈)",
+    "category": "",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 광고 페이지 확인 안 됨"
+    ],
+    "link": ""
   },
   {
     "platform": "캐치테이블",
-    "category": "DA, 로컬",
+    "category": "DA, 로컬, 식음료",
     "summary": "국내 대표 미식 생활 플랫폼",
     "description": "국내 대표 미식 생활 플랫폼",
     "features": [
@@ -502,23 +1327,297 @@
     "link": "https://drive.google.com/file/d/1m1bY8Gcg5Du58dQUzvrdk4a8iY5-vpKH/view?usp=drive_link"
   },
   {
-    "platform": "에이블리",
-    "category": "패션, App",
-    "summary": "패션 특화 개인화 커머스 앱",
-    "description": "동대문 기반 여성 패션/뷰티 상품을 개인화 추천으로 큐레이션하는 커머스 앱",
+    "platform": "캠퍼스픽",
+    "category": "기타",
+    "summary": "대학생 대상 매체",
+    "description": "대학생 대상 매체 (유니브아이엠씨/비누랩스 운영)",
     "features": [
-      "담당자/상품소개서 자료 확인 필요"
+      "자료: 비누랩스소개",
+      "최근 업데이트 기준: 2025.11"
     ],
-    "link": "https://www.a-bly.com"
+    "link": ""
   },
   {
-    "platform": "무신사",
-    "category": "패션, App",
-    "summary": "국내 대표 온라인 패션 커머스 플랫폼",
-    "description": "스트릿 패션 커뮤니티에서 출발한 국내 최대 규모 패션 커머스 플랫폼. 다양한 브랜드 입점 및 자체 브랜드(무신사 스탠다드) 운영",
+    "platform": "컬쳐랜드",
+    "category": "앱",
+    "summary": "",
+    "description": "",
     "features": [
-      "담당자/상품소개서 자료 확인 필요"
+      "수수료율: 30% (네스트애즈) · 영역: 앱"
     ],
-    "link": "https://www.musinsa.com"
+    "link": ""
+  },
+  {
+    "platform": "콴다",
+    "category": "웹",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 15% (백피) · 영역: 웹"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "쿠키오븐",
+    "category": "",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 확인 필요"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "쿠팡",
+    "category": "SA",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 검색광고(SA) 집행 매체"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "퀀텀유니버스",
+    "category": "기타",
+    "summary": "AR/VR/XR 관련 솔루션",
+    "description": "AR/VR/XR 관련 솔루션",
+    "features": [
+      "자료: [퀀텀유니버스] 광고소개서_2022_Q1_kr.pdf",
+      "이메일: info@quantumuniverse.co",
+      "전화: 02-555-8809",
+      "비고: 광고소개서 최신버전 없음"
+    ],
+    "link": "https://drive.google.com/file/d/1qRXbXYEB61sO1JwdjFz83I-BQLgMXJza/view?usp=drive_link"
+  },
+  {
+    "platform": "클래스팅",
+    "category": "DA",
+    "summary": "학부모-학생-교사용 클래스 관리 앱",
+    "description": "학부모-학생-교사가 활용하는 클래스 관리 앱",
+    "features": [
+      "자료: 클래스팅소개",
+      "담당: 클래스팅 문의폼",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "키즈노트",
+    "category": "DA, 기타",
+    "summary": "영유아 모바일 커뮤니케이션 플랫폼",
+    "description": "영유아 모바일 커뮤니케이션 플랫폼",
+    "features": [
+      "자료: 키즈노트 소개",
+      "이메일: adpart@kidsnote.com",
+      "최근 업데이트 기준: 2025.11",
+      "수수료율: 20% (백피) · 영역: 앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "타겟픽",
+    "category": "웹",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 20% (백피) · 영역: 웹"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "타다",
+    "category": "SA",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 검색광고(SA) 집행 매체"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "토스",
+    "category": "App",
+    "summary": "모바일 금융 서비스",
+    "description": "모바일 금융 서비스",
+    "features": [
+      "비고: 확인 필요",
+      "수수료율: 20% (백피) · 영역: 앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "토스페이",
+    "category": "앱",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 10% (백피) · 영역: 앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "티앤케이",
+    "category": "리워드",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 20% (백피) · 영역: 리워드"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "티오더",
+    "category": "로컬, 기타, Video, DA",
+    "summary": "스마트 오더 시스템",
+    "description": "주문·결제하고 테이블에 바로 받아볼 수 있는 스마트 오더 시스템",
+    "features": [
+      "자료: 티오더소개",
+      "담당: 조용래 팀장",
+      "이메일: yonglae.cho@torder.com (광고팀: team_ads@torder.com)",
+      "전화: 010-6647-9585",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "파이브애드",
+    "category": "DA, 비즈니스, 로컬, 오프라인",
+    "summary": "공유오피스 플랫폼",
+    "description": "공유오피스 플랫폼",
+    "features": [
+      "자료: [패스트파이브] 광고상품소개서_2025.Q4.pdf",
+      "담당자: 패스트파이브 문의폼",
+      "사내 자료명: 패스트파이브 소개",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://drive.google.com/file/d/1HZCX-pH9aH77fjODARZwZECa9UICaPyo/view?usp=drive_link"
+  },
+  {
+    "platform": "팟빵",
+    "category": "App, 기타, Video",
+    "summary": "오디오 플랫폼",
+    "description": "오디오 플랫폼",
+    "features": [
+      "자료: [팟빵] 광고소개서_2025.Q1.pdf",
+      "이메일: ad@podbbang.com",
+      "전화: 02-6457-8017",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://drive.google.com/file/d/1MrZ13z34o1PtZ6Bi2XWYRluK9MN93fj5/view?usp=drive_link"
+  },
+  {
+    "platform": "페이북",
+    "category": "SA",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 검색광고(SA) 집행 매체"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "포스타입",
+    "category": "웹",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 20% (백피) · 영역: 웹"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "포커스미디어",
+    "category": "DOOH",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 확인 필요 (백피) · 영역: DOOH"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "핑크다이어리",
+    "category": "웹/앱",
+    "summary": "여성 커뮤니티 앱",
+    "description": "",
+    "features": [
+      "비고: 2023년 자료가 최신, 업데이트 확인 필요",
+      "수수료율: 20% (백피) · 영역: 웹/앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "하나투어",
+    "category": "앱",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 20% (네스트애즈) · 영역: 앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "하이브스택",
+    "category": "OOH",
+    "summary": "DOOH 플랫폼",
+    "description": "",
+    "features": [
+      "비고: 한국 철수, Perion Network 인수 (https://perion.com/)"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "해피포인트",
+    "category": "웹/앱",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 30% (백피) · 영역: 웹/앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "허프포스트",
+    "category": "SNS, Video, 비즈니스",
+    "summary": "인스타그램 카드 뉴스, 웹사이트",
+    "description": "인스타그램 카드 뉴스, 웹사이트",
+    "features": [
+      "자료: [허프포스트] 광고소개서_2023_Q1.pdf",
+      "이메일: sanga.kwak@huffpost.kr",
+      "전화: 대표 02-6959-9810",
+      "최근 업데이트 기준: 2025.11"
+    ],
+    "link": "https://drive.google.com/file/d/1iSzNnrQ-1A0ZkmxeJueBEgv1bs3B2k0T/view?usp=drive_link"
+  },
+  {
+    "platform": "현대포인트",
+    "category": "웹/앱",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 30% (백피) · 영역: 웹/앱"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "홈쇼핑모아",
+    "category": "SA",
+    "summary": "",
+    "description": "",
+    "features": [
+      "비고: 검색광고(SA) 집행 매체"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "캐시워크",
+    "category": "앱",
+    "summary": "",
+    "description": "",
+    "features": [
+      "수수료율: 20%"
+    ],
+    "link": ""
   }
 ]

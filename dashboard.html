@@ -453,6 +453,16 @@
     overflow: hidden;
     min-height: 3.2em;
   }
+  .pc-fee {
+    display: inline-block;
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #b8860b;
+    background: #f2c94c1f;
+    padding: 3px 9px;
+    border-radius: 6px;
+    margin: -6px 0 12px;
+  }
   .pc-footer {
     display: flex;
     align-items: center;
@@ -543,6 +553,7 @@
     color: var(--muted);
     line-height: 1.8;
   }
+  .fee-line { color: #b8860b; font-weight: 700; }
   .copy-email-btn {
     font-size: 10.5px;
     font-weight: 600;
@@ -1111,6 +1122,12 @@ function freshnessClass(dateObj) {
   if (days <= 180) return 'stale';
   return 'old';
 }
+// "수수료율: 20% (백퍼) · 영역: 웹" 같은 줄에서 카드 앞면에 바로 보여줄 짧은 값만 뽑는다.
+function extractFeeRate(p) {
+  const line = (p.features || []).find(f => f.startsWith('수수료율:'));
+  if (!line) return '';
+  return line.replace('수수료율:', '').split('·')[0].trim();
+}
 
 function renderProducts(products) {
   allProducts = products;
@@ -1187,6 +1204,7 @@ function renderProductGrid() {
     const color = categoryColor(cat);
     const note = extractUpdateNote(p);
     const fresh = freshnessClass(parseUpdateDate(note));
+    const feeRate = extractFeeRate(p);
     return `
       <div class="product-card" data-index="${allProducts.indexOf(p)}">
         <div class="pc-head">
@@ -1197,6 +1215,7 @@ function renderProductGrid() {
           <span class="pc-badge" style="background:${color}1f; color:${color};">${escapeHTML(cat)}</span>
         </div>
         <p class="pc-desc">${escapeHTML(p.description || p.summary || '')}</p>
+        ${feeRate ? `<div class="pc-fee">💰 수수료 ${escapeHTML(feeRate)}</div>` : ''}
         <div class="pc-footer">
           <span class="pc-dot ${fresh}"></span>
           <span>${note ? '최근 업데이트 ' + note : '업데이트 정보 없음'}</span>
@@ -1263,6 +1282,9 @@ function openProductSheet(p) {
 // 담당자 이메일이 들어있는 특징 줄이면 바로 복사할 수 있는 작은 버튼을 붙여준다.
 const EMAIL_RE = /[\w.+-]+@[\w-]+\.[\w.-]+/;
 function featureLineHTML(f) {
+  if (f.startsWith('수수료율:') || /수수료:/.test(f)) {
+    return `<strong class="fee-line">${escapeHTML(f)}</strong>`;
+  }
   const m = f.match(EMAIL_RE);
   if (!m) return escapeHTML(f);
   return `${escapeHTML(f)} <button class="copy-email-btn" data-email="${escapeHTML(m[0])}" title="이메일 복사">복사</button>`;
