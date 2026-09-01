@@ -632,6 +632,16 @@
     padding: 2px 7px;
     border-radius: 4px;
   }
+  .type-badge {
+    font-size: 10px;
+    font-weight: 700;
+    flex-shrink: 0;
+    padding: 2px 7px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .type-badge.launch { color: #2f9e44; background: #2f9e4414; }
+  .type-badge.industry { color: #7c5cff; background: #7c5cff14; }
 
   .empty-state {
     text-align: center;
@@ -791,6 +801,15 @@ function isImportant(title) {
   return IMPORTANT_KEYWORDS.some(k => (title || '').includes(k));
 }
 
+// 신상품 출시 / 업계소식 / 일반 공지 구분 (제목 키워드 + 매체 기준, AI 아님)
+const LAUNCH_KEYWORDS = ['출시', '오픈', 'BETA', '베타', '신규 상품', '신규 광고', '신규 서비스', '선보', '런칭'];
+function noticeType(n) {
+  if (n.platform === CLIPPING_PLATFORM) return 'industry';
+  if (LAUNCH_KEYWORDS.some(k => (n.title || '').includes(k))) return 'launch';
+  return 'notice';
+}
+const NOTICE_TYPE_LABEL = { launch: '🚀 신상품', industry: '📰 업계소식', notice: '' };
+
 function daysAgo(dateStr) {
   if (!dateStr) return null;
   return Math.floor((Date.now() - parseDateOnly(dateStr).getTime()) / 86400000);
@@ -812,11 +831,14 @@ function excerptHTML(s) {
 }
 
 function noticeRowHTML(n) {
+  const type = noticeType(n);
+  const typeLabel = NOTICE_TYPE_LABEL[type];
   return `
     <div class="th-row">
       <a class="th-link ${isUnseen(n) ? 'is-unseen' : ''}" href="${n.url}" target="_blank" rel="noopener">
         ${isUnseen(n) ? '<span class="unseen-dot" title="지난 방문 이후 새 글"></span>' : ''}
         <span class="platform-tag ${PLATFORM_CLASS[n.platform] || 'common'}">${escapeHTML(platformLabel(n.platform))}</span>
+        ${typeLabel ? `<span class="type-badge ${type}">${typeLabel}</span>` : ''}
         ${n.is_pinned ? '<span title="고정 공지">📌</span>' : ''}
         ${isImportant(n.title) ? '<span title="캠페인에 영향 줄 수 있는 소식">⚠️</span>' : ''}
         <span class="th-text">${escapeHTML(n.title)}</span>
