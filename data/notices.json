@@ -1,7 +1,151 @@
 {
-  "generated_at": "2026-08-26T10:23:56+09:00",
-  "new_count": 14,
+  "generated_at": "2026-09-01T13:52:18+09:00",
+  "new_count": 18,
   "notices": [
+    {
+      "id": 33851,
+      "title": "동영상 광고 전환수 집계 반영 안내",
+      "category": "디스플레이 광고",
+      "date": "2026-08-31",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://ads.naver.com/notice/33851",
+      "platform": "네이버 GFA"
+    },
+    {
+      "id": "/entry/20260824-news-clipping",
+      "title": "2026년 8월 24일주 뉴스클리핑",
+      "excerpt": "한 주 간의 <mark>디지털 미디어와 마케팅</mark> 관련 주요 뉴스를 모아 전해드립니다. <mark>메타, 청소년 SNS 이용 제한 강화…플랫폼 전반으로 확대되나</mark> 메타가 청소년의 SNS 중독을 유도했다는 의혹으로 미국 47개 주 등과 소송 합의에 나서며, 인스타그램·페이스북의 18세 미만 이용자에 하루 2시간 이용 제한과 자정~오전 6시 접속 차단 등을 도입할 예정임. 향후 6개월 내에는 좋아요·반응 수 비공개 등 이용 환경 전반의 보호장치가 추가적으로 도입됨. 메타는 틱톡·유튜브 등 경쟁 플랫폼에도 유사한 조치 도입을 촉구하며 업계 전반의 청소년 SNS 이용 환경 변화를 유도함.🔗메타, '청소년 SNS 중독' 美소송서 23조원 지급 합의…셧다운제 도입 <mark>네이버, 음원 플랫폼 '바이브' 8년 만에 서비스 종료</mark> 네이버가 2018년 출시한 음원 스트리밍 플랫폼 ‘바이브’를 12월 31일 종료하며, 11월 27일부터 신규 가입과 정기 결제를 중단할 예정임. 네이버는 지난해 네이버플러스 멤버십에 스포티파이를 추가한 데 이어 바이브 서비스…",
+      "platforms": [
+        "인스타그램",
+        "유튜브",
+        "네이버",
+        "메타",
+        "틱톡"
+      ],
+      "category": "뉴스클리핑",
+      "date": "2026-08-31",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://blog.nasmedia.co.kr/entry/20260824-news-clipping",
+      "highlights": [
+        {
+          "platform": "메타",
+          "headline": "메타, 청소년 SNS 이용 제한 강화…플랫폼 전반으로 확대되나"
+        },
+        {
+          "platform": "네이버",
+          "headline": "네이버, 음원 플랫폼 '바이브' 8년 만에 서비스 종료"
+        },
+        {
+          "platform": "인스타그램",
+          "headline": "인스타그램, 릴스 편집 기능 '퍼스트 드래프트' 출시 예정"
+        },
+        {
+          "platform": "틱톡",
+          "headline": "틱톡, K컬처 확산 넘어 경제효과 확대"
+        },
+        {
+          "platform": "챗GPT",
+          "headline": "오픈AI, 챗GPT 광고 '제외 타기팅' 테스트"
+        },
+        {
+          "platform": "카카오톡",
+          "headline": "카카오, 카카오톡·전화로 AI 서비스 제공 예정"
+        },
+        {
+          "platform": "구글",
+          "headline": "구글, 한국 대학생 대상 제미나이 유료 멤버십 무료 제공…AI 이용자 선점 경쟁"
+        },
+        {
+          "platform": "카카오",
+          "headline": "카카오, '선물하기' 독점 구도 흔들"
+        },
+        {
+          "platform": "토스",
+          "headline": "…10대는 토스 이용 확대"
+        },
+        {
+          "platform": "유튜브",
+          "headline": "유튜브 쇼핑, 국내 홈쇼핑 4사로 제휴 확대"
+        }
+      ],
+      "platform": "나스미디어 뉴스클리핑"
+    },
+    {
+      "id": 25560,
+      "title": "[공지] 일주일 방문 미션(협력광고) - 상품 담기/상품 좋아요 누르기 미션 데이터 반영 지연 안내 (8/30~8/31)",
+      "category": "공지",
+      "date": "2026-08-31",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://tossads.toss.im/notice/25560",
+      "platform": "토스애즈"
+    },
+    {
+      "id": 25552,
+      "title": "[사전 안내] 버튼누르기 광고 개편 안내 (9/17 오픈)",
+      "category": "공지",
+      "date": "2026-08-28",
+      "is_pinned": true,
+      "is_new": true,
+      "url": "https://tossads.toss.im/notice/25552",
+      "platform": "토스애즈"
+    },
+    {
+      "id": "/entry/2608adissue",
+      "title": "2026년 8월 - 토스 신규 네이티브 광고 상품 출시 외",
+      "excerpt": "2025년 8월 디지털 미디어 애드 이슈 월간 디지털 미디어 상품 이슈와 주요 업데이트를 전해드립니다. 📢주요 이슈토스, 탐색 흐름에 맞춘 신규 네이티브 광고 출시토스가 쇼핑 앱·앱·혜택 등 이용자가 특정 목적을 가지고 탐색하는 지면에 자연스럽게 광고를 노출하는 신규 네이티브 광고 상품을 출시했습니다. 정해진 배너 영역에 광고를 보여주는 방식에서 벗어나, 사용자가 상품을 찾거나 앱을 둘러보고 혜택을 비교하는 흐름 속에서 관련 광고를 제안하는 것이 특징입니다.신규 상품은 구매 유도, 앱 설치, 잠재고객 확보 등 광고 목적에 따라 활용할 수 있습니다. '오토 타겟팅'을 통해 토스에 축적된 결제·자산·행동 데이터를 기반으로 전환 가능성이 높은 이..",
+      "platforms": [
+        "네이버",
+        "카카오",
+        "당근",
+        "메타",
+        "구글",
+        "토스",
+        "틱톡"
+      ],
+      "category": "광고 상품 업데이트",
+      "date": "2026-08-27",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://blog.nasmedia.co.kr/entry/2608adissue",
+      "platform": "나스미디어 광고상품업데이트"
+    },
+    {
+      "id": 25550,
+      "title": "신규 기능 상품보고서 제공 안내",
+      "category": "공지",
+      "date": "2026-08-27",
+      "is_pinned": true,
+      "is_new": true,
+      "url": "https://tossads.toss.im/notice/25550",
+      "platform": "토스애즈"
+    },
+    {
+      "id": "/entry/2608adissue-naveradvoostmax",
+      "title": "네이버 AI 광고 'ADVoost Max' 출시! 집행 전 알아둬야 할 점은?",
+      "excerpt": "네이버가 AI 기반 검색광고 ‘ADVoost Max(애드부스트 맥스)’​를 정식 출시했습니다. 2026년 7월 15일 광고주센터를 오픈한 데 이어, 7월 21일부터 광고 노출을 시작했는데요.ADVoost Max는 기존 검색광고처럼 등록된 키워드를 중심으로 광고를 연결하는 방식에서 한발 더 나아가, AI가 이용자의 검색 의도와 탐색 흐름을 파악해 관련성이 높은 광고를 선별합니다. 현재 네이버 통합검색의 AI 브리핑을 주요 지면으로 활용하며, 검색 결과가 AI 중심으로 변화하는 흐름에 맞춰 검색광고의 노출 방식도 함께 확장되고 있습니다. 검색어 대신 '탐색 맥락'을 읽는다기존 검색광고에서는 이용자가 입력한 검색어와 광고주가 등록한 키워드·연결 URL의 연관성이 광고 노출에 중요한 역할을 했습니다. ADVoo..",
+      "platforms": [
+        "네이버"
+      ],
+      "category": "광고 상품 업데이트",
+      "date": "2026-08-26",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://blog.nasmedia.co.kr/entry/2608adissue-naveradvoostmax",
+      "platform": "나스미디어 광고상품업데이트"
+    },
+    {
+      "id": 25540,
+      "title": "광고 소재 규격 통일 안내",
+      "category": "공지",
+      "date": "2026-08-26",
+      "is_pinned": true,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25540",
+      "platform": "토스애즈"
+    },
     {
       "id": "/entry/20260817-news-clipping",
       "title": "2026년 8월 17일주 뉴스클리핑",
@@ -15,7 +159,7 @@
       "category": "뉴스클리핑",
       "date": "2026-08-24",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://blog.nasmedia.co.kr/entry/20260817-news-clipping",
       "highlights": [
         {
@@ -55,19 +199,9 @@
       "category": "공지",
       "date": "2026-08-22",
       "is_pinned": true,
-      "is_new": true,
+      "is_new": false,
       "url": "https://tossads.toss.im/notice/25538",
       "platform": "토스애즈"
-    },
-    {
-      "id": 33583,
-      "title": "디스플레이 광고 비즈채널 재검수 요청 기능 추가 안내",
-      "category": "디스플레이 광고",
-      "date": "2026-08-19",
-      "is_pinned": false,
-      "is_new": true,
-      "url": "https://ads.naver.com/notice/33583",
-      "platform": "네이버 GFA"
     },
     {
       "id": "https://www.facebook.com/business/news/meta-ai-for-small-businesses",
@@ -78,6 +212,16 @@
       "is_new": true,
       "url": "https://www.facebook.com/business/news/meta-ai-for-small-businesses",
       "platform": "메타 for Business"
+    },
+    {
+      "id": 33583,
+      "title": "디스플레이 광고 비즈채널 재검수 요청 기능 추가 안내",
+      "category": "디스플레이 광고",
+      "date": "2026-08-19",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://ads.naver.com/notice/33583",
+      "platform": "네이버 GFA"
     },
     {
       "id": 33601,
@@ -232,7 +376,7 @@
     {
       "id": "/entry/20260803-news-clipping",
       "title": "2026년 8월 3일주 뉴스클리핑",
-      "excerpt": "한 주 간의 <mark>디지털 미디어와 마케팅</mark> 관련 주요 뉴스를 모아 전해드립니다. <mark>네이버·카카오, 2분기 호실적 속 AI 수익화 격돌</mark> 네이버·카카오가 올해 2분기 나란히 성장세를 기록하며 AI 사업의 본격적인 수익화 단계 진입을 선언함. 네이버는 AI 탭과 AI 브리핑 광고를 앞세운 '실행형 AI'를 통해 광고 및 쇼핑 사업화에 집중하고 있음. 반면 카카오는 카카오톡 기반으로 이용자 의도를 파악해 거래로 연결하는 '의도경제' 서비스를 확장 중임. 🔗'검색·결제' vs '톡'…AI 수익화 길 갈렸다 <mark>네이버, '채널 검색' 출시</mark><mark>…</mark><mark>AI 기반 숏폼 생태계 확장</mark> 네이버가 숏폼 창작자의 채널 정보와 콘텐츠를 한데 모아 보여주는 '채널 검색' 서비스를 출시함. 이는 이용자의 개별 콘텐츠 관심을 창작자 탐색과 소비로 이어지게 하여 선순환 생태계를 구축하려는 전략으로, '클립 AI 브리핑' 연계로 창작자 노출을 3배 늘린 데 이어 연내 'AI탭'에도 동영상 활용을 확대할 계획임. …",
+      "excerpt": "한 주 간의 디지털 미디어와 마케팅 관련 주요 뉴스를 모아 전해드립니다.네이버·카카오, 2분기 호실적 속 AI 수익화 격돌네이버·카카오가 올해 2분기 나란히 성장세를 기록하며 AI 사업의 본격적인 수익화 단계 진입을 선언함. 네이버는 AI 탭과 AI 브리핑 광고를 앞세운 '실행형 AI'를 통해 광고 및 쇼핑 사업화에 집중하고 있음. 반면 카카오는 카카오톡 기반으로 이용자 의도를 파악해 거래로 연결하는 '의도경제' 서비스를 확장 중임. 🔗'검색·결제' vs '톡'…AI 수익화 길 갈렸다네이버, '채널 검색' 출시…AI 기반 숏폼 생태계 확장네이버가 숏폼 창작자의 채널 정보와 콘텐츠를 한데 모아 보여주는 '채널 검색' 서비스를 출시함. 이는 이용자의 개별 콘텐츠 관심을 창작자 탐색과 소비로 이..",
       "platforms": [
         "네이버",
         "카카오톡",
@@ -243,40 +387,6 @@
       "is_pinned": false,
       "is_new": false,
       "url": "https://blog.nasmedia.co.kr/entry/20260803-news-clipping",
-      "highlights": [
-        {
-          "platform": "네이버",
-          "headline": "네이버·카카오, 2분기 호실적 속 AI 수익화 격돌"
-        },
-        {
-          "platform": "유튜브",
-          "headline": "카페24, 아시아 최초 유튜브 크리에이터 파트너십 API 연동"
-        },
-        {
-          "platform": "당근",
-          "headline": "당근, '동네걷기' 출시 1년"
-        },
-        {
-          "platform": "챗GPT",
-          "headline": "오픈AI, 챗GPT 무료 이용자에 ‘GPT-5.6 루나’ 무제한 제공"
-        },
-        {
-          "platform": "카카오",
-          "headline": "카카오, 카나나-오 음성 생성 고도화…자연어로 말투·감정까지 제어"
-        },
-        {
-          "platform": "카카오페이",
-          "headline": "카카오페이, 마이데이터 기반 AI 금융 에이전트 ‘AI코치’ 출시"
-        },
-        {
-          "platform": "틱톡",
-          "headline": "디즈니플러스, 틱톡 숏폼 콘텐츠 유통 확대"
-        },
-        {
-          "platform": "OTT",
-          "headline": "…OTT·소셜미디어 경계 허문다"
-        }
-      ],
       "platform": "나스미디어 뉴스클리핑"
     },
     {
@@ -333,6 +443,16 @@
       "is_new": true
     },
     {
+      "id": "https://www.facebook.com/business/news/2026-holiday-small-business",
+      "title": "소규모 비즈니스의 연말 시즌 준비: 무료 인사이트, AI 도구 및 성장에 도움이 되는 가이드북",
+      "category": "비즈니스 소식",
+      "date": "2026-07-27",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://www.facebook.com/business/news/2026-holiday-small-business",
+      "platform": "메타 for Business"
+    },
+    {
       "id": "/entry/20260720-news-clipping",
       "title": "2026년 7월 20일주 뉴스클리핑",
       "excerpt": "한 주 간의 디지털 미디어와 마케팅 관련 주요 뉴스를 모아 전해드립니다.삼성전자, 갤럭시 언팩 2026에서 AI 기반 신제품 공개…구글·넷플릭스와 협업삼성이 갤럭시 언팩 2026에서 AI 기반 신제품을 공개하며 실행형 AI 경험을 강화함. 구글 제미나이와 넷플릭스 등 주요 서비스와의 협업을 확대하며 AI 활용성과 앱 생태계 연동을 강화함. AI 경쟁이 모델 성능을 넘어 플랫폼 협업과 생태계 중심으로 확대되는 흐름. 🔗말 한마디에 40개 앱 움직인다…'대화' 넘어 '실행' 나선 폰AI네이버페이, AI 기반 'Npay 연금' 출시…맞춤형 자산관리 서비스 확대 네이버페이가 국민연금·퇴직연금·개인연금을 통합 조회하고 AI 기반 맞춤형 연금 관리 서비스 'Npay 연금'을 출시함. AI가 이용자 데..",
@@ -349,21 +469,11 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
-      "id": "https://www.facebook.com/business/news/2026-holiday-small-business",
-      "title": "소규모 비즈니스의 연말 시즌 준비: 무료 인사이트, AI 도구 및 성장에 도움이 되는 가이드북",
-      "category": "비즈니스 소식",
-      "date": "2026-07-27",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://www.facebook.com/business/news/2026-holiday-small-business",
-      "platform": "메타 for Business"
-    },
-    {
       "id": 25392,
       "title": "'도달률 높이기' 캠페인 목표 종료 안내",
       "category": "공지",
       "date": "2026-07-26",
-      "is_pinned": true,
+      "is_pinned": false,
       "is_new": false,
       "url": "https://tossads.toss.im/notice/25392",
       "platform": "토스애즈"
@@ -413,7 +523,7 @@
       "title": "[중요] 신규 네이티브 광고 상품 오픈 안내",
       "category": "공지",
       "date": "2026-07-22",
-      "is_pinned": true,
+      "is_pinned": false,
       "is_new": false,
       "url": "https://tossads.toss.im/notice/25322",
       "platform": "토스애즈"
@@ -522,16 +632,6 @@
       "platform": "토스애즈"
     },
     {
-      "id": 32742,
-      "title": "디스플레이 광고 상품 성과 보고서 내 일부 기능 변경 안내",
-      "category": "디스플레이 광고",
-      "date": "2026-07-08",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://ads.naver.com/notice/32742",
-      "platform": "네이버 GFA"
-    },
-    {
       "id": "https://www.facebook.com/business/news/muse-image-for-businesses",
       "title": "어드밴티지+ 크리에이티브의 Muse Image",
       "category": "비즈니스 소식",
@@ -597,7 +697,7 @@
       "title": "버튼 누르기 광고 ‘노출·CTR’ 지표 변경 안내",
       "category": "공지",
       "date": "2026-06-29",
-      "is_pinned": true,
+      "is_pinned": false,
       "is_new": false,
       "url": "https://tossads.toss.im/notice/25264",
       "platform": "토스애즈"
@@ -685,16 +785,6 @@
       "platform": "토스애즈"
     },
     {
-      "id": 25220,
-      "title": "직접 입찰의 입찰가 선정 방식 변경 안내",
-      "category": "공지",
-      "date": "2026-06-16",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://tossads.toss.im/notice/25220",
-      "platform": "토스애즈"
-    },
-    {
       "id": "https://www.facebook.com/business/news/cannes-2026-discovery-into-purchase",
       "title": "2026년 칸 라이언즈: Meta에서 발견을 구매로 전환하는 새로운 방법",
       "category": "비즈니스 소식",
@@ -703,6 +793,16 @@
       "is_new": false,
       "url": "https://www.facebook.com/business/news/cannes-2026-discovery-into-purchase",
       "platform": "메타 for Business"
+    },
+    {
+      "id": 25220,
+      "title": "직접 입찰의 입찰가 선정 방식 변경 안내",
+      "category": "공지",
+      "date": "2026-06-16",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25220",
+      "platform": "토스애즈"
     },
     {
       "id": "/entry/20260608-news-clipping",
@@ -737,20 +837,6 @@
       "is_new": false,
       "url": "https://www.facebook.com/business/news/2026-winning-hearts-boosting-carts",
       "platform": "메타 for Business"
-    },
-    {
-      "id": "/entry/20260601-news-clipping",
-      "title": "2026년 6월 1일주 뉴스클리핑",
-      "excerpt": "한 주 간의 디지털 미디어와 마케팅 관련 주요 뉴스를 모아 전해드립니다.네이버, AI 검색 인용 창작자 보상 프로그램 도입…UGC 생태계 강화네이버가 AI 브리핑에 인용된 블로그·카페·지식iN 등 UGC 창작자를 대상으로 연 200억 원 규모의 네이버 메이트 프로그램을 도입. 월 30만 원부터 최대 1000만 원까지 활동비를 지원하며, AI 검색 경쟁에서 실제 경험과 전문성이 담긴 콘텐츠 확보를 강화하려는 전략으로 해석🔗\"AI도 '사람 손길 담긴 콘텐츠' 필요해\"…네이버, 창작자에 200억 쏜다네이버 치지직, 월드컵 중계 부분 유료화…스포츠 콘텐츠 수익화 본격화네이버가 2026 북중미 월드컵 온라인 독점 중계에서 한국전 외 경기와 고화질 시청을 멤버십 구독자 중심으로 제공하며 치지직 수익화..",
-      "platforms": [
-        "네이버"
-      ],
-      "category": "뉴스클리핑",
-      "date": "2026-06-08",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://blog.nasmedia.co.kr/entry/20260601-news-clipping",
-      "platform": "나스미디어 뉴스클리핑"
     },
     {
       "id": "https://www.facebook.com/business/news/conversations-2026-introducing-meta-business-agent",
@@ -799,26 +885,6 @@
       "is_pinned": false,
       "is_new": false,
       "url": "https://tossads.toss.im/notice/25200",
-      "platform": "토스애즈"
-    },
-    {
-      "id": 25198,
-      "title": "채널톡 상담  운영 시간 변경 안내",
-      "category": "공지",
-      "date": "2026-05-29",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://tossads.toss.im/notice/25198",
-      "platform": "토스애즈"
-    },
-    {
-      "id": 25174,
-      "title": "라이브 마켓 베이직 상품 반값 할인 프로모션 연장 안내",
-      "category": "공지",
-      "date": "2026-05-20",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://tossads.toss.im/notice/25174",
       "platform": "토스애즈"
     },
     {
@@ -890,26 +956,6 @@
       "is_new": false,
       "url": "https://ads.tiktok.com/business/ko/blog/smart-plus-ai-performance-solution",
       "platform": "틱톡 for Business"
-    },
-    {
-      "id": 25140,
-      "title": "광고 상품 위약금 정책 변경 안내",
-      "category": "공지",
-      "date": "2026-05-06",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://tossads.toss.im/notice/25140",
-      "platform": "토스애즈"
-    },
-    {
-      "id": 25116,
-      "title": "배너 광고 성/연령 성과 제공 방식 변경 안내",
-      "category": "공지",
-      "date": "2026-04-27",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://tossads.toss.im/notice/25116",
-      "platform": "토스애즈"
     },
     {
       "id": "/entry/2604adissue",
@@ -1018,25 +1064,6 @@
       "platform": "나스미디어 광고상품업데이트"
     },
     {
-      "id": "/entry/2511adissue",
-      "title": "2025년 11월 - 인스타그램 '릴스 트렌딩 광고' 일부 국가에서 본격 도입 외",
-      "excerpt": "2025년 11월 디지털 미디어 애드 이슈월간 디지털 미디어 주요 업데이트를 전해드립니다.#메타 #구글 #카카오 #토스 #X메타1. 메타, '릴스 트렌딩 광고' 일부 국가에서 본격 도입메타가 현재 가장 트렌딩한 릴스 콘텐츠 바로 뒤에 광고를 붙일 수 있는 'Reels Trending Ads'를 출시했습니다. 미국과 일본 등 11개국에서 우선 적용되며 매일 상위 5% 릴스를 선별해 노출하는 방식으로 광고 효율 극대화를 노린 포맷입니다. 2. 인스타그램 탐색탭, 1X1 타일 클릭 시 릴스로 이동하는 방식으로 변경인스타그램이 탐색탭의 1X1 타일을 클릭하면 릴스로 바로 이동하도록 업데이트를 진행했습니다. 기존에는 동일한 1X1 타일 형태로 이어졌지만 앞으로는 탐색 탭 노출을 유지하는 방식은 더 이상 ..",
-      "platforms": [
-        "인스타그램",
-        "카카오",
-        "메타",
-        "구글",
-        "토스",
-        "X"
-      ],
-      "category": "광고 상품 업데이트",
-      "date": "2025-11-24",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://blog.nasmedia.co.kr/entry/2511adissue",
-      "platform": "나스미디어 광고상품업데이트"
-    },
-    {
       "id": 100644,
       "title": "[공지] 카카오 Conversion API 오픈 안내",
       "category": "공지/이벤트",
@@ -1045,24 +1072,6 @@
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
       "platform": "카카오모먼트",
       "is_new": true
-    },
-    {
-      "id": "/entry/2510adissue",
-      "title": "2025년 10월 - 유튜브 'Peak Places 패키지' 출시, 카카오톡 신규 광고 지면 출시 외",
-      "excerpt": "2025년 10월 디지털 미디어 애드 이슈 월간 디지털 미디어 상품 이슈와 주요 업데이트를 전해드립니다. 📢주요 이슈유튜브, 2025 Peak Places 패키지 출시성수, 홍대, 여의도 등 핫플레이스를 방문하려는 이용자들의 관심이 어느 때보다 높아지고 있습니다. 최근 몇 년간 SNS를 중심으로 '성수 맛집', '더현대 팝업', '연남 데이트 코스' 와 같이 지역 기반의 검색과 콘텐츠 소비가 일상화되었죠. 이러한 변화에 맞추어 유튜브가 '피크 플레이스(Peak Places) 패키지'를 새롭게 선보였습니다.Peak Places 패키지는 주요 지역을 중심으로, 이용자가 해당 지역 관련 콘텐츠를 시청하거나 방문을 계획하는 순간을 포착해 광고 효율을 높일 수 있습니다. ..",
-      "platforms": [
-        "유튜브",
-        "카카오톡",
-        "카카오",
-        "메타",
-        "토스"
-      ],
-      "category": "광고 상품 업데이트",
-      "date": "2025-10-27",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://blog.nasmedia.co.kr/entry/2510adissue",
-      "platform": "나스미디어 광고상품업데이트"
     },
     {
       "id": "/business/ko/blog/pangle-event-2025",
