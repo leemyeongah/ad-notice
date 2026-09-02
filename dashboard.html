@@ -248,15 +248,41 @@
   .clip-hero-footer a { color: var(--accent); text-decoration: none; font-weight: 600; }
 
   /* ---- notice row: 한 줄짜리 소식(보관함/검색/카드 내 보조 항목 공용) ---- */
+  .th-item { border-bottom: 1px solid var(--border-soft); }
+  .th-item:last-child { border-bottom: none; }
+  .th-item:first-child .th-row { padding-top: 0; }
   .th-row {
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 9px 0;
-    border-bottom: 1px solid var(--border-soft);
   }
-  .th-row:last-child { border-bottom: none; padding-bottom: 0; }
-  .th-row:first-child { padding-top: 0; }
+  .th-summary-toggle {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent);
+    background: none;
+    border: none;
+    padding: 0;
+    margin: -4px 0 8px;
+    cursor: pointer;
+  }
+  .th-summary {
+    display: none;
+    font-size: 12.5px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: -4px 0 10px;
+  }
+  .th-summary.open { display: block; }
+  .th-summary mark {
+    background: var(--accent-dim);
+    color: var(--accent);
+    font-weight: 700;
+    padding: 0 2px;
+    border-radius: 3px;
+  }
   .th-link {
     flex: 1;
     display: flex;
@@ -833,18 +859,24 @@ function excerptHTML(s) {
 function noticeRowHTML(n) {
   const type = noticeType(n);
   const typeLabel = NOTICE_TYPE_LABEL[type];
+  const hasExcerpt = !!(n.excerpt && n.excerpt.trim());
   return `
-    <div class="th-row">
-      <a class="th-link ${isUnseen(n) ? 'is-unseen' : ''}" href="${n.url}" target="_blank" rel="noopener">
-        ${isUnseen(n) ? '<span class="unseen-dot" title="지난 방문 이후 새 글"></span>' : ''}
-        <span class="platform-tag ${PLATFORM_CLASS[n.platform] || 'common'}">${escapeHTML(platformLabel(n.platform))}</span>
-        ${typeLabel ? `<span class="type-badge ${type}">${typeLabel}</span>` : ''}
-        ${n.is_pinned ? '<span title="고정 공지">📌</span>' : ''}
-        ${isImportant(n.title) ? '<span title="캠페인에 영향 줄 수 있는 소식">⚠️</span>' : ''}
-        <span class="th-text">${escapeHTML(n.title)}</span>
-        ${n.is_new ? '<span class="new-flag">NEW</span>' : ''}
-      </a>
-      <span class="th-date">${n.date}</span>
+    <div class="th-item">
+      <div class="th-row">
+        <a class="th-link ${isUnseen(n) ? 'is-unseen' : ''}" href="${n.url}" target="_blank" rel="noopener">
+          ${isUnseen(n) ? '<span class="unseen-dot" title="지난 방문 이후 새 글"></span>' : ''}
+          <span class="platform-tag ${PLATFORM_CLASS[n.platform] || 'common'}">${escapeHTML(platformLabel(n.platform))}</span>
+          ${typeLabel ? `<span class="type-badge ${type}">${typeLabel}</span>` : ''}
+          ${n.is_pinned ? '<span title="고정 공지">📌</span>' : ''}
+          ${isImportant(n.title) ? '<span title="캠페인에 영향 줄 수 있는 소식">⚠️</span>' : ''}
+          <span class="th-text">${escapeHTML(n.title)}</span>
+          ${n.is_new ? '<span class="new-flag">NEW</span>' : ''}
+        </a>
+        <span class="th-date">${n.date}</span>
+      </div>
+      ${hasExcerpt ? `
+        <button class="th-summary-toggle" type="button" title="${escapeHTML(n.excerpt.slice(0, 200))}">요약 보기 ▾</button>
+        <div class="th-summary">${excerptHTML(n.excerpt)}</div>` : ''}
     </div>`;
 }
 
@@ -1343,6 +1375,17 @@ fetch('data/products.json', { cache: 'no-store' })
     renderProducts(products);
   })
   .catch(() => renderProducts([]));
+
+// 요약 보기 토글 - feed/검색/사이드바 등 여러 곳에서 innerHTML로 반복 그려지므로
+// 개별 리스너 대신 document에 한 번만 위임해서 붙인다.
+document.addEventListener('click', (e) => {
+  const btn = e.target.closest('.th-summary-toggle');
+  if (!btn) return;
+  e.preventDefault();
+  const summary = btn.nextElementSibling;
+  const isOpen = summary.classList.toggle('open');
+  btn.textContent = isOpen ? '요약 접기 ▴' : '요약 보기 ▾';
+});
 
 document.getElementById('archive-toggle').addEventListener('click', () => {
   const area = document.getElementById('archive-area');

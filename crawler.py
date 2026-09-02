@@ -65,7 +65,8 @@ TIKTOK_CARD_PATTERN = re.compile(
     r'<div class="tt4bRevampedStyleSpace articleCard">\s*'
     r'<a href="(?P<href>/business/ko/blog/[^"]+)"[^>]*class="main">.*?'
     r'<span class="publishedDate[^"]*">(?P<date>[^<]+)</span>\s*'
-    r'<div class="cardTitle[^"]*">(?P<title>[^<]+)</div>',
+    r'<div class="cardTitle[^"]*">(?P<title>[^<]+)</div>\s*'
+    r'<p[^>]*class="cardDescription[^"]*">(?P<excerpt>[^<]*)</p>',
     re.DOTALL
 )
 TIKTOK_DATE_PATTERN = re.compile(r'(\d{1,2})월\s*(\d{1,2}),\s*(\d{4})')
@@ -315,6 +316,7 @@ def extract_tiktok_notices(raw_html: str):
         notices.append({
             "id": m.group("href"),
             "title": m.group("title").strip(),
+            "excerpt": _clean_html_text(m.group("excerpt")),
             "category": "공지사항",
             "date": date_iso,
             "is_pinned": False,
@@ -342,9 +344,11 @@ def extract_toss_faq_notices(raw_json: str):
             is_new = False
 
         notice_id = item.get("id")
+        excerpt = _clean_html_text(item.get("description") or "")[:300]
         notices.append({
             "id": notice_id,
             "title": (item.get("title") or "").strip(),
+            "excerpt": excerpt,
             "category": "공지",
             "date": date_str,
             "is_pinned": bool(item.get("is_pinned", False)),
