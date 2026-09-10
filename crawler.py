@@ -36,25 +36,17 @@ DASHBOARD_URL = "https://leemyeongah.github.io/ad-notice/dashboard.html"
 # 대시보드(dashboard.html)의 IMPORTANT_KEYWORDS와 동일한 기준 - 캠페인에 영향 줄 수 있는 소식 강조용
 IMPORTANT_KEYWORDS = ['정책', '종료', '필수', '변경', '중단', '차단', '마감']
 
-# 대시보드의 신상품/업계소식 구분(LAUNCH_KEYWORDS)과 같은 기준 + Slack에서는 개편/업데이트도 딱지로 구분
+# 대시보드(dashboard.html)의 노출 구분(LAUNCH_KEYWORDS)과 동일한 기준
 CLIPPING_PLATFORM = "나스미디어 뉴스클리핑"
 LAUNCH_KEYWORDS = ['출시', '오픈', 'BETA', '베타', '신규 상품', '신규 광고', '신규 서비스', '선보', '런칭']
-REVAMP_KEYWORDS = ['개편', '리뉴얼', '개선']
 
 
 def is_important_title(title):
     return any(k in (title or "") for k in IMPORTANT_KEYWORDS)
 
 
-def notice_type_label(n):
-    title = n.get("title") or ""
-    if n.get("platform") == CLIPPING_PLATFORM:
-        return "📰 업계소식"
-    if any(k in title for k in LAUNCH_KEYWORDS):
-        return "🚀 신상품"
-    if any(k in title for k in REVAMP_KEYWORDS):
-        return "🔧 개편"
-    return "📝 업데이트"
+def is_launch_title(title):
+    return any(k in (title or "") for k in LAUNCH_KEYWORDS)
 
 
 def _week_label(now):
@@ -70,28 +62,41 @@ def _week_label(now):
     return f"{last_sunday.month}월 {week_of_month}주차 ({date_range})"
 
 
+def _slack_item_line(n):
+    mark = "⚠️ " if is_important_title(n["title"]) else ""
+    return f"• {mark}<{n['url']}|[{n['platform']}]> {n['title']}"
+
+
 def notify_slack(newly_added):
-    """이번 크롤링에서 새로 발견된 소식만 Slack으로 보낸다 (기존에 이미 있던 글은 제외)."""
+    """이번 크롤링에서 새로 발견된 소식만 Slack으로 보낸다 (기존에 이미 있던 글은 제외).
+    업계소식(나스미디어 뉴스클리핑)은 대시보드에서만 보고 Slack으로는 보내지 않는다."""
     if not SLACK_WEBHOOK_URL or not newly_added:
         return
 
-    period = _week_label(datetime.now(KST))
+    targets = [n for n in newly_added if n.get("platform") != CLIPPING_PLATFORM]
+    if not targets:
+        return
 
-    lines = []
-    for n in sorted(newly_added, key=lambda n: n["date"], reverse=True):
-        type_label = notice_type_label(n)
-        mark = "⚠️ " if is_important_title(n["title"]) else ""
-        lines.append(f"• {type_label} {mark}[{n['platform']}] <{n['url']}|{n['title']}>")
+    targets.sort(key=lambda n: n["date"], reverse=True)
+    launch = [n for n in targets if is_launch_title(n["title"])]
+    updates = [n for n in targets if not is_launch_title(n["title"])]
+
+    period = _week_label(datetime.now(KST))
+    sections = []
+    if launch:
+        sections.append("🆕 신상품\n" + "\n".join(_slack_item_line(n) for n in launch))
+    if updates:
+        sections.append("🚩 업데이트\n" + "\n".join(_slack_item_line(n) for n in updates))
 
     text = (
-        f"*📢 매체 신규 소식 {period} {len(newly_added)}건*\n"
-        + "\n".join(lines)
-        + f"\n\n<{DASHBOARD_URL}|대시보드 바로가기>"
+        f"*📌 매체 신규 소식 {period} {len(targets)}건*\n\n"
+        + "\n\n".join(sections)
+        + f"\n\n👉 <{DASHBOARD_URL}|대시보드 바로가기>"
     )
     try:
         res = requests.post(SLACK_WEBHOOK_URL, json={"text": text}, timeout=10)
         res.raise_for_status()
-        print(f"[Slack] 알림 전송 완료 ({len(newly_added)}건)")
+        print(f"[Slack] 알림 전송 완료 ({len(targets)}건)")
     except requests.RequestException as e:
         print(f"[에러] Slack 알림 전송 실패: {e}")
 
