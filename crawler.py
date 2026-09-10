@@ -14,6 +14,7 @@
 주의: 이 스크립트는 로컬/서버 등 실제 인터넷이 되는 환경에서 실행해야 합니다.
 """
 import json
+import os
 import re
 from pathlib import Path
 from datetime import datetime, timedelta
@@ -27,6 +28,40 @@ KST = ZoneInfo("Asia/Seoul")
 DATA_DIR = Path(__file__).parent / "data"
 DATA_DIR.mkdir(exist_ok=True)
 NOTICES_PATH = DATA_DIR / "notices.json"
+
+# Slack 알림 (선택). GitHub Actions secret SLACK_WEBHOOK_URL이 설정돼 있을 때만 전송됨.
+SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL", "")
+DASHBOARD_URL = "https://leemyeongah.github.io/ad-notice/dashboard.html"
+
+# 대시보드(dashboard.html)의 IMPORTANT_KEYWORDS와 동일한 기준 - 캠페인에 영향 줄 수 있는 소식 강조용
+IMPORTANT_KEYWORDS = ['정책', '종료', '필수', '변경', '중단', '차단', '마감']
+
+
+def is_important_title(title):
+    return any(k in (title or "") for k in IMPORTANT_KEYWORDS)
+
+
+def notify_slack(newly_added):
+    """이번 크롤링에서 새로 발견된 소식만 Slack으로 보낸다 (기존에 이미 있던 글은 제외)."""
+    if not SLACK_WEBHOOK_URL or not newly_added:
+        return
+
+    lines = []
+    for n in sorted(newly_added, key=lambda n: n["date"], reverse=True):
+        mark = "⚠️ " if is_important_title(n["title"]) else ""
+        lines.append(f"• {mark}[{n['platform']}] <{n['url']}|{n['title']}> ({n['date']})")
+
+    text = (
+        f"*📢 매체 신규 소식 {len(newly_added)}건*\n"
+        + "\n".join(lines)
+        + f"\n\n대시보드: {DASHBOARD_URL}"
+    )
+    try:
+        res = requests.post(SLACK_WEBHOOK_URL, json={"text": text}, timeout=10)
+        res.raise_for_status()
+        print(f"[Slack] 알림 전송 완료 ({len(newly_added)}건)")
+    except requests.RequestException as e:
+        print(f"[에러] Slack 알림 전송 실패: {e}")
 
 # 며칠 이내 발행된 글까지 NEW로 볼지 (RSS 소스처럼 자체 NEW 표시가 없는 경우에 사용)
 NEW_WINDOW_DAYS = 5
@@ -409,6 +444,7 @@ def run():
     if NOTICES_PATH.exists():
         existing = json.loads(NOTICES_PATH.read_text(encoding="utf-8"))
     kept = [n for n in existing.get("notices", []) if n.get("platform") not in crawled_platforms]
+    existing_urls = {n.get("url") for n in existing.get("notices", [])}
 
     all_notices = kept + fresh_notices
     all_notices.sort(key=lambda n: n["date"], reverse=True)
@@ -420,6 +456,11 @@ def run():
     }
     NOTICES_PATH.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\n총 {len(all_notices)}건 저장 완료 -> {NOTICES_PATH}")
+
+    # "새로 발견된" 소식 = 지난 크롤링 시점엔 없다가 이번에 처음 잡힌 것 (URL 기준)
+    newly_added = [n for n in fresh_notices if n.get("url") not in existing_urls]
+    print(f"이번 크롤링에서 새로 추가된 소식: {len(newly_added)}건")
+    notify_slack(newly_added)
 
 
 if __name__ == "__main__":

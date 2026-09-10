@@ -24,6 +24,8 @@ jobs:
         run: pip install requests
 
       - name: 크롤러 실행
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: python crawler.py
 
       - name: 변경사항 커밋
