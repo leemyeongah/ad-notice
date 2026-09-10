@@ -93,8 +93,9 @@ def notify_slack(newly_added):
         + "\n\n".join(sections)
         + f"\n\n👉 <{DASHBOARD_URL}|대시보드 바로가기>"
     )
+    payload = {"text": text, "unfurl_links": False, "unfurl_media": False}
     try:
-        res = requests.post(SLACK_WEBHOOK_URL, json={"text": text}, timeout=10)
+        res = requests.post(SLACK_WEBHOOK_URL, json=payload, timeout=10)
         res.raise_for_status()
         print(f"[Slack] 알림 전송 완료 ({len(targets)}건)")
     except requests.RequestException as e:
