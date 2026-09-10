@@ -841,6 +841,13 @@ function daysAgo(dateStr) {
   return Math.floor((Date.now() - parseDateOnly(dateStr).getTime()) / 86400000);
 }
 
+// 고정 공지는 오래된 것까지 계속 상단에 남아 눈에 띄는 자리를 차지하므로,
+// 최근 3개월(92일) 안에 올라온 것만 "고정 공지" 영역에 노출한다.
+function isPinnedRecent(n) {
+  const d = daysAgo(n.date);
+  return d !== null && d <= 92;
+}
+
 function formatKST(isoString) {
   const d = new Date(isoString);
   const opts = { month: 'long', day: 'numeric', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Asia/Seoul' };
@@ -856,10 +863,36 @@ function excerptHTML(s) {
   return escapeHTML(s).replace(/&lt;mark&gt;/g, '<mark>').replace(/&lt;\/mark&gt;/g, '</mark>');
 }
 
+// "요약 보기"에는 원문 전체(토스 인사말 포함)를 그대로 노출하지 않고,
+// 인사말/도입부 상투어를 걷어낸 뒤 핵심 문장 2개 정도만 보여준다.
+// (AI 요약이 아니라 원문 중 실제로 존재하는 문장만 골라내는 규칙 기반 처리)
+const EXCERPT_BOILERPLATE_PATTERNS = [
+  /^안녕하세요[,.]?\s*[^.!?]{0,20}(?:입니다|드립니다)\.?\s*/,
+  /^[^.!?]{0,40}(?:모아\s*)?전해드립니다\.?\s*/,
+];
+function condenseExcerpt(raw) {
+  if (!raw) return '';
+  let text = raw.trim();
+  for (let i = 0; i < 3; i++) {
+    let changed = false;
+    for (const re of EXCERPT_BOILERPLATE_PATTERNS) {
+      const next = text.replace(re, '').trim();
+      if (next !== text) { text = next; changed = true; }
+    }
+    if (!changed) break;
+  }
+  const sentences = (text.match(/[^.!?]+[.!?]?/g) || [text]).map(s => s.trim()).filter(Boolean);
+  let out = sentences.slice(0, 2).join(' ').trim();
+  if (out.length > 140) out = out.slice(0, 140).trim() + '…';
+  else if (sentences.length > 2 && !/[…]$/.test(out)) out += '…';
+  return out || text;
+}
+
 function noticeRowHTML(n) {
   const type = noticeType(n);
   const typeLabel = NOTICE_TYPE_LABEL[type];
   const hasExcerpt = !!(n.excerpt && n.excerpt.trim());
+  const summaryText = hasExcerpt ? condenseExcerpt(n.excerpt) : '';
   return `
     <div class="th-item">
       <div class="th-row">
@@ -875,8 +908,8 @@ function noticeRowHTML(n) {
         <span class="th-date">${n.date}</span>
       </div>
       ${hasExcerpt ? `
-        <button class="th-summary-toggle" type="button" title="${escapeHTML(n.excerpt.slice(0, 200))}">요약 보기 ▾</button>
-        <div class="th-summary">${excerptHTML(n.excerpt)}</div>` : ''}
+        <button class="th-summary-toggle" type="button" title="${escapeHTML(summaryText)}">요약 보기 ▾</button>
+        <div class="th-summary">${excerptHTML(summaryText)}</div>` : ''}
     </div>`;
 }
 
@@ -894,7 +927,7 @@ function sourceHeadlineHTML(n) {
         ${n.is_new ? '<span class="si-new">NEW</span>' : ''}
       </div>
       <div class="si-meta">${escapeHTML(n.category)} · ${n.date}</div>
-      ${n.excerpt ? `<p class="si-excerpt">${excerptHTML(n.excerpt)}</p>` : ''}
+      ${n.excerpt ? `<p class="si-excerpt">${excerptHTML(condenseExcerpt(n.excerpt))}</p>` : ''}
     </div>`;
 }
 
@@ -931,8 +964,8 @@ function renderFeed() {
     return;
   }
 
-  const pinned = filtered.filter(n => n.is_pinned);
-  const rest = filtered.filter(n => !n.is_pinned);
+  const pinned = filtered.filter(n => n.is_pinned && isPinnedRecent(n));
+  const rest = filtered.filter(n => !(n.is_pinned && isPinnedRecent(n)));
 
   pinnedArea.innerHTML = pinned.length ? `
     <div class="card">
