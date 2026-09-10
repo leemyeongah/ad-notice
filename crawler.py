@@ -28,6 +28,8 @@ KST = ZoneInfo("Asia/Seoul")
 DATA_DIR = Path(__file__).parent / "data"
 DATA_DIR.mkdir(exist_ok=True)
 NOTICES_PATH = DATA_DIR / "notices.json"
+# 크롤링(오전 9시)에서 찾은 신규 소식을 잠시 담아뒀다가, 오전 11시에 notify_slack.py가 읽어서 보낸다.
+PENDING_SLACK_PATH = DATA_DIR / "pending_slack_notification.json"
 
 # Slack 알림 (선택). GitHub Actions secret SLACK_WEBHOOK_URL이 설정돼 있을 때만 전송됨.
 SLACK_WEBHOOK_URL = os.environ.get("SLACK_WEBHOOK_URL", "")
@@ -496,9 +498,11 @@ def run():
     print(f"\n총 {len(all_notices)}건 저장 완료 -> {NOTICES_PATH}")
 
     # "새로 발견된" 소식 = 지난 크롤링 시점엔 없다가 이번에 처음 잡힌 것 (URL 기준)
+    # Slack 발송은 대시보드 갱신(오전 9시)과 분리해서 오전 11시에 notify_slack.py가 따로 보내므로,
+    # 여기서는 바로 보내지 않고 다음 발송 때 쓸 수 있게 파일에 남겨둔다.
     newly_added = [n for n in fresh_notices if n.get("url") not in existing_urls]
     print(f"이번 크롤링에서 새로 추가된 소식: {len(newly_added)}건")
-    notify_slack(newly_added)
+    PENDING_SLACK_PATH.write_text(json.dumps(newly_added, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 if __name__ == "__main__":

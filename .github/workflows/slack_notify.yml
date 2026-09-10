@@ -1,0 +1,37 @@
+name: 매체 신규 소식 Slack 알림
+
+on:
+  schedule:
+    # UTC 기준 매주 화요일 2시 = 한국시간(UTC+9) 화요일 오전 11시
+    # (대시보드 갱신은 오전 9시 크롤링에서 이미 끝나고, Slack 발송만 2시간 뒤에 따로 함)
+    - cron: '0 2 * * 2'
+  workflow_dispatch: {}  # Actions 탭에서 수동으로도 실행 가능
+
+permissions:
+  contents: write
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 의존성 설치
+        run: pip install requests
+
+      - name: Slack 알림 발송
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: python notify_slack.py
+
+      - name: 발송 완료 처리 커밋
+        run: |
+          git config user.name "notice-bot"
+          git config user.email "notice-bot@users.noreply.github.com"
+          git add data/pending_slack_notification.json
+          git diff --cached --quiet || git commit -m "chore: Slack 알림 발송 완료 처리"
+          git push

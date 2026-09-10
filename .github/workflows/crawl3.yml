@@ -2,9 +2,9 @@ name: 매체 공지 크롤링
 
 on:
   schedule:
-    # UTC 기준 매주 화요일 2시 = 한국시간(UTC+9) 화요일 오전 11시
+    # UTC 기준 매주 화요일 0시 = 한국시간(UTC+9) 화요일 오전 9시
     # (나스미디어 뉴스클리핑이 월요일 중 늦게 올라올 때가 있어서 하루 늦춰서 확실히 잡음)
-    - cron: '0 2 * * 2'
+    - cron: '0 0 * * 2'
   workflow_dispatch: {}  # Actions 탭에서 수동으로도 실행 가능
 
 permissions:
@@ -24,14 +24,12 @@ jobs:
         run: pip install requests
 
       - name: 크롤러 실행
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: python crawler.py
 
       - name: 변경사항 커밋
         run: |
           git config user.name "notice-bot"
           git config user.email "notice-bot@users.noreply.github.com"
-          git add data/notices.json
+          git add data/notices.json data/pending_slack_notification.json
           git diff --cached --quiet || git commit -m "chore: 공지 데이터 갱신 $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
