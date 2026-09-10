@@ -57,18 +57,17 @@ def notice_type_label(n):
     return "📝 업데이트"
 
 
-def _format_md(date_str):
-    y, m, d = date_str.split("-")
-    return f"{int(m)}/{int(d)}"
-
-
-def _week_label(dates):
-    """예: ['2026-09-16', '2026-09-15'] -> '9월 3주차 (9/15~9/16)'"""
-    latest, earliest = max(dates), min(dates)
-    y, m, d = latest.split("-")
-    week_of_month = (int(d) - 1) // 7 + 1
-    date_range = _format_md(latest) if earliest == latest else f"{_format_md(earliest)}~{_format_md(latest)}"
-    return f"{int(m)}월 {week_of_month}주차 ({date_range})"
+def _week_label(now):
+    """크롤러는 매주 화요일에 도는데, 그 직전에 끝난 한 주(월~일)를 이번 크롤링의 기간으로 본다.
+    개별 소식 날짜가 들쭉날쭉해도 헷갈리지 않도록 "실행 시점" 기준으로만 계산한다.
+    예: 9/8(화) 실행 -> '9월 1주차 (8/31~9/6)'"""
+    today = now.date()
+    this_monday = today - timedelta(days=today.weekday())
+    last_monday = this_monday - timedelta(days=7)
+    last_sunday = last_monday + timedelta(days=6)
+    week_of_month = (last_sunday.day - 1) // 7 + 1
+    date_range = f"{last_monday.month}/{last_monday.day}~{last_sunday.month}/{last_sunday.day}"
+    return f"{last_sunday.month}월 {week_of_month}주차 ({date_range})"
 
 
 def notify_slack(newly_added):
@@ -76,8 +75,7 @@ def notify_slack(newly_added):
     if not SLACK_WEBHOOK_URL or not newly_added:
         return
 
-    dates = [n["date"] for n in newly_added if n.get("date")]
-    period = _week_label(dates) if dates else ""
+    period = _week_label(datetime.now(KST))
 
     lines = []
     for n in sorted(newly_added, key=lambda n: n["date"], reverse=True):
