@@ -797,7 +797,7 @@ const CLIPPING_PLATFORM = '나스미디어 뉴스클리핑';
 const SOURCE_ORDER = ['네이버 GFA', 'NOSP', '카카오모먼트', '메타 for Business', '토스애즈', '틱톡 for Business', '나스미디어 광고상품업데이트', '나스미디어 뉴스클리핑'];
 // 매체 이름은 원본 데이터(n.platform) 그대로 두고, 화면 표시용 짧은 이름만 따로 매핑한다.
 const PLATFORM_LABEL = {
-  '나스미디어 뉴스클리핑': '클리핑',
+  '나스미디어 뉴스클리핑': '업계소식',
   '나스미디어 광고상품업데이트': '광고상품 업데이트',
 };
 function platformLabel(p) {
@@ -835,7 +835,8 @@ function noticeType(n) {
   if (LAUNCH_KEYWORDS.some(k => (n.title || '').includes(k))) return 'launch';
   return 'notice';
 }
-const NOTICE_TYPE_LABEL = { launch: '🚀 신상품', industry: '📰 업계소식', notice: '' };
+// industry(업계소식)는 매체 태그 자체가 이미 "업계소식"이라 뱃지를 또 붙이면 중복 표기라 비워둔다.
+const NOTICE_TYPE_LABEL = { launch: '🚀 신상품', industry: '', notice: '' };
 
 function daysAgo(dateStr) {
   if (!dateStr) return null;
