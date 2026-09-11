@@ -1,6 +1,54 @@
 {
-  "generated_at": "2026-08-26T14:41:40+09:00",
+  "generated_at": "2026-09-11T10:45:18+09:00",
   "products": [
+    {
+      "platform": "(공유용)",
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "자료: (공유용) ChatGPT Ads _ Wisebirds × OpenAI _ 2026.08.27.pdf",
+        "최근 업데이트 기준: 2025.11"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
+    },
+    {
+      "platform": "1SW",
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "자료: [1SW] 마이비오디언스_통합상품소개서_2608_와이즈버즈.pdf",
+        "최근 업데이트 기준: 2025.11"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
+    },
+    {
+      "platform": "2608.0",
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "자료: 2608_SK Planet AD_광고상품소개서.pdf",
+        "최근 업데이트 기준: 2025.11"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
+    },
+    {
+      "platform": "AB180",
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "자료: [AB180] Airbridge 소개서 (2024).pdf",
+        "최근 업데이트 기준: 2025.11"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
+    },
     {
       "platform": "ACE Trader",
       "category": "DA, Video, CTV",
@@ -11,8 +59,8 @@
         "이메일: at@nhnace.com",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://drive.google.com/file/d/1T9rTVKfTHKuwwe5HaQ0exp0HeYwJKnHy/view?usp=drive_link",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "ACROS ADN",
@@ -22,12 +70,24 @@
       "features": [
         "자료: [ACROSS AND] 광고 상품 소개서_2025.Q1.pdf",
         "이메일: adn_team@rainbow.co.kr",
-        "전화: 02-564-3685",
+        "전화: 02) 564-3685",
         "사내 자료명: ADN",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://drive.google.com/file/d/1B7lM5wHR4CqVmQG5dWZCL-x9HK5cEjGk/view?usp=drive_link",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
+    },
+    {
+      "platform": "ACROSS AND",
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "자료: [ACROSS AND] 광고 상품 소개서_2025.Q1.pdf",
+        "최근 업데이트 기준: 2025.11"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "ART19",
@@ -52,15 +112,16 @@
       "updated_at": "2026-08-26"
     },
     {
-      "platform": "Adjust",
+      "platform": "Aleph Snap",
       "category": "",
-      "summary": "MMP(모바일 측정 파트너)",
+      "summary": "",
       "description": "",
       "features": [
-        "비고: 최신 자료 없음"
+        "자료: [Aleph Snap] Snap x Kantar 4 Verticals View_April 2026.pdf",
+        "최근 업데이트 기준: 2025.11"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "Apple",
@@ -83,8 +144,8 @@
         "이메일: hello@appsflyer.com",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://www.appsflyer.com/ko/",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "CGV",
@@ -103,14 +164,15 @@
       "summary": "통합 마케팅 서비스 플랫폼",
       "description": "통합 마케팅 서비스 플랫폼",
       "features": [
-        "자료: [CJ ONE] 매체소개서_2025.Q2.pdf",
-        "이메일: cjonead@cj.net",
+        "자료: [CJ ONE]_광고 전략 제안서_2604.pdf",
+        "담당: 김지연 / 성승화",
+        "이메일: cjonead@cj.net / jiyeon.kim45@cj.net / sh.sung1@cj.net",
         "사내 자료명: CJ ONE",
         "최근 업데이트 기준: 2025.11",
-        "수수료율: 15% (백피) · 영역: 웹/앱"
+        "수수료율: 15% (백피) · 영역: DA, 보상형"
       ],
-      "link": "https://drive.google.com/file/d/13xdvRcBeDRNHesKp_GmaKx4rICYMvYwo/view?usp=drive_link",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "CJ YouTube",
@@ -140,12 +202,14 @@
     },
     {
       "platform": "Criteo",
-      "category": "리타기팅",
-      "summary": "리타기팅 DSP",
-      "description": "리타기팅 DSP (사내 NEST 게시판 참고)",
-      "features": [],
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "최근 업데이트 기준: 2025.11"
+      ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "DeepAD",
@@ -178,17 +242,19 @@
         "자료: EMCG홈페이지",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://emcg.co.kr/?page_id=1534&n_media=27758&n_query=EMCG&n_rank=1&n_ad_group=grp-a001-01-000000011640013&n_ad=nad-a001-01-000000309971024&n_keyword_id=nkw-a001-01-000002140167615&n_keyword=EMCG&n_campaign_type=1&n_ad_group_type=1&n_match=1",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "Google",
       "category": "",
-      "summary": "구글 광고 전반",
-      "description": "구글 광고 전반 (사내 NEST 게시판 참고)",
-      "features": [],
+      "summary": "",
+      "description": "",
+      "features": [
+        "최근 업데이트 기준: 2025.11"
+      ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "HYPEBEAST",
@@ -220,22 +286,23 @@
       "description": "글로벌 모바일 네트워크 플랫폼",
       "features": [
         "자료: [InMobi] 상품소개서_2025.Q1.pdf",
-        "이메일(세일즈): Korea-Sales@inmobi.com",
-        "이메일(AdOps): korea-adops@inmobi.com",
+        "이메일: Korea-Sales) Korea-Sales@inmobi.com / Korea-AdOps) korea-adops@inmobi.com",
         "사내 자료명: 인모비",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://drive.google.com/file/d/1DPEnpVxdDKG70eYe5j4G6V8cBRfIsOk-/view?usp=drive_link",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "Kakao moment",
       "category": "",
-      "summary": "카카오모먼트 광고",
-      "description": "카카오모먼트 광고 전반 (사내 NEST 게시판 참고)",
-      "features": [],
+      "summary": "",
+      "description": "",
+      "features": [
+        "최근 업데이트 기준: 2025.11"
+      ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "L.Point",
@@ -252,24 +319,15 @@
       "updated_at": "2026-08-26"
     },
     {
-      "platform": "MANPLUS",
+      "platform": "Meta",
       "category": "",
       "summary": "",
       "description": "",
       "features": [
-        "비고: 운영 여부 확인 필요"
+        "최근 업데이트 기준: 2025.11"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
-    },
-    {
-      "platform": "Meta",
-      "category": "",
-      "summary": "메타 광고 전반",
-      "description": "메타(Facebook/Instagram) 광고 전반 (사내 NEST 게시판 참고)",
-      "features": [],
-      "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "Microsoft ads",
@@ -291,25 +349,35 @@
         "자료: MobileMove홈페이지",
         "사내 자료명: 모바일무브",
         "최근 업데이트 기준: 2025.11",
-        "비고: 담당자 변경 - 권수진 AE / sj.kwon@37mobilemove.com / 010-2102-5307 (2022.06 기준, 업데이트 가능성 있음)"
+        "비고: 담당자 변경 권수진 AE / / sj.kwon@37mobilemove.com / / 010-2102-5307 / <-2022.06 기준이라 업데이트 가능성 있음"
       ],
-      "link": "http://37mobilemove.com/",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
+    },
+    {
+      "platform": "Moloco",
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "자료: [Moloco] 와이즈버즈 매체설명회_2025.Q1.pdf",
+        "최근 업데이트 기준: 2025.11"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "Motov",
       "category": "OOH, 로컬",
-      "summary": "모빌리티 DOOH 미디어 플랫폼",
-      "description": "모빌리티 DOOH 미디어 플랫폼",
+      "summary": "",
+      "description": "",
       "features": [
         "자료: [motov] 매체소개서_2025.Q1.pdf",
-        "이메일: sales@motov.co.kr",
-        "전화: 1644-4437",
-        "사내 자료명: Motov소개",
+        "사내 자료명: Naver게시판",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://drive.google.com/file/d/1NnOov8K5ZIBEynqcmPBLMLSc-TPvH-Hz/view?usp=drive_link",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "NAP",
@@ -323,17 +391,28 @@
       "updated_at": "2026-08-26"
     },
     {
-      "platform": "NETFLIX",
-      "category": "Video",
-      "summary": "넷플릭스 광고",
-      "description": "넷플릭스 광고 (전략실 문의)",
+      "platform": "NEST ADS",
+      "category": "사람인",
+      "summary": "",
+      "description": "",
       "features": [
-        "담당: 전략실 문의",
-        "최근 업데이트 기준: 2026.04",
+        "최근 업데이트 기준: 2025.11",
+        "수수료율: 20% · 영역: 사람인"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
+    },
+    {
+      "platform": "NETFLIX",
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "최근 업데이트 기준: 2025.11",
         "수수료율: 11% (마크업)"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "NHN Dighty",
@@ -349,11 +428,13 @@
     {
       "platform": "Naver",
       "category": "",
-      "summary": "네이버 광고 전반",
-      "description": "네이버 광고 전반 (사내 NEST 게시판 참고)",
-      "features": [],
+      "summary": "",
+      "description": "",
+      "features": [
+        "최근 업데이트 기준: 2025.11"
+      ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "Open AI",
@@ -361,68 +442,24 @@
       "summary": "",
       "description": "",
       "features": [
-        "수수료율: 0% (마크업)"
+        "수수료율: 0% (마크업)",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
-    },
-    {
-      "platform": "Payco(페이코)",
-      "category": "",
-      "summary": "",
-      "description": "",
-      "features": [
-        "비고: 자료 확인 필요"
-      ],
-      "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "Pinterest",
       "category": "SNS",
-      "summary": "아이디어 검색 플랫폼",
-      "description": "아이디어 검색 플랫폼",
-      "features": [
-        "자료: [Pinterest] 매체소개서_2025.Q2.pdf",
-        "이메일: pinterest-kr@mediadonuts.com",
-        "사내 자료명: 핀터레스트 웨비나",
-        "최근 업데이트 기준: 2025.11"
-      ],
-      "link": "https://drive.google.com/file/d/1XOjTED1THeYV_StW90Nmkkj-xX0e7dbo/view?usp=drive_link",
-      "updated_at": "2026-08-26"
-    },
-    {
-      "platform": "RTB HOUSE",
-      "category": "웹/앱",
       "summary": "",
       "description": "",
       "features": [
-        "수수료율: 15% (네스트애즈) · 영역: 웹/앱"
+        "자료: [Pinterest] 매체소개서_2025.Q2.pdf",
+        "사내 자료명: Naver게시판",
+        "최근 업데이트 기준: 2025.11"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
-    },
-    {
-      "platform": "RTB house",
-      "category": "리타기팅",
-      "summary": "리타기팅 DSP",
-      "description": "",
-      "features": [
-        "비고: 최신 내용 없음, 아래 RTB HOUSE(네스트애즈)와 별개 확인 필요"
-      ],
-      "link": "",
-      "updated_at": "2026-08-26"
-    },
-    {
-      "platform": "ReAppi",
-      "category": "",
-      "summary": "글로벌 모바일 마케팅 플랫폼",
-      "description": "글로벌 모바일 마케팅 플랫폼",
-      "features": [
-        "비고: 광고소개서 최신버전 없음"
-      ],
-      "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "Remerge",
@@ -430,13 +467,13 @@
       "summary": "앱 DSP",
       "description": "앱 DSP",
       "features": [
-        "자료: remerge홈페이지, [Remerge] 소개자료_2024.Q1.pdf",
-        "담당자: remerge문의폼",
+        "자료: [Remerge] 소개자료_2024.Q1.pdf",
+        "이메일: remerge문의폼",
         "사내 자료명: 리머지",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://drive.google.com/file/d/1YMhzglKKEokZiua8jEx9qWrROToZDAyX/view?usp=drive_link",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "RunDay / FitDay",
@@ -482,21 +519,11 @@
       "description": "실시간 1인 방송 플랫폼",
       "features": [
         "자료: 최신 상품소개서 SOOP",
-        "최근 업데이트 기준: 2025.11"
-      ],
-      "link": "https://adv.sooplive.co.kr/",
-      "updated_at": "2026-08-26"
-    },
-    {
-      "platform": "SPHERE",
-      "category": "",
-      "summary": "",
-      "description": "",
-      "features": [
-        "비고: 최신 소식 없음"
+        "최근 업데이트 기준: 2025.11",
+        "비고: https://adv.sooplive.co.kr/"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "Singular",
@@ -504,10 +531,11 @@
       "summary": "DMP / 마케팅 인텔리전스 플랫폼",
       "description": "DMP / 마케팅 인텔리전스 플랫폼",
       "features": [
+        "자료: https://www.singular.net/ko/",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://www.singular.net/ko/",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "Smadex",
@@ -522,12 +550,14 @@
     },
     {
       "platform": "Snapchat",
-      "category": "SNS",
-      "summary": "스냅챗 광고",
-      "description": "스냅챗 광고",
-      "features": [],
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "최근 업데이트 기준: 2025.11"
+      ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "Snow(스노우)",
@@ -555,20 +585,33 @@
       "updated_at": "2026-08-26"
     },
     {
+      "platform": "TJ미디어",
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "자료: TJ미디어 광고 상품 소개서_260403.pdf",
+        "최근 업데이트 기준: 2025.11"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
+    },
+    {
       "platform": "TVING",
       "category": "Video",
       "summary": "컨텐츠 플랫폼",
       "description": "컨텐츠 플랫폼",
       "features": [
-        "자료: 티빙소개",
-        "담당: 현지은/조성현/정보교",
-        "이메일: jieun.hyun@cj.net, sh.cho22@cj.net, bg.jeong@cj.net",
+        "자료: TVING",
+        "담당: 현지은 / 조성현 / 정보교",
+        "이메일: jieun.hyun@cj.net / sh.cho22@cj.net / bg.jeong@cj.net",
         "전화: 010-8253-8222 / 010-4704-2550 / 010-7457-1756",
+        "사내 자료명: 티빙소개",
         "최근 업데이트 기준: 2024.11",
-        "비고: POC 확인 필요"
+        "비고: <-poc확인 필요"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "TW360",
@@ -576,52 +619,60 @@
       "summary": "",
       "description": "",
       "features": [
-        "수수료율: 15% (백피) · 영역: 웹/앱"
+        "수수료율: 15% (백피) · 영역: 웹/앱",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "Taboola",
       "category": "SA, 리타기팅, 기타",
-      "summary": "디스커버리 플랫폼",
-      "description": "디스커버리 플랫폼",
+      "summary": "",
+      "description": "",
       "features": [
         "자료: [Taboola] 매체소개서_2024.Q3.pdf",
-        "담당자: 손원형",
-        "이메일: wonhyoung.s@taboola.com",
-        "전화: 010-9535-9628",
-        "사내 자료명: 타불라소개",
+        "사내 자료명: Naver게시판",
         "최근 업데이트 기준: 2025.11",
-        "수수료율: 0% (마크업) · 영역: 웹"
+        "수수료율: 0% (마크업) · 영역: SA, 리타기팅, 기타"
       ],
-      "link": "https://drive.google.com/file/d/1lIZwFqjQ7m4je479RMeYCm2U126t3HGF/view?usp=drive_link",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
+    },
+    {
+      "platform": "TargetingGates",
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "자료: [TargetingGates] 2026 AC_TargetingGates 소개서_V1.0.pdf",
+        "최근 업데이트 기준: 2025.11"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "Teads",
       "category": "기타",
-      "summary": "글로벌 동영상 광고 플랫폼",
-      "description": "글로벌 동영상 광고 플랫폼 (한국티즈)",
+      "summary": "",
+      "description": "",
       "features": [
-        "자료: 한국티즈소개",
         "최근 업데이트 기준: 2025.11",
-        "수수료율: 20% (백피) · 영역: 웹/앱"
+        "수수료율: 20% (백피) · 영역: 기타"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "TikTok",
-      "category": "SNS, Video",
-      "summary": "틱톡 광고",
-      "description": "틱톡 광고 (사내 NEST 게시판 참고)",
+      "category": "",
+      "summary": "",
+      "description": "",
       "features": [
-        "담당: 김동훈 매니저",
-        "이메일: donghoon.kim@bytedance.com"
+        "최근 업데이트 기준: 2025.11"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "WeTransfer",
@@ -634,17 +685,19 @@
         "최근 업데이트 기준: 2025.11",
         "비고: 영문 문의 필요"
       ],
-      "link": "https://www.wetransfer.com/",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "X(Twitter)",
-      "category": "SNS",
-      "summary": "X(구 트위터) 광고",
-      "description": "X(구 트위터) 광고 (사내 NEST 게시판 참고)",
-      "features": [],
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "최근 업데이트 기준: 2025.11"
+      ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "watchapedia",
@@ -653,14 +706,14 @@
       "description": "영화, 책, TV 프로그램 추천 및 평가 서비스",
       "features": [
         "자료: [watchapedia] 광고 상품 소개서_2025.Q3.pdf",
-        "담당자: 광고사업팀",
+        "담당: 광고사업팀",
         "이메일: ad_sales@watcha.com",
         "전화: 010-5033-9698",
         "사내 자료명: Watchapedia 소개",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://drive.google.com/file/d/1vrAptT6Lxk5ldsAYSWJandYC5g7xJQVU/view?usp=drive_link",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "뉴닉",
@@ -679,14 +732,14 @@
       "summary": "대한민국 부동산 앱",
       "description": "대한민국 부동산 앱",
       "features": [
-        "자료: 다방 소개",
-        "팀메일: ad@station3.co.kr",
-        "담당: 이지혜 매니저 (jhlee93@station3.co.kr)",
-        "전화: T) 070-4211-3953 M) 010-4851-2430",
+        "자료: 다방",
+        "이메일: 팀메일: ad@station3.co.kr / 이지혜 매니저: jhlee93@station3.co.k",
+        "전화: T: 070-4211-3953 / M: 010-4851-2430",
+        "사내 자료명: 다방 소개",
         "최근 업데이트 기준: 2025.11"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "다음(AXZ)",
@@ -701,14 +754,15 @@
     },
     {
       "platform": "당근",
-      "category": "웹/앱",
-      "summary": "당근마켓 광고",
-      "description": "당근마켓 지역 기반 광고",
+      "category": "",
+      "summary": "",
+      "description": "",
       "features": [
-        "수수료율: 15% (백피) · 영역: 웹/앱"
+        "최근 업데이트 기준: 2025.11",
+        "수수료율: 15% (백피)"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "대학백과",
@@ -728,10 +782,11 @@
       "summary": "",
       "description": "",
       "features": [
-        "수수료율: 15% (백피) · 영역: 앱"
+        "수수료율: 15% (백피) · 영역: 앱",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "데이블",
@@ -740,14 +795,14 @@
       "description": "개인화 컨텐츠 추천 플랫폼",
       "features": [
         "자료: [데이블] 데이블 네이티브AD 서비스 소개서_2025.Q2.pdf",
-        "담당자: 이종민 팀장",
+        "담당: 이종민 팀장",
         "이메일: jongmin@dable.io",
         "전화: 010-8685-7898",
         "사내 자료명: 데이블 소개",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://drive.google.com/file/d/1_6J9JlRq91oN7l7EOrutotvrp_VQ39lV/view?usp=drive_link",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "데일리샷",
@@ -777,10 +832,11 @@
       "summary": "",
       "description": "",
       "features": [
-        "수수료율: 15% (백피) · 영역: 웹"
+        "수수료율: 15% (백피) · 영역: 웹",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "디에디트",
@@ -806,8 +862,8 @@
         "사내 자료명: 디지털캠프",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://drive.google.com/file/d/1Zub7Y5Tpgxm5xNW-q7aAclMJv0sBgoej/view?usp=drive_link",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "레뷰코퍼레이션",
@@ -854,10 +910,11 @@
       "summary": "",
       "description": "",
       "features": [
-        "수수료율: 15% (백피) · 영역: LMS"
+        "수수료율: 15% (백피) · 영역: LMS",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "롯데포인트",
@@ -865,10 +922,11 @@
       "summary": "",
       "description": "",
       "features": [
-        "수수료율: 15% (백피) · 영역: 웹/앱"
+        "수수료율: 15% (백피) · 영역: 웹/앱",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "롱블랙",
@@ -884,16 +942,15 @@
     {
       "platform": "리멤버",
       "category": "비즈니스",
-      "summary": "명함 관리, 경력 채용 앱",
-      "description": "명함 관리, 경력 채용 앱",
+      "summary": "",
+      "description": "",
       "features": [
-        "자료: 리멤버소개",
-        "이메일: ad@rememberapp.co.kr",
+        "사내 자료명: Naver게시판",
         "최근 업데이트 기준: 2025.11",
-        "수수료율: 20% (백피) · 영역: 앱"
+        "수수료율: 20% (백피) · 영역: 비즈니스"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "리얼클릭(RealClick)",
@@ -902,24 +959,37 @@
       "description": "DSP 플랫폼",
       "features": [
         "자료: 리얼클릭 홈페이지",
-        "담당자: 리얼클릭 문의폼",
+        "이메일: 리얼클릭 문의폼",
         "사내 자료명: 리얼클릭소개",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://www.realclick.co.kr/index.html",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "링크드인",
-      "category": "SNS, Video, DA, 리타기팅, 비즈니스",
+      "category": "리타기팅, App, 보상형",
       "summary": "세계 최대 비즈니스 플랫폼",
       "description": "세계 최대 비즈니스 플랫폼",
       "features": [
         "자료: 링크드인",
+        "사내 자료명: 링크드인",
         "최근 업데이트 기준: 2025.11"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
+    },
+    {
+      "platform": "마미톡",
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "자료: 마미톡_매체소개서_Agency_25.pdf",
+        "최근 업데이트 기준: 2025.11"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "마이리얼트립",
@@ -965,10 +1035,10 @@
         "전화: 070-4672-2303",
         "사내 자료명: 모비온",
         "최근 업데이트 기준: 2025.11",
-        "수수료율: 15% (백피) · 영역: 웹"
+        "수수료율: 15% (백피) · 영역: DMP, DSP"
       ],
-      "link": "https://drive.google.com/file/d/1NCACLD9Ni6MlpPHu6zPvHz460iGnuSbt/view?usp=drive_link",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "몰로코",
@@ -996,6 +1066,18 @@
       ],
       "link": "https://www.musinsa.com",
       "updated_at": "2026-08-26"
+    },
+    {
+      "platform": "미니맵",
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "자료: 미니맵_매체소개서_Minimap_Mediakit_2025_KR_252H.pdf",
+        "최근 업데이트 기준: 2025.11"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "바나나몽키즈",
@@ -1026,18 +1108,26 @@
     {
       "platform": "버즈빌",
       "category": "보상형",
-      "summary": "광고주-매체-유저 리워드 연결 플랫폼",
-      "description": "광고주와 매체, 그리고 유저를 리워드로 연결하는 플랫폼",
+      "summary": "",
+      "description": "",
       "features": [
-        "자료: 버즈빌",
-        "담당: 임주희 매니저",
-        "이메일: jules.yim@buzzvil.com",
-        "전화: 010-6355-0032",
         "최근 업데이트 기준: 2025.11",
-        "수수료율: 15% (백피) · 영역: 리워드"
+        "수수료율: 15% (백피) · 영역: 보상형"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
+    },
+    {
+      "platform": "베나투스",
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "자료: [베나투스] 아카라이브 매체 소개서_2025.Q1.pdf",
+        "최근 업데이트 기준: 2025.11"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "베나투스미디어",
@@ -1050,8 +1140,8 @@
         "사내 자료명: 베나투스미디어 소개",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://drive.google.com/file/d/1o0z18RhaqnvnruggxAdYZ6B7zpCtzzD1/view?usp=drive_link",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "봄캘린더",
@@ -1067,30 +1157,40 @@
     {
       "platform": "블라인드",
       "category": "SNS, 비즈니스",
-      "summary": "직장인 SNS",
-      "description": "직장인 SNS",
+      "summary": "",
+      "description": "",
       "features": [
         "자료: [블라인드] 매체소개서_2025.Q2.pdf",
-        "이메일: ads@teamblind.com",
-        "사내 자료명: 블라인드",
+        "사내 자료명: Naver게시판",
         "최근 업데이트 기준: 2025.11",
-        "수수료율: 20% (백피) · 영역: 웹"
-      ],
-      "link": "https://drive.google.com/file/d/1oMc8jsqHN2WQCKX5Q41YDtpAf8DCiK6F/view?usp=drive_link",
-      "updated_at": "2026-08-26"
-    },
-    {
-      "platform": "사람인",
-      "category": "웹/앱",
-      "summary": "채용 플랫폼 광고",
-      "description": "채용 플랫폼 광고 (네스트애즈팀 문의)",
-      "features": [
-        "담당: 네스트ADS팀 문의",
-        "최근 업데이트 기준: 2026.04",
-        "수수료율: 20% (네스트애즈) · 영역: 웹/앱"
+        "수수료율: 20% (백피) · 영역: SNS, 비즈니스"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
+    },
+    {
+      "platform": "삼성",
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "자료: 삼성 Ads 매체소개서_11월.pdf",
+        "최근 업데이트 기준: 2025.11"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
+    },
+    {
+      "platform": "섹타나인",
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "자료: [섹타나인] 해피포인트_매체 소개서_2025.09.pdf",
+        "최근 업데이트 기준: 2025.11"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "스마트스코어",
@@ -1122,10 +1222,36 @@
       "summary": "",
       "description": "",
       "features": [
-        "수수료율: 20% (백피) · 영역: 리워드"
+        "수수료율: 20% (백피) · 영역: 리워드",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
+    },
+    {
+      "platform": "애디슨오퍼월",
+      "category": "리워드",
+      "summary": "",
+      "description": "",
+      "features": [
+        "수수료율: 20% (백피) · 영역: 리워드",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
+    },
+    {
+      "platform": "애디슨오퍼월 / / 캐쉬슬라이드 / / Treasure Hunt / (NBT)",
+      "category": "보상형",
+      "summary": "",
+      "description": "",
+      "features": [
+        "사내 자료명: Naver게시판",
+        "최근 업데이트 기준: 2025.11",
+        "수수료율: 20% (백피) · 영역: 보상형"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "애디슨오퍼월 / 캐쉬슬라이드 / Treasure Hunt (NBT)",
@@ -1156,38 +1282,32 @@
       "updated_at": "2026-08-26"
     },
     {
-      "platform": "얼루어, W, GQ, 보그",
-      "category": "",
-      "summary": "사내 NEST 게시판 참고",
-      "description": "사내 NEST 게시판 참고",
-      "features": [],
-      "link": "https://nest.wisebirds.com/app/board/103/post/1345",
-      "updated_at": "2026-08-26"
-    },
-    {
       "platform": "에브리타임",
-      "category": "기타",
-      "summary": "대학생 커뮤니티 앱",
-      "description": "대학생 커뮤니티 앱 (유니브아이엠씨/비누랩스 운영)",
+      "category": "앱",
+      "summary": "",
+      "description": "",
       "features": [
-        "자료: 비누랩스소개",
-        "최근 업데이트 기준: 2025.11",
-        "수수료율: 0% (마크업) · 영역: 앱"
+        "수수료율: 0% (마크업) · 영역: 앱",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "에이블리",
-      "category": "패션, App",
-      "summary": "패션 특화 개인화 커머스 앱",
-      "description": "동대문 기반 여성 패션/뷰티 상품을 개인화 추천으로 큐레이션하는 커머스 앱",
+      "category": "DA, 커머스",
+      "summary": "여성 패션/뷰티 쇼핑 플랫폼",
+      "description": "여성 패션/뷰티 쇼핑 플랫폼",
       "features": [
-        "담당자/상품소개서 자료 확인 필요",
-        "수수료율: 20% (백피) · 영역: 웹"
+        "자료: [에이블리] 광고 상품 소개서",
+        "담당: 에이블리 허대리",
+        "이메일: ad-biz@a-bly.com",
+        "사내 자료명: 에이블리",
+        "최근 업데이트 기준: 2026.07",
+        "비고: 1,000만 여성 쇼핑 유저, 구매 데이터 기반 타겟팅"
       ],
-      "link": "https://www.a-bly.com",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "엠넷플러스",
@@ -1195,10 +1315,11 @@
       "summary": "",
       "description": "",
       "features": [
-        "수수료율: 20% (백피) · 영역: 웹"
+        "수수료율: 20% (백피) · 영역: 웹",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "열나요",
@@ -1212,8 +1333,8 @@
         "사내 자료명: 디지털캠프",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://drive.google.com/file/d/1SbcEmUk5GO79YJKs61NClilF-f5cNhjB/view?usp=drive_link",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "열품타",
@@ -1221,10 +1342,11 @@
       "summary": "",
       "description": "",
       "features": [
-        "수수료율: 20% (백피) · 영역: 웹"
+        "수수료율: 20% (백피) · 영역: 웹",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "오늘의집",
@@ -1232,24 +1354,30 @@
       "summary": "라이프스타일 플랫폼",
       "description": "라이프스타일 플랫폼",
       "features": [
-        "자료: 오하우스애즈 소개서, 오늘의집 배너광고 상품소개서",
+        "자료: 오하우스애즈 소개서  / 오늘의집 배너광고 상품소개서",
         "이메일: ad_product@bucketplace.net",
         "사내 자료명: 오늘의집소개",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://docs.google.com/presentation/d/1QVmkia1aUUOzSUee4AJX6NJPLPFHL4NGZAbfBlQiV58/edit?slide=id.g38c61f3d49f_2_255",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "오늘학교",
-      "category": "웹",
-      "summary": "",
-      "description": "",
+      "category": "DA, App",
+      "summary": "초중고 학생 및 학부모 학교생활 플랫폼",
+      "description": "초중고 학생 및 학부모 학교생활 플랫폼",
       "features": [
-        "수수료율: 20% (백피) · 영역: 웹"
+        "자료: [오늘학교] 광고 상품소개서",
+        "담당: 아테나스랩 광고운영팀",
+        "이메일: ads@athenaslab.com",
+        "전화: 02-2088-6173",
+        "사내 자료명: 오늘학교",
+        "최근 업데이트 기준: 2026.08",
+        "비고: 초중고 학생/학부모 타겟, 9월 프로모션 진행"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "오케이캐시백",
@@ -1257,10 +1385,23 @@
       "summary": "",
       "description": "",
       "features": [
-        "수수료율: 20% (백피) · 영역: 웹/앱"
+        "수수료율: 20% (백피) · 영역: 웹/앱",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
+    },
+    {
+      "platform": "오케이포스",
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "자료: [오케이포스]_상품소개서(26년1Q)_2026.03.pdf",
+        "최근 업데이트 기준: 2025.11"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "원티드",
@@ -1273,8 +1414,8 @@
         "사내 자료명: 원티드",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://drive.google.com/file/d/1YeeIvI-2erztQQKA8Lp5QO8TNb8KwGzq/view?usp=drive_link",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "위키트리",
@@ -1305,6 +1446,18 @@
       "updated_at": "2026-08-26"
     },
     {
+      "platform": "인아웃",
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "자료: 인아웃 프로모션.docx",
+        "최근 업데이트 기준: 2025.11"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
+    },
+    {
       "platform": "자소설닷컴",
       "category": "웹",
       "summary": "",
@@ -1321,24 +1474,15 @@
       "summary": "AI기반 종합 커리어 플랫폼",
       "description": "AI기반 종합 커리어 플랫폼",
       "features": [
+        "자료: 잡코리아",
         "이메일: ad@jobkorea.co.kr",
         "전화: 02-3466-5480",
+        "사내 자료명: 잡코리아소개",
         "최근 업데이트 기준: 2025.11",
         "비고: 잡코리아 광고"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
-    },
-    {
-      "platform": "잡플래닛",
-      "category": "비즈니스",
-      "summary": "기업 리뷰/채용 플랫폼",
-      "description": "",
-      "features": [
-        "비고: 자료 확인 필요"
-      ],
-      "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "점신",
@@ -1347,23 +1491,12 @@
       "description": "모바일 앱 기반 통합 운세 플랫폼",
       "features": [
         "자료: [점신] 상품소개서 2025.Q2.pdf",
-        "담당자: 점신 문의폼",
+        "이메일: 점신 문의폼",
         "사내 자료명: 점신",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://drive.google.com/file/d/119CrCOzffZD2aoNbecCQarwYoqIbznRd/view?usp=drive_link",
-      "updated_at": "2026-08-26"
-    },
-    {
-      "platform": "제이커뮤니케이션",
-      "category": "",
-      "summary": "",
-      "description": "",
-      "features": [
-        "비고: 별도 사이트 없음"
-      ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "직방 / 호갱노노",
@@ -1394,21 +1527,43 @@
       "description": "건강 챌린지 앱",
       "features": [
         "자료: [챌린저스] 광고상품소개서_2023.Q1.pdf",
-        "담당자: 문의폼",
+        "이메일: 문의폼",
         "사내 자료명: 챌린저스",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://drive.google.com/file/d/14hhLrhGZpYAVZZyhVkfg70gE0R6HXYrh/view?usp=drive_link",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "카울리",
       "category": "",
-      "summary": "모바일 광고 네트워크 플랫폼",
-      "description": "모바일 광고 네트워크 플랫폼",
-      "features": [],
+      "summary": "",
+      "description": "",
+      "features": [
+        "자료: 카울리_통합_상품_소개서_251031.pdf",
+        "사내 자료명: Naver게시판",
+        "최근 업데이트 기준: 2025.11"
+      ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
+    },
+    {
+      "platform": "카카오 VX",
+      "category": "App, DOOH",
+      "summary": "스크린골프 및 골프예약 플랫폼",
+      "description": "스크린골프 및 골프예약 플랫폼",
+      "features": [
+        "자료: [카카오 VX] 광고 상품 소개서",
+        "담당: 박성준 차장",
+        "이메일: simon.psj@kakaovx.com / 팀메일: _advx@kakaovx.com",
+        "전화: 010-2271-1377",
+        "사내 자료명: 카카오 VX",
+        "최근 업데이트 기준: 2026.07",
+        "비고: 최소 집행 금액 월 500만원",
+        "수수료율: 30% (백피) · 영역: App, DOOH"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "카카오뱅크",
@@ -1422,45 +1577,34 @@
       "updated_at": "2026-08-26"
     },
     {
-      "platform": "카카오페이지 (캐시프렌즈)",
-      "category": "",
-      "summary": "",
-      "description": "",
-      "features": [
-        "비고: 광고 페이지 확인 안 됨"
-      ],
-      "link": "",
-      "updated_at": "2026-08-26"
-    },
-    {
       "platform": "캐시워크",
       "category": "보상형",
       "summary": "헬스케어앱",
       "description": "헬스케어앱",
       "features": [
         "자료: [캐시워크] 최신 상품 소개서",
-        "담당자: 오수정 매니저",
-        "이메일: oh.sujeong@cashwalk.io (팀메일: ads@cashwalk.io)",
+        "담당: 오수정 매니저",
+        "이메일: oh.sujeong@cashwalk.io / 팀메일) ads@cashwalk.io",
         "사내 자료명: 캐시워크 소개",
         "최근 업데이트 기준: 2025.11",
-        "수수료율: 20%"
+        "수수료율: 20% · 영역: 보상형"
       ],
-      "link": "https://drive.google.com/drive/folders/1x6m3hxPqbYO3K16wIsHKVD55RMdZ66lo?usp=drive_link",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "캐치테이블",
-      "category": "DA, 로컬, 식음료",
+      "category": "DA, 로컬",
       "summary": "국내 대표 미식 생활 플랫폼",
       "description": "국내 대표 미식 생활 플랫폼",
       "features": [
         "자료: [캐치테이블] 광고 상품소개서_2023.Q4.pdf",
-        "담당자: 캐치테이블 문의폼",
+        "이메일: 캐치테이블 문의폼",
         "사내 자료명: 캐치테이블",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://drive.google.com/file/d/1m1bY8Gcg5Du58dQUzvrdk4a8iY5-vpKH/view?usp=drive_link",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "캠퍼스픽",
@@ -1491,21 +1635,11 @@
       "summary": "",
       "description": "",
       "features": [
-        "수수료율: 15% (백피) · 영역: 웹"
+        "수수료율: 15% (백피) · 영역: 웹",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
-    },
-    {
-      "platform": "쿠키오븐",
-      "category": "",
-      "summary": "",
-      "description": "",
-      "features": [
-        "비고: 확인 필요"
-      ],
-      "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "쿠팡",
@@ -1521,29 +1655,29 @@
     {
       "platform": "퀀텀유니버스",
       "category": "기타",
-      "summary": "AR/VR/XR 관련 솔루션",
-      "description": "AR/VR/XR 관련 솔루션",
+      "summary": "",
+      "description": "",
       "features": [
         "자료: [퀀텀유니버스] 광고소개서_2022_Q1_kr.pdf",
-        "이메일: info@quantumuniverse.co",
-        "전화: 02-555-8809",
-        "비고: 광고소개서 최신버전 없음"
+        "사내 자료명: Naver게시판",
+        "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://drive.google.com/file/d/1qRXbXYEB61sO1JwdjFz83I-BQLgMXJza/view?usp=drive_link",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "클래스팅",
       "category": "DA",
-      "summary": "학부모-학생-교사용 클래스 관리 앱",
+      "summary": "학부모-학생-교사가 활용하는 클래스 관리 앱",
       "description": "학부모-학생-교사가 활용하는 클래스 관리 앱",
       "features": [
-        "자료: 클래스팅소개",
-        "담당: 클래스팅 문의폼",
+        "자료: 클래스팅",
+        "이메일: 클래스팅 문의폼",
+        "사내 자료명: 클래스팅소개",
         "최근 업데이트 기준: 2025.11"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "키즈노트",
@@ -1551,13 +1685,26 @@
       "summary": "영유아 모바일 커뮤니케이션 플랫폼",
       "description": "영유아 모바일 커뮤니케이션 플랫폼",
       "features": [
-        "자료: 키즈노트 소개",
+        "자료: 키즈노트",
         "이메일: adpart@kidsnote.com",
+        "사내 자료명: 키즈노트 소개",
         "최근 업데이트 기준: 2025.11",
-        "수수료율: 20% (백피) · 영역: 앱"
+        "수수료율: 20% (백피) · 영역: DA, 기타"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
+    },
+    {
+      "platform": "타게팅게이츠",
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "자료: [타게팅게이츠] 통합상품소개서_v3.2_2025.Q4.pdf",
+        "최근 업데이트 기준: 2025.11"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "타겟픽",
@@ -1565,10 +1712,11 @@
       "summary": "",
       "description": "",
       "features": [
-        "수수료율: 20% (백피) · 영역: 웹"
+        "수수료율: 20% (백피) · 영역: 웹",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "타다",
@@ -1582,16 +1730,28 @@
       "updated_at": "2026-08-26"
     },
     {
-      "platform": "토스",
-      "category": "App",
-      "summary": "모바일 금융 서비스",
-      "description": "모바일 금융 서비스",
+      "platform": "타불라",
+      "category": "웹",
+      "summary": "",
+      "description": "",
       "features": [
-        "비고: 확인 필요",
-        "수수료율: 20% (백피) · 영역: 앱"
+        "수수료율: 0% (마크업) · 영역: 웹",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
+    },
+    {
+      "platform": "토스",
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "최근 업데이트 기준: 2025.11",
+        "수수료율: 20% (백피)"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "토스페이",
@@ -1610,25 +1770,39 @@
       "summary": "",
       "description": "",
       "features": [
-        "수수료율: 20% (백피) · 영역: 리워드"
+        "수수료율: 20% (백피) · 영역: 리워드",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "티오더",
       "category": "로컬, 기타, Video, DA",
-      "summary": "스마트 오더 시스템",
+      "summary": "주문·결제하고 테이블에 바로 받아볼 수 있는 스마트 오더 시스템",
       "description": "주문·결제하고 테이블에 바로 받아볼 수 있는 스마트 오더 시스템",
       "features": [
-        "자료: 티오더소개",
+        "자료: [티오더] 매체 소개서_2025.Q4_ver2.pdf",
         "담당: 조용래 팀장",
-        "이메일: yonglae.cho@torder.com (광고팀: team_ads@torder.com)",
+        "이메일: yonglae.cho@torder.com / 광고팀) team_ads@torder.com",
         "전화: 010-6647-9585",
+        "사내 자료명: 티오더소개",
         "최근 업데이트 기준: 2025.11"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
+    },
+    {
+      "platform": "티즈",
+      "category": "웹/앱",
+      "summary": "",
+      "description": "",
+      "features": [
+        "수수료율: 20% (백피) · 영역: 웹/앱",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "파이브애드",
@@ -1637,12 +1811,12 @@
       "description": "공유오피스 플랫폼",
       "features": [
         "자료: [패스트파이브] 광고상품소개서_2025.Q4.pdf",
-        "담당자: 패스트파이브 문의폼",
+        "이메일: 패스트파이브 문의폼",
         "사내 자료명: 패스트파이브 소개",
         "최근 업데이트 기준: 2025.11"
       ],
-      "link": "https://drive.google.com/file/d/1HZCX-pH9aH77fjODARZwZECa9UICaPyo/view?usp=drive_link",
-      "updated_at": "2026-08-26"
+      "link": "",
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "팟빵",
@@ -1659,6 +1833,18 @@
       "updated_at": "2026-08-26"
     },
     {
+      "platform": "패스트파이브",
+      "category": "",
+      "summary": "",
+      "description": "",
+      "features": [
+        "자료: [패스트파이브] 광고상품소개서_2025.Q4.pdf",
+        "최근 업데이트 기준: 2025.11"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
+    },
+    {
       "platform": "페이북",
       "category": "SA",
       "summary": "",
@@ -1670,15 +1856,32 @@
       "updated_at": "2026-08-26"
     },
     {
+      "platform": "페이코 캠퍼스",
+      "category": "DA, App",
+      "summary": "대학생 타겟 모바일 간편결제 플랫폼",
+      "description": "대학생 타겟 모바일 간편결제 플랫폼",
+      "features": [
+        "자료: [페이코 캠퍼스] 상품소개서",
+        "담당: 홍샛별",
+        "이메일: saebyel.hong@nhnad.com / mediasolution@nhn.com",
+        "사내 자료명: 페이코 캠퍼스",
+        "최근 업데이트 기준: 2026.08",
+        "비고: NHN AD 미디어솔루션팀"
+      ],
+      "link": "",
+      "updated_at": "2026-09-11"
+    },
+    {
       "platform": "포스타입",
       "category": "웹",
       "summary": "",
       "description": "",
       "features": [
-        "수수료율: 20% (백피) · 영역: 웹"
+        "수수료율: 20% (백피) · 영역: 웹",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "포커스미디어",
@@ -1687,18 +1890,6 @@
       "description": "",
       "features": [
         "수수료율: 확인 필요 (백피) · 영역: DOOH"
-      ],
-      "link": "",
-      "updated_at": "2026-08-26"
-    },
-    {
-      "platform": "핑크다이어리",
-      "category": "웹/앱",
-      "summary": "여성 커뮤니티 앱",
-      "description": "",
-      "features": [
-        "비고: 2023년 자료가 최신, 업데이트 확인 필요",
-        "수수료율: 20% (백피) · 영역: 웹/앱"
       ],
       "link": "",
       "updated_at": "2026-08-26"
@@ -1715,26 +1906,16 @@
       "updated_at": "2026-08-26"
     },
     {
-      "platform": "하이브스택",
-      "category": "OOH",
-      "summary": "DOOH 플랫폼",
-      "description": "",
-      "features": [
-        "비고: 한국 철수, Perion Network 인수 (https://perion.com/)"
-      ],
-      "link": "",
-      "updated_at": "2026-08-26"
-    },
-    {
       "platform": "해피포인트",
       "category": "웹/앱",
       "summary": "",
       "description": "",
       "features": [
-        "수수료율: 30% (백피) · 영역: 웹/앱"
+        "수수료율: 30% (백피) · 영역: 웹/앱",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "허프포스트",
@@ -1756,10 +1937,11 @@
       "summary": "",
       "description": "",
       "features": [
-        "수수료율: 30% (백피) · 영역: 웹/앱"
+        "수수료율: 30% (백피) · 영역: 웹/앱",
+        "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
       ],
       "link": "",
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-11"
     },
     {
       "platform": "홈쇼핑모아",
