@@ -966,16 +966,26 @@ function renderFeed() {
   }
 
   // "전체" 보기에서는 특정 매체의 고정 공지가 상단을 계속 차지해 다른 매체 소식이
-  // 묻히므로, 고정 공지는 특정 매체를 선택해서 볼 때만 노출한다.
+  // 묻히므로, 고정 공지는 특정 매체를 선택해서 볼 때만 노출한다. (기간과 무관하게 항상 노출)
   const showPinned = activeFilter !== '전체';
   const pinned = showPinned ? filtered.filter(n => n.is_pinned && isPinnedRecent(n)) : [];
-  const rest = showPinned ? filtered.filter(n => !(n.is_pinned && isPinnedRecent(n))) : filtered;
+  let rest = showPinned ? filtered.filter(n => !(n.is_pinned && isPinnedRecent(n))) : filtered;
+
+  // 왼쪽 연도/월 탭에서 고른 달로 보관함 목록도 같이 좁혀서 보여준다.
+  if (selectedNavYear && selectedNavMonth) {
+    rest = rest.filter(n => n.date.startsWith(`${selectedNavYear}-${selectedNavMonth}`));
+  }
 
   pinnedArea.innerHTML = pinned.length ? `
     <div class="card">
       <div class="section-label">📌 고정 공지</div>
       ${pinned.map(noticeRowHTML).join('')}
     </div>` : '';
+
+  if (rest.length === 0) {
+    feed.innerHTML = `<div class="empty-state">${selectedNavMonth ? Number(selectedNavMonth) + '월에는 ' : ''}해당 매체 소식이 없어요.</div>`;
+    return;
+  }
 
   // 요일별로 잘게 쪼개는 대신, 매체소식 탭과 같은 "한 주" 단위로 묶어서
   // "이번 주엔 뭐가 있었지"를 스캔하기 쉽게 보여준다.
@@ -1093,7 +1103,6 @@ document.getElementById('week-nav').addEventListener('click', (e) => {
       selectedNavMonth = clipYearMonth(firstInYear).month;
       selectedClipIndex = clippings.indexOf(firstInYear);
     }
-    renderBrowseArea();
   } else if (monthBtn) {
     selectedNavMonth = monthBtn.dataset.month;
     const firstInMonth = clippings.find(c => {
@@ -1101,11 +1110,14 @@ document.getElementById('week-nav').addEventListener('click', (e) => {
       return ym.year === selectedNavYear && ym.month === selectedNavMonth;
     });
     if (firstInMonth) selectedClipIndex = clippings.indexOf(firstInMonth);
-    renderBrowseArea();
   } else if (weekBtn) {
     selectedClipIndex = Number(weekBtn.dataset.clipIndex);
-    renderBrowseArea();
+  } else {
+    return;
   }
+  renderBrowseArea();
+  // 아래 전체/매체별 보관함도 왼쪽에서 고른 월에 맞춰 같이 좁혀서 보여준다.
+  renderFeed();
 });
 
 // 매체별 핵심(highlights)이 있으면 그걸로, 없으면(최신 3건 밖의 과거 클리핑) 예전처럼
