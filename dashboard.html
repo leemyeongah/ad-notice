@@ -681,6 +681,23 @@
     .week-select { flex-basis: 100%; order: 1; }
     .stats-row { gap: 20px; }
   }
+
+  /* ---- PC 화면: 뉴스클리핑(좌) / 전체 매체소식(우) 좌우 배치 ----
+     모바일에서는 위→아래 순서(클리핑 → 매체별 소식)가 이미 보기 편해서 그대로 두고,
+     화면이 넓을 때만 옆으로 나란히 둬서 스크롤 없이 한눈에 보이게 한다. */
+  @media (min-width: 900px) {
+    #browse-area {
+      display: grid;
+      grid-template-columns: minmax(260px, 320px) 1fr;
+      align-items: start;
+      gap: 24px;
+    }
+    #browse-area .week-picker,
+    #browse-area #clip-hero-area { grid-column: 1; }
+    #browse-area #source-grid-label,
+    #browse-area #source-grid { grid-column: 2; }
+    #browse-area #source-grid { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
