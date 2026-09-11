@@ -1003,9 +1003,11 @@ function renderFeed() {
   const pinned = showPinned ? filtered.filter(n => n.is_pinned && isPinnedRecent(n)) : [];
   let rest = showPinned ? filtered.filter(n => !(n.is_pinned && isPinnedRecent(n))) : filtered;
 
-  // 왼쪽 연도/월 탭에서 고른 달로 보관함 목록도 같이 좁혀서 보여준다.
-  if (selectedNavYear && selectedNavMonth) {
-    rest = rest.filter(n => n.date.startsWith(`${selectedNavYear}-${selectedNavMonth}`));
+  // 왼쪽에서 고른 주차로 보관함 목록도 같이 좁혀서 보여준다 (월 단위가 아니라 그 주 딱 하나만).
+  const selectedClip = clippings[selectedClipIndex];
+  const feedRange = selectedClip ? weekRangeOf(selectedClip) : null;
+  if (feedRange) {
+    rest = rest.filter(n => n.date >= feedRange.start && n.date <= feedRange.end);
   }
 
   pinnedArea.innerHTML = pinned.length ? `
@@ -1015,7 +1017,7 @@ function renderFeed() {
     </div>` : '';
 
   if (rest.length === 0) {
-    feed.innerHTML = `<div class="empty-state">${selectedNavMonth ? Number(selectedNavMonth) + '월에는 ' : ''}해당 매체 소식이 없어요.</div>`;
+    feed.innerHTML = `<div class="empty-state">${feedRange ? formatMD(feedRange.start) + '~' + formatMD(feedRange.end) + ' 주에는 ' : ''}해당 매체 소식이 없어요.</div>`;
     return;
   }
 
