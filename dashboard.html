@@ -697,8 +697,7 @@
     }
     #browse-area #week-nav { grid-column: 1; }
     #browse-area #clip-hero-area { grid-column: 2; }
-    #browse-area #source-grid-label,
-    #browse-area #source-grid { grid-column: 3; }
+    #browse-area #source-grid-col { grid-column: 3; }
     #browse-area #source-grid { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
   }
 </style>
@@ -731,8 +730,10 @@
     <div id="browse-area">
       <div id="week-nav"></div>
       <div id="clip-hero-area"></div>
-      <div class="section-label" id="source-grid-label"></div>
-      <div id="source-grid" class="source-grid"></div>
+      <div id="source-grid-col">
+        <div class="section-label" id="source-grid-label"></div>
+        <div id="source-grid" class="source-grid"></div>
+      </div>
     </div>
 
     <div id="archive-area">
