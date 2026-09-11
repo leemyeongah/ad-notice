@@ -365,6 +365,7 @@
   .source-headline { margin-bottom: 4px; }
   .sh-title-row { display: flex; align-items: baseline; gap: 8px; }
   .sh-title {
+    position: relative;
     text-decoration: none;
     color: var(--text);
     font-size: 14px;
@@ -372,6 +373,35 @@
     line-height: 1.45;
   }
   .sh-title:hover { color: var(--accent); }
+
+  /* 주요 매체 소식 제목에 마우스 올리면 전문을 팝업으로 미리보기 */
+  .sh-preview {
+    display: none;
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    z-index: 30;
+    width: 340px;
+    max-width: min(90vw, 340px);
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--text);
+    box-shadow: 0 10px 28px rgba(0,0,0,.14);
+    white-space: normal;
+  }
+  .sh-preview mark {
+    background: var(--accent-dim);
+    color: var(--accent);
+    font-weight: 700;
+    padding: 0 2px;
+    border-radius: 3px;
+  }
+  .sh-title:hover .sh-preview { display: block; }
   .si-new {
     flex-shrink: 0;
     font-size: 10px;
@@ -916,6 +946,7 @@ function noticeRowHTML(n) {
 
 // 매체별 소식 카드에서 가장 최근 소식 1건을 헤드라인으로 크게 보여줄 때 쓰는 마크업.
 function sourceHeadlineHTML(n) {
+  const hasExcerpt = !!(n.excerpt && n.excerpt.trim());
   return `
     <div class="source-headline">
       <div class="sh-title-row">
@@ -924,11 +955,12 @@ function sourceHeadlineHTML(n) {
           ${n.is_pinned ? '<span title="고정 공지">📌</span>' : ''}
           ${isImportant(n.title) ? '<span title="캠페인에 영향 줄 수 있는 소식">⚠️</span>' : ''}
           ${escapeHTML(n.title)}
+          ${hasExcerpt ? `<span class="sh-preview">${excerptHTML(n.excerpt)}</span>` : ''}
         </a>
         ${n.is_new ? '<span class="si-new">NEW</span>' : ''}
       </div>
       <div class="si-meta">${escapeHTML(n.category)} · ${n.date}</div>
-      ${n.excerpt ? `<p class="si-excerpt">${excerptHTML(condenseExcerpt(n.excerpt))}</p>` : ''}
+      ${hasExcerpt ? `<p class="si-excerpt">${excerptHTML(condenseExcerpt(n.excerpt))}</p>` : ''}
     </div>`;
 }
 
