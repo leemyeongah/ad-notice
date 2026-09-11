@@ -1,171 +1,12 @@
 [
   {
-    "platform": "Naver",
-    "category": "",
-    "summary": "",
-    "description": "",
-    "features": [
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "Kakao moment",
-    "category": "",
-    "summary": "",
-    "description": "",
-    "features": [
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "Google",
-    "category": "",
-    "summary": "",
-    "description": "",
-    "features": [
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "Meta",
-    "category": "",
-    "summary": "",
-    "description": "",
-    "features": [
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "Criteo",
-    "category": "",
-    "summary": "",
-    "description": "",
-    "features": [
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "X(Twitter)",
-    "category": "",
-    "summary": "",
-    "description": "",
-    "features": [
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "TikTok",
-    "category": "",
-    "summary": "",
-    "description": "",
-    "features": [
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "Snapchat",
-    "category": "",
-    "summary": "",
-    "description": "",
-    "features": [
-      "최근 업데이트 기준: 2025.11"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "토스",
-    "category": "",
-    "summary": "",
-    "description": "",
-    "features": [
-      "최근 업데이트 기준: 2025.11",
-      "수수료율: 20% (백피)"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "당근",
-    "category": "",
-    "summary": "",
-    "description": "",
-    "features": [
-      "최근 업데이트 기준: 2025.11",
-      "수수료율: 15% (백피)"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "NETFLIX",
-    "category": "",
-    "summary": "",
-    "description": "",
-    "features": [
-      "최근 업데이트 기준: 2025.11",
-      "수수료율: 11% (마크업)"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "NEST ADS",
-    "category": "사람인",
-    "summary": "",
-    "description": "",
-    "features": [
-      "최근 업데이트 기준: 2025.11",
-      "수수료율: 20% · 영역: 사람인"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "Teads",
-    "category": "기타",
-    "summary": "",
-    "description": "",
-    "features": [
-      "최근 업데이트 기준: 2025.11",
-      "수수료율: 20% (백피) · 영역: 기타"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "버즈빌",
-    "category": "보상형",
-    "summary": "",
-    "description": "",
-    "features": [
-      "최근 업데이트 기준: 2025.11",
-      "수수료율: 15% (백피) · 영역: 보상형"
-    ],
-    "link": ""
-  },
-  {
     "platform": "카울리",
     "category": "",
     "summary": "",
     "description": "",
     "features": [
       "자료: 카울리_통합_상품_소개서_251031.pdf",
-      "사내 자료명: Naver게시판",
       "최근 업데이트 기준: 2025.11"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "애디슨오퍼월 / / 캐쉬슬라이드 / / Treasure Hunt / (NBT)",
-    "category": "보상형",
-    "summary": "",
-    "description": "",
-    "features": [
-      "사내 자료명: Naver게시판",
-      "최근 업데이트 기준: 2025.11",
-      "수수료율: 20% (백피) · 영역: 보상형"
     ],
     "link": ""
   },
@@ -176,20 +17,7 @@
     "description": "",
     "features": [
       "자료: [챌린저스] 광고상품소개서_2023.Q1.pdf",
-      "사내 자료명: Naver게시판",
       "최근 업데이트 기준: 2025.11"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "리멤버",
-    "category": "비즈니스",
-    "summary": "",
-    "description": "",
-    "features": [
-      "사내 자료명: Naver게시판",
-      "최근 업데이트 기준: 2025.11",
-      "수수료율: 20% (백피) · 영역: 비즈니스"
     ],
     "link": ""
   },
@@ -200,7 +28,6 @@
     "description": "",
     "features": [
       "자료: [블라인드] 매체소개서_2025.Q2.pdf",
-      "사내 자료명: Naver게시판",
       "최근 업데이트 기준: 2025.11",
       "수수료율: 20% (백피) · 영역: SNS, 비즈니스"
     ],
@@ -213,7 +40,6 @@
     "description": "",
     "features": [
       "자료: [motov] 매체소개서_2025.Q1.pdf",
-      "사내 자료명: Naver게시판",
       "최근 업데이트 기준: 2025.11"
     ],
     "link": ""
@@ -225,7 +51,6 @@
     "description": "",
     "features": [
       "자료: [Taboola] 매체소개서_2024.Q3.pdf",
-      "사내 자료명: Naver게시판",
       "최근 업데이트 기준: 2025.11",
       "수수료율: 0% (마크업) · 영역: SA, 리타기팅, 기타"
     ],
@@ -238,7 +63,6 @@
     "description": "",
     "features": [
       "자료: [Pinterest] 매체소개서_2025.Q2.pdf",
-      "사내 자료명: Naver게시판",
       "최근 업데이트 기준: 2025.11"
     ],
     "link": ""
@@ -250,7 +74,6 @@
     "description": "",
     "features": [
       "자료: [퀀텀유니버스] 광고소개서_2022_Q1_kr.pdf",
-      "사내 자료명: Naver게시판",
       "최근 업데이트 기준: 2025.11"
     ],
     "link": ""
@@ -975,226 +798,6 @@
       "사내 자료명: 에이블리",
       "최근 업데이트 기준: 2026.07",
       "비고: 1,000만 여성 쇼핑 유저, 구매 데이터 기반 타겟팅"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "애드팝콘",
-    "category": "리워드",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 20% (백피) · 영역: 리워드",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "애디슨오퍼월",
-    "category": "리워드",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 20% (백피) · 영역: 리워드",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "타겟픽",
-    "category": "웹",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 20% (백피) · 영역: 웹",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "티앤케이",
-    "category": "리워드",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 20% (백피) · 영역: 리워드",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "엠넷플러스",
-    "category": "웹",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 20% (백피) · 영역: 웹",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "TW360",
-    "category": "웹/앱",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 15% (백피) · 영역: 웹/앱",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "콴다",
-    "category": "웹",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 15% (백피) · 영역: 웹",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "열품타",
-    "category": "웹",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 20% (백피) · 영역: 웹",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "롯데멤버스",
-    "category": "LMS",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 15% (백피) · 영역: LMS",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "포스타입",
-    "category": "웹",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 20% (백피) · 영역: 웹",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "타불라",
-    "category": "웹",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 0% (마크업) · 영역: 웹",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "디시인사이드",
-    "category": "웹",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 15% (백피) · 영역: 웹",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "에브리타임",
-    "category": "앱",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 0% (마크업) · 영역: 앱",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "더리치",
-    "category": "앱",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 15% (백피) · 영역: 앱",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "Open AI",
-    "category": "",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 0% (마크업)",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "현대포인트",
-    "category": "웹/앱",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 30% (백피) · 영역: 웹/앱",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "롯데포인트",
-    "category": "웹/앱",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 15% (백피) · 영역: 웹/앱",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "오케이캐시백",
-    "category": "웹/앱",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 20% (백피) · 영역: 웹/앱",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "해피포인트",
-    "category": "웹/앱",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 30% (백피) · 영역: 웹/앱",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
-    ],
-    "link": ""
-  },
-  {
-    "platform": "티즈",
-    "category": "웹/앱",
-    "summary": "",
-    "description": "",
-    "features": [
-      "수수료율: 20% (백피) · 영역: 웹/앱",
-      "비고: 수수료 표에만 있던 항목 - 매체 설명 보강 필요"
     ],
     "link": ""
   }
