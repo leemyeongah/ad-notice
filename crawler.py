@@ -13,6 +13,7 @@
 
 주의: 이 스크립트는 로컬/서버 등 실제 인터넷이 되는 환경에서 실행해야 합니다.
 """
+import html
 import json
 import os
 import re
@@ -110,7 +111,8 @@ NEW_WINDOW_DAYS = 5
 # "rss" (표준 RSS 피드) / "nasmedia" (나스미디어 블로그 post-item 목록)
 # 메타(Facebook)는 자동 요청을 막아서(400 에러) 여기 넣지 않음 -> merge_meta.py로 반자동 처리
 SOURCES = [
-    {"platform": "네이버 GFA", "type": "gfa_json", "url": "https://ads.naver.com/notice?categoryId=148&page=1"},
+    {"platform": "네이버 GFA", "type": "gfa_json", "excerpt_top_n": 20,
+     "url": "https://ads.naver.com/notice?categoryId=148&page=1"},
     {"platform": "나스미디어 뉴스클리핑", "type": "nasmedia", "category_label": "뉴스클리핑", "highlight_top_n": 20,
      "url": "https://blog.nasmedia.co.kr/category/%EB%94%94%EC%A7%80%ED%84%B8%20%EB%AF%B8%EB%94%94%EC%96%B4%20%EC%9D%B4%EC%8A%88/%EB%89%B4%EC%8A%A4%ED%81%B4%EB%A6%AC%ED%95%91"},
     {"platform": "나스미디어 광고상품업데이트", "type": "nasmedia", "category_label": "광고 상품 업데이트",
@@ -258,7 +260,8 @@ def _unescape(s: str) -> str:
              .replace('\\\\', '\\'))
 
 
-def extract_gfa_notices(raw_html: str):
+def extract_gfa_notices(raw_html: str, excerpt_top_n: int = 0):
+    """excerpt_top_n > 0이면 최신 글부터 그만큼 상세 페이지를 추가로 열어서 본문 요약을 채운다."""
     notices = []
     seen_in_page = set()
     for m in NOTICE_PATTERN.finditer(raw_html):
@@ -275,7 +278,48 @@ def extract_gfa_notices(raw_html: str):
             "is_new": m.group("is_new") == "true",
             "url": "https://ads.naver.com" + _unescape(m.group("url")),
         })
+
+    for notice in notices[:excerpt_top_n]:
+        excerpt = fetch_gfa_notice_excerpt(notice["id"])
+        if excerpt:
+            notice["excerpt"] = excerpt
     return notices
+
+
+def fetch_gfa_notice_excerpt(notice_id: int, max_len: int = 300) -> str:
+    """GFA 공지 상세 페이지(/notice/{id})는 그냥 받으면 본문(htmlData)이 RSC 스트리밍
+    조각으로 빠져서 비어있다. Next.js 클라이언트 전환이 쓰는 것과 같은 RSC 전용 요청
+    (헤더 RSC:1)으로 다시 요청하면, 본문이 포함된 플라이트 페이로드가 그대로 내려온다.
+    실패해도 조용히 빈 문자열을 돌려주고, 호출부는 원래대로 excerpt 없이 진행한다."""
+    url = f"https://ads.naver.com/notice/{notice_id}"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+                      " (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+        "RSC": "1",
+    }
+    try:
+        resp = requests.get(url, headers=headers, timeout=15)
+        resp.raise_for_status()
+    except requests.RequestException:
+        return ""
+    raw = resp.content.decode("utf-8", errors="replace")
+
+    ref_match = re.search(r'"htmlData":"\$([0-9a-zA-Z]+)"', raw)
+    if not ref_match:
+        return ""
+    ref_id = ref_match.group(1)
+
+    chunk_match = re.search(r'(?:^|\n)' + re.escape(ref_id) + r':T([0-9a-f]+),', raw)
+    if not chunk_match:
+        return ""
+    length = int(chunk_match.group(1), 16)
+    html_chunk = raw[chunk_match.end():chunk_match.end() + length]
+
+    html_chunk = re.sub(r'<script[^>]*>.*?</script>', '', html_chunk, flags=re.DOTALL)
+    text = re.sub(r'<[^>]+>', '', html_chunk)
+    text = html.unescape(text)
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text[:max_len]
 
 
 def extract_rss_notices(raw_xml: str):
@@ -466,7 +510,7 @@ def run():
             elif source_type == "tiktok":
                 notices = extract_tiktok_notices(raw)
             else:
-                notices = extract_gfa_notices(raw)
+                notices = extract_gfa_notices(raw, source.get("excerpt_top_n", 0))
         except ElementTree.ParseError as e:
             print(f"[에러] {platform} 파싱 실패 (RSS XML이 아닌 것 같아요): {e}")
             continue
