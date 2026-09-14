@@ -26,10 +26,15 @@ jobs:
       - name: 크롤러 실행
         run: python crawler.py
 
+      - name: 매체 상품소개서 시트 동기화
+        env:
+          PRODUCTS_SHEET_URL: ${{ secrets.PRODUCTS_SHEET_URL }}
+        run: python sync_products.py
+
       - name: 변경사항 커밋
         run: |
           git config user.name "notice-bot"
           git config user.email "notice-bot@users.noreply.github.com"
-          git add data/notices.json data/pending_slack_notification.json
+          git add data/notices.json data/pending_slack_notification.json data/products.json manual_input/products_raw.json
           git diff --cached --quiet || git commit -m "chore: 공지 데이터 갱신 $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
