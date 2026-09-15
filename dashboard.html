@@ -3,7 +3,7 @@
 <html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>매체 신규 소식 - ACD1-T2용</title>
+<title>매체 신규 소식 - 광고컨설팅 1본부용</title>
 <link rel="preconnect" href="https://fonts.googleapis.com/">
 <link href="./dashboard_files/css2" rel="stylesheet">
 <style>
@@ -734,7 +734,7 @@
 </head>
 <body>
 <div class="topbar">
-  <div class="brand">매체 신규 소식 <span class="dot">- ACD1-T2용</span></div>
+  <div class="brand">매체 신규 소식 <span class="dot">- 광고컨설팅 1본부용</span></div>
   <div class="tab-nav" id="tab-nav">
     <button class="tab-btn active" data-tab="news">매체소식</button>
     <button class="tab-btn" data-tab="products">매체 상품소개서</button>
@@ -872,6 +872,15 @@ function daysAgo(dateStr) {
   return Math.floor((Date.now() - parseDateOnly(dateStr).getTime()) / 86400000);
 }
 
+// NEW_WINDOW_DAYS: 크롤링 대상 매체와 동일한 기준(5일)으로, "지금 보는 시점" 기준 새로 계산한다.
+// 크롤러가 저장해둔 n.is_new는 크롤링하지 않는 매체(카카오모먼트/메타처럼 수동으로 넣는 소식)의 경우
+// 그 값이 한 번 정해지면 다시는 안 바뀌어서, 몇 달 지난 글도 계속 NEW로 남는 문제가 있었다.
+// 그래서 화면에 보여줄 때는 항상 날짜 기준으로 직접 다시 판단한다.
+function isRecentNew(n) {
+  const d = daysAgo(n.date);
+  return d !== null && d >= 0 && d <= 5;
+}
+
 // 고정 공지는 오래된 것까지 계속 상단에 남아 눈에 띄는 자리를 차지하므로,
 // 최근 3개월(92일) 안에 올라온 것만 "고정 공지" 영역에 노출한다.
 function isPinnedRecent(n) {
@@ -934,7 +943,7 @@ function noticeRowHTML(n) {
           ${n.is_pinned ? '<span title="고정 공지">📌</span>' : ''}
           ${isImportant(n.title) ? '<span title="캠페인에 영향 줄 수 있는 소식">⚠️</span>' : ''}
           <span class="th-text">${escapeHTML(n.title)}</span>
-          ${n.is_new ? '<span class="new-flag">NEW</span>' : ''}
+          ${isRecentNew(n) ? '<span class="new-flag">NEW</span>' : ''}
         </a>
         <span class="th-date">${n.date}</span>
       </div>
@@ -957,7 +966,7 @@ function sourceHeadlineHTML(n) {
           ${escapeHTML(n.title)}
           ${hasExcerpt ? `<span class="sh-preview">${excerptHTML(n.excerpt)}</span>` : ''}
         </a>
-        ${n.is_new ? '<span class="si-new">NEW</span>' : ''}
+        ${isRecentNew(n) ? '<span class="si-new">NEW</span>' : ''}
       </div>
       <div class="si-meta">${escapeHTML(n.category)} · ${n.date}</div>
       ${hasExcerpt ? `<p class="si-excerpt">${excerptHTML(condenseExcerpt(n.excerpt))}</p>` : ''}
@@ -1176,7 +1185,7 @@ function renderClippingHero() {
     <div class="card">
       <div class="clip-hero-eyebrow">
         <span>🗞️ ${escapeHTML(platformLabel(CLIPPING_PLATFORM))}</span>
-        ${clip.is_new ? '<span class="new-flag">NEW</span>' : ''}
+        ${isRecentNew(clip) ? '<span class="new-flag">NEW</span>' : ''}
       </div>
       <div class="clip-hero-title">${escapeHTML(clip.title)}</div>
       ${renderClipHighlightsOrExcerpt(clip)}
@@ -1570,7 +1579,9 @@ fetch('data/notices.json', { cache: 'no-store' })
   .then(data => {
     allNotices = data.notices || [];
     document.getElementById('last-checked').textContent = '마지막 확인 — ' + formatKST(data.generated_at);
-    const newCount = data.new_count || 0;
+    // 크롤러가 계산해둔 new_count는 안 쓴다 - 크롤링 안 하는 매체(카카오모먼트/메타)는 그 값이
+    // 갱신 안 되고 계속 남아서 몇 달 지난 글까지 "새 소식"에 잡히는 문제가 있었다.
+    const newCount = allNotices.filter(isRecentNew).length;
     document.getElementById('new-count-chip').innerHTML = newCount > 0
       ? `새 소식 <b>${newCount}</b>건`
       : '새 소식 없음';
