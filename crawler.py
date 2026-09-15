@@ -70,13 +70,23 @@ def _slack_item_line(n):
     return f"• {mark}<{n['url']}|[{n['platform']}]> {n['title']}"
 
 
+# Slack은 대시보드와 달리 "주요 매체 소식"만 골라서 보내는 요약 채널이라, 아래 플랫폼은 아예 제외한다.
+# - 나스미디어 뉴스클리핑: 대시보드에서만 보면 되는 업계소식
+# - 틱톡 for Business: 실제 운영 공지가 아니라 일반 마케팅/콘텐츠 팁 블로그 글이라 "소식"으로서 가치가 낮음
+SLACK_EXCLUDED_PLATFORMS = {CLIPPING_PLATFORM, "틱톡 for Business"}
+
+
 def notify_slack(newly_added):
-    """이번 크롤링에서 새로 발견된 소식만 Slack으로 보낸다 (기존에 이미 있던 글은 제외).
-    업계소식(나스미디어 뉴스클리핑)은 대시보드에서만 보고 Slack으로는 보내지 않는다."""
+    """이번 크롤링에서 새로 발견된 소식 중, 신상품이거나 캠페인에 영향 줄 수 있는(⚠️) 것만 Slack으로 보낸다.
+    일반적인 사소한 업데이트 공지는 대시보드에서만 보고 Slack까지 보내진 않는다."""
     if not SLACK_WEBHOOK_URL or not newly_added:
         return
 
-    targets = [n for n in newly_added if n.get("platform") != CLIPPING_PLATFORM]
+    targets = [
+        n for n in newly_added
+        if n.get("platform") not in SLACK_EXCLUDED_PLATFORMS
+        and (is_launch_title(n["title"]) or is_important_title(n["title"]))
+    ]
     if not targets:
         return
 
