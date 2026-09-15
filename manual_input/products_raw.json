@@ -143,8 +143,9 @@
     "summary": "",
     "description": "",
     "features": [
-      "자료: [Pinterest] 매체소개서_2025.Q2.pdf",
-      "최근 업데이트 기준: 2025_2Q"
+      "자료: [Pinterest] 매체소개서_2026.Q2.pdf",
+      "사내 자료명: https://nest.wisebirds.com/app/board/103/post/7681",
+      "최근 업데이트 기준: 2026_2Q(26.09)"
     ],
     "link": "https://drive.google.com/file/d/1c9cCibpanoHBHVILTf4opRBQL9cZB40s/view?usp=drivesdk"
   },
@@ -177,8 +178,9 @@
     "summary": "실시간 1인 방송 플랫폼",
     "description": "실시간 1인 방송 플랫폼",
     "features": [
-      "자료: 최신 상품소개서 SOOP",
-      "최근 업데이트 기준: 2025.11"
+      "자료: 최신 상품소개서 SOOP 2026.02",
+      "사내 자료명: https://nest.wisebirds.com/app/board/103/post/7891",
+      "최근 업데이트 기준: 2026.02(26.09)"
     ],
     "link": "https://adv.sooplive.co.kr/"
   },
@@ -337,9 +339,9 @@
   },
   {
     "platform": "마이비오디언스",
-    "category": "",
-    "summary": "",
-    "description": "",
+    "category": "App, DA, 보상형, DSP, 네이티브",
+    "summary": "취향 인증 리워드 앱\n응답, 인증 기반의 콘텐츠형\n리워드 광고앱",
+    "description": "취향 인증 리워드 앱\n응답, 인증 기반의 콘텐츠형\n리워드 광고앱",
     "features": [
       "자료: [1SW] 마이비오디언스_통합상품소개서_2608_와이즈버즈.pdf",
       "최근 업데이트 기준: 2026.08"
@@ -388,8 +390,8 @@
     "summary": "",
     "description": "",
     "features": [
-      "자료: [블라인드] 매체소개서_2025.Q2.pdf",
-      "최근 업데이트 기준: 2025_2Q",
+      "자료: [블라인드] 매체소개서_2026.Q3.pdf",
+      "최근 업데이트 기준: 20256_3Q(26.09)",
       "수수료율: 20% (백피) · 영역: SNS, 비즈니스"
     ],
     "link": "https://drive.google.com/file/d/1pu_RQZ-iYf-VPk0MV5bHzMWQT2aeNyyo/view?usp=drivesdk"
@@ -415,6 +417,18 @@
       "최근 업데이트 기준: 2025.09"
     ],
     "link": "https://drive.google.com/file/d/1MaGcKHOdUYP_--WChTzaMmtCnnUYLuP5/view?usp=drivesdk"
+  },
+  {
+    "platform": "신규매체",
+    "category": "",
+    "summary": "신규매체",
+    "description": "신규매체",
+    "features": [
+      "자료: PDF 파일 올리기",
+      "사내 자료명: 네스트 게시판 내용이라면 링크 걸기",
+      "최근 업데이트 기준: 업데이트 날짜 > 작성 시점 기준(26.09)"
+    ],
+    "link": ""
   },
   {
     "platform": "에이블리",
@@ -543,8 +557,8 @@
     "summary": "",
     "description": "",
     "features": [
-      "자료: 카울리_통합_상품_소개서_251031.pdf",
-      "최근 업데이트 기준: 2026.3Q"
+      "자료: 카울리_통합_상품_소개서_2026.Q3.pdf",
+      "최근 업데이트 기준: 2026.3Q(26.09)"
     ],
     "link": "https://drive.google.com/file/d/13m5UwGuPTpg5nXyU0o8eVMu0kDgn-HQp/view?usp=drivesdk"
   },
