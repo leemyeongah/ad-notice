@@ -1,7 +1,63 @@
 {
-  "generated_at": "2026-09-11T16:02:58+09:00",
-  "new_count": 19,
+  "generated_at": "2026-09-15T10:52:52+09:00",
+  "new_count": 17,
   "notices": [
+    {
+      "id": 25616,
+      "title": "추석 연휴 검수 일정 안내",
+      "excerpt": "안녕하세요, 토스애즈입니다.추석 연휴에 따른 소재 검수 운영 일정을 안내드립니다.검수 운영 일정9월 23일 수요일 18시까지 제출되는 소재에 한해 당일 검수 진행 예정9월 28일 월요일부터 검수 정상 운영 참고 안내 소재 검수는 순차 검수를 원칙으로 하며, 토스애즈 가이드에 부합하지 않는 경우 보류될 수 있습니다.원활한 광고 운영을 위해서 집행일 기준 2-3영업일 전 소재를 제출해주시기 바랍니다.소재 검수 운영 시간은 평일 10:00 ~ 19:00이며, 주말 및 공휴일은 검수되지 않습니다.감사합니다.토스애즈 드림",
+      "category": "공지",
+      "date": "2026-09-15",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://tossads.toss.im/notice/25616",
+      "platform": "토스애즈"
+    },
+    {
+      "id": "/entry/20260907-news-clipping",
+      "title": "2026년 9월 7일주 뉴스클리핑",
+      "excerpt": "한 주 간의 <mark>디지털 미디어와 마케팅</mark> 관련 주요 뉴스를 모아 전해드립니다. <mark>카카오, '카카오툴즈'에 외부 파트너사 10곳 추가</mark><mark>…에이전틱 AI 활용 영역 확대</mark> 카카오가 챗 지피티 포 카카오 내 AI 에이전트 서비스 '카카오툴즈'에 3월 확대 개편 이후 두 번째 파트너 협업을 진행함. 기존 연동된 OP.GG, 직방, 하나투어 3곳에 이어 다이소몰, 신세계면세점, 신한카드 등 7곳을 추가 연동함. 카카오는 게임·금융·여행·쇼핑 등 다양한 분야의 서비스를 연결해 일상 속 AI 활용 접점을 확대할 계획임.🔗카카오, ‘카카오툴즈’에 새로운 파트너 서비스 연동…에이전틱 AI 생태계 확산 지속 <mark>네이버, 9월 16일 오후 모바일 광고주 센터 리뉴얼 오픈</mark> 네이버가 9월 16일부터 모바일 광고주 센터를 리뉴얼해 검색 광고뿐만 아니라 디스플레이 광고까지 모바일에서 관리할 수 있도록 개편함. 광고 ON/OFF, 예산·입찰가 수정 등 주요 광고 관리 기능을 모바일에서 지원하며, 검색 광고를 모바일에서 바로…",
+      "platforms": [
+        "네이버",
+        "카카오"
+      ],
+      "category": "뉴스클리핑",
+      "date": "2026-09-14",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://blog.nasmedia.co.kr/entry/20260907-news-clipping",
+      "highlights": [
+        {
+          "platform": "카카오",
+          "headline": "카카오, '카카오툴즈'에 외부 파트너사 10곳 추가"
+        },
+        {
+          "platform": "네이버",
+          "headline": "네이버, 9월 16일 오후 모바일 광고주 센터 리뉴얼 오픈"
+        },
+        {
+          "platform": "챗GPT",
+          "headline": "오픈AI, 한국 진출 1년 만에 기업용 챗GPT 이용자 28배 증가…광고 사업 확대"
+        },
+        {
+          "platform": "메타",
+          "headline": "메타, '청소년 SNS 이용 시간 제한' 등 보호 조치 한국 정부와 협의"
+        },
+        {
+          "platform": "쿠팡",
+          "headline": "쿠팡, 내달 '쿠팡쇼츠' 론칭…셀러 상품 숏폼 영상 직접 제작"
+        },
+        {
+          "platform": "네이버지도",
+          "headline": "네이버, 네이버지도에 대화형 AI 검색 도입"
+        },
+        {
+          "platform": "OTT",
+          "headline": "…OTT 업계 긴장"
+        }
+      ],
+      "platform": "나스미디어 뉴스클리핑"
+    },
     {
       "id": 25600,
       "title": "[사전 안내] 행운퀴즈 구좌 개편 안내",
@@ -11,6 +67,17 @@
       "is_pinned": true,
       "is_new": true,
       "url": "https://tossads.toss.im/notice/25600",
+      "platform": "토스애즈"
+    },
+    {
+      "id": 25602,
+      "title": "라이브 마켓 '플러스·프리미엄 상품' 운영 정책 변경 안내",
+      "excerpt": "안녕하세요, 토스애즈입니다.라이브 마켓 '플러스 상품'과 '프리미엄 상품'의 운영 정책이 아래와 같이 변경되어 공지드립니다.적용 일시 : 2026년 9월 14일(월)부터1. 플러스 상품 : 최대 트래픽 한도 제거기존 최대 트래픽 한도(20만)가 제거되어, 트래픽 한도 없이 운영됩니다.캠페인 부킹 시점과 관계없이 9월 14일(월) 이후 진행되는 모든 플러스 상품 방송에 적용됩니다.2. 프리미엄 상품 : 최소 라이브 시간 변경라이브 시간 '1시간' 옵션이 사라지고, 최소 1시간 30분부터 설정할 수 있습니다.9월 14일(월) 이후 방송",
+      "category": "공지",
+      "date": "2026-09-11",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://tossads.toss.im/notice/25602",
       "platform": "토스애즈"
     },
     {
@@ -42,7 +109,7 @@
       "category": "공지",
       "date": "2026-09-09",
       "is_pinned": true,
-      "is_new": true,
+      "is_new": false,
       "url": "https://tossads.toss.im/notice/25590",
       "platform": "토스애즈"
     },
@@ -53,7 +120,7 @@
       "category": "공지",
       "date": "2026-09-08",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://tossads.toss.im/notice/25586",
       "platform": "토스애즈"
     },
@@ -70,7 +137,7 @@
       "category": "뉴스클리핑",
       "date": "2026-09-07",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://blog.nasmedia.co.kr/entry/20260831-news-clipping",
       "highlights": [
         {
@@ -111,7 +178,7 @@
       "category": "공지",
       "date": "2026-09-07",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://tossads.toss.im/notice/25578",
       "platform": "토스애즈"
     },
@@ -122,7 +189,7 @@
       "category": "공지",
       "date": "2026-09-07",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://tossads.toss.im/notice/25574",
       "platform": "토스애즈"
     },
@@ -723,17 +790,6 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
-      "id": 25392,
-      "title": "'도달률 높이기' 캠페인 목표 종료 안내",
-      "excerpt": "안녕하세요, 토스애즈입니다.항상 토스애즈를 이용해주시는 광고주 여러분께 진심으로 감사드립니다.그동안 디스플레이 광고 캠페인 생성 시 선택하실 수 있었던 '도달률 높이기' 캠페인 목표의 제공이 종료될 예정입니다.이에 따라 8월 5일(수)부터 '도달률 높이기' 목표의 신규 캠페인 생성이 불가하오니, 아래 상세 내용을 참고해주시길 바랍니다.1. 종료 일시8월 5일(수) 오후 7시2. 신규 캠페인 생성8월 5일(수)부터 신규 캠페인 생성 시 '도달률 높이기' 캠페인 목표를 선택하실 수 없습니다.8월 4일(화)까지는 기존과 동일하게 집행이 ",
-      "category": "공지",
-      "date": "2026-07-26",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://tossads.toss.im/notice/25392",
-      "platform": "토스애즈"
-    },
-    {
       "id": 100936,
       "title": "[상품] 카카오톡 브랜드픽 집행 기준 확대 및 등록 화면 개선 안내 (07/28)",
       "category": "상품/서비스",
@@ -773,17 +829,6 @@
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
       "platform": "카카오모먼트",
       "is_new": true
-    },
-    {
-      "id": 25322,
-      "title": "[중요] 신규 네이티브 광고 상품 오픈 안내",
-      "excerpt": "안녕하세요, 토스애즈입니다.2026년 7월 28일, 토스 앱 내에 신규 네이티브 광고 상품이 오픈됩니다.세팅 가이드 : https://toss-ads.gitbook.io/guide/a-d/display-ads1. 오픈 일정2026년 7월 28일 오후 2시7월 28일 오후 2시부터 신규 광고 상품 집행을 원하시는 경우 캠페인을 생성할 수 있습니다.네이티브 광고 오픈과 함께, 일부 디스플레이 광고 캠페인/세트/소재의 신규 생성이 제한됩니다.캠페인 목적기존 디스플레이 광고네이티브 광고구매 유도하기‘직접 등록’ 선택 시 신규 생성 가능‘카",
-      "category": "공지",
-      "date": "2026-07-22",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://tossads.toss.im/notice/25322",
-      "platform": "토스애즈"
     },
     {
       "id": 100926,
@@ -1075,42 +1120,15 @@
       "platform": "틱톡 for Business"
     },
     {
-      "id": "/entry/20260615-news-clipping",
-      "title": "2026년 6월 15일주 뉴스클리핑",
-      "excerpt": "한 주 간의 <mark>디지털 미디어와 마케팅</mark> 관련 주요 뉴스를 모아 전해드립니다. <mark>오픈AI, 한국서 챗GPT 광고 파일럿 시작…무료·Go 요금제 대상 광고 실험 확대 </mark> 오픈AI가 6월 19일부터 한국에서 챗GPT 무료 및 Go 요금제 성인 이용자를 대상으로 광고 파일럿을 시작함. 광고는 답변과 분리된 스폰서 콘텐츠로 표시되며, 유료 요금제·미성년자·정신건강·정치 등 민감 주제 대화에는 노출하지 않는 방식으로 이용자 신뢰와 광고 경험 관리에 나섬.🔗=오픈AI, 한국서 무료·고(Go) 요금제 대상 '챗GPT 광고 파일럿' 시작 <mark>유튜브, 한국인 영상·음악 앱 사용시간 1위…넷플릭스·음원 앱 압도</mark> 올해 1~5월 한국인이 가장 오래 사용한 영상·음악 앱은 유튜브로 월평균 1,136억 분을 기록하며 독주를 이어감. 넷플릭스와 유튜브 뮤직, 멜론, 스포티파이를 크게 앞선 가운데, 유튜브·유튜브 뮤직·스포티파이는 최근 4년간 사용 시간이 꾸준히 증가한 것으로 나타남🔗한국인 영상·음악 앱 사용시간 1위 유튜브…독주 지속 <ma…",
-      "platforms": [
-        "유튜브",
-        "챗GPT",
-        "오픈AI"
-      ],
-      "category": "뉴스클리핑",
-      "date": "2026-06-21",
+      "id": "/business/ko/blog/content-suite-creator-ugc-library",
+      "title": "TikTok One 콘텐츠 스위트로 최고의 UGC를 찾아 확산시키세요",
+      "excerpt": "틱톡에는 브랜드에 관련된 진정성 있는 콘텐츠가 가득합니다. 틱톡의 콘텐츠가 다음 캠페인을 멋지게 성공시켜 줄 열쇠가 되어줄 거예요. 그리고 이러한 콘텐츠를 활용하는 일이 그 어느 때보다 쉬워지고 있습니다.",
+      "category": "공지사항",
+      "date": "2026-06-22",
       "is_pinned": false,
       "is_new": false,
-      "url": "https://blog.nasmedia.co.kr/entry/20260615-news-clipping",
-      "highlights": [
-        {
-          "platform": "챗GPT",
-          "headline": "오픈AI, 한국서 챗GPT 광고 파일럿 시작…무료·Go 요금제 대상 광고 실험 확대"
-        },
-        {
-          "platform": "유튜브",
-          "headline": "유튜브, 한국인 영상·음악 앱 사용시간 1위…넷플릭스·음원 앱 압도"
-        },
-        {
-          "platform": "인스타그램",
-          "headline": "인스타그램, 캐러셀 슬라이드별 캡션 기능 추가…게시물 스토리텔링 자유도 확대"
-        },
-        {
-          "platform": "스레드",
-          "headline": "스레드, 한국에 커뮤니티 기능 출시…관심사 기반 대화·팬덤 소통 강화"
-        },
-        {
-          "platform": "네이버",
-          "headline": "네이버, 광고 전문가 인증 프로그램 도입…AI 광고 시대 파트너 역량 검증 강화"
-        }
-      ],
-      "platform": "나스미디어 뉴스클리핑"
+      "url": "https://ads.tiktok.com/business/ko/blog/content-suite-creator-ugc-library",
+      "platform": "틱톡 for Business"
     },
     {
       "id": "https://www.facebook.com/business/news/cannes-2026-discovery-into-purchase",
@@ -1242,6 +1260,17 @@
       "is_pinned": false,
       "is_new": false,
       "url": "https://ads.tiktok.com/business/ko/blog/smart-plus-ai-performance-solution",
+      "platform": "틱톡 for Business"
+    },
+    {
+      "id": "/business/ko/blog/tiktok-branded-buzz-search-hubs",
+      "title": "브랜디드 버즈와 검색 허브로 발견을 촉진하고 참여를 유도하세요",
+      "excerpt": "브랜디드 버즈와 검색 허브가 틱톡에서의 발견을 더욱 심층적인 참여로 전환하는 방법",
+      "category": "공지사항",
+      "date": "2026-05-13",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://ads.tiktok.com/business/ko/blog/tiktok-branded-buzz-search-hubs",
       "platform": "틱톡 for Business"
     },
     {
@@ -1426,28 +1455,6 @@
       "url": "https://ads.naver.com/notice/18005",
       "excerpt": "안녕하세요, 네이버 성과형 디스플레이 광고 운영자입니다.​성과형 디스플레이 광고 노출 지면, 광고 집행 및 소재 제작 가이드를 안내해 드립니다. 가이드가 변경될 경우, 아래 내용에서 업데이트 될 예정이오니, 광고 운영시 참고 부탁드립니다.​- 노출 지면 안내 위 링크를 통해 네이버 성과형 DA의 게재위치별 노출 광고상품을 확인하실 수 있습니다. 노출지면이 추가/변경될 경우 파일을 통해 업데이트 내용을 확인 할 수 있으며 안내된 지면 내에 콘텐츠 변경에 따라 광고 노출 위치와 노출 개수는 변경될 수 있습니다.​- 광고 집행 및 소재 ",
       "platform": "네이버 GFA"
-    },
-    {
-      "id": "/business/ko/blog/tiktok-image-ads-visual-marketing-guide",
-      "title": "이미지 광고: TikTok에서 스토리를 전달하는 새로운 성장형 방식",
-      "excerpt": "사진이요? TikTok에서요? 예, 효과가 있어요. 이미지 광고의 최신 기능과 이를 통해 TikTok에서 목표를 달성하는 방법을 알아보세요.",
-      "category": "공지사항",
-      "date": "2024-09-13",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://ads.tiktok.com/business/ko/blog/tiktok-image-ads-visual-marketing-guide",
-      "platform": "틱톡 for Business"
-    },
-    {
-      "id": "/business/ko/blog/foryou-summit-korea-2024",
-      "title": "For You Summit Korea 2024, 하던 대로 말고 핫한 데로",
-      "excerpt": "TikTok For You Summit 2024 지금 바로 등록하세요!",
-      "category": "공지사항",
-      "date": "2024-08-25",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://ads.tiktok.com/business/ko/blog/foryou-summit-korea-2024",
-      "platform": "틱톡 for Business"
     }
   ]
 }
