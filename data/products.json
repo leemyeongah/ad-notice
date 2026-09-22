@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T12:00:04+09:00",
+  "generated_at": "2026-09-22T14:26:08+09:00",
   "products": [
     {
       "platform": "AB180",
@@ -11,6 +11,8 @@
         "최근 업데이트 기준: 2025.11"
       ],
       "link": "https://www.airbridge.io/ko",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"\", \"features\": [\"자료: AB180_Airbridge_소개서.pdf\", \"최근 업데이트 기준: 2025.11\"], \"link\": \"https://www.airbridge.io/ko\", \"summary\": \"\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -23,6 +25,8 @@
         "최근 업데이트 기준: 2025_1Q"
       ],
       "link": "https://drive.google.com/file/d/1df7yaspzZicP_ejM1_ZhGsvtf7vCY63p/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA, Video, CTV\", \"features\": [\"자료: [ACE Trader] 상품소개서_2025.Q1.pdf\", \"최근 업데이트 기준: 2025_1Q\"], \"link\": \"https://drive.google.com/file/d/1df7yaspzZicP_ejM1_ZhGsvtf7vCY63p/view?usp=drivesdk\", \"summary\": \"데이터 기반 광고 DSP\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -36,6 +40,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"리타기팅, DMP\", \"features\": [\"자료: [ACROSS ADN] 매체 소개서_2026.09.pdf\", \"사내 자료명: ADN\", \"최근 업데이트 기준: 26.09\"], \"link\": \"\", \"summary\": \"데이터 기반 통합 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -48,6 +54,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DMP, DSP\", \"features\": [\"자료: [ADOASIS] 상품 소개서_260903.pdf\", \"최근 업데이트 기준: 26.09\"], \"link\": \"\", \"summary\": \"디지털·모바일 광고 솔루션 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -60,6 +68,8 @@
         "최근 업데이트 기준: 26.04"
       ],
       "link": "https://drive.google.com/file/d/1cgYOjj3t_hDGSIy3TaXdTnjcFAMbqVQR/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"\", \"features\": [\"자료: [Aleph Snap]_메체소개서_26.04.pdf\", \"최근 업데이트 기준: 26.04\"], \"link\": \"https://drive.google.com/file/d/1cgYOjj3t_hDGSIy3TaXdTnjcFAMbqVQR/view?usp=drivesdk\", \"summary\": \"\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -72,6 +82,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"기타\", \"features\": [\"자료: Appsflyer홈페이지\", \"최근 업데이트 기준: 26.09\"], \"link\": \"\", \"summary\": \"성과 측정 솔루션\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -86,6 +98,8 @@
         "수수료율: 15% (백피) · 영역: DA, 보상형"
       ],
       "link": "https://drive.google.com/file/d/1yco7KJQRxRcsWs1QEpFnhwxYsv8XXPjE/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA, 보상형\", \"features\": [\"자료: [CJ ONE]_광고 전략 제안서_2604.pdf\", \"사내 자료명: CJ ONE\", \"최근 업데이트 기준: 2026.04\", \"수수료율: 15% (백피) · 영역: DA, 보상형\"], \"link\": \"https://drive.google.com/file/d/1yco7KJQRxRcsWs1QEpFnhwxYsv8XXPjE/view?usp=drivesdk\", \"summary\": \"통합 마케팅 서비스 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -98,6 +112,8 @@
         "최근 업데이트 기준: 26.08"
       ],
       "link": "https://drive.google.com/file/d/1ogvtiBWOShXYPdMcuziuzx1YXm7Hh-ko/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"\", \"features\": [\"자료: [Chat_GPT]_매체소개서_26.08.pdf\", \"최근 업데이트 기준: 26.08\"], \"link\": \"https://drive.google.com/file/d/1ogvtiBWOShXYPdMcuziuzx1YXm7Hh-ko/view?usp=drivesdk\", \"summary\": \"\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -110,6 +126,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"OOH\", \"features\": [\"자료: [EMCG] 매체 소개서_2026.09.pdf\", \"최근 업데이트 기준: 26.09\"], \"link\": \"\", \"summary\": \"항공기 옥외광고\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -123,6 +141,8 @@
         "최근 업데이트 기준: 2025_1Q"
       ],
       "link": "https://drive.google.com/file/d/1zg8DE1IQ0UgVf0FegcKVSzp-zHQoaNP4/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DSP\", \"features\": [\"자료: [InMobi] 상품소개서_2025.Q1.pdf\", \"사내 자료명: 인모비\", \"최근 업데이트 기준: 2025_1Q\"], \"link\": \"https://drive.google.com/file/d/1zg8DE1IQ0UgVf0FegcKVSzp-zHQoaNP4/view?usp=drivesdk\", \"summary\": \"글로벌 모바일 네트워크 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -137,6 +157,8 @@
         "비고: 담당자 변경 권수진 AE /\nsj.kwon@37mobilemove.com /\n010-2102-5307\n<-2022.06 기준이라 업데이트 가능성 있음"
       ],
       "link": "",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA\", \"features\": [\"자료: [MobileMove] 매체 소개서_2022.02.pdf\", \"사내 자료명: https://nest.wisebirds.com/app/board/103/post/1341\", \"최근 업데이트 기준: 26.09\", \"비고: 담당자 변경 권수진 AE /\\nsj.kwon@37mobilemove.com /\\n010-2102-5307\\n<-2022.06 기준이라 업데이트 가능성 있음\"], \"link\": \"\", \"summary\": \"애드 네트워크 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -149,6 +171,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "https://drive.google.com/file/d/1h-iq8mdzLeawUP2ggHjJ2NDK-bTbS0K2/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"\", \"features\": [\"자료: [몰로코] 광고상품 소개서_2025.Q1.pdf\", \"최근 업데이트 기준: 26.09\"], \"link\": \"https://drive.google.com/file/d/1h-iq8mdzLeawUP2ggHjJ2NDK-bTbS0K2/view?usp=drivesdk\", \"summary\": \"\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -161,6 +185,8 @@
         "최근 업데이트 기준: 2025_1Q"
       ],
       "link": "https://drive.google.com/file/d/1SQg561znwdEWgCaDiRdobMjk9WwLMFxA/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"OOH, 로컬\", \"features\": [\"자료: [motov] 매체소개서_2025.Q1.pdf\", \"최근 업데이트 기준: 2025_1Q\"], \"link\": \"https://drive.google.com/file/d/1SQg561znwdEWgCaDiRdobMjk9WwLMFxA/view?usp=drivesdk\", \"summary\": \"\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -174,6 +200,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "https://drive.google.com/file/d/1c9cCibpanoHBHVILTf4opRBQL9cZB40s/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"SNS\", \"features\": [\"자료: [Pinterest] 매체 소개서_2026_Q2.pdf\", \"사내 자료명: https://nest.wisebirds.com/app/board/103/post/7681\", \"최근 업데이트 기준: 26.09\"], \"link\": \"https://drive.google.com/file/d/1c9cCibpanoHBHVILTf4opRBQL9cZB40s/view?usp=drivesdk\", \"summary\": \"아이디어&디자인 탐색 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -188,6 +216,8 @@
         "비고: 09.15 설명회 파일 받으면 수정"
       ],
       "link": "https://drive.google.com/file/d/1vXRVZQoTWyx8SRjoeV2WvIYiEg-cQTS-/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DSP\", \"features\": [\"자료: [Remerge] 소개자료_2024.Q1.pdf\", \"사내 자료명: 리머지\", \"최근 업데이트 기준: 26.09\", \"비고: 09.15 설명회 파일 받으면 수정\"], \"link\": \"https://drive.google.com/file/d/1vXRVZQoTWyx8SRjoeV2WvIYiEg-cQTS-/view?usp=drivesdk\", \"summary\": \"앱 DSP\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -200,6 +230,8 @@
         "최근 업데이트 기준: 26.08"
       ],
       "link": "https://drive.google.com/file/d/1_KC3zwM99voFNoBnU72a61mY13zcvXeh/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"\", \"features\": [\"자료: 2608_SK Planet AD_광고상품소개서.pdf\", \"최근 업데이트 기준: 26.08\"], \"link\": \"https://drive.google.com/file/d/1_KC3zwM99voFNoBnU72a61mY13zcvXeh/view?usp=drivesdk\", \"summary\": \"\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -213,6 +245,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "https://adv.sooplive.co.kr/",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"SNS, Video, App, OOH\", \"features\": [\"자료: [SOOP] 광고 상품 소개서_2026.02.pdf\", \"사내 자료명: https://nest.wisebirds.com/app/board/103/post/7891\", \"최근 업데이트 기준: 26.09\"], \"link\": \"https://adv.sooplive.co.kr/\", \"summary\": \"실시간 1인 방송 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -225,6 +259,8 @@
         "최근 업데이트 기준: 2025.11"
       ],
       "link": "https://www.singular.net/ko/",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DMP\", \"features\": [\"자료: Singular 홈페이지\", \"최근 업데이트 기준: 2025.11\"], \"link\": \"https://www.singular.net/ko/\", \"summary\": \"DMP / 마케팅 인텔리전스 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -237,6 +273,8 @@
         "최근 업데이트 기준: 26.04"
       ],
       "link": "https://drive.google.com/file/d/1-5wynT4OggTOb24lvY44-VCyzNztp_q3/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA\", \"features\": [\"자료: TJ미디어 광고 상품 소개서_260403.pdf\", \"최근 업데이트 기준: 26.04\"], \"link\": \"https://drive.google.com/file/d/1-5wynT4OggTOb24lvY44-VCyzNztp_q3/view?usp=drivesdk\", \"summary\": \"노래방 화면 배너/이미지 광고\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -251,6 +289,8 @@
         "비고: <-poc확인 필요"
       ],
       "link": "https://drive.google.com/file/d/1mlQ5ZDnt4lVXYV-N6tJt091ZDVNYkeXo/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"Video\", \"features\": [\"자료: [TVING] 광고 상품 소개서_2026.08.pdf\", \"사내 자료명: 티빙소개\", \"최근 업데이트 기준: 26.09\", \"비고: <-poc확인 필요\"], \"link\": \"https://drive.google.com/file/d/1mlQ5ZDnt4lVXYV-N6tJt091ZDVNYkeXo/view?usp=drivesdk\", \"summary\": \"컨텐츠 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -264,6 +304,8 @@
         "수수료율: 0% (마크업) · 영역: SA, 리타기팅, 기타"
       ],
       "link": "https://drive.google.com/file/d/1NUponZlD-MsRpqKvVR0N2FyvSCdc_QMf/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"SA, 리타기팅, 기타\", \"features\": [\"자료: 타불라 매체소개서_2025.pdf\", \"최근 업데이트 기준: 2025\", \"수수료율: 0% (마크업) · 영역: SA, 리타기팅, 기타\"], \"link\": \"https://drive.google.com/file/d/1NUponZlD-MsRpqKvVR0N2FyvSCdc_QMf/view?usp=drivesdk\", \"summary\": \"\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -276,6 +318,8 @@
         "최근 업데이트 기준: 2026"
       ],
       "link": "https://drive.google.com/file/d/12GqpFeZFF0UWD-Y0SqBRbH6gdhYRXvx3/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"\", \"features\": [\"자료: [TargetingGates] 2026 AC_TargetingGates 소개서_V1.0.pdf\", \"최근 업데이트 기준: 2026\"], \"link\": \"https://drive.google.com/file/d/12GqpFeZFF0UWD-Y0SqBRbH6gdhYRXvx3/view?usp=drivesdk\", \"summary\": \"\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -290,6 +334,8 @@
         "비고: 영문 문의 필요"
       ],
       "link": "",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA\", \"features\": [\"자료: [WeTransfer] 광고 상품 소개서_2025.11.xlsx\", \"사내 자료명: https://nest.wisebirds.com/app/board/103/post/2193\", \"최근 업데이트 기준: 26.09\", \"비고: 영문 문의 필요\"], \"link\": \"\", \"summary\": \"글로벌 대용량 파일 전송 서비스\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -303,6 +349,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "https://drive.google.com/file/d/1mo1jX-o1-2WaV8dnLTQsMnNhrb5mNYZi/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"보상형, DA\", \"features\": [\"자료: [왓챠] 광고 상품 소개서_2026_3Q.pdf\", \"사내 자료명: Watchapedia 소개\", \"최근 업데이트 기준: 26.09\"], \"link\": \"https://drive.google.com/file/d/1mo1jX-o1-2WaV8dnLTQsMnNhrb5mNYZi/view?usp=drivesdk\", \"summary\": \"영화, 책, TV 프로그램 추천 및 평가 서비스\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -316,6 +364,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "https://drive.google.com/file/d/1M6dlacsrYl7I_8jk5AS5fLCnDG9Tk34D/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA\", \"features\": [\"자료: [다방] 광고 상품 소개서_2026_3Q\", \"사내 자료명: 다방 소개\", \"최근 업데이트 기준: 26.09\"], \"link\": \"https://drive.google.com/file/d/1M6dlacsrYl7I_8jk5AS5fLCnDG9Tk34D/view?usp=drivesdk\", \"summary\": \"대한민국 부동산 앱\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -329,6 +379,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "https://drive.google.com/file/d/17KmCqwzSBoxN9Css9h4r0JY9t3-ITeZ4/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA, 네이티브\", \"features\": [\"자료: [데이블]_매체 소개서_2025_3Q.pdf\", \"사내 자료명: 데이블 소개\", \"최근 업데이트 기준: 26.09\"], \"link\": \"https://drive.google.com/file/d/17KmCqwzSBoxN9Css9h4r0JY9t3-ITeZ4/view?usp=drivesdk\", \"summary\": \"개인화 컨텐츠 추천 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -342,6 +394,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "https://drive.google.com/file/d/1f6bAZzdK9l9fui_9XwiSDznGUZxLNuVa/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DSP, DA, Video, DMP\", \"features\": [\"자료: [디지털캠프] 광고 상품 소개서_2026.07.pdf\", \"사내 자료명: 디지털캠프\", \"최근 업데이트 기준: 26.09\"], \"link\": \"https://drive.google.com/file/d/1f6bAZzdK9l9fui_9XwiSDznGUZxLNuVa/view?usp=drivesdk\", \"summary\": \"SKP DMP 기반 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -355,6 +409,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DSP\", \"features\": [\"자료: [리얼클릭(RealClick)] 광고 상품 소개서_2023_1Q.pdf\", \"사내 자료명: 리얼클릭소개\", \"최근 업데이트 기준: 26.09\"], \"link\": \"\", \"summary\": \"DSP 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -368,6 +424,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "https://drive.google.com/file/d/1dgUBs5yIo2zxFkGTtzYDUL8r5kqaoCd0/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"리타기팅, App, 보상형\", \"features\": [\"자료: [링크드인] 매체 소개서_2024.01.pdf\", \"사내 자료명: 링크드인\", \"최근 업데이트 기준: 26.09\"], \"link\": \"https://drive.google.com/file/d/1dgUBs5yIo2zxFkGTtzYDUL8r5kqaoCd0/view?usp=drivesdk\", \"summary\": \"세계 최대 비즈니스 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -380,6 +438,8 @@
         "최근 업데이트 기준: 2025"
       ],
       "link": "https://drive.google.com/file/d/1BCiQeVk7FhlDxJTLQanTlhgRLhmgI793/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"\", \"features\": [\"자료: 마미톡_매체소개서_Agency_25.pdf\", \"최근 업데이트 기준: 2025\"], \"link\": \"https://drive.google.com/file/d/1BCiQeVk7FhlDxJTLQanTlhgRLhmgI793/view?usp=drivesdk\", \"summary\": \"\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -392,6 +452,8 @@
         "최근 업데이트 기준: 26.08"
       ],
       "link": "https://drive.google.com/file/d/1EQ3I-WPY3q1XX5a6suYB7B0oVXeTaVze/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"App, DA, 보상형, DSP, 네이티브\", \"features\": [\"자료: [1SW] 마이비오디언스_통합상품소개서_2608_와이즈버즈.pdf\", \"최근 업데이트 기준: 26.08\"], \"link\": \"https://drive.google.com/file/d/1EQ3I-WPY3q1XX5a6suYB7B0oVXeTaVze/view?usp=drivesdk\", \"summary\": \"취향 인증 리워드 앱\\n응답, 인증 기반의 콘텐츠형\\n리워드 광고앱\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -406,6 +468,8 @@
         "수수료율: 15% (백피) · 영역: DMP, DSP"
       ],
       "link": "https://drive.google.com/file/d/1YpBQ6jgGO6vgGCZtZBVhbuppAoamIJXk/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DMP, DSP\", \"features\": [\"자료: [모비온] 매체 소개서_2024.Q2.pdf\", \"사내 자료명: 모비온\", \"최근 업데이트 기준: 2024_2Q\", \"수수료율: 15% (백피) · 영역: DMP, DSP\"], \"link\": \"https://drive.google.com/file/d/1YpBQ6jgGO6vgGCZtZBVhbuppAoamIJXk/view?usp=drivesdk\", \"summary\": \"네트워크 광고 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -418,6 +482,8 @@
         "최근 업데이트 기준: 2025"
       ],
       "link": "https://drive.google.com/file/d/1b0RETWtIyUMnAR7Zchb9oeOVvb46F0GO/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"\", \"features\": [\"자료: [미니맵]_매체소개서_2025\", \"최근 업데이트 기준: 2025\"], \"link\": \"https://drive.google.com/file/d/1b0RETWtIyUMnAR7Zchb9oeOVvb46F0GO/view?usp=drivesdk\", \"summary\": \"게임 기반 타겟팅 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -431,6 +497,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA, Video\", \"features\": [\"자료: [베나투스] 광고 상품소개서_2025.02.pdf\", \"사내 자료명: 베나투스미디어 소개\", \"최근 업데이트 기준: 26.09\"], \"link\": \"\", \"summary\": \"게임 광고 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -444,6 +512,8 @@
         "수수료율: 20% (백피) · 영역: SNS, 비즈니스"
       ],
       "link": "https://drive.google.com/file/d/1pu_RQZ-iYf-VPk0MV5bHzMWQT2aeNyyo/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"SNS, 비즈니스\", \"features\": [\"자료: [블라인드] 광고 상품 소개서_2026_3Q.pdf\", \"최근 업데이트 기준: 26.09\", \"수수료율: 20% (백피) · 영역: SNS, 비즈니스\"], \"link\": \"https://drive.google.com/file/d/1pu_RQZ-iYf-VPk0MV5bHzMWQT2aeNyyo/view?usp=drivesdk\", \"summary\": \"직장인 소통 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -457,6 +527,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "https://drive.google.com/file/d/1thc_zs9u1yVwokKCcOGNL3JhlL-GHjAU/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"\", \"features\": [\"자료: [Samsung Ads] 광고상품 소개서_2026.05.pdf\", \"사내 자료명: https://nest.wisebirds.com/app/board/103/post/5800\", \"최근 업데이트 기준: 26.09\"], \"link\": \"https://drive.google.com/file/d/1thc_zs9u1yVwokKCcOGNL3JhlL-GHjAU/view?usp=drivesdk\", \"summary\": \"\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -469,6 +541,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "https://drive.google.com/file/d/1MaGcKHOdUYP_--WChTzaMmtCnnUYLuP5/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA, App\", \"features\": [\"자료: [섹티나인] 광고상품 소개서_2025.09.pdf\", \"최근 업데이트 기준: 26.09\"], \"link\": \"https://drive.google.com/file/d/1MaGcKHOdUYP_--WChTzaMmtCnnUYLuP5/view?usp=drivesdk\", \"summary\": \"해피포인트 앱 고객 통합 멤버십 서비스\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -483,6 +557,8 @@
         "수수료율: 10% (백피) · 영역: DA"
       ],
       "link": "",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA\", \"features\": [\"자료: 스카이스캐너 매체 및 상품소개서 (2026.03).pdf\", \"최근 업데이트 기준: 26.09\", \"비고: 국가 IP, 항공권 검색 유저 타겟팅\", \"수수료율: 10% (백피) · 영역: DA\"], \"link\": \"\", \"summary\": \"OTA 광고 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -496,6 +572,8 @@
         "최근 업데이트 기준: 업데이트 날짜 > 작성 시점 기준(26.09)"
       ],
       "link": "",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"\", \"features\": [\"자료: PDF 파일 올리기\", \"사내 자료명: 네스트 게시판 내용이라면 링크 걸기\", \"최근 업데이트 기준: 업데이트 날짜 > 작성 시점 기준(26.09)\"], \"link\": \"\", \"summary\": \"신규매체\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -510,6 +588,8 @@
         "비고: 1,000만 여성 쇼핑 유저, 구매 데이터 기반 타겟팅"
       ],
       "link": "",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA, 커머스\", \"features\": [\"자료: [에이블리] 광고 상품 소개서_2025_06.pdf\", \"사내 자료명: 에이블리\", \"최근 업데이트 기준: 26.09\", \"비고: 1,000만 여성 쇼핑 유저, 구매 데이터 기반 타겟팅\"], \"link\": \"\", \"summary\": \"여성 패션/뷰티 쇼핑 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -523,6 +603,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "https://drive.google.com/file/d/1pTa_Hhoz0sfmJ3DIYvXReNkjm_0M_Ygz/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA\", \"features\": [\"자료: [열나요] 광고 상품 소개서_2026.09.pdf\", \"사내 자료명: 디지털캠프\", \"최근 업데이트 기준: 26.09\"], \"link\": \"https://drive.google.com/file/d/1pTa_Hhoz0sfmJ3DIYvXReNkjm_0M_Ygz/view?usp=drivesdk\", \"summary\": \"영유아 열 관리\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -536,6 +618,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA\", \"features\": [\"자료: [오늘의집] 광고 상품 소개서_2026.09.pdf\", \"사내 자료명: 오늘의집소개\", \"최근 업데이트 기준: 26.09\"], \"link\": \"\", \"summary\": \"라이프스타일 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -550,6 +634,8 @@
         "비고: 초중고 학생/학부모 타겟, 9월 프로모션 진행"
       ],
       "link": "",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA, App\", \"features\": [\"자료: [오늘학교] _매체소개서_2026.Q3\", \"사내 자료명: 오늘학교\", \"최근 업데이트 기준: 26.09\", \"비고: 초중고 학생/학부모 타겟, 9월 프로모션 진행\"], \"link\": \"\", \"summary\": \"초중고 학생 및 학부모 학교생활 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -562,6 +648,8 @@
         "최근 업데이트 기준: 24.2Q"
       ],
       "link": "https://drive.google.com/file/d/1HAGzrmbOONXbJKKCDMPNmX3O12iS9vNF/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"\", \"features\": [\"자료: [오케이포스]_상품소개서(26년2Q)_F.pdf\", \"최근 업데이트 기준: 24.2Q\"], \"link\": \"https://drive.google.com/file/d/1HAGzrmbOONXbJKKCDMPNmX3O12iS9vNF/view?usp=drivesdk\", \"summary\": \"\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -575,6 +663,8 @@
         "최근 업데이트 기준: 2024_4Q"
       ],
       "link": "https://drive.google.com/file/d/1L3jySMxkY4fwkZteAIe9zjhs_8yowdyl/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA\", \"features\": [\"자료: [원티드] 광고상품소개서_2024.Q4.pdf\", \"사내 자료명: 원티드\", \"최근 업데이트 기준: 2024_4Q\"], \"link\": \"https://drive.google.com/file/d/1L3jySMxkY4fwkZteAIe9zjhs_8yowdyl/view?usp=drivesdk\", \"summary\": \"커리어 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -587,6 +677,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "https://drive.google.com/file/d/1iGcSIZqAffYt7x_xCr33Pw7bnIqhikGf/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"\", \"features\": [\"자료: [인아웃] 광고 상품 소개서_2025.10.pdf\", \"최근 업데이트 기준: 26.09\"], \"link\": \"https://drive.google.com/file/d/1iGcSIZqAffYt7x_xCr33Pw7bnIqhikGf/view?usp=drivesdk\", \"summary\": \"\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -601,6 +693,8 @@
         "비고: 잡코리아 광고"
       ],
       "link": "https://drive.google.com/file/d/13IXb7eer87JXJpotiNZGLDrOHa5LS2iD/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA\", \"features\": [\"자료: 잡코리아 2026 상품소개서\\n잡코리아 2026 매체소개서\", \"사내 자료명: 잡코리아소개\", \"최근 업데이트 기준: 26.09\", \"비고: 잡코리아 광고\"], \"link\": \"https://drive.google.com/file/d/13IXb7eer87JXJpotiNZGLDrOHa5LS2iD/view?usp=drivesdk\", \"summary\": \"AI기반 종합 커리어 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -614,6 +708,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "https://drive.google.com/file/d/1Ek9v2vJriBaiJYe4S_St4U1uKzAMA8sC/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA\", \"features\": [\"자료: [점신] 광고 상품 소개서_2025.09.pdf\", \"사내 자료명: 점신\", \"최근 업데이트 기준: 26.09\"], \"link\": \"https://drive.google.com/file/d/1Ek9v2vJriBaiJYe4S_St4U1uKzAMA8sC/view?usp=drivesdk\", \"summary\": \"모바일 앱 기반 통합 운세 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -627,6 +723,8 @@
         "최근 업데이트 기준: 2023_1Q"
       ],
       "link": "https://drive.google.com/file/d/17iQd-C1fzR41mYMqiyNZo9msEt9tOCsy/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA, SNS, 기타\", \"features\": [\"자료: [챌린저스] 광고 상품 소개서_2023.02.pdf\", \"사내 자료명: 챌린저스\", \"최근 업데이트 기준: 2023_1Q\"], \"link\": \"https://drive.google.com/file/d/17iQd-C1fzR41mYMqiyNZo9msEt9tOCsy/view?usp=drivesdk\", \"summary\": \"건강 챌린지 앱\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -639,6 +737,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "https://drive.google.com/file/d/13m5UwGuPTpg5nXyU0o8eVMu0kDgn-HQp/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"\", \"features\": [\"자료: [카울리] 광고 상품 소개서_2026_2Q.pdf\", \"최근 업데이트 기준: 26.09\"], \"link\": \"https://drive.google.com/file/d/13m5UwGuPTpg5nXyU0o8eVMu0kDgn-HQp/view?usp=drivesdk\", \"summary\": \"\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -654,6 +754,8 @@
         "수수료율: 30% (백피) · 영역: App, OOH"
       ],
       "link": "",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"App, OOH\", \"features\": [\"자료: [카카오VC]_매체소개서_2025.Q1\", \"사내 자료명: 카카오 VX\", \"최근 업데이트 기준: 26.09\", \"비고: 최소 집행 금액 월 500만원\", \"수수료율: 30% (백피) · 영역: App, OOH\"], \"link\": \"\", \"summary\": \"스크린골프 및 골프예약 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -668,6 +770,8 @@
         "수수료율: 20% · 영역: 보상형"
       ],
       "link": "",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"보상형\", \"features\": [\"자료: [캐시워크] 광고 상품 소개서_2026.01.pdf\", \"사내 자료명: 캐시워크 소개\", \"최근 업데이트 기준: 26.09\", \"수수료율: 20% · 영역: 보상형\"], \"link\": \"\", \"summary\": \"헬스케어앱\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -680,6 +784,8 @@
         "최근 업데이트 기준: 2022_1Q"
       ],
       "link": "https://drive.google.com/file/d/1nBLyN9QvkrO5IY4QuxsZeLEOCpqg5dAG/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"기타\", \"features\": [\"자료: [퀸덤유니버스] 매체소개서_2022.pdf\", \"최근 업데이트 기준: 2022_1Q\"], \"link\": \"https://drive.google.com/file/d/1nBLyN9QvkrO5IY4QuxsZeLEOCpqg5dAG/view?usp=drivesdk\", \"summary\": \"\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -692,6 +798,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DMP, DA\", \"features\": [\"자료: [크로스타겟]CT Prime Intro 202508_2.pdf\", \"최근 업데이트 기준: 26.09\"], \"link\": \"\", \"summary\": \"국내 최대 규모 DMP를 활용, 정밀한 타겟팅 제공\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -705,6 +813,8 @@
         "최근 업데이트 기준: 2026.01"
       ],
       "link": "https://drive.google.com/file/d/1235eefEX13OtzlQ68K001Vqa7ZAuVFx7/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA\", \"features\": [\"자료: [클래스팅] 광고 상품 소개서_2026.01.pdf\", \"사내 자료명: 클래스팅소개\", \"최근 업데이트 기준: 2026.01\"], \"link\": \"https://drive.google.com/file/d/1235eefEX13OtzlQ68K001Vqa7ZAuVFx7/view?usp=drivesdk\", \"summary\": \"학부모-학생-교사가 활용하는 클래스 관리 앱\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -719,6 +829,8 @@
         "수수료율: 20% (백피) · 영역: DA, 기타"
       ],
       "link": "https://drive.google.com/file/d/1kubuRL6D3oCisSCc1OGJFm_I1yXA0bil/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA, 기타\", \"features\": [\"자료: [캐치테이블] 광고 상품 소개서_2026.01.pdf\", \"사내 자료명: 키즈노트 소개\", \"최근 업데이트 기준: 26.09\", \"수수료율: 20% (백피) · 영역: DA, 기타\"], \"link\": \"https://drive.google.com/file/d/1kubuRL6D3oCisSCc1OGJFm_I1yXA0bil/view?usp=drivesdk\", \"summary\": \"영유아 모바일 커뮤니케이션 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -732,6 +844,8 @@
         "수수료율: 20% (백피) · 영역: DMP, DA"
       ],
       "link": "",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DMP, DA\", \"features\": [\"자료: 타겟픽_상품소개서_2026\", \"최근 업데이트 기준: 26.09\", \"수수료율: 20% (백피) · 영역: DMP, DA\"], \"link\": \"\", \"summary\": \"DMP 및 애드 네트워크 기반 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -745,6 +859,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "https://drive.google.com/file/d/1pGdqnySCoKzTz_2JcE6nBhb1TaIBAUN7/view?usp=drivesdk",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"로컬, 기타, Video, DA\", \"features\": [\"자료: [티오더] 광고 상품 소개서_2026.07.pdf\", \"사내 자료명: 티오더소개\", \"최근 업데이트 기준: 26.09\"], \"link\": \"https://drive.google.com/file/d/1pGdqnySCoKzTz_2JcE6nBhb1TaIBAUN7/view?usp=drivesdk\", \"summary\": \"주문·결제하고 테이블에 바로 받아볼 수 있는 스마트 오더 시스템\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -758,6 +874,8 @@
         "최근 업데이트 기준: 26.09"
       ],
       "link": "",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA, 비즈니스, 로컬, 오프라인\", \"features\": [\"자료: [패스트파이브] 광고 상품 소개서_2026.09.pdf\", \"사내 자료명: 패스트파이브 소개\", \"최근 업데이트 기준: 26.09\"], \"link\": \"\", \"summary\": \"공유오피스 플랫폼\"}",
       "updated_at": "2026-09-22"
     },
     {
@@ -772,6 +890,8 @@
         "비고: NHN AD 미디어솔루션팀"
       ],
       "link": "",
+      "last_changed_at": "",
+      "_signature": "{\"category\": \"DA, App\", \"features\": [\"자료: [페이코캠퍼스] 광고 상품 소개서_2026_1H.pdf\", \"사내 자료명: https://nest.wisebirds.com/app/board/103/post/6404\", \"최근 업데이트 기준: 26.09\", \"비고: NHN AD 미디어솔루션팀\"], \"link\": \"\", \"summary\": \"대학생 타겟 모바일 간편결제 플랫폼\"}",
       "updated_at": "2026-09-22"
     }
   ]

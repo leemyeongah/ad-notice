@@ -456,6 +456,21 @@
     margin: 4px 0 12px;
   }
 
+  .product-new-card { margin-bottom: 20px; }
+  .product-new-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+  .product-new-chip {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 7px 14px;
+    border-radius: 20px;
+    border: 1px solid var(--accent);
+    background: var(--accent-dim);
+    color: var(--accent);
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .product-new-chip:hover { background: var(--accent); color: #fff; }
+
   .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -788,6 +803,7 @@
       <input type="text" class="search-input" id="product-search-input" placeholder="매체 상품소개서 검색 (매체명, 설명)">
       <button class="search-clear" id="product-search-clear">✕</button>
     </div>
+    <div id="product-new-area"></div>
     <div id="product-stats" class="stats-row"></div>
     <div class="filters" id="product-filters"></div>
     <div class="product-meta-row" id="product-meta-row"></div>
@@ -1351,9 +1367,39 @@ function extractFeeRate(p) {
 function renderProducts(products) {
   allProducts = products;
   activeProductFilter = '전체';
+  renderProductNewArea();
   renderProductStats();
   renderProductFilters();
   renderProductGrid();
+}
+
+// 이번 동기화에서 실제로 내용이 바뀐(또는 새로 추가된) 매체만 상단에 모아 보여준다.
+// (sync_products.py가 실제 변경분에만 last_changed_at을 오늘 날짜로 채워둠 - 단순히
+// 스크립트가 훑고 지나간 것만으로는 안 바뀜)
+function renderProductNewArea() {
+  const area = document.getElementById('product-new-area');
+  const dated = allProducts.filter(p => p.last_changed_at);
+  if (!dated.length) { area.innerHTML = ''; return; }
+
+  const latestDate = dated.reduce((max, p) => p.last_changed_at > max ? p.last_changed_at : max, dated[0].last_changed_at);
+  // 너무 오래된 배치가 계속 "최신 업데이트"로 남아있지 않도록, 2주 넘은 건 표시 안 함
+  const age = daysAgo(latestDate);
+  if (age === null || age > 14) { area.innerHTML = ''; return; }
+
+  const recent = dated.filter(p => p.last_changed_at === latestDate);
+  area.innerHTML = `
+    <div class="card product-new-card">
+      <div class="section-label">🆕 ${formatMD(latestDate)} 업데이트된 상품소개서 · ${recent.length}건</div>
+      <div class="product-new-grid">
+        ${recent.map(p => `<button class="product-new-chip" data-platform="${escapeHTML(p.platform)}">${escapeHTML(p.platform)}</button>`).join('')}
+      </div>
+    </div>`;
+  area.querySelectorAll('.product-new-chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const p = allProducts.find(x => x.platform === btn.dataset.platform);
+      if (p) openProductSheet(p);
+    });
+  });
 }
 
 function renderProductStats() {

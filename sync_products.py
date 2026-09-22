@@ -159,32 +159,60 @@ def run():
 
     products = build_products(rows)
 
-    # CSV로 게시하면 셀에 파일명으로 걸려있는 구글 드라이브 하이퍼링크는 못 가져온다
-    # (CSV엔 서식이 안 남음). 그래서 텍스트로 된 URL이 없으면, 이전에 수동으로 복구해둔
-    # PDF 미리보기 링크를 그대로 이어받아 매주 자동 동기화 때 미리보기가 다시 깨지지 않게 한다.
-    previous_links = {}
+    prev = {}
     if PRODUCTS_PATH.exists():
         try:
             prev = json.loads(PRODUCTS_PATH.read_text(encoding="utf-8"))
-            previous_links = {p["platform"]: p["link"] for p in prev.get("products", []) if p.get("link")}
-        except (json.JSONDecodeError, KeyError):
+        except json.JSONDecodeError:
             pass
+    prev_by_name = {p["platform"]: p for p in prev.get("products", [])}
+
+    # CSV로 게시하면 셀에 파일명으로 걸려있는 구글 드라이브 하이퍼링크는 못 가져온다
+    # (CSV엔 서식이 안 남음). 그래서 텍스트로 된 URL이 없으면, 이전에 수동으로 복구해둔
+    # PDF 미리보기 링크를 그대로 이어받아 매주 자동 동기화 때 미리보기가 다시 깨지지 않게 한다.
     carried_over = 0
     for p in products:
-        if not p["link"] and p["platform"] in previous_links:
-            p["link"] = previous_links[p["platform"]]
+        prev_link = prev_by_name.get(p["platform"], {}).get("link", "")
+        if not p["link"] and prev_link:
+            p["link"] = prev_link
             carried_over += 1
     if carried_over:
         print(f"[안내] CSV에 없는 미리보기 링크 {carried_over}건은 이전 데이터에서 이어받음")
 
+    # "이번 주 업데이트된 상품소개서"를 대시보드 상단에 보여주기 위해, 실제로 내용이 바뀐 항목만
+    # last_changed_at을 오늘로 갱신한다 (그냥 스크립트가 훑고 지나간 것만으로는 안 바꿈 -
+    # 예전엔 매주 전부 다 "오늘 업데이트"로 찍혀서 의미가 없었음).
+    # 이 기능 도입 전 데이터(_signature가 하나도 없음)와 비교할 때는 기준선이 아예 없으므로,
+    # 그 첫 실행에서만 전체를 "변경 없음"으로 두고 기준선만 새로 잡는다. 그 이후로는 신규 매체가
+    # 생기거나 내용이 바뀔 때마다 정상적으로 잡힌다.
+    is_bootstrap_run = bool(prev_by_name) and not any("_signature" in p for p in prev_by_name.values())
     today = datetime.now(KST).strftime("%Y-%m-%d")
+    changed_count = 0
     for p in products:
+        signature = json.dumps(
+            {"category": p["category"], "summary": p["summary"], "features": p["features"], "link": p["link"]},
+            ensure_ascii=False, sort_keys=True,
+        )
+        prev_entry = prev_by_name.get(p["platform"])
+        if is_bootstrap_run:
+            p["last_changed_at"] = ""
+        elif prev_entry is None or prev_entry.get("_signature") != signature:
+            p["last_changed_at"] = today
+            changed_count += 1
+        else:
+            p["last_changed_at"] = prev_entry.get("last_changed_at", "")
+        p["_signature"] = signature
         p["updated_at"] = today
+    print(f"[안내] 이번 동기화에서 실제로 내용이 바뀐 매체: {changed_count}건")
     products.sort(key=lambda p: p["platform"])
 
     MANUAL_INPUT_PATH.parent.mkdir(exist_ok=True)
+    INTERNAL_ONLY_FIELDS = {"updated_at", "last_changed_at", "_signature"}
     MANUAL_INPUT_PATH.write_text(
-        json.dumps([{k: v for k, v in p.items() if k != "updated_at"} for p in products], ensure_ascii=False, indent=2),
+        json.dumps(
+            [{k: v for k, v in p.items() if k not in INTERNAL_ONLY_FIELDS} for p in products],
+            ensure_ascii=False, indent=2,
+        ),
         encoding="utf-8",
     )
 
