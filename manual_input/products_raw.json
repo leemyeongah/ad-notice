@@ -161,6 +161,18 @@
     "link": "https://drive.google.com/file/d/1c9cCibpanoHBHVILTf4opRBQL9cZB40s/view?usp=drivesdk"
   },
   {
+    "platform": "RTB House",
+    "category": "",
+    "summary": "",
+    "description": "",
+    "features": [
+      "자료: [RTB House] 상품소개서_2026.Q3_",
+      "사내 자료명: https://nest.wisebirds.com/app/board/103/post/7777",
+      "최근 업데이트 기준: 26.09"
+    ],
+    "link": ""
+  },
+  {
     "platform": "Remerge",
     "category": "DSP",
     "summary": "앱 DSP",
@@ -415,7 +427,7 @@
     "summary": "",
     "description": "",
     "features": [
-      "자료: [Samsung Ads] 광고상품 소개서_2026.05.pdf",
+      "자료: Samsung Ads_광고상품 소개서_26.08.pdf",
       "사내 자료명: https://nest.wisebirds.com/app/board/103/post/5800",
       "최근 업데이트 기준: 26.09"
     ],
@@ -453,7 +465,7 @@
     "features": [
       "자료: PDF 파일 올리기",
       "사내 자료명: 네스트 게시판 내용이라면 링크 걸기",
-      "최근 업데이트 기준: 업데이트 날짜 > 작성 시점 기준(26.09)"
+      "최근 업데이트 기준: 업데이트 날짜 > 작성 시점 기준(26.09.00)"
     ],
     "link": ""
   },
@@ -500,6 +512,19 @@
     "summary": "초중고 학생 및 학부모 학교생활 플랫폼",
     "description": "초중고 학생 및 학부모 학교생활 플랫폼",
     "features": [
+      "자료: [오늘학교] _매체소개서_2026.10",
+      "사내 자료명: 오늘학교",
+      "최근 업데이트 기준: 26.09",
+      "비고: 카카오톡 메세지 발송 가능"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "오늘학교",
+    "category": "DA, App",
+    "summary": "초중고 학생 및 학부모 학교생활 플랫폼",
+    "description": "초중고 학생 및 학부모 학교생활 플랫폼",
+    "features": [
       "자료: [오늘학교] _매체소개서_2026.Q3",
       "사내 자료명: 오늘학교",
       "최근 업데이트 기준: 26.09",
@@ -517,6 +542,18 @@
       "최근 업데이트 기준: 24.2Q"
     ],
     "link": "https://drive.google.com/file/d/1HAGzrmbOONXbJKKCDMPNmX3O12iS9vNF/view?usp=drivesdk"
+  },
+  {
+    "platform": "원셀프월드",
+    "category": "",
+    "summary": "",
+    "description": "",
+    "features": [
+      "자료: [원셀프월드]_광고상품소개서_2026.08",
+      "사내 자료명: https://nest.wisebirds.com/app/board/103/post/7956",
+      "최근 업데이트 기준: 26.09"
+    ],
+    "link": ""
   },
   {
     "platform": "원티드",
@@ -617,6 +654,18 @@
     "link": ""
   },
   {
+    "platform": "캐치테이블",
+    "category": "DA, 로컬",
+    "summary": "국내 대표 미식 생활 플랫폼",
+    "description": "국내 대표 미식 생활 플랫폼",
+    "features": [
+      "자료: [캐치테이블] 광고 상품 소개서_2026.01.pdf",
+      "사내 자료명: 캐치테이블",
+      "최근 업데이트 기준: 26.09"
+    ],
+    "link": ""
+  },
+  {
     "platform": "퀀텀유니버스",
     "category": "기타",
     "summary": "",
@@ -656,7 +705,7 @@
     "summary": "영유아 모바일 커뮤니케이션 플랫폼",
     "description": "영유아 모바일 커뮤니케이션 플랫폼",
     "features": [
-      "자료: [캐치테이블] 광고 상품 소개서_2026.01.pdf",
+      "자료: [키즈노트] 광고상품소개서 2026.09",
       "사내 자료명: 키즈노트 소개",
       "최근 업데이트 기준: 26.09",
       "수수료율: 20% (백피) · 영역: DA, 기타"
