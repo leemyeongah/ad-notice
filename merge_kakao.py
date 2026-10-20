@@ -81,7 +81,10 @@ def run():
     existing = load_json(NOTICES_PATH, {"notices": []})
     known_ids = {n["id"] for n in existing.get("notices", []) if n.get("platform") == PLATFORM_NAME}
     cutoff = (datetime.now(KST) - timedelta(days=SLACK_RECENT_DAYS)).strftime("%Y-%m-%d")
-    newly_added = [n for n in kakao_notices if n["id"] not in known_ids and n["date"] >= cutoff]
+    # 슬랙에는 제목이 [플랫폼]/[상품]으로 시작하는 것만 보낸다 (crawler.KAKAO_SLACK_TAGS와 동일 기준)
+    newly_added = [n for n in kakao_notices
+                   if n["id"] not in known_ids and n["date"] >= cutoff
+                   and n["title"].startswith(("[플랫폼]", "[상품]"))]
     if newly_added:
         pending = load_json(PENDING_SLACK_PATH, [])
         pending_ids = {(x.get("platform"), x.get("id")) for x in pending}

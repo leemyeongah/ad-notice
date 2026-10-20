@@ -76,12 +76,24 @@ def _slack_item_line(n):
 SLACK_EXCLUDED_PLATFORMS = {CLIPPING_PLATFORM, "틱톡 for Business"}
 
 
+# 카카오모먼트는 공지 종류가 많아서(계산서/세미나/약관 등) 슬랙에는 제목이 [플랫폼]·[상품]으로 시작하는 것만 보낸다.
+KAKAO_SLACK_TAGS = ("[플랫폼]", "[상품]")
+
+
+def _slack_allowed(n):
+    if n.get("platform") in SLACK_EXCLUDED_PLATFORMS:
+        return False
+    if n.get("platform") == "카카오모먼트":
+        return (n.get("title") or "").lstrip().startswith(KAKAO_SLACK_TAGS)
+    return True
+
+
 def notify_slack(newly_added):
     """이번 크롤링에서 새로 발견된 소식 중 대시보드 '주요 매체 소식'에 해당하는 것(제외 플랫폼 빼고)을 전부 Slack으로 보낸다."""
     if not SLACK_WEBHOOK_URL or not newly_added:
         return
 
-    targets = [n for n in newly_added if n.get("platform") not in SLACK_EXCLUDED_PLATFORMS]
+    targets = [n for n in newly_added if _slack_allowed(n)]
     if not targets:
         return
 
