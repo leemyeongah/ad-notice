@@ -59,5 +59,75 @@
     "is_new": true,
     "url": "https://tossads.toss.im/notice/25738",
     "platform": "토스애즈"
+  },
+  {
+    "id": 101066,
+    "title": "[플랫폼] 모먼트 신규 규격 소재 등록 일정 리마인드 안내",
+    "category": "상품/서비스",
+    "date": "2026-10-15",
+    "is_pinned": false,
+    "is_new": true,
+    "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+    "platform": "카카오모먼트"
+  },
+  {
+    "id": 101065,
+    "title": "[시스템] 보장형 광고>소재 미등록 및 계약 확정에 대한 안내 강화 (10/20)",
+    "category": "시스템/개선",
+    "date": "2026-10-15",
+    "is_pinned": false,
+    "is_new": true,
+    "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+    "platform": "카카오모먼트"
+  },
+  {
+    "id": 101057,
+    "title": "[상품] 카카오톡 서브 디바이스 내 광고 노출 확대 안내 (10/19)",
+    "category": "상품/서비스",
+    "date": "2026-10-12",
+    "is_pinned": false,
+    "is_new": true,
+    "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+    "platform": "카카오모먼트"
+  },
+  {
+    "id": 101055,
+    "title": "[안내] 10월 카카오비즈니스 세미나 일정",
+    "category": "공지/이벤트",
+    "date": "2026-10-12",
+    "is_pinned": false,
+    "is_new": true,
+    "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+    "platform": "카카오모먼트"
+  },
+  {
+    "id": 101047,
+    "title": "[상품] 참여형 광고 PC 지면 업데이트 사항 안내",
+    "category": "상품/서비스",
+    "date": "2026-10-07",
+    "is_pinned": false,
+    "is_new": true,
+    "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+    "platform": "카카오모먼트"
+  },
+  {
+    "id": 101045,
+    "title": "[상품] 카카오 커머스 > 상품 카탈로그 캠페인 노출 지면 확장 안내 (10/7)",
+    "category": "상품/서비스",
+    "date": "2026-10-06",
+    "is_pinned": false,
+    "is_new": true,
+    "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+    "platform": "카카오모먼트"
+  },
+  {
+    "id": 101043,
+    "title": "[계산서] 2026년 3분기 (7월~9월)세금계산서 발행 및 수정발행 안내",
+    "category": "회계",
+    "date": "2026-10-06",
+    "is_pinned": false,
+    "is_new": true,
+    "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+    "platform": "카카오모먼트"
   }
 ]

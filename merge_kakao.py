@@ -14,7 +14,7 @@
 """
 import json
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 KST = ZoneInfo("Asia/Seoul")
@@ -22,6 +22,9 @@ BASE_DIR = Path(__file__).parent
 DATA_DIR = BASE_DIR / "data"
 MANUAL_INPUT_PATH = BASE_DIR / "manual_input" / "kakao_raw.json"
 NOTICES_PATH = DATA_DIR / "notices.json"
+PENDING_SLACK_PATH = DATA_DIR / "pending_slack_notification.json"
+# 처음 가져오는 오래된 공지까지 한꺼번에 슬랙으로 쏟아지지 않도록, 이 기간 안의 신규 공지만 슬랙 대기열에 넣는다.
+SLACK_RECENT_DAYS = 14
 
 PLATFORM_NAME = "카카오모먼트"
 # 개별 공지 상세 URL 패턴이 아직 확인되지 않아서, 일단 목록 페이지로 연결합니다.
@@ -74,8 +77,18 @@ def run():
     for n in kakao_notices:
         n["platform"] = PLATFORM_NAME
 
-    # 기존 notices.json에서 다른 플랫폼 데이터는 유지하고, 카카오모먼트만 이번 걸로 교체
+    # 이번에 처음 보이는(이전 notices.json에 없던) 최근 공지는 슬랙 발송 대기열(pending)에 추가
     existing = load_json(NOTICES_PATH, {"notices": []})
+    known_ids = {n["id"] for n in existing.get("notices", []) if n.get("platform") == PLATFORM_NAME}
+    cutoff = (datetime.now(KST) - timedelta(days=SLACK_RECENT_DAYS)).strftime("%Y-%m-%d")
+    newly_added = [n for n in kakao_notices if n["id"] not in known_ids and n["date"] >= cutoff]
+    if newly_added:
+        pending = load_json(PENDING_SLACK_PATH, [])
+        pending_ids = {(x.get("platform"), x.get("id")) for x in pending}
+        pending += [n for n in newly_added if (n["platform"], n["id"]) not in pending_ids]
+        save_json(PENDING_SLACK_PATH, pending)
+
+    # 기존 notices.json에서 다른 플랫폼 데이터는 유지하고, 카카오모먼트만 이번 걸로 교체
     other_platform_notices = [n for n in existing.get("notices", []) if n.get("platform") != PLATFORM_NAME]
     all_notices = other_platform_notices + kakao_notices
     all_notices.sort(key=lambda n: n["date"], reverse=True)
@@ -90,6 +103,8 @@ def run():
     new_count = sum(1 for n in kakao_notices if n["is_new"])
     print(f"[{PLATFORM_NAME}] {len(kakao_notices)}건 병합 완료, NEW 배지 {new_count}건")
     print(f"-> {NOTICES_PATH} 갱신됨")
+    if newly_added:
+        print(f"-> 슬랙 발송 대기열에 신규 {len(newly_added)}건 추가")
 
 
 if __name__ == "__main__":
