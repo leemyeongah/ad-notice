@@ -81,5 +81,15 @@
     "is_new": false,
     "url": "https://tossads.toss.im/notice/25770",
     "platform": "토스애즈"
+  },
+  {
+    "id": 101078,
+    "title": "[플랫폼] 비즈보드 소재 규격 변경 및 PC 노출 확대에 대한 추가 안내",
+    "category": "상품/서비스",
+    "date": "2026-10-22",
+    "is_pinned": false,
+    "is_new": true,
+    "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+    "platform": "카카오모먼트"
   }
 ]

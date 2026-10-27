@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-27T11:09:39+09:00",
-  "new_count": 10,
+  "generated_at": "2026-10-27T11:19:41+09:00",
+  "new_count": 5,
   "notices": [
     {
       "id": "/entry/20261019-news-clipping",
@@ -51,6 +51,16 @@
         }
       ],
       "platform": "나스미디어 뉴스클리핑"
+    },
+    {
+      "id": 101078,
+      "title": "[플랫폼] 비즈보드 소재 규격 변경 및 PC 노출 확대에 대한 추가 안내",
+      "category": "상품/서비스",
+      "date": "2026-10-22",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
     },
     {
       "id": 34889,
@@ -152,7 +162,7 @@
       "category": "상품/서비스",
       "date": "2026-10-15",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
       "platform": "카카오모먼트"
     },
@@ -176,26 +186,6 @@
       "is_new": false,
       "url": "https://tossads.toss.im/notice/25718",
       "platform": "토스애즈"
-    },
-    {
-      "id": 101057,
-      "title": "[상품] 카카오톡 서브 디바이스 내 광고 노출 확대 안내 (10/19)",
-      "category": "상품/서비스",
-      "date": "2026-10-12",
-      "is_pinned": false,
-      "is_new": true,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
-      "id": 101055,
-      "title": "[안내] 10월 카카오비즈니스 세미나 일정",
-      "category": "공지/이벤트",
-      "date": "2026-10-12",
-      "is_pinned": false,
-      "is_new": true,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
     },
     {
       "id": "/entry/20261005-news-clipping",
@@ -239,6 +229,26 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
+      "id": 101057,
+      "title": "[상품] 카카오톡 서브 디바이스 내 광고 노출 확대 안내 (10/19)",
+      "category": "상품/서비스",
+      "date": "2026-10-12",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
+      "id": 101055,
+      "title": "[안내] 10월 카카오비즈니스 세미나 일정",
+      "category": "공지/이벤트",
+      "date": "2026-10-12",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
       "id": 25708,
       "title": "잠재고객 모으기·앱 설치 유도하기 이전 버전 캠페인 운영 종료 안내",
       "excerpt": "안녕하세요, 토스애즈입니다.잠재고객 모으기와 앱 설치 유도하기 캠페인 중 이전 버전으로 운영 중인 캠페인이 2026년 11월 9일(월)에 종료될 예정입니다.1. 종료 일시2026년 11월 9일(월) 오후 7시종료 일시 이후 대상 캠페인은 집행이 자동으로 중단됩니다.집행이 중단된 캠페인은 다시 운영할 수 없습니다.2. 운영 종료 대상1) 잠재고객 모으기 > 토스 양식 사용2026년 9월 15일 이전에 생성된 캠페인소개 화면이 포함되지 않은 고객 수집 양식을 사용하는 캠페인변경 전 소개 화면이 포함된 고객 수집 양식을 사용하는 캠페인2",
@@ -248,16 +258,6 @@
       "is_new": false,
       "url": "https://tossads.toss.im/notice/25708",
       "platform": "토스애즈"
-    },
-    {
-      "id": 101047,
-      "title": "[상품] 참여형 광고 PC 지면 업데이트 사항 안내",
-      "category": "상품/서비스",
-      "date": "2026-10-07",
-      "is_pinned": false,
-      "is_new": true,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
     },
     {
       "id": 25700,
@@ -271,22 +271,12 @@
       "platform": "토스애즈"
     },
     {
-      "id": 101045,
-      "title": "[상품] 카카오 커머스 > 상품 카탈로그 캠페인 노출 지면 확장 안내 (10/7)",
+      "id": 101047,
+      "title": "[상품] 참여형 광고 PC 지면 업데이트 사항 안내",
       "category": "상품/서비스",
-      "date": "2026-10-06",
+      "date": "2026-10-07",
       "is_pinned": false,
-      "is_new": true,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
-      "id": 101043,
-      "title": "[계산서] 2026년 3분기 (7월~9월)세금계산서 발행 및 수정발행 안내",
-      "category": "회계",
-      "date": "2026-10-06",
-      "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
       "platform": "카카오모먼트"
     },
@@ -344,6 +334,26 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
+      "id": 101045,
+      "title": "[상품] 카카오 커머스 > 상품 카탈로그 캠페인 노출 지면 확장 안내 (10/7)",
+      "category": "상품/서비스",
+      "date": "2026-10-06",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
+      "id": 101043,
+      "title": "[계산서] 2026년 3분기 (7월~9월)세금계산서 발행 및 수정발행 안내",
+      "category": "회계",
+      "date": "2026-10-06",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
       "id": 101042,
       "title": "[상품] 비즈니스폼 랜딩 유형 및 비즈니스폼 연동 관리 지원 종료 안내(11/3)",
       "category": "상품/서비스",
@@ -374,26 +384,6 @@
       "is_new": false,
       "url": "https://ads.tiktok.com/business/ko/blog/tiktok-pulse-premium-contextual-ad-placement",
       "platform": "틱톡 for Business"
-    },
-    {
-      "id": 101035,
-      "title": "카카오모먼트 Open API 변경 사항 안내 (9/28)",
-      "category": "시스템/개선",
-      "date": "2026-09-28",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
-      "id": 101026,
-      "title": "[시스템] 스마트메시지 종료 안내 (11/3)",
-      "category": "시스템/개선",
-      "date": "2026-09-28",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
     },
     {
       "id": "/entry/20260921-news-clipping",
@@ -445,20 +435,20 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
-      "id": 101032,
-      "title": "[상품] 카카오 비즈보드 광고 내 'AI 활용 표기 설정' 옵션 추가 지원 안내",
-      "category": "상품/서비스",
-      "date": "2026-09-23",
+      "id": 101035,
+      "title": "카카오모먼트 Open API 변경 사항 안내 (9/28)",
+      "category": "시스템/개선",
+      "date": "2026-09-28",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
       "platform": "카카오모먼트"
     },
     {
-      "id": 101031,
-      "title": "[안내] 커머스카탈로그 연동 베네핏 프로모션-광고비100만원 지급 기간 연장 안내",
-      "category": "공지/이벤트",
-      "date": "2026-09-23",
+      "id": 101026,
+      "title": "[시스템] 스마트메시지 종료 안내 (11/3)",
+      "category": "시스템/개선",
+      "date": "2026-09-28",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
@@ -476,20 +466,20 @@
       "platform": "토스애즈"
     },
     {
-      "id": 101021,
-      "title": "카카오비즈니스 이용약관 개정 안내 (9/29, 10/22)",
-      "category": "공지/이벤트",
-      "date": "2026-09-22",
+      "id": 101032,
+      "title": "[상품] 카카오 비즈보드 광고 내 'AI 활용 표기 설정' 옵션 추가 지원 안내",
+      "category": "상품/서비스",
+      "date": "2026-09-23",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
       "platform": "카카오모먼트"
     },
     {
-      "id": 101015,
-      "title": "[카카오비즈니스] '카카오광고' 서비스 운영정책 개정 사전공지 (10/27)",
+      "id": 101031,
+      "title": "[안내] 커머스카탈로그 연동 베네핏 프로모션-광고비100만원 지급 기간 연장 안내",
       "category": "공지/이벤트",
-      "date": "2026-09-22",
+      "date": "2026-09-23",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
@@ -526,30 +516,20 @@
       "platform": "토스애즈"
     },
     {
-      "id": 101027,
-      "title": "[시스템] 카카오 커머스 랜딩 URL 자동 레퍼러 파라미터 추가 안내",
-      "category": "시스템/개선",
-      "date": "2026-09-21",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
-      "id": 100975,
-      "title": "[시스템] '고객데이터' 타겟 신설 및 고객파일/친구그룹 종료 안내",
-      "category": "시스템/개선",
-      "date": "2026-09-21",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
-      "id": 101025,
-      "title": "[공지] 2026 카카오비즈니스 베스트 어워즈 안내",
+      "id": 101021,
+      "title": "카카오비즈니스 이용약관 개정 안내 (9/29, 10/22)",
       "category": "공지/이벤트",
-      "date": "2026-09-21",
+      "date": "2026-09-22",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
+      "id": 101015,
+      "title": "[카카오비즈니스] '카카오광고' 서비스 운영정책 개정 사전공지 (10/27)",
+      "category": "공지/이벤트",
+      "date": "2026-09-22",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
@@ -609,6 +589,36 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
+      "id": 101027,
+      "title": "[시스템] 카카오 커머스 랜딩 URL 자동 레퍼러 파라미터 추가 안내",
+      "category": "시스템/개선",
+      "date": "2026-09-21",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
+      "id": 100975,
+      "title": "[시스템] '고객데이터' 타겟 신설 및 고객파일/친구그룹 종료 안내",
+      "category": "시스템/개선",
+      "date": "2026-09-21",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
+      "id": 101025,
+      "title": "[공지] 2026 카카오비즈니스 베스트 어워즈 안내",
+      "category": "공지/이벤트",
+      "date": "2026-09-21",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
       "id": 25624,
       "title": "토스 애즈 전환 집계 기준(Attribution Window) 변경 안내",
       "excerpt": "안녕하세요, 토스 애즈입니다.토스 애즈의 기본 전환 집계 기준을 2026년 9월 28일부터 클릭 후 90일에서 30일로 변경합니다.무엇이 바뀌나요전환 집계 기준의 기본 값이 변경됩니다: 클릭 후 90일 → 30일대시보드: 30일 기준으로 노출맞춤 보고서: 30일 기준으로 노출되며, 1/7/30/90일 기간을 선택해 성과 조회 가능적용일: 2026년 9월 28일(월)리포팅에 어떤 영향이 있나요캠페인 광고 성과 자체가 달라지는 것이 아니라, 전환을 인정하는 기간이 변경되는 것입니다. 광고 노출이나 유입 품질과는 무관합니다.대부분의 캠페",
@@ -642,16 +652,6 @@
       "platform": "네이버 GFA"
     },
     {
-      "id": 101018,
-      "title": "보고서 구매수량 지표 제공 확대 안내 (26.09.28)",
-      "category": "공지/이벤트",
-      "date": "2026-09-15",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
       "id": 25616,
       "title": "추석 연휴 검수 일정 안내",
       "excerpt": "안녕하세요, 토스애즈입니다.추석 연휴에 따른 소재 검수 운영 일정을 안내드립니다.검수 운영 일정9월 23일 수요일 18시까지 제출되는 소재에 한해 당일 검수 진행 예정9월 28일 월요일부터 검수 정상 운영 참고 안내 소재 검수는 순차 검수를 원칙으로 하며, 토스애즈 가이드에 부합하지 않는 경우 보류될 수 있습니다.원활한 광고 운영을 위해서 집행일 기준 2-3영업일 전 소재를 제출해주시기 바랍니다.소재 검수 운영 시간은 평일 10:00 ~ 19:00이며, 주말 및 공휴일은 검수되지 않습니다.감사합니다.토스애즈 드림",
@@ -663,10 +663,10 @@
       "platform": "토스애즈"
     },
     {
-      "id": 101016,
-      "title": "보고서 신규 지표(노출 기반 구매 전환 지표) 제공 안내 (26.09.28)",
+      "id": 101018,
+      "title": "보고서 구매수량 지표 제공 확대 안내 (26.09.28)",
       "category": "공지/이벤트",
-      "date": "2026-09-14",
+      "date": "2026-09-15",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
@@ -718,6 +718,16 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
+      "id": 101016,
+      "title": "보고서 신규 지표(노출 기반 구매 전환 지표) 제공 안내 (26.09.28)",
+      "category": "공지/이벤트",
+      "date": "2026-09-14",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
       "id": 25602,
       "title": "라이브 마켓 '플러스·프리미엄 상품' 운영 정책 변경 안내",
       "excerpt": "안녕하세요, 토스애즈입니다.라이브 마켓 '플러스 상품'과 '프리미엄 상품'의 운영 정책이 아래와 같이 변경되어 공지드립니다.적용 일시 : 2026년 9월 14일(월)부터1. 플러스 상품 : 최대 트래픽 한도 제거기존 최대 트래픽 한도(20만)가 제거되어, 트래픽 한도 없이 운영됩니다.캠페인 부킹 시점과 관계없이 9월 14일(월) 이후 진행되는 모든 플러스 상품 방송에 적용됩니다.2. 프리미엄 상품 : 최소 라이브 시간 변경라이브 시간 '1시간' 옵션이 사라지고, 최소 1시간 30분부터 설정할 수 있습니다.9월 14일(월) 이후 방송",
@@ -738,16 +748,6 @@
       "is_new": false,
       "url": "https://tossads.toss.im/notice/25600",
       "platform": "토스애즈"
-    },
-    {
-      "id": 101005,
-      "title": "[공지] 추석 연휴 고객센터/광고 심사 휴무(9/24~9/25) 안내",
-      "category": "기타",
-      "date": "2026-09-10",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
     },
     {
       "id": 25598,
@@ -772,6 +772,16 @@
       "platform": "토스애즈"
     },
     {
+      "id": 101005,
+      "title": "[공지] 추석 연휴 고객센터/광고 심사 휴무(9/24~9/25) 안내",
+      "category": "기타",
+      "date": "2026-09-10",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
       "id": 25590,
       "title": "상품명 AI 최적화 기능 적용 안내 (9/15 오픈)",
       "excerpt": "안녕하세요, 토스애즈입니다.2026년 9월 15일부터 카탈로그 광고에 노출되는 상품명이 상품 간 통일된 형태로 정리되어 노출됩니다.어떤 기능인가요?상품명 AI 최적화는 원본 상품명을 최대한 유지하면서, 광고에 노출될 상품명을 정리하는 기능입니다.변환된 상품명의 노출 여부는 광고주센터에서 상품별로 관리하실 수 있습니다.브랜드·규격·수량처럼 상품을 특정하는 정보는 그대로 유지하며, 표기 순서와 구분만 정돈합니다.여러 상품이 나란히 노출되는 화면에서 표기 형태가 통일되면, 고객이 상품을 비교하고 이해하기 쉬워집니다.어떻게 달라지나요?변경",
@@ -792,66 +802,6 @@
       "is_new": false,
       "url": "https://tossads.toss.im/notice/25586",
       "platform": "토스애즈"
-    },
-    {
-      "id": 101003,
-      "title": "[안내] 9월 카카오비즈니스 세미나 일정",
-      "category": "공지/이벤트",
-      "date": "2026-09-07",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
-      "id": 101000,
-      "title": "[상품] 카카오톡 PC 지면의 광고 업데이트 사항 안내",
-      "category": "상품/서비스",
-      "date": "2026-09-07",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
-      "id": 100999,
-      "title": "[상품] 동영상 네이티브 1:1 비율 소재 추가 지원 안내",
-      "category": "상품/서비스",
-      "date": "2026-09-07",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
-      "id": 100998,
-      "title": "[상품] 카카오 비즈보드 및 카카오 비즈보드 CPT 상품 업데이트 안내",
-      "category": "상품/서비스",
-      "date": "2026-09-07",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
-      "id": 100992,
-      "title": "인천 구 신설 및 폐지 등에 따른 행정구역 타게팅 변동사항",
-      "category": "시스템/개선",
-      "date": "2026-09-07",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
-      "id": 100996,
-      "title": "[심사] 보장형 광고 포커스 보드(PC) 제작가이드 변경 안내 (9/28)",
-      "category": "정책/심사",
-      "date": "2026-09-07",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
     },
     {
       "id": "/entry/20260831-news-clipping",
@@ -923,6 +873,66 @@
       "platform": "토스애즈"
     },
     {
+      "id": 101003,
+      "title": "[안내] 9월 카카오비즈니스 세미나 일정",
+      "category": "공지/이벤트",
+      "date": "2026-09-07",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
+      "id": 101000,
+      "title": "[상품] 카카오톡 PC 지면의 광고 업데이트 사항 안내",
+      "category": "상품/서비스",
+      "date": "2026-09-07",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
+      "id": 100999,
+      "title": "[상품] 동영상 네이티브 1:1 비율 소재 추가 지원 안내",
+      "category": "상품/서비스",
+      "date": "2026-09-07",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
+      "id": 100998,
+      "title": "[상품] 카카오 비즈보드 및 카카오 비즈보드 CPT 상품 업데이트 안내",
+      "category": "상품/서비스",
+      "date": "2026-09-07",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
+      "id": 100992,
+      "title": "인천 구 신설 및 폐지 등에 따른 행정구역 타게팅 변동사항",
+      "category": "시스템/개선",
+      "date": "2026-09-07",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
+      "id": 100996,
+      "title": "[심사] 보장형 광고 포커스 보드(PC) 제작가이드 변경 안내 (9/28)",
+      "category": "정책/심사",
+      "date": "2026-09-07",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
       "id": 100993,
       "title": "[계산서] 2026년 8월 세금계산서 발행 및 수정발행 안내",
       "category": "회계",
@@ -937,16 +947,6 @@
       "title": "카카오톡 일본 광고와 함께 성장할 공식 대행사를 모집합니다",
       "category": "공지/이벤트",
       "date": "2026-09-01",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
-      "id": 100981,
-      "title": "9월 15일 모먼트 성과형 광고의 카카오톡 게재지면이 개선되어 안내드립니다.",
-      "category": "공지/이벤트",
-      "date": "2026-08-31",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
@@ -1024,10 +1024,10 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
-      "id": 100978,
-      "title": "[상품] 카카오 선물하기 홈 CPT 비즈보드 등록 소재 규격 변경 안내",
-      "category": "상품/서비스",
-      "date": "2026-08-27",
+      "id": 100981,
+      "title": "9월 15일 모먼트 성과형 광고의 카카오톡 게재지면이 개선되어 안내드립니다.",
+      "category": "공지/이벤트",
+      "date": "2026-08-31",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
@@ -1054,10 +1054,10 @@
       "platform": "나스미디어 광고상품업데이트"
     },
     {
-      "id": 100976,
-      "title": "[심사] 디스플레이 광고(보장형 상품 제외) 심사 운영시간 변경 안내 (9/7)",
-      "category": "정책/심사",
-      "date": "2026-08-26",
+      "id": 100978,
+      "title": "[상품] 카카오 선물하기 홈 CPT 비즈보드 등록 소재 규격 변경 안내",
+      "category": "상품/서비스",
+      "date": "2026-08-27",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
@@ -1078,21 +1078,21 @@
       "platform": "나스미디어 광고상품업데이트"
     },
     {
-      "id": 100974,
-      "title": "[상품] 상품 카탈로그 전체 오픈 및 변경 안내 (9/1)",
-      "category": "상품/서비스",
-      "date": "2026-08-25",
-      "is_pinned": true,
+      "id": 100976,
+      "title": "[심사] 디스플레이 광고(보장형 상품 제외) 심사 운영시간 변경 안내 (9/7)",
+      "category": "정책/심사",
+      "date": "2026-08-26",
+      "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
       "platform": "카카오모먼트"
     },
     {
-      "id": 100968,
-      "title": "[공지] 카카오비즈니스 이용약관 개정 안내 (2026/8/31)",
-      "category": "공지/이벤트",
-      "date": "2026-08-24",
-      "is_pinned": false,
+      "id": 100974,
+      "title": "[상품] 상품 카탈로그 전체 오픈 및 변경 안내 (9/1)",
+      "category": "상품/서비스",
+      "date": "2026-08-25",
+      "is_pinned": true,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
       "platform": "카카오모먼트"
@@ -1145,6 +1145,16 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
+      "id": 100968,
+      "title": "[공지] 카카오비즈니스 이용약관 개정 안내 (2026/8/31)",
+      "category": "공지/이벤트",
+      "date": "2026-08-24",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
       "id": "https://www.facebook.com/business/news/meta-ai-for-small-businesses",
       "title": "소규모 비즈니스를 위한 새로운 Meta AI 기능",
       "category": "비즈니스 소식",
@@ -1164,16 +1174,6 @@
       "url": "https://ads.naver.com/notice/33583",
       "excerpt": "안녕하세요, 네이버 디스플레이 광고 운영자입니다. ​ 비즈채널 검토 반려 건을 삭제·재등록 없이 직접 재검토 요청하실 수 있는 기능을 추가하여 안내드립니다. ​ 그동안 비즈채널이 검토에서 반려될 경우, 해당 채널을 삭제하거나 고객센터 또는 파트너사 요청 채널을 통해 재검토를 진행해야 했습니다. 이 과정에서 삭제된 비즈채널은 기존 검토 이력까지 함께 사라지는 불편함이 있었습니다. ​ 이번 기능 추가로 비즈채널을 삭제하거나 별도 절차를 거치지 않아도 바로 재검토 요청이 가능하여 기존 검 이력이 보존되고, 재검토 절차가 크게 간소화됩니다",
       "platform": "네이버 GFA"
-    },
-    {
-      "id": 100967,
-      "title": "[카카오비즈니스] '카카오광고' 서비스 운영정책 개정 사전공지 (9/28)",
-      "category": "공지/이벤트",
-      "date": "2026-08-18",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
     },
     {
       "id": 33601,
@@ -1259,6 +1259,16 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
+      "id": 100967,
+      "title": "[카카오비즈니스] '카카오광고' 서비스 운영정책 개정 사전공지 (9/28)",
+      "category": "공지/이벤트",
+      "date": "2026-08-18",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
       "id": 100964,
       "title": "[상품] 프로필 풀뷰 상품 노출 변경사항 안내",
       "category": "상품/서비스",
@@ -1300,16 +1310,6 @@
       "url": "https://ads.naver.com/notice/33469",
       "excerpt": "안녕하세요, 네이버 디스플레이 광고 운영자입니다. ​ 시리즈 이용 고객층에게 효과적으로 광고를 노출할 수 있도록, 시리즈 > 작품 하단 영역에 노출 가능한 성과형 광고 유형이 확대되어 안내드립니다. 기존에는 이미지 배너(1250x560) 단일 유형만 노출 가능했으나, 2026년 8월 19일(수) 부터 아래와 같은 성과형 광고 유형이 추가됩니다. • 16:9 네이티브 이미지 피드 광고 • 16:9 네이티브 동영상 피드 광고 • 피드 컬렉션형 광고 ​ ■ 적용일정 - 2026년 8월 19일(수) 순차 적용 ​ ■ 변경 사항 시리즈 작품",
       "platform": "네이버 GFA"
-    },
-    {
-      "id": 100960,
-      "title": "사장님 커뮤니티 5기 [오프라인 뷰티] 업종 사장님을 모집합니다! (~9/6)",
-      "category": "공지/이벤트",
-      "date": "2026-08-10",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
     },
     {
       "id": "/entry/20260803-news-clipping",
@@ -1360,6 +1360,16 @@
         }
       ],
       "platform": "나스미디어 뉴스클리핑"
+    },
+    {
+      "id": 100960,
+      "title": "사장님 커뮤니티 5기 [오프라인 뷰티] 업종 사장님을 모집합니다! (~9/6)",
+      "category": "공지/이벤트",
+      "date": "2026-08-10",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
     },
     {
       "id": 100951,
