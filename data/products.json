@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T14:13:46+09:00",
+  "generated_at": "2026-10-27T14:43:32+09:00",
   "products": [
     {
       "platform": "AB180",
@@ -657,13 +657,13 @@
       "summary": "라이프스타일 플랫폼",
       "description": "라이프스타일 플랫폼",
       "features": [
-        "자료: [오늘의집] 광고 상품 소개서_2026.09.",
+        "자료: [오늘의집]",
         "사내 자료명: 오늘의집소개",
         "최근 업데이트 기준: 26.09"
       ],
       "link": "https://drive.google.com/file/d/11qonDkj_Zs63vABIbfoVGvfVgrjSiwGT/view",
       "last_changed_at": "2026-10-27",
-      "_signature": "{\"category\": \"DA\", \"features\": [\"자료: [오늘의집] 광고 상품 소개서_2026.09.\", \"사내 자료명: 오늘의집소개\", \"최근 업데이트 기준: 26.09\"], \"link\": \"https://drive.google.com/file/d/11qonDkj_Zs63vABIbfoVGvfVgrjSiwGT/view\", \"summary\": \"라이프스타일 플랫폼\"}",
+      "_signature": "{\"category\": \"DA\", \"features\": [\"자료: [오늘의집]\", \"사내 자료명: 오늘의집소개\", \"최근 업데이트 기준: 26.09\"], \"link\": \"https://drive.google.com/file/d/11qonDkj_Zs63vABIbfoVGvfVgrjSiwGT/view\", \"summary\": \"라이프스타일 플랫폼\"}",
       "updated_at": "2026-10-27"
     },
     {
