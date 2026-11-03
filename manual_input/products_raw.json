@@ -114,6 +114,19 @@
     "link": "https://drive.google.com/file/d/1zg8DE1IQ0UgVf0FegcKVSzp-zHQoaNP4/view?usp=drivesdk"
   },
   {
+    "platform": "KB Pay",
+    "category": "DA, 보상형",
+    "summary": "국내 카드 이용금액 2위 KB국민카드(시장 점유율 약 20%)의 유일한 통합 APP 플랫폼",
+    "description": "국내 카드 이용금액 2위 KB국민카드(시장 점유율 약 20%)의 유일한 통합 APP 플랫폼",
+    "features": [
+      "자료: KB Pay AD 오늘의 퀴즈 광고상품 소개서(2505)",
+      "사내 자료명: https://nest.wisebirds.com/app/board/103/post/4782",
+      "최근 업데이트 기준: 26.11",
+      "비고: 「오늘의 퀴즈」 : KB Pay의 대표적인 혜택 서비스로, 참여형 퀴즈 (고객 리워드 100% 지급)"
+    ],
+    "link": ""
+  },
+  {
     "platform": "Mnet Plus",
     "category": "DA, 기타",
     "summary": "K-POP 올인원 팬터랙티브 플랫폼",
@@ -191,8 +204,7 @@
     "features": [
       "자료: [Remerge] 소개자료_2026.09.pdf",
       "사내 자료명: 리머지",
-      "최근 업데이트 기준: 26.09",
-      "비고: 09.15 설명회 파일 받으면 수정"
+      "최근 업데이트 기준: 26.10"
     ],
     "link": "https://drive.google.com/file/d/1vXRVZQoTWyx8SRjoeV2WvIYiEg-cQTS-/view?usp=drivesdk"
   },
@@ -322,7 +334,7 @@
     "features": [
       "자료: [데이블] 광고 상품 소개서_2026.Q3.pdf",
       "사내 자료명: 데이블 소개",
-      "최근 업데이트 기준: 26.09"
+      "최근 업데이트 기준: 26.10"
     ],
     "link": "https://drive.google.com/file/d/17KmCqwzSBoxN9Css9h4r0JY9t3-ITeZ4/view?usp=drivesdk"
   },
@@ -525,7 +537,7 @@
     "features": [
       "자료: [오늘의집]",
       "사내 자료명: 오늘의집소개",
-      "최근 업데이트 기준: 26.09"
+      "최근 업데이트 기준: 26.10"
     ],
     "link": "https://drive.google.com/file/d/11qonDkj_Zs63vABIbfoVGvfVgrjSiwGT/view"
   },
@@ -552,6 +564,18 @@
       "사내 자료명: 오늘학교",
       "최근 업데이트 기준: 26.09",
       "비고: 초중고 학생/학부모 타겟, 9월 프로모션 진행"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "오르비",
+    "category": "DA",
+    "summary": "학부모+학생 타겟 매체",
+    "description": "학부모+학생 타겟 매체",
+    "features": [
+      "자료: 아테나스랩_오르비_광고소개서_2026",
+      "최근 업데이트 기준: 26.11",
+      "비고: 입시·교육 커뮤니티로 초중고 및 학부모 타깃이 가능하며, 모바일/PC DA 광고 상품을 운영하고 있습니다. 특히 고2~3, N수생 등 수험생 이용자가 많은 매체"
     ],
     "link": ""
   },
@@ -818,6 +842,18 @@
       "최근 업데이트 기준: 26.09"
     ],
     "link": "https://drive.google.com/file/d/1bXXBzHEl3Xqn7WeOK_olSmLcqPlUS7pr/view"
+  },
+  {
+    "platform": "퍼핀",
+    "category": "DA",
+    "summary": "초중등 자녀와 부모가 함께 사용하는 용돈관리·금융교육 앱\n학부모+학생 타겟 매체",
+    "description": "초중등 자녀와 부모가 함께 사용하는 용돈관리·금융교육 앱\n학부모+학생 타겟 매체",
+    "features": [
+      "자료: 아테나스랩_퍼핀_광고소개서_2026",
+      "최근 업데이트 기준: 26.11",
+      "비고: 부모앱 내 메인배너 및 정보메뉴 배너 등 DA 광고 상품을 운영"
+    ],
+    "link": ""
   },
   {
     "platform": "페이코 캠퍼스",

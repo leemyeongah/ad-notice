@@ -1,7 +1,92 @@
 {
-  "generated_at": "2026-10-27T14:43:51+09:00",
-  "new_count": 6,
+  "generated_at": "2026-11-03T10:59:07+09:00",
+  "new_count": 7,
   "notices": [
+    {
+      "id": "/entry/20261026-news-clipping",
+      "title": "2026년 10월 26일주 뉴스클리핑",
+      "excerpt": "한 주 간의 <mark>디지털 미디어와 마케팅</mark> 관련 주요 뉴스를 모아 전해드립니다. <mark>유튜브, '쇼츠 시리즈' 도입으로 숏폼 연재·수익화 강화</mark> 유튜브가 쇼츠를 시즌·에피소드별로 구성하고 맞춤형 썸네일과 순차 재생을 지원하는 '쇼츠 시리즈'를 도입함. 국내 숏폼 드라마 조회수 130% 증가 등 연재형 콘텐츠 수요 확대에 따른 시리즈 기능 강화로, 향후 멤버십 전용 다음 회차를 시청 화면에서 바로 가입 및 시청할 수 있도록 개편해 연재형 콘텐츠 수익화를 지원할 예정임.🔗유튜브 웹시리즈의 진화: 숏폼 드라마 <mark>인스타그램, 최대 90분 롱폼 영상 기능 '피처스' 시험 도입</mark> 인스타그램이 최대 90분 길이의 가로형 동영상을 지원하는 '피처스'를 시험 도입하며 숏폼 중심에서 롱폼으로 영상 서비스를 확대함. 긴 영상의 광고 수익성과 이용자 체류 시간을 확보하고, 연재형 콘텐츠 시청을 위해 유튜브 등 외부 플랫폼으로 이동하는 이용자를 자사 플랫폼에 머물게 하려는 전략으로 해석됨.🔗인스타그램, 90분 길이 가로형 영상 실험… 유튜브에…",
+      "platforms": [
+        "인스타그램",
+        "유튜브"
+      ],
+      "category": "뉴스클리핑",
+      "date": "2026-11-02",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://blog.nasmedia.co.kr/entry/20261026-news-clipping",
+      "highlights": [
+        {
+          "platform": "유튜브",
+          "headline": "유튜브, '쇼츠 시리즈' 도입으로 숏폼 연재·수익화 강화"
+        },
+        {
+          "platform": "인스타그램",
+          "headline": "인스타그램, 최대 90분 롱폼 영상 기능 '피처스' 시험 도입"
+        },
+        {
+          "platform": "메타",
+          "headline": "메타, AI 인프라 투자 위해 최대 975억달러 자금 조달 추진"
+        },
+        {
+          "platform": "구글",
+          "headline": "구글, AI 오버뷰 내 상품 광고 글로벌 확대"
+        }
+      ],
+      "platform": "나스미디어 뉴스클리핑"
+    },
+    {
+      "id": "/entry/2610adissue",
+      "title": "2026년 10월 - 파파고 앱 스플래시 패키지(한국어, 외국어) 출시 외",
+      "excerpt": "2026년 10월 디지털 미디어 애드 이슈 월간 디지털 미디어 상품 이슈와 주요 업데이트를 전해드립니다. 📢주요 이슈네이버, 파파고 앱 스플래시 패키지 한국어·외국어 상품 출시네이버가 파파고 앱의 스플래시 화면과 스마트채널을 결합한 광고 상품을 출시했습니다. 이번에 선보인 '파파고 앱 스플래시 패키지'는 앱 실행 시 노출되는 스플래시 광고와 홈 화면 및 번역 결과 화면의 스마트채널 광고를 하나의 패키지로 제공하는 상품입니다.특히 이용자의 디바이스 언어 설정에 따라 한국어 패키지와 외국어 패키지로 구분해 판매하는 것이 특징인데요. 광고주는 국내 이용자와 외국어 이용자를 구분해 캠페인을 운영할 수 있습니다. 한국어 패키지는 약 450만 회, 외국어 패키지는 약 ..",
+      "platforms": [
+        "네이버",
+        "카카오",
+        "당근",
+        "메타",
+        "토스",
+        "틱톡"
+      ],
+      "category": "광고 상품 업데이트",
+      "date": "2026-11-02",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://blog.nasmedia.co.kr/entry/2610adissue",
+      "platform": "나스미디어 광고상품업데이트"
+    },
+    {
+      "id": 25892,
+      "title": "구매 유도하기 캠페인의 상품별 성과 지표 구성 변경 안내",
+      "excerpt": "안녕하세요, 토스애즈입니다.'구매 유도하기' 캠페인을 '카탈로그 연동' 방식으로 집행하고 계시다면, 이제 맞춤보고서에서 상품별 성과를 더 자세히 보실 수 있어요.1. 무엇이 바뀌나요?광고 노출 지면 확대에 따라 지난 9월부터 디스플레이 광고 성과를 [광고 진입]과 [랜딩 직전] 단계로 나눠서 확인하실 수 있도록 지표를 제공하고 있어요.(관련 공지: 네이티브 광고 노출 지면 및 광고 형태 확대에 따른 성과 지표 구성 변경 안내)이에 맞춰 상품별 성과도 같은 기준으로 분석하실 수 있게 지표를 제공해요. ■ 기존 상품 지표 이름이 바뀌어",
+      "category": "공지",
+      "date": "2026-11-02",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://tossads.toss.im/notice/25892",
+      "platform": "토스애즈"
+    },
+    {
+      "id": 25832,
+      "title": "AI 이미지 생성 기능 오픈 안내 (이미지 한 장으로 비율별 소재 생성)",
+      "excerpt": "안녕하세요, 토스애즈입니다.2026년 10월 28일(수)부터 모든 캠페인 목표에서 'AI 이미지 생성' 기능을 사용하실 수 있습니다.이미지 한 장만 올리면 가로형, 정사각형, 세로형 소재가 함께 만들어져, 비율별 소재를 따로 제작하지 않아도 여러 지면에 광고를 노출할 수 있습니다.1. 오픈 일시2026년 10월 28일(수)2. 주요 기능이미지 한 장을 올리면 가로형(1.91:1), 정사각형(1:1), 세로형(9:16) 비율별로 2장씩, 총 6장의 이미지가 생성됩니다.원본에 담긴 로고, 문구, 심의필은 최대한 그대로 유지합니다.원본의",
+      "category": "공지",
+      "date": "2026-10-28",
+      "is_pinned": true,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25832",
+      "platform": "토스애즈"
+    },
+    {
+      "id": 25834,
+      "title": "앱 설치 유도하기 소재 링크 등록 방식 변경 안내 (랜딩 URL 등록 방법)",
+      "excerpt": "안녕하세요, 토스애즈입니다.10월 21일 사전 안내드린 앱 설치 유도하기 소재의 링크 등록 방식 변경이 2026년 11월 3일(화) 오후 3시에 적용됩니다.적용 전에 준비하실 수 있도록 랜딩 URL을 만들고 등록하는 방법을 안내드립니다.변경 일시2026년 11월 3일(화) 오후 3시변경 사항 한눈에 보기구분현재11월 3일 이후소재에 입력하는 링크랜딩 URL + 앱 스킴 (2개)랜딩 URL 1개 (MMP 트래킹 링크)앱 스킴소재 등록 화면에 따로 입력MMP 콘솔에서 트래킹 링크에 설정 (필수)유니버설 링크·앱 링크필수권장변경 전변경 ",
+      "category": "공지",
+      "date": "2026-10-28",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25834",
+      "platform": "토스애즈"
+    },
     {
       "id": 101081,
       "title": "[시스템] 파트너센터 신규 소식의 광고 랜딩 설정 일시 제한 안내(~11/3)",
@@ -24,7 +109,7 @@
       "category": "뉴스클리핑",
       "date": "2026-10-26",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://blog.nasmedia.co.kr/entry/20261019-news-clipping",
       "highlights": [
         {
@@ -78,9 +163,20 @@
       "category": "디스플레이 광고",
       "date": "2026-10-21",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://ads.naver.com/notice/34889",
       "excerpt": "안녕하세요. 네이버 디스플레이 광고 운영자입니다. ​ 네이버 디스플레이 광고 플랫폼에서 AI가 광고에 활용할 타겟을 찾아 제안하는 '타겟 찾기' 기능을 새롭게 출시합니다. 찾고 싶은 고객의 특징을 문장으로 입력하거나 광고 계정 데이터를 바탕으로, 내 광고에 맞는 타겟을 근거와 함께 제안받고 바로 광고그룹에 활용하실 수 있습니다. 이와 함께 '잠재고객 관리' 메뉴의 이름이 '오디언스 관리'로 변경됩니다. 광고주님께서는 아래 상세 내용을 확인하시고 광고 운영에 참고하시기 바랍니다. ​ ​ 1. 적용 일자 ​ - 2026년 10월 28일",
+      "platform": "네이버 GFA"
+    },
+    {
+      "id": 34687,
+      "title": "[디스플레이 광고] '쇼핑 프로모션' → '쇼핑 고객 확장' 캠페인 목적 이름 변경 및 잠재고객 확장 등 신규 기능 제공 안내",
+      "category": "디스플레이 광고",
+      "date": "2026-10-21",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://ads.naver.com/notice/34687",
+      "excerpt": "안녕하세요, 네이버 디스플레이 광고 운영자입니다. ​ 2026년 10월 28일(수)부터 디스플레이 광고의 '쇼핑 프로모션' 캠페인 목적 이름이 '쇼핑 고객 확장'으로 바뀝니다. 그동안 일부 광고주를 대상으로 테스트하던 잠재고객 확장 타게팅, 다이내믹 소재, 신규 고객 타겟 등의 기능도 같은 날부터 모든 광고주께 제공합니다. 새 기능을 처음 접하시는 광고주를 위해 캠페인 소개, 기능별 내용, 시작 방법을 함께 안내드립니다. 스마트스토어·브랜드스토어 광고를 운영 중이거나 계획 중인 광고주께서는 아래 내용을 확인하시고 광고 운영에 참고하",
       "platform": "네이버 GFA"
     },
     {
@@ -198,6 +294,26 @@
       "platform": "토스애즈"
     },
     {
+      "id": 101057,
+      "title": "[상품] 카카오톡 서브 디바이스 내 광고 노출 확대 안내 (10/19)",
+      "category": "상품/서비스",
+      "date": "2026-10-12",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
+      "id": 101055,
+      "title": "[안내] 10월 카카오비즈니스 세미나 일정",
+      "category": "공지/이벤트",
+      "date": "2026-10-12",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
       "id": "/entry/20261005-news-clipping",
       "title": "2026년 10월 5일주 뉴스클리핑",
       "excerpt": "한 주 간의 <mark>디지털 미디어와 마케팅</mark> 관련 주요 뉴스를 모아 전해드립니다. <mark>오픈AI, 챗GPT에 '인텔리전트 UI' 도입…질문에 맞춰 지도·차트 등 생성</mark> 오픈AI가 GPT-6 업데이트와 함께 질문에 맞춰 답변 화면을 구성하는 '인텔리전트 UI'를 도입함. 인텔리전트 UI는 지도·차트·입력창 등 질문에 따라 필요한 인터랙티브 요소를 생성하고 단순한 질문에는 기존처럼 텍스트로 답변함. 10월 8일부터 유료 이용자에게 순차적으로 제공되며 9일부터 무료 이용자까지 확대될 예정임.🔗오픈AI, 챗GPT 답변 방식 바꾼다…GPT-6로 화면까지 생성 <mark>챗GPT, 이미지 생성 중 광고 노출 및 광고 성과 측정 기능 확대</mark> 오픈AI가 챗GPT 이미지 생성 중 별도로 노출되는 비주얼 광고 형식을 새롭게 도입하고, 이달 말 미국 일부 광고주를 대상으로 테스트할 예정임. 또한 광고주가 챗GPT 광고의 전환 성과를 파악할 수 있도록 데이터 연동 및 측정 파트너십을 확대하고, 광고가 적절한 대화 맥락에 노출되도록 브랜드 적합성 평가와…",
@@ -239,26 +355,6 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
-      "id": 101057,
-      "title": "[상품] 카카오톡 서브 디바이스 내 광고 노출 확대 안내 (10/19)",
-      "category": "상품/서비스",
-      "date": "2026-10-12",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
-      "id": 101055,
-      "title": "[안내] 10월 카카오비즈니스 세미나 일정",
-      "category": "공지/이벤트",
-      "date": "2026-10-12",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
       "id": 25708,
       "title": "잠재고객 모으기·앱 설치 유도하기 이전 버전 캠페인 운영 종료 안내",
       "excerpt": "안녕하세요, 토스애즈입니다.잠재고객 모으기와 앱 설치 유도하기 캠페인 중 이전 버전으로 운영 중인 캠페인이 2026년 11월 9일(월)에 종료될 예정입니다.1. 종료 일시2026년 11월 9일(월) 오후 7시종료 일시 이후 대상 캠페인은 집행이 자동으로 중단됩니다.집행이 중단된 캠페인은 다시 운영할 수 없습니다.2. 운영 종료 대상1) 잠재고객 모으기 > 토스 양식 사용2026년 9월 15일 이전에 생성된 캠페인소개 화면이 포함되지 않은 고객 수집 양식을 사용하는 캠페인변경 전 소개 화면이 포함된 고객 수집 양식을 사용하는 캠페인2",
@@ -268,6 +364,16 @@
       "is_new": false,
       "url": "https://tossads.toss.im/notice/25708",
       "platform": "토스애즈"
+    },
+    {
+      "id": 101047,
+      "title": "[상품] 참여형 광고 PC 지면 업데이트 사항 안내",
+      "category": "상품/서비스",
+      "date": "2026-10-07",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
     },
     {
       "id": 25700,
@@ -281,10 +387,20 @@
       "platform": "토스애즈"
     },
     {
-      "id": 101047,
-      "title": "[상품] 참여형 광고 PC 지면 업데이트 사항 안내",
+      "id": 101045,
+      "title": "[상품] 카카오 커머스 > 상품 카탈로그 캠페인 노출 지면 확장 안내 (10/7)",
       "category": "상품/서비스",
-      "date": "2026-10-07",
+      "date": "2026-10-06",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
+      "id": 101043,
+      "title": "[계산서] 2026년 3분기 (7월~9월)세금계산서 발행 및 수정발행 안내",
+      "category": "회계",
+      "date": "2026-10-06",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
@@ -344,26 +460,6 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
-      "id": 101045,
-      "title": "[상품] 카카오 커머스 > 상품 카탈로그 캠페인 노출 지면 확장 안내 (10/7)",
-      "category": "상품/서비스",
-      "date": "2026-10-06",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
-      "id": 101043,
-      "title": "[계산서] 2026년 3분기 (7월~9월)세금계산서 발행 및 수정발행 안내",
-      "category": "회계",
-      "date": "2026-10-06",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
       "id": 101042,
       "title": "[상품] 비즈니스폼 랜딩 유형 및 비즈니스폼 연동 관리 지원 종료 안내(11/3)",
       "category": "상품/서비스",
@@ -394,6 +490,26 @@
       "is_new": false,
       "url": "https://ads.tiktok.com/business/ko/blog/tiktok-pulse-premium-contextual-ad-placement",
       "platform": "틱톡 for Business"
+    },
+    {
+      "id": 101035,
+      "title": "카카오모먼트 Open API 변경 사항 안내 (9/28)",
+      "category": "시스템/개선",
+      "date": "2026-09-28",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
+      "id": 101026,
+      "title": "[시스템] 스마트메시지 종료 안내 (11/3)",
+      "category": "시스템/개선",
+      "date": "2026-09-28",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
     },
     {
       "id": "/entry/20260921-news-clipping",
@@ -445,20 +561,31 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
-      "id": 101035,
-      "title": "카카오모먼트 Open API 변경 사항 안내 (9/28)",
-      "category": "시스템/개선",
+      "id": "/business/ko/blog/premier-agency-partners",
+      "title": "최고의 대행사를 더욱 돋보이게 — 'Premier Agency Partner'를 소개합니다",
+      "excerpt": "TikTok 에이전시 배지 프로그램을 2단계로 개편하여, 우수한 성과와 전문성을 갖춘 대행사의 차별화된 경쟁력을 부각합니다.",
+      "category": "공지사항",
       "date": "2026-09-28",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://ads.tiktok.com/business/ko/blog/premier-agency-partners",
+      "platform": "틱톡 for Business"
+    },
+    {
+      "id": 101032,
+      "title": "[상품] 카카오 비즈보드 광고 내 'AI 활용 표기 설정' 옵션 추가 지원 안내",
+      "category": "상품/서비스",
+      "date": "2026-09-23",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
       "platform": "카카오모먼트"
     },
     {
-      "id": 101026,
-      "title": "[시스템] 스마트메시지 종료 안내 (11/3)",
-      "category": "시스템/개선",
-      "date": "2026-09-28",
+      "id": 101031,
+      "title": "[안내] 커머스카탈로그 연동 베네핏 프로모션-광고비100만원 지급 기간 연장 안내",
+      "category": "공지/이벤트",
+      "date": "2026-09-23",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
@@ -476,20 +603,20 @@
       "platform": "토스애즈"
     },
     {
-      "id": 101032,
-      "title": "[상품] 카카오 비즈보드 광고 내 'AI 활용 표기 설정' 옵션 추가 지원 안내",
-      "category": "상품/서비스",
-      "date": "2026-09-23",
+      "id": 101021,
+      "title": "카카오비즈니스 이용약관 개정 안내 (9/29, 10/22)",
+      "category": "공지/이벤트",
+      "date": "2026-09-22",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
       "platform": "카카오모먼트"
     },
     {
-      "id": 101031,
-      "title": "[안내] 커머스카탈로그 연동 베네핏 프로모션-광고비100만원 지급 기간 연장 안내",
+      "id": 101015,
+      "title": "[카카오비즈니스] '카카오광고' 서비스 운영정책 개정 사전공지 (10/27)",
       "category": "공지/이벤트",
-      "date": "2026-09-23",
+      "date": "2026-09-22",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
@@ -526,20 +653,30 @@
       "platform": "토스애즈"
     },
     {
-      "id": 101021,
-      "title": "카카오비즈니스 이용약관 개정 안내 (9/29, 10/22)",
-      "category": "공지/이벤트",
-      "date": "2026-09-22",
+      "id": 101027,
+      "title": "[시스템] 카카오 커머스 랜딩 URL 자동 레퍼러 파라미터 추가 안내",
+      "category": "시스템/개선",
+      "date": "2026-09-21",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
       "platform": "카카오모먼트"
     },
     {
-      "id": 101015,
-      "title": "[카카오비즈니스] '카카오광고' 서비스 운영정책 개정 사전공지 (10/27)",
+      "id": 100975,
+      "title": "[시스템] '고객데이터' 타겟 신설 및 고객파일/친구그룹 종료 안내",
+      "category": "시스템/개선",
+      "date": "2026-09-21",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
+      "id": 101025,
+      "title": "[공지] 2026 카카오비즈니스 베스트 어워즈 안내",
       "category": "공지/이벤트",
-      "date": "2026-09-22",
+      "date": "2026-09-21",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
@@ -599,36 +736,6 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
-      "id": 101027,
-      "title": "[시스템] 카카오 커머스 랜딩 URL 자동 레퍼러 파라미터 추가 안내",
-      "category": "시스템/개선",
-      "date": "2026-09-21",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
-      "id": 100975,
-      "title": "[시스템] '고객데이터' 타겟 신설 및 고객파일/친구그룹 종료 안내",
-      "category": "시스템/개선",
-      "date": "2026-09-21",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
-      "id": 101025,
-      "title": "[공지] 2026 카카오비즈니스 베스트 어워즈 안내",
-      "category": "공지/이벤트",
-      "date": "2026-09-21",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
       "id": 25624,
       "title": "토스 애즈 전환 집계 기준(Attribution Window) 변경 안내",
       "excerpt": "안녕하세요, 토스 애즈입니다.토스 애즈의 기본 전환 집계 기준을 2026년 9월 28일부터 클릭 후 90일에서 30일로 변경합니다.무엇이 바뀌나요전환 집계 기준의 기본 값이 변경됩니다: 클릭 후 90일 → 30일대시보드: 30일 기준으로 노출맞춤 보고서: 30일 기준으로 노출되며, 1/7/30/90일 기간을 선택해 성과 조회 가능적용일: 2026년 9월 28일(월)리포팅에 어떤 영향이 있나요캠페인 광고 성과 자체가 달라지는 것이 아니라, 전환을 인정하는 기간이 변경되는 것입니다. 광고 노출이나 유입 품질과는 무관합니다.대부분의 캠페",
@@ -662,6 +769,16 @@
       "platform": "네이버 GFA"
     },
     {
+      "id": 101018,
+      "title": "보고서 구매수량 지표 제공 확대 안내 (26.09.28)",
+      "category": "공지/이벤트",
+      "date": "2026-09-15",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
       "id": 25616,
       "title": "추석 연휴 검수 일정 안내",
       "excerpt": "안녕하세요, 토스애즈입니다.추석 연휴에 따른 소재 검수 운영 일정을 안내드립니다.검수 운영 일정9월 23일 수요일 18시까지 제출되는 소재에 한해 당일 검수 진행 예정9월 28일 월요일부터 검수 정상 운영 참고 안내 소재 검수는 순차 검수를 원칙으로 하며, 토스애즈 가이드에 부합하지 않는 경우 보류될 수 있습니다.원활한 광고 운영을 위해서 집행일 기준 2-3영업일 전 소재를 제출해주시기 바랍니다.소재 검수 운영 시간은 평일 10:00 ~ 19:00이며, 주말 및 공휴일은 검수되지 않습니다.감사합니다.토스애즈 드림",
@@ -673,10 +790,10 @@
       "platform": "토스애즈"
     },
     {
-      "id": 101018,
-      "title": "보고서 구매수량 지표 제공 확대 안내 (26.09.28)",
+      "id": 101016,
+      "title": "보고서 신규 지표(노출 기반 구매 전환 지표) 제공 안내 (26.09.28)",
       "category": "공지/이벤트",
-      "date": "2026-09-15",
+      "date": "2026-09-14",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
@@ -728,16 +845,6 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
-      "id": 101016,
-      "title": "보고서 신규 지표(노출 기반 구매 전환 지표) 제공 안내 (26.09.28)",
-      "category": "공지/이벤트",
-      "date": "2026-09-14",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
       "id": 25602,
       "title": "라이브 마켓 '플러스·프리미엄 상품' 운영 정책 변경 안내",
       "excerpt": "안녕하세요, 토스애즈입니다.라이브 마켓 '플러스 상품'과 '프리미엄 상품'의 운영 정책이 아래와 같이 변경되어 공지드립니다.적용 일시 : 2026년 9월 14일(월)부터1. 플러스 상품 : 최대 트래픽 한도 제거기존 최대 트래픽 한도(20만)가 제거되어, 트래픽 한도 없이 운영됩니다.캠페인 부킹 시점과 관계없이 9월 14일(월) 이후 진행되는 모든 플러스 상품 방송에 적용됩니다.2. 프리미엄 상품 : 최소 라이브 시간 변경라이브 시간 '1시간' 옵션이 사라지고, 최소 1시간 30분부터 설정할 수 있습니다.9월 14일(월) 이후 방송",
@@ -758,6 +865,16 @@
       "is_new": false,
       "url": "https://tossads.toss.im/notice/25600",
       "platform": "토스애즈"
+    },
+    {
+      "id": 101005,
+      "title": "[공지] 추석 연휴 고객센터/광고 심사 휴무(9/24~9/25) 안내",
+      "category": "기타",
+      "date": "2026-09-10",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
     },
     {
       "id": 25598,
@@ -782,16 +899,6 @@
       "platform": "토스애즈"
     },
     {
-      "id": 101005,
-      "title": "[공지] 추석 연휴 고객센터/광고 심사 휴무(9/24~9/25) 안내",
-      "category": "기타",
-      "date": "2026-09-10",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
       "id": 25590,
       "title": "상품명 AI 최적화 기능 적용 안내 (9/15 오픈)",
       "excerpt": "안녕하세요, 토스애즈입니다.2026년 9월 15일부터 카탈로그 광고에 노출되는 상품명이 상품 간 통일된 형태로 정리되어 노출됩니다.어떤 기능인가요?상품명 AI 최적화는 원본 상품명을 최대한 유지하면서, 광고에 노출될 상품명을 정리하는 기능입니다.변환된 상품명의 노출 여부는 광고주센터에서 상품별로 관리하실 수 있습니다.브랜드·규격·수량처럼 상품을 특정하는 정보는 그대로 유지하며, 표기 순서와 구분만 정돈합니다.여러 상품이 나란히 노출되는 화면에서 표기 형태가 통일되면, 고객이 상품을 비교하고 이해하기 쉬워집니다.어떻게 달라지나요?변경",
@@ -800,86 +907,6 @@
       "is_pinned": false,
       "is_new": false,
       "url": "https://tossads.toss.im/notice/25590",
-      "platform": "토스애즈"
-    },
-    {
-      "id": 25586,
-      "title": "행정구역 개편에 따른 타겟팅 변경 및 대응 안내",
-      "excerpt": "안녕하세요, 토스애즈입니다.2026년 7월 1일 시행된 행정구역 개편에 따라 2026년 9월 22일(화) 오후 7시부터 지역 타겟팅의 일부 지역 항목이 변경됩니다.9월 22일 이후에는 '전라남도'와 '광주광역시', 인천광역시의 '서구', '중구', '동구', '남구'를 선택하실 수 없어, 변경된 행정구역으로 변경해주셔야 합니다.기존에 해당 지역으로 설정하신 타겟팅은 모수가 0명으로 변경되어 광고 노출이 중단될 수 있으니, 아래 내용을 미리 확인하고 대응해주시기 바랍니다.변경 일시2026년 9월 22일(화) 오후 7시1. 행정구역 개",
-      "category": "공지",
-      "date": "2026-09-08",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://tossads.toss.im/notice/25586",
-      "platform": "토스애즈"
-    },
-    {
-      "id": "/entry/20260831-news-clipping",
-      "title": "2026년 8월 31일주 뉴스클리핑",
-      "excerpt": "한 주 간의 <mark>디지털 미디어와 마케팅</mark> 관련 주요 뉴스를 모아 전해드립니다. <mark>카카오, 주요 계열사 묶는 통합 멤버십 출시 준비</mark><mark>…생활 서비스 연결 추진</mark> 카카오가 카카오톡을 중심으로 모빌리티·콘텐츠·커머스·결제 등 주요 계열사 서비스를 연계한 통합 멤버십 출시를 준비 중임. 외부 서비스까지 협업 범위를 넓혀 카카오톡을 일상 소비와 거래의 출발점으로 구축하려는 전략으로 풀이되며, 구체적인 혜택과 참여 서비스, 출시 시점은 아직 정해지지 않았음. 🔗카카오, 통합 멤버십 준비…\"택시·음악·쇼핑·웹툰 혜택 묶는다\" <mark>오픈AI, 챗GPT 광고 연 환산 매출 10억달러 기록</mark> 오픈AI가 챗GPT 광고 출시 약 200일 만에 연 환산 매출 10억달러를 기록하며 주요 수익원으로 키우고 있음. 향후 광고 운영 국가와 형식, 구매·성과 측정 기능을 확대할 계획임.🔗챗GPT, 200일 만에 연간 환산 광고매출 10억달러 돌파 <mark>구글, 국내 모바일 앱 MAU 두 달 연속 네이버 앞서</mark><mar…",
-      "platforms": [
-        "챗GPT",
-        "오픈AI",
-        "카카오톡",
-        "카카오"
-      ],
-      "category": "뉴스클리핑",
-      "date": "2026-09-07",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://blog.nasmedia.co.kr/entry/20260831-news-clipping",
-      "highlights": [
-        {
-          "platform": "카카오",
-          "headline": "카카오, 주요 계열사 묶는 통합 멤버십 출시 준비"
-        },
-        {
-          "platform": "챗GPT",
-          "headline": "오픈AI, 챗GPT 광고 연 환산 매출 10억달러 기록"
-        },
-        {
-          "platform": "네이버",
-          "headline": "구글, 국내 모바일 앱 MAU 두 달 연속 네이버 앞서"
-        },
-        {
-          "platform": "카카오톡",
-          "headline": "카카오, 10월 일본 카카오톡 광고 출시…K컬처 관심층 공략"
-        },
-        {
-          "platform": "인스타그램",
-          "headline": "인스타그램, 한국인 SNS 앱 사용 시간 1위"
-        },
-        {
-          "platform": "오픈AI",
-          "headline": "오픈AI, 'GPT-6 아스트라' 공개"
-        },
-        {
-          "platform": "유튜브",
-          "headline": "유튜브, 아마존과 손잡고 쇼핑 사업 확대"
-        }
-      ],
-      "platform": "나스미디어 뉴스클리핑"
-    },
-    {
-      "id": 25578,
-      "title": "토스애즈 약관 개정 안내",
-      "excerpt": "안녕하세요. 토스애즈입니다.2026년 10월 7일부로 토스애즈 이용약관이 변경됨을 공지드립니다.주요 변경사항은 아래와 같으며, 변경약관의 전문은 아래의 링크에서 확인할 수 있습니다.1. 주요 변경사항 및 개정사유광고매체별 광고 소재 최적화를 위한 조정, 활용 방식에 관한 설명 추가 (제10조 제4항, 제17조 제5항)광고 타겟 설정 관련 책임 소재 명확화 (제11조 제1항 및 제2항)토스 광고 서비스 운영 목적 내 광고 소재의 활용 범위에 관한 설명 추가 (제16조 제5항)기타 오기 등 수정2. 변경 전, 후 약관 전문[변경 전 약",
-      "category": "공지",
-      "date": "2026-09-07",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://tossads.toss.im/notice/25578",
-      "platform": "토스애즈"
-    },
-    {
-      "id": 25574,
-      "title": "라이브 마켓 베이직 상품 반값 할인 프로모션 연장 안내(~26. 12. 31.)",
-      "excerpt": "안녕하세요, 토스애즈입니다.라이브 마켓 '베이직 상품'에 대한 반값 할인 프로모션이 연장되어 공지드립니다.기간 : 2026년 4월 1일 ~ 12월 31일(예정)운영 기간은 변동될 수 있으며, 변동 시 추가 공지 예정입니다.대상 : 모든 광고주/대행사 적용 가격 : 30만원(기존 60만원에서 50% 할인)평일(일반/골든타임), 주말 관계 없이 모든 시간에 적용토스 라이브 마켓 제품을 사랑해 주셔서 감사드리며,앞으로도 좋은 프로모션으로 찾아뵙는 토스 광고팀이 되고자 노력하겠습니다.토스애즈 드림",
-      "category": "공지",
-      "date": "2026-09-07",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://tossads.toss.im/notice/25574",
       "platform": "토스애즈"
     },
     {
@@ -943,6 +970,53 @@
       "platform": "카카오모먼트"
     },
     {
+      "id": "/entry/20260831-news-clipping",
+      "title": "2026년 8월 31일주 뉴스클리핑",
+      "excerpt": "한 주 간의 <mark>디지털 미디어와 마케팅</mark> 관련 주요 뉴스를 모아 전해드립니다. <mark>카카오, 주요 계열사 묶는 통합 멤버십 출시 준비</mark><mark>…생활 서비스 연결 추진</mark> 카카오가 카카오톡을 중심으로 모빌리티·콘텐츠·커머스·결제 등 주요 계열사 서비스를 연계한 통합 멤버십 출시를 준비 중임. 외부 서비스까지 협업 범위를 넓혀 카카오톡을 일상 소비와 거래의 출발점으로 구축하려는 전략으로 풀이되며, 구체적인 혜택과 참여 서비스, 출시 시점은 아직 정해지지 않았음. 🔗카카오, 통합 멤버십 준비…\"택시·음악·쇼핑·웹툰 혜택 묶는다\" <mark>오픈AI, 챗GPT 광고 연 환산 매출 10억달러 기록</mark> 오픈AI가 챗GPT 광고 출시 약 200일 만에 연 환산 매출 10억달러를 기록하며 주요 수익원으로 키우고 있음. 향후 광고 운영 국가와 형식, 구매·성과 측정 기능을 확대할 계획임.🔗챗GPT, 200일 만에 연간 환산 광고매출 10억달러 돌파 <mark>구글, 국내 모바일 앱 MAU 두 달 연속 네이버 앞서</mark><mar…",
+      "platforms": [
+        "챗GPT",
+        "오픈AI",
+        "카카오톡",
+        "카카오"
+      ],
+      "category": "뉴스클리핑",
+      "date": "2026-09-07",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://blog.nasmedia.co.kr/entry/20260831-news-clipping",
+      "highlights": [
+        {
+          "platform": "카카오",
+          "headline": "카카오, 주요 계열사 묶는 통합 멤버십 출시 준비"
+        },
+        {
+          "platform": "챗GPT",
+          "headline": "오픈AI, 챗GPT 광고 연 환산 매출 10억달러 기록"
+        },
+        {
+          "platform": "네이버",
+          "headline": "구글, 국내 모바일 앱 MAU 두 달 연속 네이버 앞서"
+        },
+        {
+          "platform": "카카오톡",
+          "headline": "카카오, 10월 일본 카카오톡 광고 출시…K컬처 관심층 공략"
+        },
+        {
+          "platform": "인스타그램",
+          "headline": "인스타그램, 한국인 SNS 앱 사용 시간 1위"
+        },
+        {
+          "platform": "오픈AI",
+          "headline": "오픈AI, 'GPT-6 아스트라' 공개"
+        },
+        {
+          "platform": "유튜브",
+          "headline": "유튜브, 아마존과 손잡고 쇼핑 사업 확대"
+        }
+      ],
+      "platform": "나스미디어 뉴스클리핑"
+    },
+    {
       "id": 100993,
       "title": "[계산서] 2026년 8월 세금계산서 발행 및 수정발행 안내",
       "category": "회계",
@@ -957,6 +1031,16 @@
       "title": "카카오톡 일본 광고와 함께 성장할 공식 대행사를 모집합니다",
       "category": "공지/이벤트",
       "date": "2026-09-01",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
+      "id": 100981,
+      "title": "9월 15일 모먼트 성과형 광고의 카카오톡 게재지면이 개선되어 안내드립니다.",
+      "category": "공지/이벤트",
+      "date": "2026-08-31",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
@@ -1034,10 +1118,10 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
-      "id": 100981,
-      "title": "9월 15일 모먼트 성과형 광고의 카카오톡 게재지면이 개선되어 안내드립니다.",
-      "category": "공지/이벤트",
-      "date": "2026-08-31",
+      "id": 100978,
+      "title": "[상품] 카카오 선물하기 홈 CPT 비즈보드 등록 소재 규격 변경 안내",
+      "category": "상품/서비스",
+      "date": "2026-08-27",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
@@ -1064,10 +1148,10 @@
       "platform": "나스미디어 광고상품업데이트"
     },
     {
-      "id": 100978,
-      "title": "[상품] 카카오 선물하기 홈 CPT 비즈보드 등록 소재 규격 변경 안내",
-      "category": "상품/서비스",
-      "date": "2026-08-27",
+      "id": 100976,
+      "title": "[심사] 디스플레이 광고(보장형 상품 제외) 심사 운영시간 변경 안내 (9/7)",
+      "category": "정책/심사",
+      "date": "2026-08-26",
       "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
@@ -1088,21 +1172,21 @@
       "platform": "나스미디어 광고상품업데이트"
     },
     {
-      "id": 100976,
-      "title": "[심사] 디스플레이 광고(보장형 상품 제외) 심사 운영시간 변경 안내 (9/7)",
-      "category": "정책/심사",
-      "date": "2026-08-26",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
       "id": 100974,
       "title": "[상품] 상품 카탈로그 전체 오픈 및 변경 안내 (9/1)",
       "category": "상품/서비스",
       "date": "2026-08-25",
       "is_pinned": true,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
+    },
+    {
+      "id": 100968,
+      "title": "[공지] 카카오비즈니스 이용약관 개정 안내 (2026/8/31)",
+      "category": "공지/이벤트",
+      "date": "2026-08-24",
+      "is_pinned": false,
       "is_new": false,
       "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
       "platform": "카카오모먼트"
@@ -1155,16 +1239,6 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
-      "id": 100968,
-      "title": "[공지] 카카오비즈니스 이용약관 개정 안내 (2026/8/31)",
-      "category": "공지/이벤트",
-      "date": "2026-08-24",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
       "id": "https://www.facebook.com/business/news/meta-ai-for-small-businesses",
       "title": "소규모 비즈니스를 위한 새로운 Meta AI 기능",
       "category": "비즈니스 소식",
@@ -1184,6 +1258,16 @@
       "url": "https://ads.naver.com/notice/33583",
       "excerpt": "안녕하세요, 네이버 디스플레이 광고 운영자입니다. ​ 비즈채널 검토 반려 건을 삭제·재등록 없이 직접 재검토 요청하실 수 있는 기능을 추가하여 안내드립니다. ​ 그동안 비즈채널이 검토에서 반려될 경우, 해당 채널을 삭제하거나 고객센터 또는 파트너사 요청 채널을 통해 재검토를 진행해야 했습니다. 이 과정에서 삭제된 비즈채널은 기존 검토 이력까지 함께 사라지는 불편함이 있었습니다. ​ 이번 기능 추가로 비즈채널을 삭제하거나 별도 절차를 거치지 않아도 바로 재검토 요청이 가능하여 기존 검 이력이 보존되고, 재검토 절차가 크게 간소화됩니다",
       "platform": "네이버 GFA"
+    },
+    {
+      "id": 100967,
+      "title": "[카카오비즈니스] '카카오광고' 서비스 운영정책 개정 사전공지 (9/28)",
+      "category": "공지/이벤트",
+      "date": "2026-08-18",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
+      "platform": "카카오모먼트"
     },
     {
       "id": 33601,
@@ -1269,16 +1353,6 @@
       "platform": "나스미디어 뉴스클리핑"
     },
     {
-      "id": 100967,
-      "title": "[카카오비즈니스] '카카오광고' 서비스 운영정책 개정 사전공지 (9/28)",
-      "category": "공지/이벤트",
-      "date": "2026-08-18",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://lounge-board.kakao.com/bulletin/list?serviceType=KAKAOMOMENT",
-      "platform": "카카오모먼트"
-    },
-    {
       "id": 100964,
       "title": "[상품] 프로필 풀뷰 상품 노출 변경사항 안내",
       "category": "상품/서비스",
@@ -1309,67 +1383,6 @@
       "url": "https://ads.naver.com/notice/33492",
       "excerpt": "안녕하세요, 네이버 디스플레이 광고 운영자입니다. ​ 네이버 디스플레이 광고 플랫폼에서 캠페인과 광고그룹 단위의 '도달' 지표를 확인할 수 있는 '도달 보고서' 제공합니다. 도달 보고서를 통해 집행 중인 광고가 얼마나 많은 사용자에게 노출되었는지 확인하실 수 있으며, 캠페인의 도달 성과를 파악하는 데 활용하실 수 있습니다. 모든 광고주님께서는 아래 상세 내용을 확인하시고 광고 운영에 참고하시기 바랍니다. ​ ​ ■ 적용 일자 - 2026년 8월 12일(수) ​ ■ 도달 보고서 안내 도달 보고서는 광고가 도달한 사용자 규모를 확인할 ",
       "platform": "네이버 GFA"
-    },
-    {
-      "id": 33469,
-      "title": "[디스플레이 광고] 시리즈 > 작품 하단 성과형 광고 유형 추가 안내",
-      "category": "디스플레이 광고",
-      "date": "2026-08-12",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://ads.naver.com/notice/33469",
-      "excerpt": "안녕하세요, 네이버 디스플레이 광고 운영자입니다. ​ 시리즈 이용 고객층에게 효과적으로 광고를 노출할 수 있도록, 시리즈 > 작품 하단 영역에 노출 가능한 성과형 광고 유형이 확대되어 안내드립니다. 기존에는 이미지 배너(1250x560) 단일 유형만 노출 가능했으나, 2026년 8월 19일(수) 부터 아래와 같은 성과형 광고 유형이 추가됩니다. • 16:9 네이티브 이미지 피드 광고 • 16:9 네이티브 동영상 피드 광고 • 피드 컬렉션형 광고 ​ ■ 적용일정 - 2026년 8월 19일(수) 순차 적용 ​ ■ 변경 사항 시리즈 작품",
-      "platform": "네이버 GFA"
-    },
-    {
-      "id": "/entry/20260803-news-clipping",
-      "title": "2026년 8월 3일주 뉴스클리핑",
-      "excerpt": "한 주 간의 <mark>디지털 미디어와 마케팅</mark> 관련 주요 뉴스를 모아 전해드립니다. <mark>네이버·카카오, 2분기 호실적 속 AI 수익화 격돌</mark> 네이버·카카오가 올해 2분기 나란히 성장세를 기록하며 AI 사업의 본격적인 수익화 단계 진입을 선언함. 네이버는 AI 탭과 AI 브리핑 광고를 앞세운 '실행형 AI'를 통해 광고 및 쇼핑 사업화에 집중하고 있음. 반면 카카오는 카카오톡 기반으로 이용자 의도를 파악해 거래로 연결하는 '의도경제' 서비스를 확장 중임. 🔗'검색·결제' vs '톡'…AI 수익화 길 갈렸다 <mark>네이버, '채널 검색' 출시</mark><mark>…</mark><mark>AI 기반 숏폼 생태계 확장</mark> 네이버가 숏폼 창작자의 채널 정보와 콘텐츠를 한데 모아 보여주는 '채널 검색' 서비스를 출시함. 이는 이용자의 개별 콘텐츠 관심을 창작자 탐색과 소비로 이어지게 하여 선순환 생태계를 구축하려는 전략으로, '클립 AI 브리핑' 연계로 창작자 노출을 3배 늘린 데 이어 연내 'AI탭'에도 동영상 활용을 확대할 계획임. …",
-      "platforms": [
-        "네이버",
-        "카카오톡",
-        "카카오"
-      ],
-      "category": "뉴스클리핑",
-      "date": "2026-08-10",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://blog.nasmedia.co.kr/entry/20260803-news-clipping",
-      "highlights": [
-        {
-          "platform": "네이버",
-          "headline": "네이버·카카오, 2분기 호실적 속 AI 수익화 격돌"
-        },
-        {
-          "platform": "유튜브",
-          "headline": "카페24, 아시아 최초 유튜브 크리에이터 파트너십 API 연동"
-        },
-        {
-          "platform": "당근",
-          "headline": "당근, '동네걷기' 출시 1년"
-        },
-        {
-          "platform": "챗GPT",
-          "headline": "오픈AI, 챗GPT 무료 이용자에 ‘GPT-5.6 루나’ 무제한 제공"
-        },
-        {
-          "platform": "카카오",
-          "headline": "카카오, 카나나-오 음성 생성 고도화…자연어로 말투·감정까지 제어"
-        },
-        {
-          "platform": "카카오페이",
-          "headline": "카카오페이, 마이데이터 기반 AI 금융 에이전트 ‘AI코치’ 출시"
-        },
-        {
-          "platform": "틱톡",
-          "headline": "디즈니플러스, 틱톡 숏폼 콘텐츠 유통 확대"
-        },
-        {
-          "platform": "OTT",
-          "headline": "…OTT·소셜미디어 경계 허문다"
-        }
-      ],
-      "platform": "나스미디어 뉴스클리핑"
     },
     {
       "id": 100960,
@@ -1753,17 +1766,6 @@
       "platform": "카카오모먼트"
     },
     {
-      "id": "/business/ko/blog/lead-generation-dfo-solution",
-      "title": "고품질 리드를 만드는 가장 확실한 방법, TikTok Lead Generation",
-      "excerpt": "단순 수집을 넘어 최종 전환까지, CPL 절감과 고품질 리드 확보를 동시에 실현하는 DFO 기술로 TikTok Lead Ads 최적화의 미래를 경험하세요!",
-      "category": "공지사항",
-      "date": "2026-02-27",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://ads.tiktok.com/business/ko/blog/lead-generation-dfo-solution",
-      "platform": "틱톡 for Business"
-    },
-    {
       "id": "/entry/2602adissue",
       "title": "2026년 2월 - 토스, 플랫폼 대시보드 '인사이트 팁' 오픈",
       "excerpt": "2026년 2월 디지털 미디어 애드 이슈월간 디지털 미디어 주요 업데이트를 전해드립니다.#토스토스, 플랫폼 대시보드 '인사이트 팁' 오픈토스가 플랫폼 대시보드에 인사이트 팁 기능을 새로 오픈했습니다. 이번 업데이트는 캠페인 진행 시 KPI를 더 효율적으로 달성할 수 있도록, 실행 가능한 형태의 인사이트를 제공하는 것이 핵심입니다.캠페인·세트가 인사이트 제공 조건을 충족하면 대시보드에 노출되고, 광고그룹을 최적화하는 데 도움이 되는 콘텐츠를 우선순위에 따라 안내해주는 방식이에요. 또한 최소 1주 이상 데이터가 쌓인 캠페인은 팁 적용 전·후 기간의 성과 변화를 함께 확인할 수 있어, 추천을 적용했을 때 실제로 무엇이 달라졌는지를 대시보드 내에서 바로 비교할 수 있도록 설계됐습니다.원문 리포트가 궁금하신가요?..",
@@ -1775,24 +1777,6 @@
       "is_pinned": false,
       "is_new": false,
       "url": "https://blog.nasmedia.co.kr/entry/2602adissue",
-      "platform": "나스미디어 광고상품업데이트"
-    },
-    {
-      "id": "/entry/2601adissue",
-      "title": "2026년 1월 - 네이버 크림(KREAM) DA 출시 및 게재 지면 추가 외",
-      "excerpt": "2026년 1월 디지털 미디어 애드 이슈 월간 디지털 미디어 상품 이슈와 주요 업데이트를 전해드립니다. 📢주요 이슈 - 네이버네이버, 크림(KREAM) DA 상품 출시 및 게재 지면 추가네이버는 지난 11월, 크림(KREAM) DA 상품을 새로 출시했습니다. 크림은 MAU 400만 명 규모의 탄탄한 유저 풀을 기반으로 연간 1,290만 건 수준의 활발한 거래가 이뤄지는 고관여 커머스 플랫폼인데요. 크림에 따르면, 크림의 핵심 유저층은 30~40대 남성 중심이며, 이들은 구매력이 높은 타겟층으로 남성 타겟 브랜드 집행에 적합합니다. 이용 패턴은 월요일과 일요일에 이용률이 높고, 주요 이용 시간대는 오후 6시~새벽 1시로 확인되었습니다. 이에 따라 30~40대 ..",
-      "platforms": [
-        "네이버",
-        "카카오",
-        "당근",
-        "구글",
-        "토스"
-      ],
-      "category": "광고 상품 업데이트",
-      "date": "2026-01-20",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://blog.nasmedia.co.kr/entry/2601adissue",
       "platform": "나스미디어 광고상품업데이트"
     },
     {
