@@ -1,7 +1,99 @@
 {
-  "generated_at": "2026-11-03T15:55:32+09:00",
+  "generated_at": "2026-11-10T10:35:24+09:00",
   "new_count": 7,
   "notices": [
+    {
+      "id": "/entry/20261102-news-clipping",
+      "title": "2026년 11월 2일주 뉴스클리핑",
+      "excerpt": "한 주 간의 <mark>디지털 미디어와 마케팅</mark> 관련 주요 뉴스를 모아 전해드립니다. <mark>카카오, 3분기 실적 발표…톡비즈 성장세 속 AI 기반 광고·커머스 수익화 추진</mark> 카카오가 매출 2조 867억 원, 영업이익 2,403억 원을 기록하며 역대 3분기 최대 실적을 달성함. 톡비즈 광고·커머스의 성장세가 이어지는 가운데, 견조한 광고주 수요를 바탕으로 4분기에는 광고 매출이 두 자릿수 성장할 것으로 전망됨. 카카오는 12월 광고주 지원 에이전트 'AI 크루' 비공개 베타 테스트와 '카나나 스페이스' 시범 출시를 통해 연내 AI 서비스 MAU 1,000만 명을 달성한다는 계획임. 아울러 2028년에는 AI 사업 손익분기점 달성을 목표로 함.🔗카카오, 3분기 매출 2조867억·영업익 2403억원⋯카톡 광고·커머스 성장 <mark>네이버, AI 광고 에이전트 탑재한 '네이버애즈' 출시…광고 운영 지원 강화</mark> 네이버가 기존 광고주센터에 AI 기반 광고 에이전트 기능을 추가해 '네이버애즈'로 개편함. AI가 광고 캠페인 성과를 분석하고 개선…",
+      "platforms": [
+        "카카오"
+      ],
+      "category": "뉴스클리핑",
+      "date": "2026-11-09",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://blog.nasmedia.co.kr/entry/20261102-news-clipping",
+      "highlights": [
+        {
+          "platform": "카카오",
+          "headline": "카카오, 3분기 실적 발표…톡비즈 성장세 속 AI 기반 광고·커머스 수익화 추진"
+        },
+        {
+          "platform": "네이버",
+          "headline": "네이버, AI 광고 에이전트 탑재한 '네이버애즈' 출시…광고 운영 지원 강화"
+        },
+        {
+          "platform": "카카오톡",
+          "headline": "카카오, 맥용 카카오톡에도 광고 도입…PC 광고 지면 확대"
+        },
+        {
+          "platform": "유튜브",
+          "headline": "유튜브, 숏폼·롱폼 연계 넘어 OTT·쇼핑으로 수익 모델 확장"
+        },
+        {
+          "platform": "메타",
+          "headline": "메타, 영상 편집 앱 '에디츠' 맥용 데스크톱 버전 출시"
+        },
+        {
+          "platform": "챗GPT",
+          "headline": "챗GPT, 이용자 10명 중 9명이 네이버와 함께 사용"
+        },
+        {
+          "platform": "오픈AI",
+          "headline": "오픈AI, 이미지 생성 모델 '이미지 2.6' 공개…생성 속도·편집 기능 강화"
+        },
+        {
+          "platform": "쿠팡",
+          "headline": "쿠팡플레이, 크런치롤과 제휴해 애니메이션 콘텐츠 라인업 강화"
+        }
+      ],
+      "platform": "나스미디어 뉴스클리핑"
+    },
+    {
+      "id": "/business/ko/blog/tiktok-symphony-ai-creative-suite",
+      "title": "Meet TikTok Symphony, our creative AI suite",
+      "excerpt": "Powered by generative AI, our new suite of creative solutions is designed to enhance every step of your TikTok content creation journey.",
+      "category": "공지사항",
+      "date": "2026-11-08",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://ads.tiktok.com/business/ko/blog/tiktok-symphony-ai-creative-suite",
+      "platform": "틱톡 for Business"
+    },
+    {
+      "id": 34852,
+      "title": "[안내] 디스플레이 광고 지역 타겟팅 행정구역 변경 안내 (대구 달성군 구지읍, 경기 평택시 고덕1·2동 등)",
+      "category": "디스플레이 광고",
+      "date": "2026-11-05",
+      "is_pinned": false,
+      "is_new": true,
+      "url": "https://ads.naver.com/notice/34852",
+      "excerpt": "안녕하세요. 네이버애즈 운영자입니다. ​ 행정구역 변경에 따라 디스플레이 광고 지역 타겟팅의 지역 정보가 아래와 같이 변경됩니다. ​ [적용 일정] - 2026년 11월 11일(수) 적용 예정 - 적용일 전까지는 변경 후 지역(구지읍, 고덕1동·고덕2동)을 선택하실 수 없으며, 기존 지역 타겟팅은 그대로 유지됩니다. ​ [변경 내용] 지역 변경 전 변경 후 비고 대구광역시 달성군 구지면 구지읍 면 → 읍 승격 (하위 리 포함) 경기도 평택시 고덕동 고덕1동, 고덕2동 행정동 분동 경기도 평택시 통복동, 동삭동 통복동, 동삭동 지역명",
+      "platform": "네이버 GFA"
+    },
+    {
+      "id": "/business/ko/blog/pangle-event-2026",
+      "title": "게임 비즈니스의 해답은 인스파이어 라운지 G-STAR 2026에서!",
+      "excerpt": "게임 비즈니스의 해답을 찾고 계신가요? G-STAR 2026, 인스파이어 라운지에서 만나요! 🎮",
+      "category": "공지사항",
+      "date": "2026-11-04",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://ads.tiktok.com/business/ko/blog/pangle-event-2026",
+      "platform": "틱톡 for Business"
+    },
+    {
+      "id": 25898,
+      "title": "오토 타겟팅 제외 조건 확대 안내 (지역, 전환 추적 타겟 제외)",
+      "excerpt": "안녕하세요, 토스애즈입니다.이제부터 오토 타겟팅의 '특정 타겟 제외'에서 지역과 전환 추적 타겟도 제외할 수 있습니다.오토 타겟팅이 성과가 좋을 고객을 자동으로 찾는 방식은 그대로 두면서, 광고를 보여주고 싶지 않은 지역의 고객이나 이미 전환을 완료한 고객을 노출 대상에서 제외할 수 있습니다.1. 적용 일시2026년 11월 3일(화)2. 변경 내용구분변경 전변경 후특정 타겟 제외에서 선택할 수 있는 조건성별, 연령, 디바이스, 고객 목록성별, 연령, 디바이스, 고객 목록, 지역, 전환 추적 타겟3. 지역 제외광고 세트 만들기 > 타",
+      "category": "공지",
+      "date": "2026-11-03",
+      "is_pinned": true,
+      "is_new": false,
+      "url": "https://tossads.toss.im/notice/25898",
+      "platform": "토스애즈"
+    },
     {
       "id": "/entry/20261026-news-clipping",
       "title": "2026년 10월 26일주 뉴스클리핑",
@@ -13,7 +105,7 @@
       "category": "뉴스클리핑",
       "date": "2026-11-02",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://blog.nasmedia.co.kr/entry/20261026-news-clipping",
       "highlights": [
         {
@@ -50,7 +142,7 @@
       "category": "광고 상품 업데이트",
       "date": "2026-11-02",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://blog.nasmedia.co.kr/entry/2610adissue",
       "platform": "나스미디어 광고상품업데이트"
     },
@@ -61,7 +153,7 @@
       "category": "공지",
       "date": "2026-11-02",
       "is_pinned": false,
-      "is_new": true,
+      "is_new": false,
       "url": "https://tossads.toss.im/notice/25892",
       "platform": "토스애즈"
     },
@@ -146,6 +238,17 @@
         }
       ],
       "platform": "나스미디어 뉴스클리핑"
+    },
+    {
+      "id": "/business/ko/blog/tiktok-pulse-premium-contextual-ad-placement",
+      "title": "틱톡 펄스 모음: 최고의 틱톡 콘텐츠와 나란히 배치해 차별화된 오디언스에 도달하세요",
+      "excerpt": "틱톡의 솔루션 모음은 화제성이 높은 콘텐츠 옆에 브랜드를 배치합니다. 다른 방식으로는 놓쳤을 수 있는 오디언스를 관련성이 높은 환경에서 확보해 보세요.",
+      "category": "공지사항",
+      "date": "2026-10-26",
+      "is_pinned": false,
+      "is_new": false,
+      "url": "https://ads.tiktok.com/business/ko/blog/tiktok-pulse-premium-contextual-ad-placement",
+      "platform": "틱톡 for Business"
     },
     {
       "id": 101078,
@@ -481,14 +584,14 @@
       "platform": "토스애즈"
     },
     {
-      "id": "/business/ko/blog/tiktok-pulse-premium-contextual-ad-placement",
+      "id": "/business/ko/blog/kantar-media-reactions",
       "title": "틱톡, 마케터들이 향후 광고비를 늘릴 계획인 플랫폼 1위·재미있고 즐거운 광고 플랫폼 1위",
       "excerpt": "Kantar의 연례 Media Reactions 보고서는 틱톡이 미디어 계획에 어떤 변화를 만들고 전 세계 오디언스와 어떻게 소통하고 있는지 새롭게 조명합니다.",
       "category": "공지사항",
       "date": "2026-09-29",
       "is_pinned": false,
       "is_new": false,
-      "url": "https://ads.tiktok.com/business/ko/blog/tiktok-pulse-premium-contextual-ad-placement",
+      "url": "https://ads.tiktok.com/business/ko/blog/kantar-media-reactions",
       "platform": "틱톡 for Business"
     },
     {
@@ -899,17 +1002,6 @@
       "platform": "토스애즈"
     },
     {
-      "id": 25590,
-      "title": "상품명 AI 최적화 기능 적용 안내 (9/15 오픈)",
-      "excerpt": "안녕하세요, 토스애즈입니다.2026년 9월 15일부터 카탈로그 광고에 노출되는 상품명이 상품 간 통일된 형태로 정리되어 노출됩니다.어떤 기능인가요?상품명 AI 최적화는 원본 상품명을 최대한 유지하면서, 광고에 노출될 상품명을 정리하는 기능입니다.변환된 상품명의 노출 여부는 광고주센터에서 상품별로 관리하실 수 있습니다.브랜드·규격·수량처럼 상품을 특정하는 정보는 그대로 유지하며, 표기 순서와 구분만 정돈합니다.여러 상품이 나란히 노출되는 화면에서 표기 형태가 통일되면, 고객이 상품을 비교하고 이해하기 쉬워집니다.어떻게 달라지나요?변경",
-      "category": "공지",
-      "date": "2026-09-09",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://tossads.toss.im/notice/25590",
-      "platform": "토스애즈"
-    },
-    {
       "id": 101003,
       "title": "[안내] 9월 카카오비즈니스 세미나 일정",
       "category": "공지/이벤트",
@@ -1303,56 +1395,6 @@
       "platform": "네이버 GFA"
     },
     {
-      "id": "/entry/20260810-news-clipping",
-      "title": "2026년 8월 10일주 뉴스클리핑",
-      "excerpt": "한 주 간의 <mark>디지털 미디어와 마케팅</mark> 관련 주요 뉴스를 모아 전해드립니다. <mark>구글, 국내 모바일 앱 MAU 네이버 첫 추월…AI 검색 확산에 검색시장 지형 변화</mark> 구글이 지난달 앱 MAU 4,702만 명을 기록하며 네이버(4,684만 명)를 앞서 2021년 통계 집계 이후 처음으로 1위를 기록함. 제미나이와 AI 검색 기능 강화 등이 구글 이용자 증가에 영향을 미친 것으로 분석됨. 다만 DAU는 네이버가 2,675만 명으로 구글(1,732만 명)을 크게 앞섰고, 1인당 월평균 사용 시간도 네이버가 약 6배 높은 것으로 나타나 실제 이용 빈도와 체류 측면에서는 네이버의 우위가 이어지고 있음. 🔗구글, 국내 이용자수 네이버 첫 추월…포털 지형 흔드나 <mark>인스타그램, 10년 만에 영문 워드마크 변경</mark> 인스타그램이 2016년 이후 약 10년 만에 영문 워드마크를 변경함. 기존 필기체 형태와 브랜드 정체성은 유지하면서 글자의 곡선을 강조해 보다 선명하고 현대적인 디자인으로 다듬음. 이번 변화는 영문 워드마크에 한정되며 분…",
-      "platforms": [
-        "인스타그램",
-        "네이버",
-        "구글"
-      ],
-      "category": "뉴스클리핑",
-      "date": "2026-08-18",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://blog.nasmedia.co.kr/entry/20260810-news-clipping",
-      "highlights": [
-        {
-          "platform": "네이버",
-          "headline": "구글, 국내 모바일 앱 MAU 네이버 첫 추월…AI 검색 확산에 검색시장 지형 변화"
-        },
-        {
-          "platform": "인스타그램",
-          "headline": "인스타그램, 10년 만에 영문 워드마크 변경"
-        },
-        {
-          "platform": "당근",
-          "headline": "당근, 맞춤형 광고 강화…로컬 데이터 기반 광고 플랫폼 확대"
-        },
-        {
-          "platform": "유튜브",
-          "headline": "유튜브, 2027년부터 수익 창출 기준 상향"
-        },
-        {
-          "platform": "메타",
-          "headline": "메타, 라이브 방송부터 상품 구매까지 연결"
-        },
-        {
-          "platform": "틱톡",
-          "headline": "틱톡샵, 미국 온라인 쇼핑 시장서 급성장"
-        },
-        {
-          "platform": "배민",
-          "headline": "배민, 패션 카테고리 강화"
-        },
-        {
-          "platform": "OTT",
-          "headline": "글로벌 OTT, K예능 서바이벌 투자 확대"
-        }
-      ],
-      "platform": "나스미디어 뉴스클리핑"
-    },
-    {
       "id": 100964,
       "title": "[상품] 프로필 풀뷰 상품 노출 변경사항 안내",
       "category": "상품/서비스",
@@ -1371,17 +1413,6 @@
       "is_new": false,
       "url": "https://ads.naver.com/notice/33495",
       "excerpt": "안녕하세요, 네이버 디스플레이 광고 운영자입니다. 네이버 모바일 페이 > 머니스토리 지면에 성과형 광고가 노출될 예정입니다. 이용자가 경제·재테크 관련 콘텐츠를 이용하는 자연스러운 흐름 속에서 광고가 노출되어, 광고 성과 향상에 도움이 될 것으로 기대합니다. 자세한 내용은 아래를 참고해 주시기 바랍니다. ​ ​ ■ 노출 시점 2026년 8월 19일(수) ~ * 노출 시점은 내부 사정에 따라 변동될 수 있습니다. ​ ■ 노출 영역 및 적용 상품 안내 ​ 1. 네이버 모바일 페이 > 머니스토리 > 인기탭 리스트 - 게재 위치 : 네이버",
-      "platform": "네이버 GFA"
-    },
-    {
-      "id": 33492,
-      "title": "디스플레이 광고 도달 보고서 제공 안내",
-      "category": "디스플레이 광고",
-      "date": "2026-08-12",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://ads.naver.com/notice/33492",
-      "excerpt": "안녕하세요, 네이버 디스플레이 광고 운영자입니다. ​ 네이버 디스플레이 광고 플랫폼에서 캠페인과 광고그룹 단위의 '도달' 지표를 확인할 수 있는 '도달 보고서' 제공합니다. 도달 보고서를 통해 집행 중인 광고가 얼마나 많은 사용자에게 노출되었는지 확인하실 수 있으며, 캠페인의 도달 성과를 파악하는 데 활용하실 수 있습니다. 모든 광고주님께서는 아래 상세 내용을 확인하시고 광고 운영에 참고하시기 바랍니다. ​ ​ ■ 적용 일자 - 2026년 8월 12일(수) ​ ■ 도달 보고서 안내 도달 보고서는 광고가 도달한 사용자 규모를 확인할 ",
       "platform": "네이버 GFA"
     },
     {
@@ -1534,17 +1565,6 @@
       "platform": "나스미디어 광고상품업데이트"
     },
     {
-      "id": "/business/ko/blog/tiktok-symphony-ai-creative-suite",
-      "title": "새로운 크리에이티브 AI 모음인 틱톡 Symphony를 만나보세요",
-      "excerpt": "생성형 AI를 기반으로 한 새로운 크리에이티브 솔루션 모음으로, 틱톡 콘텐츠 제작 여정의 모든 단계를 향상하도록 설계되었습니다.",
-      "category": "공지사항",
-      "date": "2026-06-22",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://ads.tiktok.com/business/ko/blog/tiktok-symphony-ai-creative-suite",
-      "platform": "틱톡 for Business"
-    },
-    {
       "id": "/business/ko/blog/content-suite-creator-ugc-library",
       "title": "TikTok One 콘텐츠 스위트로 최고의 UGC를 찾아 확산시키세요",
       "excerpt": "틱톡에는 브랜드에 관련된 진정성 있는 콘텐츠가 가득합니다. 틱톡의 콘텐츠가 다음 캠페인을 멋지게 성공시켜 줄 열쇠가 되어줄 거예요. 그리고 이러한 콘텐츠를 활용하는 일이 그 어느 때보다 쉬워지고 있습니다.",
@@ -1598,7 +1618,7 @@
     {
       "id": "/entry/2605adissue",
       "title": "2026년 5월 - 네이버 브랜드검색 PC/모바일 상품 통합 개편 외",
-      "excerpt": "2025년 5월 디지털 미디어 애드 이슈 월간 디지털 미디어 상품 이슈와 주요 업데이트를 전해드립니다. 📢주요 이슈네이버 브랜드검색 PC/모바일 상품 통합 개편네이버가 2026년 5월, 브랜드검색 PC·모바일 상품의 템플릿 구조를 통합 개편을 안내했습니다. 기존에는 라이트형, 프리미엄형, 브랜드추천형 등 상품 유형과 PC·모바일 소재 형식에 따라 총 32개의 템플릿이 운영되고 있었는데요. 6월 1일부터 적용되는 이번 개편을 통해 주요 템플릿이 7개로 통합되며 브랜드검색 광고 운영 구조가 더욱 단순해졌습니다.이번 변화의 핵심은 광고 소재를 더 유연하게 구성할 수 있다는 점입니다. 기존에는 템플릿별로 등록 가능한 소재 형식이 나뉘어 있었지만 개편 이후에는 텍스트..",
+      "excerpt": "2026년 5월 디지털 미디어 애드 이슈 월간 디지털 미디어 상품 이슈와 주요 업데이트를 전해드립니다. 📢주요 이슈네이버 브랜드검색 PC/모바일 상품 통합 개편네이버가 2026년 5월, 브랜드검색 PC·모바일 상품의 템플릿 구조를 통합 개편을 안내했습니다. 기존에는 라이트형, 프리미엄형, 브랜드추천형 등 상품 유형과 PC·모바일 소재 형식에 따라 총 32개의 템플릿이 운영되고 있었는데요. 6월 1일부터 적용되는 이번 개편을 통해 주요 템플릿이 7개로 통합되며 브랜드검색 광고 운영 구조가 더욱 단순해졌습니다.이번 변화의 핵심은 광고 소재를 더 유연하게 구성할 수 있다는 점입니다. 기존에는 템플릿별로 등록 가능한 소재 형식이 나뉘어 있었지만 개편 이후에는 텍스트..",
       "platforms": [
         "네이버",
         "카카오",
@@ -1707,17 +1727,6 @@
       "is_pinned": false,
       "is_new": false,
       "url": "https://ads.tiktok.com/business/ko/blog/tiktok-growth-max-mini-games",
-      "platform": "틱톡 for Business"
-    },
-    {
-      "id": "/business/ko/blog/introducing-topreach",
-      "title": "피드 최상단 광고를 새롭게 정의하는 TopReach",
-      "excerpt": "탑뷰와 탑피드의 강점을 하나로 모은 틱톡의 새로운 최대 도달 솔루션이 프리미엄 노출과 독보적인 도달을 제공합니다.",
-      "category": "공지사항",
-      "date": "2026-05-13",
-      "is_pinned": false,
-      "is_new": false,
-      "url": "https://ads.tiktok.com/business/ko/blog/introducing-topreach",
       "platform": "틱톡 for Business"
     },
     {

@@ -102,6 +102,18 @@
     "link": "https://drive.google.com/file/d/1SU_UaSR4qg0iQLd40_7U1onMl_heI06v/view"
   },
   {
+    "platform": "H포인트",
+    "category": "DA",
+    "summary": "현대백화점 그룹 통합 맴버십서비스",
+    "description": "현대백화점 그룹 통합 맴버십서비스",
+    "features": [
+      "자료: [H.Point] 광고상품소개서_VF 0918",
+      "최근 업데이트 기준: 26.11",
+      "비고: 현대백화점그룹\n10여 개의 계열사 고객을\n하나로 연결하는 통합 맴버십"
+    ],
+    "link": ""
+  },
+  {
     "platform": "Inmobi",
     "category": "DSP",
     "summary": "글로벌 모바일 네트워크 플랫폼",
@@ -376,6 +388,18 @@
   },
   {
     "platform": "마미톡",
+    "category": "기타, SNS",
+    "summary": "육아 커뮤니티 \n엄마 타겟 매체",
+    "description": "육아 커뮤니티 \n엄마 타겟 매체",
+    "features": [
+      "자료: 마미톡_11-12월_프로모션_매체소개서_26",
+      "최근 업데이트 기준: 26.11",
+      "비고: 임신 주수, 출산 주기에 따른 정교한 타겟팅 가능"
+    ],
+    "link": "https://drive.google.com/file/d/1BCiQeVk7FhlDxJTLQanTlhgRLhmgI793/view?usp=drivesdk"
+  },
+  {
+    "platform": "마미톡",
     "category": "",
     "summary": "",
     "description": "",
@@ -501,6 +525,18 @@
       "자료: PDF 파일 올리기",
       "사내 자료명: 네스트 게시판 내용이라면 링크 걸기",
       "최근 업데이트 기준: 업데이트 날짜 > 작성 시점 기준(26.09.00)"
+    ],
+    "link": ""
+  },
+  {
+    "platform": "아파트너",
+    "category": "DA, SNS",
+    "summary": "아파트 커뮤니티",
+    "description": "아파트 커뮤니티",
+    "features": [
+      "자료: 아파트너 광고상품소개서_Q3",
+      "최근 업데이트 기준: 26.11",
+      "비고: 4,300단지, 360만 세대가\n함께하는 아파트 커뮤니티"
     ],
     "link": ""
   },
