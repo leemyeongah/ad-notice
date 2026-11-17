@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-17T12:20:11+09:00",
-  "new_count": 8,
+  "generated_at": "2026-11-17T17:02:19+09:00",
+  "new_count": 7,
   "notices": [
     {
       "id": 35479,
@@ -71,7 +71,7 @@
       "category": "공지",
       "date": "2026-11-12",
       "is_pinned": true,
-      "is_new": true,
+      "is_new": false,
       "url": "https://tossads.toss.im/notice/26092",
       "platform": "토스애즈"
     },
