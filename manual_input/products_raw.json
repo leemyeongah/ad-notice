@@ -139,6 +139,19 @@
     "link": ""
   },
   {
+    "platform": "MLB파크",
+    "category": "DA, 커뮤니티",
+    "summary": "야구 커뮤니티",
+    "description": "야구 커뮤니티",
+    "features": [
+      "자료: 엠엘비파크_매체소개서_2026",
+      "최근 업데이트 기준: 26.11",
+      "비고: - 최소 집행: PC 또는 MO 단독 300만 원, PC+MO 500만 원 (VAT 별도)",
+      "수수료율: 20% · 영역: DA, 커뮤니티"
+    ],
+    "link": ""
+  },
+  {
     "platform": "Mnet Plus",
     "category": "DA, 기타",
     "summary": "K-POP 올인원 팬터랙티브 플랫폼",
@@ -351,6 +364,19 @@
     "link": "https://drive.google.com/file/d/17KmCqwzSBoxN9Css9h4r0JY9t3-ITeZ4/view?usp=drivesdk"
   },
   {
+    "platform": "동네알바",
+    "category": "DA",
+    "summary": "지역 기반 채용 플랫폼",
+    "description": "지역 기반 채용 플랫폼",
+    "features": [
+      "자료: 동네알바_광고상품소개서_202508",
+      "최근 업데이트 기준: 26.11",
+      "비고: 최소 집행 금액은 500만 원(VAT 별도)",
+      "수수료율: 20% (백피) · 영역: DA"
+    ],
+    "link": ""
+  },
+  {
     "platform": "디지털캠프",
     "category": "DSP, DA, Video, DMP",
     "summary": "SKP DMP 기반 플랫폼",
@@ -502,6 +528,19 @@
       "최근 업데이트 기준: 26.11"
     ],
     "link": "https://drive.google.com/file/d/1MaGcKHOdUYP_--WChTzaMmtCnnUYLuP5/view?usp=drivesdk"
+  },
+  {
+    "platform": "소모임",
+    "category": "DA, 커뮤니티, App",
+    "summary": "국내 최대 오프라인 취미 모임 앱",
+    "description": "국내 최대 오프라인 취미 모임 앱",
+    "features": [
+      "자료: 소모임 광고 소개서_261030",
+      "최근 업데이트 기준: 26.11",
+      "비고: - 금융 집행 사례: 신한은행 모임통장, 롯데손해보험",
+      "수수료율: 10% · 영역: DA, 커뮤니티, App"
+    ],
+    "link": ""
   },
   {
     "platform": "스카이스캐너",
